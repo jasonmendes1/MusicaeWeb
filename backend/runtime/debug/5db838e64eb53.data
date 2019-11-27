@@ -1,0 +1,1192 @@
+a:14:{s:6:"config";s:1418:"a:5:{s:10:"phpVersion";s:6:"7.0.33";s:10:"yiiVersion";s:6:"2.0.29";s:11:"application";a:8:{s:3:"yii";s:6:"2.0.29";s:4:"name";s:14:"My Application";s:7:"version";s:3:"1.0";s:8:"language";s:5:"en-US";s:14:"sourceLanguage";s:5:"en-US";s:7:"charset";s:5:"UTF-8";s:3:"env";s:3:"dev";s:5:"debug";b:1;}s:3:"php";a:5:{s:7:"version";s:6:"7.0.33";s:6:"xdebug";b:1;s:3:"apc";b:0;s:8:"memcache";b:0;s:9:"memcached";b:0;}s:10:"extensions";a:5:{s:22:"yiisoft/yii2-bootstrap";a:3:{s:4:"name";s:22:"yiisoft/yii2-bootstrap";s:7:"version";s:8:"2.0.10.0";s:5:"alias";a:1:{s:14:"@yii/bootstrap";s:55:"C:\wamp64\www\musicae\vendor/yiisoft/yii2-bootstrap/src";}}s:24:"yiisoft/yii2-swiftmailer";a:3:{s:4:"name";s:24:"yiisoft/yii2-swiftmailer";s:7:"version";s:7:"2.0.7.0";s:5:"alias";a:1:{s:16:"@yii/swiftmailer";s:53:"C:\wamp64\www\musicae\vendor/yiisoft/yii2-swiftmailer";}}s:18:"yiisoft/yii2-debug";a:3:{s:4:"name";s:18:"yiisoft/yii2-debug";s:7:"version";s:8:"2.1.10.0";s:5:"alias";a:1:{s:10:"@yii/debug";s:51:"C:\wamp64\www\musicae\vendor/yiisoft/yii2-debug/src";}}s:16:"yiisoft/yii2-gii";a:3:{s:4:"name";s:16:"yiisoft/yii2-gii";s:7:"version";s:7:"2.1.2.0";s:5:"alias";a:1:{s:8:"@yii/gii";s:49:"C:\wamp64\www\musicae\vendor/yiisoft/yii2-gii/src";}}s:18:"yiisoft/yii2-faker";a:3:{s:4:"name";s:18:"yiisoft/yii2-faker";s:7:"version";s:7:"2.0.4.0";s:5:"alias";a:1:{s:10:"@yii/faker";s:47:"C:\wamp64\www\musicae\vendor/yiisoft/yii2-faker";}}}}";s:7:"request";s:10496:"a:15:{s:7:"flashes";a:0:{}s:10:"statusCode";i:200;s:14:"requestHeaders";a:16:{s:4:"host";s:9:"localhost";s:10:"connection";s:10:"keep-alive";s:14:"content-length";s:3:"892";s:13:"cache-control";s:9:"max-age=0";s:6:"origin";s:16:"http://localhost";s:25:"upgrade-insecure-requests";s:1:"1";s:12:"content-type";s:33:"application/x-www-form-urlencoded";s:10:"user-agent";s:114:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36";s:14:"sec-fetch-user";s:2:"?1";s:6:"accept";s:118:"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3";s:14:"sec-fetch-site";s:11:"same-origin";s:14:"sec-fetch-mode";s:8:"navigate";s:7:"referer";s:78:"http://localhost/musicae/backend/web/index.php?r=gii%2Fdefault%2Fview&id=model";s:15:"accept-encoding";s:17:"gzip, deflate, br";s:15:"accept-language";s:35:"pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7";s:6:"cookie";s:925:"_identity-backend=8d2839f1ebdadca1bb14f86d93f2a1df7107dde74ec7bdf7b2dda4b2cc72ef4fa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ekZ_ON8-w5t7jLa32e_ExMQTxnRi_cSx%22%2C2592000%5D%22%3B%7D; _identity-frontend=94551f5413f7dd1181b06dbb24b2721d5780ad784a4cb7dace92dfa95d99e3a9a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%2282qA-_uz-qQ8hD2e7G3WPTf9AWpLa5Iw%22%2C2592000%5D%22%3B%7D; advanced-backend=uqpmils60k84tf13d42mhpboi5; advanced-frontend=mk9bt928dd04ki419l0lmsnbm5; _csrf-frontend=0d526ff768d899fdf8af6a22155eb532f840c06a1ab9f95b3443e93106427297a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%226Oq3mo2KMPY0Sb4nGel6iY34_H-e5NXa%22%3B%7D; _csrf-backend=4841e7b88dcd826101eb6c1778241f9af8f9f338eb50f343c3a8632469eb00aaa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%222JuMSuaDnnu9UvF66ONpskDylPZl7C3q%22%3B%7D";}s:15:"responseHeaders";a:8:{s:12:"X-Powered-By";s:10:"PHP/7.0.33";s:7:"Expires";s:29:"Thu, 19 Nov 1981 08:52:00 GMT";s:13:"Cache-Control";s:35:"no-store, no-cache, must-revalidate";s:6:"Pragma";s:8:"no-cache";s:12:"Content-Type";s:24:"text/html; charset=UTF-8";s:11:"X-Debug-Tag";s:13:"5db838e64eb53";s:16:"X-Debug-Duration";s:3:"164";s:12:"X-Debug-Link";s:73:"/musicae/backend/web/index.php?r=debug%2Fdefault%2Fview&tag=5db838e64eb53";}s:5:"route";s:16:"gii/default/view";s:6:"action";s:51:"yii\gii\controllers\DefaultController::actionView()";s:12:"actionParams";a:1:{i:0;s:5:"model";}s:7:"general";a:5:{s:6:"method";s:4:"POST";s:6:"isAjax";b:0;s:6:"isPjax";b:0;s:7:"isFlash";b:0;s:18:"isSecureConnection";b:0;}s:11:"requestBody";a:3:{s:12:"Content Type";s:33:"application/x-www-form-urlencoded";s:3:"Raw";s:892:"_csrf-backend=A2heJ9iRZIBSJihIFsHu1YZOoa7gkUlNcfG48AwswPYxIitqi-QFxDxIXXFDt6jjsAHv3pP6DTQdoeKcO2_zhw%3D%3D&Generator%5BtableName%5D=generos&Generator%5BmodelClass%5D=Generos&Generator%5BstandardizeCapitals%5D=0&Generator%5Bsingularize%5D=0&Generator%5Bns%5D=app%5Cmodels&Generator%5BbaseClass%5D=yii%5Cdb%5CActiveRecord&Generator%5Bdb%5D=db&Generator%5BuseTablePrefix%5D=0&Generator%5BgenerateRelations%5D=all&Generator%5BgenerateRelationsFromCurrentSchema%5D=0&Generator%5BgenerateRelationsFromCurrentSchema%5D=1&Generator%5BgenerateLabelsFromComments%5D=0&Generator%5BgenerateQuery%5D=0&Generator%5BqueryNs%5D=app%5Cmodels&Generator%5BqueryBaseClass%5D=yii%5Cdb%5CActiveQuery&Generator%5BenableI18N%5D=0&Generator%5BmessageCategory%5D=app&Generator%5BuseSchemaName%5D=0&Generator%5BuseSchemaName%5D=1&Generator%5Btemplate%5D=default&answers%5Baf7dafc0c8859e95242818baca2d5741%5D=1&generate=";s:17:"Decoded to Params";a:4:{s:13:"_csrf-backend";s:88:"A2heJ9iRZIBSJihIFsHu1YZOoa7gkUlNcfG48AwswPYxIitqi-QFxDxIXXFDt6jjsAHv3pP6DTQdoeKcO2_zhw==";s:9:"Generator";a:18:{s:9:"tableName";s:7:"generos";s:10:"modelClass";s:7:"Generos";s:19:"standardizeCapitals";s:1:"0";s:11:"singularize";s:1:"0";s:2:"ns";s:10:"app\models";s:9:"baseClass";s:19:"yii\db\ActiveRecord";s:2:"db";s:2:"db";s:14:"useTablePrefix";s:1:"0";s:17:"generateRelations";s:3:"all";s:34:"generateRelationsFromCurrentSchema";s:1:"1";s:26:"generateLabelsFromComments";s:1:"0";s:13:"generateQuery";s:1:"0";s:7:"queryNs";s:10:"app\models";s:14:"queryBaseClass";s:18:"yii\db\ActiveQuery";s:10:"enableI18N";s:1:"0";s:15:"messageCategory";s:3:"app";s:13:"useSchemaName";s:1:"1";s:8:"template";s:7:"default";}s:7:"answers";a:1:{s:32:"af7dafc0c8859e95242818baca2d5741";s:1:"1";}s:8:"generate";s:0:"";}}s:6:"SERVER";a:43:{s:9:"HTTP_HOST";s:9:"localhost";s:15:"HTTP_CONNECTION";s:10:"keep-alive";s:14:"CONTENT_LENGTH";s:3:"892";s:18:"HTTP_CACHE_CONTROL";s:9:"max-age=0";s:11:"HTTP_ORIGIN";s:16:"http://localhost";s:30:"HTTP_UPGRADE_INSECURE_REQUESTS";s:1:"1";s:12:"CONTENT_TYPE";s:33:"application/x-www-form-urlencoded";s:15:"HTTP_USER_AGENT";s:114:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36";s:19:"HTTP_SEC_FETCH_USER";s:2:"?1";s:11:"HTTP_ACCEPT";s:118:"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3";s:19:"HTTP_SEC_FETCH_SITE";s:11:"same-origin";s:19:"HTTP_SEC_FETCH_MODE";s:8:"navigate";s:12:"HTTP_REFERER";s:78:"http://localhost/musicae/backend/web/index.php?r=gii%2Fdefault%2Fview&id=model";s:20:"HTTP_ACCEPT_ENCODING";s:17:"gzip, deflate, br";s:20:"HTTP_ACCEPT_LANGUAGE";s:35:"pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7";s:11:"HTTP_COOKIE";s:925:"_identity-backend=8d2839f1ebdadca1bb14f86d93f2a1df7107dde74ec7bdf7b2dda4b2cc72ef4fa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ekZ_ON8-w5t7jLa32e_ExMQTxnRi_cSx%22%2C2592000%5D%22%3B%7D; _identity-frontend=94551f5413f7dd1181b06dbb24b2721d5780ad784a4cb7dace92dfa95d99e3a9a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%2282qA-_uz-qQ8hD2e7G3WPTf9AWpLa5Iw%22%2C2592000%5D%22%3B%7D; advanced-backend=uqpmils60k84tf13d42mhpboi5; advanced-frontend=mk9bt928dd04ki419l0lmsnbm5; _csrf-frontend=0d526ff768d899fdf8af6a22155eb532f840c06a1ab9f95b3443e93106427297a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%226Oq3mo2KMPY0Sb4nGel6iY34_H-e5NXa%22%3B%7D; _csrf-backend=4841e7b88dcd826101eb6c1778241f9af8f9f338eb50f343c3a8632469eb00aaa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%222JuMSuaDnnu9UvF66ONpskDylPZl7C3q%22%3B%7D";s:4:"PATH";s:924:"C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Brackets\command;C:\Program Files\PuTTY\;C:\PostgreSQL\pg11\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\wamp64\bin\php\php5.6.38;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\wamp64\bin\php\php5.6.40;C:\ProgramData\ComposerSetup\bin;C:\Users\Pedro Lopes\AppData\Local\Microsoft\WindowsApps;C:\Users\Pedro Lopes\.dotnet\tools";s:10:"SystemRoot";s:10:"C:\Windows";s:7:"COMSPEC";s:27:"C:\Windows\system32\cmd.exe";s:7:"PATHEXT";s:53:".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC";s:6:"WINDIR";s:10:"C:\Windows";s:16:"SERVER_SIGNATURE";s:80:"<address>Apache/2.4.39 (Win64) PHP/7.0.33 Server at localhost Port 80</address>
+";s:15:"SERVER_SOFTWARE";s:32:"Apache/2.4.39 (Win64) PHP/7.0.33";s:11:"SERVER_NAME";s:9:"localhost";s:11:"SERVER_ADDR";s:3:"::1";s:11:"SERVER_PORT";s:2:"80";s:11:"REMOTE_ADDR";s:3:"::1";s:13:"DOCUMENT_ROOT";s:13:"C:/wamp64/www";s:14:"REQUEST_SCHEME";s:4:"http";s:14:"CONTEXT_PREFIX";s:0:"";s:21:"CONTEXT_DOCUMENT_ROOT";s:13:"C:/wamp64/www";s:12:"SERVER_ADMIN";s:29:"wampserver@wampserver.invalid";s:15:"SCRIPT_FILENAME";s:43:"C:/wamp64/www/musicae/backend/web/index.php";s:11:"REMOTE_PORT";s:5:"61893";s:17:"GATEWAY_INTERFACE";s:7:"CGI/1.1";s:15:"SERVER_PROTOCOL";s:8:"HTTP/1.1";s:14:"REQUEST_METHOD";s:4:"POST";s:12:"QUERY_STRING";s:31:"r=gii%2Fdefault%2Fview&id=model";s:11:"REQUEST_URI";s:62:"/musicae/backend/web/index.php?r=gii%2Fdefault%2Fview&id=model";s:11:"SCRIPT_NAME";s:30:"/musicae/backend/web/index.php";s:8:"PHP_SELF";s:30:"/musicae/backend/web/index.php";s:18:"REQUEST_TIME_FLOAT";d:1572354278.2780001;s:12:"REQUEST_TIME";i:1572354278;}s:3:"GET";a:2:{s:1:"r";s:16:"gii/default/view";s:2:"id";s:5:"model";}s:4:"POST";a:4:{s:13:"_csrf-backend";s:88:"A2heJ9iRZIBSJihIFsHu1YZOoa7gkUlNcfG48AwswPYxIitqi-QFxDxIXXFDt6jjsAHv3pP6DTQdoeKcO2_zhw==";s:9:"Generator";a:18:{s:9:"tableName";s:7:"generos";s:10:"modelClass";s:7:"Generos";s:19:"standardizeCapitals";s:1:"0";s:11:"singularize";s:1:"0";s:2:"ns";s:10:"app\models";s:9:"baseClass";s:19:"yii\db\ActiveRecord";s:2:"db";s:2:"db";s:14:"useTablePrefix";s:1:"0";s:17:"generateRelations";s:3:"all";s:34:"generateRelationsFromCurrentSchema";s:1:"1";s:26:"generateLabelsFromComments";s:1:"0";s:13:"generateQuery";s:1:"0";s:7:"queryNs";s:10:"app\models";s:14:"queryBaseClass";s:18:"yii\db\ActiveQuery";s:10:"enableI18N";s:1:"0";s:15:"messageCategory";s:3:"app";s:13:"useSchemaName";s:1:"1";s:8:"template";s:7:"default";}s:7:"answers";a:1:{s:32:"af7dafc0c8859e95242818baca2d5741";s:1:"1";}s:8:"generate";s:0:"";}s:6:"COOKIE";a:6:{s:17:"_identity-backend";s:157:"8d2839f1ebdadca1bb14f86d93f2a1df7107dde74ec7bdf7b2dda4b2cc72ef4fa:2:{i:0;s:17:"_identity-backend";i:1;s:46:"[1,"ekZ_ON8-w5t7jLa32e_ExMQTxnRi_cSx",2592000]";}";s:18:"_identity-frontend";s:158:"94551f5413f7dd1181b06dbb24b2721d5780ad784a4cb7dace92dfa95d99e3a9a:2:{i:0;s:18:"_identity-frontend";i:1;s:46:"[2,"82qA-_uz-qQ8hD2e7G3WPTf9AWpLa5Iw",2592000]";}";s:16:"advanced-backend";s:26:"uqpmils60k84tf13d42mhpboi5";s:17:"advanced-frontend";s:26:"mk9bt928dd04ki419l0lmsnbm5";s:14:"_csrf-frontend";s:140:"0d526ff768d899fdf8af6a22155eb532f840c06a1ab9f95b3443e93106427297a:2:{i:0;s:14:"_csrf-frontend";i:1;s:32:"6Oq3mo2KMPY0Sb4nGel6iY34_H-e5NXa";}";s:13:"_csrf-backend";s:139:"4841e7b88dcd826101eb6c1778241f9af8f9f338eb50f343c3a8632469eb00aaa:2:{i:0;s:13:"_csrf-backend";i:1;s:32:"2JuMSuaDnnu9UvF66ONpskDylPZl7C3q";}";}s:5:"FILES";a:0:{}s:7:"SESSION";a:3:{s:7:"__flash";a:0:{}s:4:"__id";i:1;s:11:"__returnUrl";s:46:"http://localhost/musicae/backend/web/index.php";}}";s:6:"router";s:315:"a:3:{s:8:"messages";a:1:{i:18;a:6:{i:0;s:56:"Pretty URL not enabled. Using default URL parsing logic.";i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1572354278.3242061;i:4;a:0:{}i:5;i:6987752;}}s:5:"route";s:16:"gii/default/view";s:6:"action";s:51:"yii\gii\controllers\DefaultController::actionView()";}";s:3:"log";s:23201:"a:1:{s:8:"messages";a:83:{i:0;a:6:{i:0;s:33:"Bootstrap with yii\log\Dispatcher";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1572354278.295239;i:4;a:0:{}i:5;i:2945712;}i:1;a:6:{i:0;s:21:"Loading module: debug";i:1;i:8;i:2;s:26:"yii\base\Module::getModule";i:3;d:1572354278.2952809;i:4;a:0:{}i:5;i:2947144;}i:2;a:6:{i:0;s:15:"Session started";i:1;i:4;i:2;s:21:"yii\web\Session::open";i:3;d:1572354278.3042691;i:4;a:0:{}i:5;i:4236112;}i:3;a:6:{i:0;s:29:"SHOW FULL COLUMNS FROM `user`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.313611;i:4;a:1:{i:0;a:5:{s:4:"file";s:44:"C:\wamp64\www\musicae\common\models\User.php";s:4:"line";i:66;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:5986112;}i:4;a:6:{i:0;s:60:"Opening DB connection: mysql:host=localhost;dbname=musicaedb";i:1;i:4;i:2;s:23:"yii\db\Connection::open";i:3;d:1572354278.313714;i:4;a:1:{i:0;a:5:{s:4:"file";s:44:"C:\wamp64\www\musicae\common\models\User.php";s:4:"line";i:66;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:5989336;}i:9;a:6:{i:0;s:595:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.317004;i:4;a:1:{i:0;a:5:{s:4:"file";s:44:"C:\wamp64\www\musicae\common\models\User.php";s:4:"line";i:66;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:6051400;}i:12;a:6:{i:0;s:53:"SELECT * FROM `user` WHERE (`id`=1) AND (`status`=10)";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.320076;i:4;a:1:{i:0;a:5:{s:4:"file";s:44:"C:\wamp64\www\musicae\common\models\User.php";s:4:"line";i:66;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:6421456;}i:15;a:6:{i:0;s:44:"Bootstrap with yii\debug\Module::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1572354278.322057;i:4;a:0:{}i:5;i:6581696;}i:16;a:6:{i:0;s:19:"Loading module: gii";i:1;i:8;i:2;s:26:"yii\base\Module::getModule";i:3;d:1572354278.322938;i:4;a:0:{}i:5;i:6717352;}i:17;a:6:{i:0;s:42:"Bootstrap with yii\gii\Module::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1572354278.3232751;i:4;a:0:{}i:5;i:6749536;}i:19;a:6:{i:0;s:35:"Route requested: 'gii/default/view'";i:1;i:8;i:2;s:34:"yii\web\Application::handleRequest";i:3;d:1572354278.3242371;i:4;a:0:{}i:5;i:6987536;}i:20;a:6:{i:0;s:30:"Route to run: gii/default/view";i:1;i:8;i:2;s:30:"yii\base\Controller::runAction";i:3;d:1572354278.325542;i:4;a:0:{}i:5;i:7145272;}i:21;a:6:{i:0;s:67:"Running action: yii\gii\controllers\DefaultController::actionView()";i:1;i:8;i:2;s:36:"yii\base\InlineAction::runWithParams";i:3;d:1572354278.3309319;i:4;a:0:{}i:5;i:7786728;}i:22;a:6:{i:0;s:32:"SHOW FULL COLUMNS FROM `generos`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.336386;i:4;a:0:{}i:5;i:8178880;}i:25;a:6:{i:0;s:601:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'generos' AND kcu.table_name = 'generos'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.33722;i:4;a:0:{}i:5;i:8190432;}i:28;a:6:{i:0;s:11:"SHOW TABLES";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.338429;i:4;a:0:{}i:5;i:8184472;}i:31;a:6:{i:0;s:36:"SHOW FULL COLUMNS FROM `bandagenero`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.338995;i:4;a:0:{}i:5;i:8189896;}i:34;a:6:{i:0;s:609:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'bandagenero' AND kcu.table_name = 'bandagenero'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3402929;i:4;a:0:{}i:5;i:8200320;}i:37;a:6:{i:0;s:41:"SHOW FULL COLUMNS FROM `bandahabilidades`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.340878;i:4;a:0:{}i:5;i:8202264;}i:40;a:6:{i:0;s:619:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'bandahabilidades' AND kcu.table_name = 'bandahabilidades'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3422761;i:4;a:0:{}i:5;i:8211408;}i:43;a:6:{i:0;s:37:"SHOW FULL COLUMNS FROM `bandamembros`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3428481;i:4;a:0:{}i:5;i:8213040;}i:46;a:6:{i:0;s:611:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'bandamembros' AND kcu.table_name = 'bandamembros'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3445721;i:4;a:0:{}i:5;i:8223120;}i:49;a:6:{i:0;s:31:"SHOW FULL COLUMNS FROM `bandas`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3453529;i:4;a:0:{}i:5;i:8225264;}i:52;a:6:{i:0;s:599:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'bandas' AND kcu.table_name = 'bandas'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.347332;i:4;a:0:{}i:5;i:8236704;}i:55;a:6:{i:0;s:40:"SHOW FULL COLUMNS FROM `bandashistorico`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.347959;i:4;a:0:{}i:5;i:8237816;}i:58;a:6:{i:0;s:617:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'bandashistorico' AND kcu.table_name = 'bandashistorico'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.349407;i:4;a:0:{}i:5;i:8247416;}i:61;a:6:{i:0;s:36:"SHOW FULL COLUMNS FROM `habilidades`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3499279;i:4;a:0:{}i:5;i:8249040;}i:64;a:6:{i:0;s:609:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'habilidades' AND kcu.table_name = 'habilidades'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.350575;i:4;a:0:{}i:5;i:8258800;}i:67;a:6:{i:0;s:35:"SHOW FULL COLUMNS FROM `industrias`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3510821;i:4;a:0:{}i:5;i:8264992;}i:70;a:6:{i:0;s:607:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'industrias' AND kcu.table_name = 'industrias'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3524821;i:4;a:0:{}i:5;i:8276352;}i:73;a:6:{i:0;s:36:"SHOW FULL COLUMNS FROM `listabandas`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3530021;i:4;a:0:{}i:5;i:8278520;}i:76;a:6:{i:0;s:609:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'listabandas' AND kcu.table_name = 'listabandas'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.354249;i:4;a:0:{}i:5;i:8287664;}i:79;a:6:{i:0;s:35:"SHOW FULL COLUMNS FROM `listafotos`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.354815;i:4;a:0:{}i:5;i:8289592;}i:82;a:6:{i:0;s:607:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'listafotos' AND kcu.table_name = 'listafotos'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.356226;i:4;a:0:{}i:5;i:8298712;}i:85;a:6:{i:0;s:37:"SHOW FULL COLUMNS FROM `listamusicas`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3568151;i:4;a:0:{}i:5;i:8298952;}i:88;a:6:{i:0;s:611:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'listamusicas' AND kcu.table_name = 'listamusicas'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.358166;i:4;a:0:{}i:5;i:8308576;}i:91;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3586769;i:4;a:0:{}i:5;i:8308816;}i:94;a:6:{i:0;s:605:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3594379;i:4;a:0:{}i:5;i:8317936;}i:97;a:6:{i:0;s:37:"SHOW FULL COLUMNS FROM `musicogenero`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3599401;i:4;a:0:{}i:5;i:8318176;}i:100;a:6:{i:0;s:611:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'musicogenero' AND kcu.table_name = 'musicogenero'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.361413;i:4;a:0:{}i:5;i:8327328;}i:103;a:6:{i:0;s:41:"SHOW FULL COLUMNS FROM `musicohabilidade`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.362179;i:4;a:0:{}i:5;i:8328960;}i:106;a:6:{i:0;s:619:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'musicohabilidade' AND kcu.table_name = 'musicohabilidade'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3637741;i:4;a:0:{}i:5;i:8338112;}i:109;a:6:{i:0;s:32:"SHOW FULL COLUMNS FROM `musicos`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.364378;i:4;a:0:{}i:5;i:8339752;}i:112;a:6:{i:0;s:601:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'musicos' AND kcu.table_name = 'musicos'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3650479;i:4;a:0:{}i:5;i:8349400;}i:115;a:6:{i:0;s:37:"SHOW FULL COLUMNS FROM `utilizadores`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3655591;i:4;a:0:{}i:5;i:8351664;}i:118;a:6:{i:0;s:611:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'utilizadores' AND kcu.table_name = 'utilizadores'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3664579;i:4;a:0:{}i:5;i:8364168;}i:121;a:6:{i:0;s:38:"SHOW FULL COLUMNS FROM `active_record`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3679891;i:4;a:0:{}i:5;i:8464776;}i:124;a:6:{i:0;s:31:"SHOW CREATE TABLE `bandagenero`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3699241;i:4;a:0:{}i:5;i:8473280;}i:127;a:6:{i:0;s:31:"SHOW CREATE TABLE `bandagenero`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.371218;i:4;a:0:{}i:5;i:8476592;}i:130;a:6:{i:0;s:31:"SHOW CREATE TABLE `bandagenero`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3720469;i:4;a:0:{}i:5;i:8483072;}i:133;a:6:{i:0;s:36:"SHOW CREATE TABLE `bandahabilidades`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.373853;i:4;a:0:{}i:5;i:8487392;}i:136;a:6:{i:0;s:36:"SHOW CREATE TABLE `bandahabilidades`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.375174;i:4;a:0:{}i:5;i:8490008;}i:139;a:6:{i:0;s:36:"SHOW CREATE TABLE `bandahabilidades`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.376003;i:4;a:0:{}i:5;i:8492424;}i:142;a:6:{i:0;s:32:"SHOW CREATE TABLE `bandamembros`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3778739;i:4;a:0:{}i:5;i:8495984;}i:145;a:6:{i:0;s:32:"SHOW CREATE TABLE `bandamembros`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3793099;i:4;a:0:{}i:5;i:8498536;}i:148;a:6:{i:0;s:32:"SHOW CREATE TABLE `bandamembros`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3806231;i:4;a:0:{}i:5;i:8501096;}i:151;a:6:{i:0;s:32:"SHOW CREATE TABLE `bandamembros`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3814261;i:4;a:0:{}i:5;i:8503488;}i:154;a:6:{i:0;s:26:"SHOW CREATE TABLE `bandas`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.382241;i:4;a:0:{}i:5;i:8504808;}i:157;a:6:{i:0;s:35:"SHOW CREATE TABLE `bandashistorico`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.383471;i:4;a:0:{}i:5;i:8508744;}i:160;a:6:{i:0;s:35:"SHOW CREATE TABLE `bandashistorico`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3847301;i:4;a:0:{}i:5;i:8511288;}i:163;a:6:{i:0;s:35:"SHOW CREATE TABLE `bandashistorico`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.385546;i:4;a:0:{}i:5;i:8513328;}i:166;a:6:{i:0;s:30:"SHOW CREATE TABLE `industrias`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3874111;i:4;a:0:{}i:5;i:8516928;}i:169;a:6:{i:0;s:30:"SHOW CREATE TABLE `industrias`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3886709;i:4;a:0:{}i:5;i:8519864;}i:172;a:6:{i:0;s:30:"SHOW CREATE TABLE `industrias`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3899889;i:4;a:0:{}i:5;i:8522416;}i:175;a:6:{i:0;s:30:"SHOW CREATE TABLE `industrias`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3908069;i:4;a:0:{}i:5;i:8524800;}i:178;a:6:{i:0;s:31:"SHOW CREATE TABLE `listabandas`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3916259;i:4;a:0:{}i:5;i:8527224;}i:181;a:6:{i:0;s:31:"SHOW CREATE TABLE `listabandas`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.392906;i:4;a:0:{}i:5;i:8530056;}i:184;a:6:{i:0;s:31:"SHOW CREATE TABLE `listabandas`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.393713;i:4;a:0:{}i:5;i:8532064;}i:187;a:6:{i:0;s:31:"SHOW FULL COLUMNS FROM `genero`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.395236;i:4;a:0:{}i:5;i:8535640;}i:190;a:6:{i:0;s:31:"SHOW FULL COLUMNS FROM `musico`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3965659;i:4;a:0:{}i:5;i:8537592;}i:193;a:6:{i:0;s:32:"SHOW CREATE TABLE `musicogenero`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3976951;i:4;a:0:{}i:5;i:8538272;}i:196;a:6:{i:0;s:35:"SHOW FULL COLUMNS FROM `habilidade`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3982699;i:4;a:0:{}i:5;i:8542464;}i:199;a:6:{i:0;s:36:"SHOW CREATE TABLE `musicohabilidade`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.399226;i:4;a:0:{}i:5;i:8543192;}i:202;a:6:{i:0;s:27:"SHOW CREATE TABLE `musicos`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.4001379;i:4;a:0:{}i:5;i:8545560;}i:205;a:6:{i:0;s:27:"SHOW CREATE TABLE `musicos`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.4014039;i:4;a:0:{}i:5;i:8548096;}i:208;a:6:{i:0;s:27:"SHOW CREATE TABLE `musicos`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.4022419;i:4;a:0:{}i:5;i:8550096;}i:211;a:6:{i:0;s:27:"SHOW CREATE TABLE `generos`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.4027729;i:4;a:0:{}i:5;i:8550400;}i:214;a:6:{i:0;s:105:"Rendering view file: C:\wamp64\www\musicae\vendor\yiisoft\yii2-gii\src\generators\model/default/model.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1572354278.404484;i:4;a:0:{}i:5;i:8749152;}i:215;a:6:{i:0;s:93:"Rendering view file: C:\wamp64\www\musicae\vendor\yiisoft\yii2-gii\src\views\default\view.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1572354278.4055331;i:4;a:0:{}i:5;i:8721656;}i:216;a:6:{i:0;s:96:"Rendering view file: C:\wamp64\www\musicae\vendor\yiisoft\yii2-gii\src\generators\model/form.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1572354278.4093921;i:4;a:0:{}i:5;i:9453472;}i:217;a:6:{i:0;s:101:"Rendering view file: C:\wamp64\www\musicae\vendor\yiisoft\yii2-gii\src\views\default\view/results.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1572354278.4425111;i:4;a:0:{}i:5;i:9648400;}i:218;a:6:{i:0;s:98:"Rendering view file: C:\wamp64\www\musicae\vendor\yiisoft\yii2-gii\src\views\layouts\generator.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1572354278.4443541;i:4;a:0:{}i:5;i:9608344;}i:219;a:6:{i:0;s:93:"Rendering view file: C:\wamp64\www\musicae\vendor/yiisoft/yii2-gii/src/views/layouts/main.php";i:1;i:8;i:2;s:25:"yii\base\View::renderFile";i:3;d:1572354278.4456561;i:4;a:0:{}i:5;i:9666160;}}}";s:9:"profiling";s:41196:"a:3:{s:6:"memory";i:9907344;s:4:"time";d:0.17121100425720215;s:8:"messages";a:136:{i:5;a:6:{i:0;s:60:"Opening DB connection: mysql:host=localhost;dbname=musicaedb";i:1;i:80;i:2;s:23:"yii\db\Connection::open";i:3;d:1572354278.3137751;i:4;a:1:{i:0;a:5:{s:4:"file";s:44:"C:\wamp64\www\musicae\common\models\User.php";s:4:"line";i:66;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:5990712;}i:6;a:6:{i:0;s:60:"Opening DB connection: mysql:host=localhost;dbname=musicaedb";i:1;i:96;i:2;s:23:"yii\db\Connection::open";i:3;d:1572354278.3147609;i:4;a:1:{i:0;a:5:{s:4:"file";s:44:"C:\wamp64\www\musicae\common\models\User.php";s:4:"line";i:66;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:6007520;}i:7;a:6:{i:0;s:29:"SHOW FULL COLUMNS FROM `user`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3148389;i:4;a:1:{i:0;a:5:{s:4:"file";s:44:"C:\wamp64\www\musicae\common\models\User.php";s:4:"line";i:66;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:6007256;}i:8;a:6:{i:0;s:29:"SHOW FULL COLUMNS FROM `user`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.31601;i:4;a:1:{i:0;a:5:{s:4:"file";s:44:"C:\wamp64\www\musicae\common\models\User.php";s:4:"line";i:66;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:6019944;}i:10;a:6:{i:0;s:595:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3170891;i:4;a:1:{i:0;a:5:{s:4:"file";s:44:"C:\wamp64\www\musicae\common\models\User.php";s:4:"line";i:66;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:6053984;}i:11;a:6:{i:0;s:595:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3174191;i:4;a:1:{i:0;a:5:{s:4:"file";s:44:"C:\wamp64\www\musicae\common\models\User.php";s:4:"line";i:66;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:6055752;}i:13;a:6:{i:0;s:53:"SELECT * FROM `user` WHERE (`id`=1) AND (`status`=10)";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.320159;i:4;a:1:{i:0;a:5:{s:4:"file";s:44:"C:\wamp64\www\musicae\common\models\User.php";s:4:"line";i:66;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:6421560;}i:14;a:6:{i:0;s:53:"SELECT * FROM `user` WHERE (`id`=1) AND (`status`=10)";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.320435;i:4;a:1:{i:0;a:5:{s:4:"file";s:44:"C:\wamp64\www\musicae\common\models\User.php";s:4:"line";i:66;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:6423776;}i:23;a:6:{i:0;s:32:"SHOW FULL COLUMNS FROM `generos`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.336452;i:4;a:0:{}i:5;i:8179464;}i:24;a:6:{i:0;s:32:"SHOW FULL COLUMNS FROM `generos`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3369589;i:4;a:0:{}i:5;i:8183440;}i:26;a:6:{i:0;s:601:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'generos' AND kcu.table_name = 'generos'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.33728;i:4;a:0:{}i:5;i:8192120;}i:27;a:6:{i:0;s:601:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'generos' AND kcu.table_name = 'generos'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3376529;i:4;a:0:{}i:5;i:8192992;}i:29;a:6:{i:0;s:11:"SHOW TABLES";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.33848;i:4;a:0:{}i:5;i:8185008;}i:30;a:6:{i:0;s:11:"SHOW TABLES";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.338876;i:4;a:0:{}i:5;i:8187576;}i:32;a:6:{i:0;s:36:"SHOW FULL COLUMNS FROM `bandagenero`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3390479;i:4;a:0:{}i:5;i:8190480;}i:33;a:6:{i:0;s:36:"SHOW FULL COLUMNS FROM `bandagenero`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3400731;i:4;a:0:{}i:5;i:8195232;}i:35;a:6:{i:0;s:609:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'bandagenero' AND kcu.table_name = 'bandagenero'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.340349;i:4;a:0:{}i:5;i:8202024;}i:36;a:6:{i:0;s:609:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'bandagenero' AND kcu.table_name = 'bandagenero'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3407471;i:4;a:0:{}i:5;i:8204264;}i:38;a:6:{i:0;s:41:"SHOW FULL COLUMNS FROM `bandahabilidades`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3409331;i:4;a:0:{}i:5;i:8202872;}i:39;a:6:{i:0;s:41:"SHOW FULL COLUMNS FROM `bandahabilidades`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.342052;i:4;a:0:{}i:5;i:8206344;}i:41;a:6:{i:0;s:619:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'bandahabilidades' AND kcu.table_name = 'bandahabilidades'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3423331;i:4;a:0:{}i:5;i:8213128;}i:42;a:6:{i:0;s:619:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'bandahabilidades' AND kcu.table_name = 'bandahabilidades'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.342725;i:4;a:0:{}i:5;i:8215392;}i:44;a:6:{i:0;s:37:"SHOW FULL COLUMNS FROM `bandamembros`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3429019;i:4;a:0:{}i:5;i:8213624;}i:45;a:6:{i:0;s:37:"SHOW FULL COLUMNS FROM `bandamembros`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3440869;i:4;a:0:{}i:5;i:8219024;}i:47;a:6:{i:0;s:611:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'bandamembros' AND kcu.table_name = 'bandamembros'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3446391;i:4;a:0:{}i:5;i:8224824;}i:48;a:6:{i:0;s:611:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'bandamembros' AND kcu.table_name = 'bandamembros'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3451951;i:4;a:0:{}i:5;i:8227608;}i:50;a:6:{i:0;s:31:"SHOW FULL COLUMNS FROM `bandas`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3454089;i:4;a:0:{}i:5;i:8225832;}i:51;a:6:{i:0;s:31:"SHOW FULL COLUMNS FROM `bandas`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3467841;i:4;a:0:{}i:5;i:8234248;}i:53;a:6:{i:0;s:599:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'bandas' AND kcu.table_name = 'bandas'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.347394;i:4;a:0:{}i:5;i:8238392;}i:54;a:6:{i:0;s:599:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'bandas' AND kcu.table_name = 'bandas'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.34782;i:4;a:0:{}i:5;i:8240120;}i:56;a:6:{i:0;s:40:"SHOW FULL COLUMNS FROM `bandashistorico`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.348011;i:4;a:0:{}i:5;i:8238424;}i:57;a:6:{i:0;s:40:"SHOW FULL COLUMNS FROM `bandashistorico`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3491571;i:4;a:0:{}i:5;i:8242848;}i:59;a:6:{i:0;s:617:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'bandashistorico' AND kcu.table_name = 'bandashistorico'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.349462;i:4;a:0:{}i:5;i:8249120;}i:60;a:6:{i:0;s:617:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'bandashistorico' AND kcu.table_name = 'bandashistorico'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.349803;i:4;a:0:{}i:5;i:8251376;}i:62;a:6:{i:0;s:36:"SHOW FULL COLUMNS FROM `habilidades`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3499789;i:4;a:0:{}i:5;i:8249624;}i:63;a:6:{i:0;s:36:"SHOW FULL COLUMNS FROM `habilidades`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3503611;i:4;a:0:{}i:5;i:8253184;}i:65;a:6:{i:0;s:609:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'habilidades' AND kcu.table_name = 'habilidades'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3506291;i:4;a:0:{}i:5;i:8266136;}i:66;a:6:{i:0;s:609:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'habilidades' AND kcu.table_name = 'habilidades'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.350971;i:4;a:0:{}i:5;i:8267008;}i:68;a:6:{i:0;s:35:"SHOW FULL COLUMNS FROM `industrias`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3511341;i:4;a:0:{}i:5;i:8265576;}i:69;a:6:{i:0;s:35:"SHOW FULL COLUMNS FROM `industrias`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.352155;i:4;a:0:{}i:5;i:8272104;}i:71;a:6:{i:0;s:607:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'industrias' AND kcu.table_name = 'industrias'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.352536;i:4;a:0:{}i:5;i:8278056;}i:72;a:6:{i:0;s:607:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'industrias' AND kcu.table_name = 'industrias'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3528841;i:4;a:0:{}i:5;i:8280856;}i:74;a:6:{i:0;s:36:"SHOW FULL COLUMNS FROM `listabandas`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3530531;i:4;a:0:{}i:5;i:8279104;}i:75;a:6:{i:0;s:36:"SHOW FULL COLUMNS FROM `listabandas`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3540421;i:4;a:0:{}i:5;i:8282576;}i:77;a:6:{i:0;s:609:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'listabandas' AND kcu.table_name = 'listabandas'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3543029;i:4;a:0:{}i:5;i:8289368;}i:78;a:6:{i:0;s:609:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'listabandas' AND kcu.table_name = 'listabandas'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3546979;i:4;a:0:{}i:5;i:8291608;}i:80;a:6:{i:0;s:35:"SHOW FULL COLUMNS FROM `listafotos`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3548651;i:4;a:0:{}i:5;i:8290176;}i:81;a:6:{i:0;s:35:"SHOW FULL COLUMNS FROM `listafotos`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3559871;i:4;a:0:{}i:5;i:8293632;}i:83;a:6:{i:0;s:607:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'listafotos' AND kcu.table_name = 'listafotos'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3562839;i:4;a:0:{}i:5;i:8300416;}i:84;a:6:{i:0;s:607:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'listafotos' AND kcu.table_name = 'listafotos'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3566959;i:4;a:0:{}i:5;i:8301288;}i:86;a:6:{i:0;s:37:"SHOW FULL COLUMNS FROM `listamusicas`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3568659;i:4;a:0:{}i:5;i:8299536;}i:87;a:6:{i:0;s:37:"SHOW FULL COLUMNS FROM `listamusicas`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.357918;i:4;a:0:{}i:5;i:8304040;}i:89;a:6:{i:0;s:611:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'listamusicas' AND kcu.table_name = 'listamusicas'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3582201;i:4;a:0:{}i:5;i:8310280;}i:90;a:6:{i:0;s:611:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'listamusicas' AND kcu.table_name = 'listamusicas'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.358557;i:4;a:0:{}i:5;i:8311152;}i:92;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3587289;i:4;a:0:{}i:5;i:8309400;}i:93;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.359231;i:4;a:0:{}i:5;i:8312896;}i:95;a:6:{i:0;s:605:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.359493;i:4;a:0:{}i:5;i:8319640;}i:96;a:6:{i:0;s:605:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3598189;i:4;a:0:{}i:5;i:8320512;}i:98;a:6:{i:0;s:37:"SHOW FULL COLUMNS FROM `musicogenero`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.359992;i:4;a:0:{}i:5;i:8318760;}i:99;a:6:{i:0;s:37:"SHOW FULL COLUMNS FROM `musicogenero`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3611579;i:4;a:0:{}i:5;i:8322240;}i:101;a:6:{i:0;s:611:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'musicogenero' AND kcu.table_name = 'musicogenero'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.361474;i:4;a:0:{}i:5;i:8329032;}i:102;a:6:{i:0;s:611:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'musicogenero' AND kcu.table_name = 'musicogenero'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3620181;i:4;a:0:{}i:5;i:8331280;}i:104;a:6:{i:0;s:41:"SHOW FULL COLUMNS FROM `musicohabilidade`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.362237;i:4;a:0:{}i:5;i:8329568;}i:105;a:6:{i:0;s:41:"SHOW FULL COLUMNS FROM `musicohabilidade`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.363523;i:4;a:0:{}i:5;i:8333048;}i:107;a:6:{i:0;s:619:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'musicohabilidade' AND kcu.table_name = 'musicohabilidade'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.363832;i:4;a:0:{}i:5;i:8339832;}i:108;a:6:{i:0;s:619:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'musicohabilidade' AND kcu.table_name = 'musicohabilidade'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3642559;i:4;a:0:{}i:5;i:8342104;}i:110;a:6:{i:0;s:32:"SHOW FULL COLUMNS FROM `musicos`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.364429;i:4;a:0:{}i:5;i:8340336;}i:111;a:6:{i:0;s:32:"SHOW FULL COLUMNS FROM `musicos`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3648019;i:4;a:0:{}i:5;i:8344784;}i:113;a:6:{i:0;s:601:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'musicos' AND kcu.table_name = 'musicos'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3651159;i:4;a:0:{}i:5;i:8351088;}i:114;a:6:{i:0;s:601:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'musicos' AND kcu.table_name = 'musicos'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.365437;i:4;a:0:{}i:5;i:8353344;}i:116;a:6:{i:0;s:37:"SHOW FULL COLUMNS FROM `utilizadores`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3656099;i:4;a:0:{}i:5;i:8352248;}i:117;a:6:{i:0;s:37:"SHOW FULL COLUMNS FROM `utilizadores`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3659959;i:4;a:0:{}i:5;i:8361696;}i:119;a:6:{i:0;s:611:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'utilizadores' AND kcu.table_name = 'utilizadores'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3665161;i:4;a:0:{}i:5;i:8365872;}i:120;a:6:{i:0;s:611:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'utilizadores' AND kcu.table_name = 'utilizadores'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.366884;i:4;a:0:{}i:5;i:8366744;}i:122;a:6:{i:0;s:38:"SHOW FULL COLUMNS FROM `active_record`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.368053;i:4;a:0:{}i:5;i:8465360;}i:123;a:6:{i:0;s:38:"SHOW FULL COLUMNS FROM `active_record`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.369154;i:4;a:0:{}i:5;i:8544832;}i:125;a:6:{i:0;s:31:"SHOW CREATE TABLE `bandagenero`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3699729;i:4;a:0:{}i:5;i:8473208;}i:126;a:6:{i:0;s:31:"SHOW CREATE TABLE `bandagenero`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3702271;i:4;a:0:{}i:5;i:8475104;}i:128;a:6:{i:0;s:31:"SHOW CREATE TABLE `bandagenero`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3712671;i:4;a:0:{}i:5;i:8476520;}i:129;a:6:{i:0;s:31:"SHOW CREATE TABLE `bandagenero`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3714831;i:4;a:0:{}i:5;i:8482112;}i:131;a:6:{i:0;s:31:"SHOW CREATE TABLE `bandagenero`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3720939;i:4;a:0:{}i:5;i:8483000;}i:132;a:6:{i:0;s:31:"SHOW CREATE TABLE `bandagenero`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.372309;i:4;a:0:{}i:5;i:8484496;}i:134;a:6:{i:0;s:36:"SHOW CREATE TABLE `bandahabilidades`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3739009;i:4;a:0:{}i:5;i:8487336;}i:135;a:6:{i:0;s:36:"SHOW CREATE TABLE `bandahabilidades`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.374115;i:4;a:0:{}i:5;i:8488904;}i:137;a:6:{i:0;s:36:"SHOW CREATE TABLE `bandahabilidades`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3752229;i:4;a:0:{}i:5;i:8489952;}i:138;a:6:{i:0;s:36:"SHOW CREATE TABLE `bandahabilidades`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.375438;i:4;a:0:{}i:5;i:8491520;}i:140;a:6:{i:0;s:36:"SHOW CREATE TABLE `bandahabilidades`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3760509;i:4;a:0:{}i:5;i:8492368;}i:141;a:6:{i:0;s:36:"SHOW CREATE TABLE `bandahabilidades`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.376178;i:4;a:0:{}i:5;i:8493936;}i:143;a:6:{i:0;s:32:"SHOW CREATE TABLE `bandamembros`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3779299;i:4;a:0:{}i:5;i:8495928;}i:144;a:6:{i:0;s:32:"SHOW CREATE TABLE `bandamembros`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.378231;i:4;a:0:{}i:5;i:8497744;}i:146;a:6:{i:0;s:32:"SHOW CREATE TABLE `bandamembros`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3793621;i:4;a:0:{}i:5;i:8498480;}i:147;a:6:{i:0;s:32:"SHOW CREATE TABLE `bandamembros`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3795919;i:4;a:0:{}i:5;i:8500296;}i:149;a:6:{i:0;s:32:"SHOW CREATE TABLE `bandamembros`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.380672;i:4;a:0:{}i:5;i:8501040;}i:150;a:6:{i:0;s:32:"SHOW CREATE TABLE `bandamembros`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3808589;i:4;a:0:{}i:5;i:8502856;}i:152;a:6:{i:0;s:32:"SHOW CREATE TABLE `bandamembros`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3814731;i:4;a:0:{}i:5;i:8503432;}i:153;a:6:{i:0;s:32:"SHOW CREATE TABLE `bandamembros`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.381639;i:4;a:0:{}i:5;i:8505248;}i:155;a:6:{i:0;s:26:"SHOW CREATE TABLE `bandas`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.382292;i:4;a:0:{}i:5;i:8504736;}i:156;a:6:{i:0;s:26:"SHOW CREATE TABLE `bandas`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3824589;i:4;a:0:{}i:5;i:8506416;}i:158;a:6:{i:0;s:35:"SHOW CREATE TABLE `bandashistorico`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3835189;i:4;a:0:{}i:5;i:8508688;}i:159;a:6:{i:0;s:35:"SHOW CREATE TABLE `bandashistorico`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.383755;i:4;a:0:{}i:5;i:8510248;}i:161;a:6:{i:0;s:35:"SHOW CREATE TABLE `bandashistorico`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.384779;i:4;a:0:{}i:5;i:8511232;}i:162;a:6:{i:0;s:35:"SHOW CREATE TABLE `bandashistorico`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.384985;i:4;a:0:{}i:5;i:8512792;}i:164;a:6:{i:0;s:35:"SHOW CREATE TABLE `bandashistorico`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3855951;i:4;a:0:{}i:5;i:8513272;}i:165;a:6:{i:0;s:35:"SHOW CREATE TABLE `bandashistorico`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3858349;i:4;a:0:{}i:5;i:8514832;}i:167;a:6:{i:0;s:30:"SHOW CREATE TABLE `industrias`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3874581;i:4;a:0:{}i:5;i:8516856;}i:168;a:6:{i:0;s:30:"SHOW CREATE TABLE `industrias`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3876979;i:4;a:0:{}i:5;i:8518800;}i:170;a:6:{i:0;s:30:"SHOW CREATE TABLE `industrias`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3887241;i:4;a:0:{}i:5;i:8519792;}i:171;a:6:{i:0;s:30:"SHOW CREATE TABLE `industrias`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.388953;i:4;a:0:{}i:5;i:8521736;}i:173;a:6:{i:0;s:30:"SHOW CREATE TABLE `industrias`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3900371;i:4;a:0:{}i:5;i:8522344;}i:174;a:6:{i:0;s:30:"SHOW CREATE TABLE `industrias`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.390274;i:4;a:0:{}i:5;i:8524288;}i:176;a:6:{i:0;s:30:"SHOW CREATE TABLE `industrias`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3908551;i:4;a:0:{}i:5;i:8524728;}i:177;a:6:{i:0;s:30:"SHOW CREATE TABLE `industrias`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3910279;i:4;a:0:{}i:5;i:8526672;}i:179;a:6:{i:0;s:31:"SHOW CREATE TABLE `listabandas`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.391674;i:4;a:0:{}i:5;i:8527152;}i:180;a:6:{i:0;s:31:"SHOW CREATE TABLE `listabandas`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3919301;i:4;a:0:{}i:5;i:8528648;}i:182;a:6:{i:0;s:31:"SHOW CREATE TABLE `listabandas`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3929541;i:4;a:0:{}i:5;i:8529984;}i:183;a:6:{i:0;s:31:"SHOW CREATE TABLE `listabandas`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3931439;i:4;a:0:{}i:5;i:8531480;}i:185;a:6:{i:0;s:31:"SHOW CREATE TABLE `listabandas`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.393764;i:4;a:0:{}i:5;i:8531992;}i:186;a:6:{i:0;s:31:"SHOW CREATE TABLE `listabandas`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.393918;i:4;a:0:{}i:5;i:8533488;}i:188;a:6:{i:0;s:31:"SHOW FULL COLUMNS FROM `genero`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.395294;i:4;a:0:{}i:5;i:8536208;}i:189;a:6:{i:0;s:31:"SHOW FULL COLUMNS FROM `genero`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.396256;i:4;a:0:{}i:5;i:8591104;}i:191;a:6:{i:0;s:31:"SHOW FULL COLUMNS FROM `musico`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3966279;i:4;a:0:{}i:5;i:8538160;}i:192;a:6:{i:0;s:31:"SHOW FULL COLUMNS FROM `musico`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.397445;i:4;a:0:{}i:5;i:8593008;}i:194;a:6:{i:0;s:32:"SHOW CREATE TABLE `musicogenero`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3977449;i:4;a:0:{}i:5;i:8538216;}i:195;a:6:{i:0;s:32:"SHOW CREATE TABLE `musicogenero`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.397994;i:4;a:0:{}i:5;i:8539664;}i:197;a:6:{i:0;s:35:"SHOW FULL COLUMNS FROM `habilidade`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.39832;i:4;a:0:{}i:5;i:8543048;}i:198;a:6:{i:0;s:35:"SHOW FULL COLUMNS FROM `habilidade`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3989899;i:4;a:0:{}i:5;i:8597968;}i:200;a:6:{i:0;s:36:"SHOW CREATE TABLE `musicohabilidade`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3992741;i:4;a:0:{}i:5;i:8543136;}i:201;a:6:{i:0;s:36:"SHOW CREATE TABLE `musicohabilidade`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.399507;i:4;a:0:{}i:5;i:8544656;}i:203;a:6:{i:0;s:27:"SHOW CREATE TABLE `musicos`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.4001861;i:4;a:0:{}i:5;i:8545488;}i:204;a:6:{i:0;s:27:"SHOW CREATE TABLE `musicos`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.4004171;i:4;a:0:{}i:5;i:8547040;}i:206;a:6:{i:0;s:27:"SHOW CREATE TABLE `musicos`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.4014511;i:4;a:0:{}i:5;i:8548024;}i:207;a:6:{i:0;s:27:"SHOW CREATE TABLE `musicos`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.4016781;i:4;a:0:{}i:5;i:8549576;}i:209;a:6:{i:0;s:27:"SHOW CREATE TABLE `musicos`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.4022901;i:4;a:0:{}i:5;i:8550024;}i:210;a:6:{i:0;s:27:"SHOW CREATE TABLE `musicos`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.402514;i:4;a:0:{}i:5;i:8551576;}i:212;a:6:{i:0;s:27:"SHOW CREATE TABLE `generos`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.4028201;i:4;a:0:{}i:5;i:8550968;}i:213;a:6:{i:0;s:27:"SHOW CREATE TABLE `generos`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.403033;i:4;a:0:{}i:5;i:8552392;}}}";s:2:"db";s:40428:"a:1:{s:8:"messages";a:134:{i:7;a:6:{i:0;s:29:"SHOW FULL COLUMNS FROM `user`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3148389;i:4;a:1:{i:0;a:5:{s:4:"file";s:44:"C:\wamp64\www\musicae\common\models\User.php";s:4:"line";i:66;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:6007256;}i:8;a:6:{i:0;s:29:"SHOW FULL COLUMNS FROM `user`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.31601;i:4;a:1:{i:0;a:5:{s:4:"file";s:44:"C:\wamp64\www\musicae\common\models\User.php";s:4:"line";i:66;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:6019944;}i:10;a:6:{i:0;s:595:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3170891;i:4;a:1:{i:0;a:5:{s:4:"file";s:44:"C:\wamp64\www\musicae\common\models\User.php";s:4:"line";i:66;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:6053984;}i:11;a:6:{i:0;s:595:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3174191;i:4;a:1:{i:0;a:5:{s:4:"file";s:44:"C:\wamp64\www\musicae\common\models\User.php";s:4:"line";i:66;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:6055752;}i:13;a:6:{i:0;s:53:"SELECT * FROM `user` WHERE (`id`=1) AND (`status`=10)";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.320159;i:4;a:1:{i:0;a:5:{s:4:"file";s:44:"C:\wamp64\www\musicae\common\models\User.php";s:4:"line";i:66;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:6421560;}i:14;a:6:{i:0;s:53:"SELECT * FROM `user` WHERE (`id`=1) AND (`status`=10)";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.320435;i:4;a:1:{i:0;a:5:{s:4:"file";s:44:"C:\wamp64\www\musicae\common\models\User.php";s:4:"line";i:66;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}}i:5;i:6423776;}i:23;a:6:{i:0;s:32:"SHOW FULL COLUMNS FROM `generos`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.336452;i:4;a:0:{}i:5;i:8179464;}i:24;a:6:{i:0;s:32:"SHOW FULL COLUMNS FROM `generos`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3369589;i:4;a:0:{}i:5;i:8183440;}i:26;a:6:{i:0;s:601:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'generos' AND kcu.table_name = 'generos'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.33728;i:4;a:0:{}i:5;i:8192120;}i:27;a:6:{i:0;s:601:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'generos' AND kcu.table_name = 'generos'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3376529;i:4;a:0:{}i:5;i:8192992;}i:29;a:6:{i:0;s:11:"SHOW TABLES";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.33848;i:4;a:0:{}i:5;i:8185008;}i:30;a:6:{i:0;s:11:"SHOW TABLES";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.338876;i:4;a:0:{}i:5;i:8187576;}i:32;a:6:{i:0;s:36:"SHOW FULL COLUMNS FROM `bandagenero`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3390479;i:4;a:0:{}i:5;i:8190480;}i:33;a:6:{i:0;s:36:"SHOW FULL COLUMNS FROM `bandagenero`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3400731;i:4;a:0:{}i:5;i:8195232;}i:35;a:6:{i:0;s:609:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'bandagenero' AND kcu.table_name = 'bandagenero'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.340349;i:4;a:0:{}i:5;i:8202024;}i:36;a:6:{i:0;s:609:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'bandagenero' AND kcu.table_name = 'bandagenero'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3407471;i:4;a:0:{}i:5;i:8204264;}i:38;a:6:{i:0;s:41:"SHOW FULL COLUMNS FROM `bandahabilidades`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3409331;i:4;a:0:{}i:5;i:8202872;}i:39;a:6:{i:0;s:41:"SHOW FULL COLUMNS FROM `bandahabilidades`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.342052;i:4;a:0:{}i:5;i:8206344;}i:41;a:6:{i:0;s:619:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'bandahabilidades' AND kcu.table_name = 'bandahabilidades'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3423331;i:4;a:0:{}i:5;i:8213128;}i:42;a:6:{i:0;s:619:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'bandahabilidades' AND kcu.table_name = 'bandahabilidades'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.342725;i:4;a:0:{}i:5;i:8215392;}i:44;a:6:{i:0;s:37:"SHOW FULL COLUMNS FROM `bandamembros`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3429019;i:4;a:0:{}i:5;i:8213624;}i:45;a:6:{i:0;s:37:"SHOW FULL COLUMNS FROM `bandamembros`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3440869;i:4;a:0:{}i:5;i:8219024;}i:47;a:6:{i:0;s:611:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'bandamembros' AND kcu.table_name = 'bandamembros'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3446391;i:4;a:0:{}i:5;i:8224824;}i:48;a:6:{i:0;s:611:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'bandamembros' AND kcu.table_name = 'bandamembros'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3451951;i:4;a:0:{}i:5;i:8227608;}i:50;a:6:{i:0;s:31:"SHOW FULL COLUMNS FROM `bandas`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3454089;i:4;a:0:{}i:5;i:8225832;}i:51;a:6:{i:0;s:31:"SHOW FULL COLUMNS FROM `bandas`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3467841;i:4;a:0:{}i:5;i:8234248;}i:53;a:6:{i:0;s:599:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'bandas' AND kcu.table_name = 'bandas'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.347394;i:4;a:0:{}i:5;i:8238392;}i:54;a:6:{i:0;s:599:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'bandas' AND kcu.table_name = 'bandas'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.34782;i:4;a:0:{}i:5;i:8240120;}i:56;a:6:{i:0;s:40:"SHOW FULL COLUMNS FROM `bandashistorico`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.348011;i:4;a:0:{}i:5;i:8238424;}i:57;a:6:{i:0;s:40:"SHOW FULL COLUMNS FROM `bandashistorico`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3491571;i:4;a:0:{}i:5;i:8242848;}i:59;a:6:{i:0;s:617:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'bandashistorico' AND kcu.table_name = 'bandashistorico'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.349462;i:4;a:0:{}i:5;i:8249120;}i:60;a:6:{i:0;s:617:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'bandashistorico' AND kcu.table_name = 'bandashistorico'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.349803;i:4;a:0:{}i:5;i:8251376;}i:62;a:6:{i:0;s:36:"SHOW FULL COLUMNS FROM `habilidades`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3499789;i:4;a:0:{}i:5;i:8249624;}i:63;a:6:{i:0;s:36:"SHOW FULL COLUMNS FROM `habilidades`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3503611;i:4;a:0:{}i:5;i:8253184;}i:65;a:6:{i:0;s:609:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'habilidades' AND kcu.table_name = 'habilidades'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3506291;i:4;a:0:{}i:5;i:8266136;}i:66;a:6:{i:0;s:609:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'habilidades' AND kcu.table_name = 'habilidades'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.350971;i:4;a:0:{}i:5;i:8267008;}i:68;a:6:{i:0;s:35:"SHOW FULL COLUMNS FROM `industrias`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3511341;i:4;a:0:{}i:5;i:8265576;}i:69;a:6:{i:0;s:35:"SHOW FULL COLUMNS FROM `industrias`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.352155;i:4;a:0:{}i:5;i:8272104;}i:71;a:6:{i:0;s:607:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'industrias' AND kcu.table_name = 'industrias'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.352536;i:4;a:0:{}i:5;i:8278056;}i:72;a:6:{i:0;s:607:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'industrias' AND kcu.table_name = 'industrias'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3528841;i:4;a:0:{}i:5;i:8280856;}i:74;a:6:{i:0;s:36:"SHOW FULL COLUMNS FROM `listabandas`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3530531;i:4;a:0:{}i:5;i:8279104;}i:75;a:6:{i:0;s:36:"SHOW FULL COLUMNS FROM `listabandas`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3540421;i:4;a:0:{}i:5;i:8282576;}i:77;a:6:{i:0;s:609:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'listabandas' AND kcu.table_name = 'listabandas'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3543029;i:4;a:0:{}i:5;i:8289368;}i:78;a:6:{i:0;s:609:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'listabandas' AND kcu.table_name = 'listabandas'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3546979;i:4;a:0:{}i:5;i:8291608;}i:80;a:6:{i:0;s:35:"SHOW FULL COLUMNS FROM `listafotos`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3548651;i:4;a:0:{}i:5;i:8290176;}i:81;a:6:{i:0;s:35:"SHOW FULL COLUMNS FROM `listafotos`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3559871;i:4;a:0:{}i:5;i:8293632;}i:83;a:6:{i:0;s:607:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'listafotos' AND kcu.table_name = 'listafotos'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3562839;i:4;a:0:{}i:5;i:8300416;}i:84;a:6:{i:0;s:607:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'listafotos' AND kcu.table_name = 'listafotos'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3566959;i:4;a:0:{}i:5;i:8301288;}i:86;a:6:{i:0;s:37:"SHOW FULL COLUMNS FROM `listamusicas`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3568659;i:4;a:0:{}i:5;i:8299536;}i:87;a:6:{i:0;s:37:"SHOW FULL COLUMNS FROM `listamusicas`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.357918;i:4;a:0:{}i:5;i:8304040;}i:89;a:6:{i:0;s:611:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'listamusicas' AND kcu.table_name = 'listamusicas'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3582201;i:4;a:0:{}i:5;i:8310280;}i:90;a:6:{i:0;s:611:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'listamusicas' AND kcu.table_name = 'listamusicas'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.358557;i:4;a:0:{}i:5;i:8311152;}i:92;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3587289;i:4;a:0:{}i:5;i:8309400;}i:93;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.359231;i:4;a:0:{}i:5;i:8312896;}i:95;a:6:{i:0;s:605:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.359493;i:4;a:0:{}i:5;i:8319640;}i:96;a:6:{i:0;s:605:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'migration' AND kcu.table_name = 'migration'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3598189;i:4;a:0:{}i:5;i:8320512;}i:98;a:6:{i:0;s:37:"SHOW FULL COLUMNS FROM `musicogenero`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.359992;i:4;a:0:{}i:5;i:8318760;}i:99;a:6:{i:0;s:37:"SHOW FULL COLUMNS FROM `musicogenero`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3611579;i:4;a:0:{}i:5;i:8322240;}i:101;a:6:{i:0;s:611:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'musicogenero' AND kcu.table_name = 'musicogenero'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.361474;i:4;a:0:{}i:5;i:8329032;}i:102;a:6:{i:0;s:611:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'musicogenero' AND kcu.table_name = 'musicogenero'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3620181;i:4;a:0:{}i:5;i:8331280;}i:104;a:6:{i:0;s:41:"SHOW FULL COLUMNS FROM `musicohabilidade`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.362237;i:4;a:0:{}i:5;i:8329568;}i:105;a:6:{i:0;s:41:"SHOW FULL COLUMNS FROM `musicohabilidade`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.363523;i:4;a:0:{}i:5;i:8333048;}i:107;a:6:{i:0;s:619:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'musicohabilidade' AND kcu.table_name = 'musicohabilidade'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.363832;i:4;a:0:{}i:5;i:8339832;}i:108;a:6:{i:0;s:619:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'musicohabilidade' AND kcu.table_name = 'musicohabilidade'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3642559;i:4;a:0:{}i:5;i:8342104;}i:110;a:6:{i:0;s:32:"SHOW FULL COLUMNS FROM `musicos`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.364429;i:4;a:0:{}i:5;i:8340336;}i:111;a:6:{i:0;s:32:"SHOW FULL COLUMNS FROM `musicos`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3648019;i:4;a:0:{}i:5;i:8344784;}i:113;a:6:{i:0;s:601:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'musicos' AND kcu.table_name = 'musicos'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3651159;i:4;a:0:{}i:5;i:8351088;}i:114;a:6:{i:0;s:601:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'musicos' AND kcu.table_name = 'musicos'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.365437;i:4;a:0:{}i:5;i:8353344;}i:116;a:6:{i:0;s:37:"SHOW FULL COLUMNS FROM `utilizadores`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3656099;i:4;a:0:{}i:5;i:8352248;}i:117;a:6:{i:0;s:37:"SHOW FULL COLUMNS FROM `utilizadores`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3659959;i:4;a:0:{}i:5;i:8361696;}i:119;a:6:{i:0;s:611:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'utilizadores' AND kcu.table_name = 'utilizadores'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3665161;i:4;a:0:{}i:5;i:8365872;}i:120;a:6:{i:0;s:611:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'utilizadores' AND kcu.table_name = 'utilizadores'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.366884;i:4;a:0:{}i:5;i:8366744;}i:122;a:6:{i:0;s:38:"SHOW FULL COLUMNS FROM `active_record`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.368053;i:4;a:0:{}i:5;i:8465360;}i:123;a:6:{i:0;s:38:"SHOW FULL COLUMNS FROM `active_record`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.369154;i:4;a:0:{}i:5;i:8544832;}i:125;a:6:{i:0;s:31:"SHOW CREATE TABLE `bandagenero`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3699729;i:4;a:0:{}i:5;i:8473208;}i:126;a:6:{i:0;s:31:"SHOW CREATE TABLE `bandagenero`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3702271;i:4;a:0:{}i:5;i:8475104;}i:128;a:6:{i:0;s:31:"SHOW CREATE TABLE `bandagenero`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3712671;i:4;a:0:{}i:5;i:8476520;}i:129;a:6:{i:0;s:31:"SHOW CREATE TABLE `bandagenero`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3714831;i:4;a:0:{}i:5;i:8482112;}i:131;a:6:{i:0;s:31:"SHOW CREATE TABLE `bandagenero`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3720939;i:4;a:0:{}i:5;i:8483000;}i:132;a:6:{i:0;s:31:"SHOW CREATE TABLE `bandagenero`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.372309;i:4;a:0:{}i:5;i:8484496;}i:134;a:6:{i:0;s:36:"SHOW CREATE TABLE `bandahabilidades`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3739009;i:4;a:0:{}i:5;i:8487336;}i:135;a:6:{i:0;s:36:"SHOW CREATE TABLE `bandahabilidades`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.374115;i:4;a:0:{}i:5;i:8488904;}i:137;a:6:{i:0;s:36:"SHOW CREATE TABLE `bandahabilidades`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3752229;i:4;a:0:{}i:5;i:8489952;}i:138;a:6:{i:0;s:36:"SHOW CREATE TABLE `bandahabilidades`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.375438;i:4;a:0:{}i:5;i:8491520;}i:140;a:6:{i:0;s:36:"SHOW CREATE TABLE `bandahabilidades`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3760509;i:4;a:0:{}i:5;i:8492368;}i:141;a:6:{i:0;s:36:"SHOW CREATE TABLE `bandahabilidades`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.376178;i:4;a:0:{}i:5;i:8493936;}i:143;a:6:{i:0;s:32:"SHOW CREATE TABLE `bandamembros`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3779299;i:4;a:0:{}i:5;i:8495928;}i:144;a:6:{i:0;s:32:"SHOW CREATE TABLE `bandamembros`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.378231;i:4;a:0:{}i:5;i:8497744;}i:146;a:6:{i:0;s:32:"SHOW CREATE TABLE `bandamembros`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3793621;i:4;a:0:{}i:5;i:8498480;}i:147;a:6:{i:0;s:32:"SHOW CREATE TABLE `bandamembros`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3795919;i:4;a:0:{}i:5;i:8500296;}i:149;a:6:{i:0;s:32:"SHOW CREATE TABLE `bandamembros`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.380672;i:4;a:0:{}i:5;i:8501040;}i:150;a:6:{i:0;s:32:"SHOW CREATE TABLE `bandamembros`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3808589;i:4;a:0:{}i:5;i:8502856;}i:152;a:6:{i:0;s:32:"SHOW CREATE TABLE `bandamembros`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3814731;i:4;a:0:{}i:5;i:8503432;}i:153;a:6:{i:0;s:32:"SHOW CREATE TABLE `bandamembros`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.381639;i:4;a:0:{}i:5;i:8505248;}i:155;a:6:{i:0;s:26:"SHOW CREATE TABLE `bandas`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.382292;i:4;a:0:{}i:5;i:8504736;}i:156;a:6:{i:0;s:26:"SHOW CREATE TABLE `bandas`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3824589;i:4;a:0:{}i:5;i:8506416;}i:158;a:6:{i:0;s:35:"SHOW CREATE TABLE `bandashistorico`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3835189;i:4;a:0:{}i:5;i:8508688;}i:159;a:6:{i:0;s:35:"SHOW CREATE TABLE `bandashistorico`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.383755;i:4;a:0:{}i:5;i:8510248;}i:161;a:6:{i:0;s:35:"SHOW CREATE TABLE `bandashistorico`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.384779;i:4;a:0:{}i:5;i:8511232;}i:162;a:6:{i:0;s:35:"SHOW CREATE TABLE `bandashistorico`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.384985;i:4;a:0:{}i:5;i:8512792;}i:164;a:6:{i:0;s:35:"SHOW CREATE TABLE `bandashistorico`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3855951;i:4;a:0:{}i:5;i:8513272;}i:165;a:6:{i:0;s:35:"SHOW CREATE TABLE `bandashistorico`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3858349;i:4;a:0:{}i:5;i:8514832;}i:167;a:6:{i:0;s:30:"SHOW CREATE TABLE `industrias`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3874581;i:4;a:0:{}i:5;i:8516856;}i:168;a:6:{i:0;s:30:"SHOW CREATE TABLE `industrias`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3876979;i:4;a:0:{}i:5;i:8518800;}i:170;a:6:{i:0;s:30:"SHOW CREATE TABLE `industrias`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3887241;i:4;a:0:{}i:5;i:8519792;}i:171;a:6:{i:0;s:30:"SHOW CREATE TABLE `industrias`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.388953;i:4;a:0:{}i:5;i:8521736;}i:173;a:6:{i:0;s:30:"SHOW CREATE TABLE `industrias`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3900371;i:4;a:0:{}i:5;i:8522344;}i:174;a:6:{i:0;s:30:"SHOW CREATE TABLE `industrias`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.390274;i:4;a:0:{}i:5;i:8524288;}i:176;a:6:{i:0;s:30:"SHOW CREATE TABLE `industrias`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3908551;i:4;a:0:{}i:5;i:8524728;}i:177;a:6:{i:0;s:30:"SHOW CREATE TABLE `industrias`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3910279;i:4;a:0:{}i:5;i:8526672;}i:179;a:6:{i:0;s:31:"SHOW CREATE TABLE `listabandas`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.391674;i:4;a:0:{}i:5;i:8527152;}i:180;a:6:{i:0;s:31:"SHOW CREATE TABLE `listabandas`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3919301;i:4;a:0:{}i:5;i:8528648;}i:182;a:6:{i:0;s:31:"SHOW CREATE TABLE `listabandas`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3929541;i:4;a:0:{}i:5;i:8529984;}i:183;a:6:{i:0;s:31:"SHOW CREATE TABLE `listabandas`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3931439;i:4;a:0:{}i:5;i:8531480;}i:185;a:6:{i:0;s:31:"SHOW CREATE TABLE `listabandas`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.393764;i:4;a:0:{}i:5;i:8531992;}i:186;a:6:{i:0;s:31:"SHOW CREATE TABLE `listabandas`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.393918;i:4;a:0:{}i:5;i:8533488;}i:188;a:6:{i:0;s:31:"SHOW FULL COLUMNS FROM `genero`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.395294;i:4;a:0:{}i:5;i:8536208;}i:189;a:6:{i:0;s:31:"SHOW FULL COLUMNS FROM `genero`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.396256;i:4;a:0:{}i:5;i:8591104;}i:191;a:6:{i:0;s:31:"SHOW FULL COLUMNS FROM `musico`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3966279;i:4;a:0:{}i:5;i:8538160;}i:192;a:6:{i:0;s:31:"SHOW FULL COLUMNS FROM `musico`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.397445;i:4;a:0:{}i:5;i:8593008;}i:194;a:6:{i:0;s:32:"SHOW CREATE TABLE `musicogenero`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3977449;i:4;a:0:{}i:5;i:8538216;}i:195;a:6:{i:0;s:32:"SHOW CREATE TABLE `musicogenero`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.397994;i:4;a:0:{}i:5;i:8539664;}i:197;a:6:{i:0;s:35:"SHOW FULL COLUMNS FROM `habilidade`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.39832;i:4;a:0:{}i:5;i:8543048;}i:198;a:6:{i:0;s:35:"SHOW FULL COLUMNS FROM `habilidade`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3989899;i:4;a:0:{}i:5;i:8597968;}i:200;a:6:{i:0;s:36:"SHOW CREATE TABLE `musicohabilidade`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.3992741;i:4;a:0:{}i:5;i:8543136;}i:201;a:6:{i:0;s:36:"SHOW CREATE TABLE `musicohabilidade`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.399507;i:4;a:0:{}i:5;i:8544656;}i:203;a:6:{i:0;s:27:"SHOW CREATE TABLE `musicos`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.4001861;i:4;a:0:{}i:5;i:8545488;}i:204;a:6:{i:0;s:27:"SHOW CREATE TABLE `musicos`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.4004171;i:4;a:0:{}i:5;i:8547040;}i:206;a:6:{i:0;s:27:"SHOW CREATE TABLE `musicos`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.4014511;i:4;a:0:{}i:5;i:8548024;}i:207;a:6:{i:0;s:27:"SHOW CREATE TABLE `musicos`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.4016781;i:4;a:0:{}i:5;i:8549576;}i:209;a:6:{i:0;s:27:"SHOW CREATE TABLE `musicos`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.4022901;i:4;a:0:{}i:5;i:8550024;}i:210;a:6:{i:0;s:27:"SHOW CREATE TABLE `musicos`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.402514;i:4;a:0:{}i:5;i:8551576;}i:212;a:6:{i:0;s:27:"SHOW CREATE TABLE `generos`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.4028201;i:4;a:0:{}i:5;i:8550968;}i:213;a:6:{i:0;s:27:"SHOW CREATE TABLE `generos`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1572354278.403033;i:4;a:0:{}i:5;i:8552392;}}}";s:5:"event";s:7211:"a:41:{i:0;a:5:{s:4:"time";d:1572354278.3106201;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:18:"yii\db\ActiveQuery";}i:1;a:5:{s:4:"time";d:1572354278.314744;s:4:"name";s:9:"afterOpen";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:17:"yii\db\Connection";}i:2;a:5:{s:4:"time";d:1572354278.324177;s:4:"name";s:13:"beforeRequest";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:19:"yii\web\Application";}i:3;a:5:{s:4:"time";d:1572354278.325717;s:4:"name";s:12:"beforeAction";s:5:"class";s:20:"yii\base\ActionEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:19:"yii\web\Application";}i:4;a:5:{s:4:"time";d:1572354278.3257561;s:4:"name";s:12:"beforeAction";s:5:"class";s:20:"yii\base\ActionEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:14:"yii\gii\Module";}i:5;a:5:{s:4:"time";d:1572354278.3307559;s:4:"name";s:12:"beforeAction";s:5:"class";s:20:"yii\base\ActionEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:37:"yii\gii\controllers\DefaultController";}i:6;a:5:{s:4:"time";d:1572354278.334964;s:4:"name";s:14:"beforeValidate";s:5:"class";s:19:"yii\base\ModelEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:34:"yii\gii\generators\model\Generator";}i:7;a:5:{s:4:"time";d:1572354278.3380201;s:4:"name";s:13:"afterValidate";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:34:"yii\gii\generators\model\Generator";}i:8;a:5:{s:4:"time";d:1572354278.3677771;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:19:"yii\db\ActiveRecord";}i:9;a:5:{s:4:"time";d:1572354278.4044671;s:4:"name";s:12:"beforeRender";s:5:"class";s:18:"yii\base\ViewEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:12:"yii\web\View";}i:10;a:5:{s:4:"time";d:1572354278.404752;s:4:"name";s:11:"afterRender";s:5:"class";s:18:"yii\base\ViewEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:12:"yii\web\View";}i:11;a:5:{s:4:"time";d:1572354278.4055181;s:4:"name";s:12:"beforeRender";s:5:"class";s:18:"yii\base\ViewEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:12:"yii\web\View";}i:12;a:5:{s:4:"time";d:1572354278.4092159;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:22:"yii\widgets\ActiveForm";}i:13;a:5:{s:4:"time";d:1572354278.4093771;s:4:"name";s:12:"beforeRender";s:5:"class";s:18:"yii\base\ViewEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:12:"yii\web\View";}i:14;a:5:{s:4:"time";d:1572354278.440625;s:4:"name";s:11:"afterRender";s:5:"class";s:18:"yii\base\ViewEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:12:"yii\web\View";}i:15;a:5:{s:4:"time";d:1572354278.4424951;s:4:"name";s:12:"beforeRender";s:5:"class";s:18:"yii\base\ViewEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:12:"yii\web\View";}i:16;a:5:{s:4:"time";d:1572354278.442744;s:4:"name";s:11:"afterRender";s:5:"class";s:18:"yii\base\ViewEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:12:"yii\web\View";}i:17;a:5:{s:4:"time";d:1572354278.442961;s:4:"name";s:9:"beforeRun";s:5:"class";s:20:"yii\base\WidgetEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:22:"yii\widgets\ActiveForm";}i:18;a:5:{s:4:"time";d:1572354278.443995;s:4:"name";s:8:"afterRun";s:5:"class";s:20:"yii\base\WidgetEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:22:"yii\widgets\ActiveForm";}i:19;a:5:{s:4:"time";d:1572354278.444077;s:4:"name";s:11:"afterRender";s:5:"class";s:18:"yii\base\ViewEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:12:"yii\web\View";}i:20;a:5:{s:4:"time";d:1572354278.444339;s:4:"name";s:12:"beforeRender";s:5:"class";s:18:"yii\base\ViewEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:12:"yii\web\View";}i:21;a:5:{s:4:"time";d:1572354278.44486;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:28:"yii\widgets\ContentDecorator";}i:22;a:5:{s:4:"time";d:1572354278.4453771;s:4:"name";s:9:"beforeRun";s:5:"class";s:20:"yii\base\WidgetEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:28:"yii\widgets\ContentDecorator";}i:23;a:5:{s:4:"time";d:1572354278.445641;s:4:"name";s:12:"beforeRender";s:5:"class";s:18:"yii\base\ViewEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:12:"yii\web\View";}i:24;a:5:{s:4:"time";d:1572354278.446445;s:4:"name";s:9:"beginPage";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:12:"yii\web\View";}i:25;a:5:{s:4:"time";d:1572354278.4465821;s:4:"name";s:9:"beginBody";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:12:"yii\web\View";}i:26;a:5:{s:4:"time";d:1572354278.4472189;s:4:"name";s:4:"init";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:16:"yii\widgets\Menu";}i:27;a:5:{s:4:"time";d:1572354278.4472671;s:4:"name";s:9:"beforeRun";s:5:"class";s:20:"yii\base\WidgetEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:16:"yii\widgets\Menu";}i:28;a:5:{s:4:"time";d:1572354278.4475839;s:4:"name";s:8:"afterRun";s:5:"class";s:20:"yii\base\WidgetEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:16:"yii\widgets\Menu";}i:29;a:5:{s:4:"time";d:1572354278.4481981;s:4:"name";s:7:"endBody";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:12:"yii\web\View";}i:30;a:5:{s:4:"time";d:1572354278.4487469;s:4:"name";s:7:"endPage";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:12:"yii\web\View";}i:31;a:5:{s:4:"time";d:1572354278.448951;s:4:"name";s:11:"afterRender";s:5:"class";s:18:"yii\base\ViewEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:12:"yii\web\View";}i:32;a:5:{s:4:"time";d:1572354278.4490011;s:4:"name";s:8:"afterRun";s:5:"class";s:20:"yii\base\WidgetEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:28:"yii\widgets\ContentDecorator";}i:33;a:5:{s:4:"time";d:1572354278.4490571;s:4:"name";s:11:"afterRender";s:5:"class";s:18:"yii\base\ViewEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:12:"yii\web\View";}i:34;a:5:{s:4:"time";d:1572354278.44911;s:4:"name";s:11:"afterAction";s:5:"class";s:20:"yii\base\ActionEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:37:"yii\gii\controllers\DefaultController";}i:35;a:5:{s:4:"time";d:1572354278.4491451;s:4:"name";s:11:"afterAction";s:5:"class";s:20:"yii\base\ActionEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:14:"yii\gii\Module";}i:36;a:5:{s:4:"time";d:1572354278.4491761;s:4:"name";s:11:"afterAction";s:5:"class";s:20:"yii\base\ActionEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:19:"yii\web\Application";}i:37;a:5:{s:4:"time";d:1572354278.4492271;s:4:"name";s:12:"afterRequest";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:19:"yii\web\Application";}i:38;a:5:{s:4:"time";d:1572354278.44926;s:4:"name";s:10:"beforeSend";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:16:"yii\web\Response";}i:39;a:5:{s:4:"time";d:1572354278.4496751;s:4:"name";s:12:"afterPrepare";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:16:"yii\web\Response";}i:40;a:5:{s:4:"time";d:1572354278.4499559;s:4:"name";s:9:"afterSend";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:16:"yii\web\Response";}}";s:6:"assets";s:2127:"a:5:{s:30:"yii\validators\ValidationAsset";a:9:{s:10:"sourcePath";s:48:"C:\wamp64\www\musicae\vendor\yiisoft\yii2/assets";s:2:"js";a:1:{i:0;s:17:"yii.validation.js";}s:7:"depends";a:1:{i:0;s:16:"yii\web\YiiAsset";}s:8:"basePath";s:49:"C:\wamp64\www\musicae\backend\web\assets\2f70138e";s:7:"baseUrl";s:36:"/musicae/backend/web/assets/2f70138e";s:3:"css";a:0:{}s:9:"jsOptions";a:0:{}s:10:"cssOptions";a:0:{}s:14:"publishOptions";a:0:{}}s:16:"yii\web\YiiAsset";a:9:{s:10:"sourcePath";s:48:"C:\wamp64\www\musicae\vendor\yiisoft\yii2/assets";s:2:"js";a:1:{i:0;s:6:"yii.js";}s:7:"depends";a:1:{i:0;s:19:"yii\web\JqueryAsset";}s:8:"basePath";s:49:"C:\wamp64\www\musicae\backend\web\assets\2f70138e";s:7:"baseUrl";s:36:"/musicae/backend/web/assets/2f70138e";s:3:"css";a:0:{}s:9:"jsOptions";a:0:{}s:10:"cssOptions";a:0:{}s:14:"publishOptions";a:0:{}}s:19:"yii\web\JqueryAsset";a:9:{s:10:"sourcePath";s:52:"C:\wamp64\www\musicae/vendor/bower-asset/jquery/dist";s:2:"js";a:1:{i:0;s:9:"jquery.js";}s:8:"basePath";s:49:"C:\wamp64\www\musicae\backend\web\assets\788ff8d0";s:7:"baseUrl";s:36:"/musicae/backend/web/assets/788ff8d0";s:7:"depends";a:0:{}s:3:"css";a:0:{}s:9:"jsOptions";a:0:{}s:10:"cssOptions";a:0:{}s:14:"publishOptions";a:0:{}}s:27:"yii\widgets\ActiveFormAsset";a:9:{s:10:"sourcePath";s:48:"C:\wamp64\www\musicae\vendor\yiisoft\yii2/assets";s:2:"js";a:1:{i:0;s:17:"yii.activeForm.js";}s:7:"depends";a:1:{i:0;s:16:"yii\web\YiiAsset";}s:8:"basePath";s:49:"C:\wamp64\www\musicae\backend\web\assets\2f70138e";s:7:"baseUrl";s:36:"/musicae/backend/web/assets/2f70138e";s:3:"css";a:0:{}s:9:"jsOptions";a:0:{}s:10:"cssOptions";a:0:{}s:14:"publishOptions";a:0:{}}s:16:"yii\gii\GiiAsset";a:9:{s:10:"sourcePath";s:56:"C:\wamp64\www\musicae\vendor/yiisoft/yii2-gii/src/assets";s:3:"css";a:1:{i:0;s:12:"css/main.css";}s:2:"js";a:2:{i:0;s:20:"js/bs4-native.min.js";i:1;s:9:"js/gii.js";}s:7:"depends";a:1:{i:0;s:16:"yii\web\YiiAsset";}s:8:"basePath";s:49:"C:\wamp64\www\musicae\backend\web\assets\78691448";s:7:"baseUrl";s:36:"/musicae/backend/web/assets/78691448";s:9:"jsOptions";a:0:{}s:10:"cssOptions";a:0:{}s:14:"publishOptions";a:0:{}}}";s:4:"mail";s:6:"a:0:{}";s:8:"timeline";s:93:"a:3:{s:5:"start";d:1572354278.2868221;s:3:"end";d:1572354278.4703979;s:6:"memory";i:9973848;}";s:4:"user";s:2:"N;";s:4:"dump";s:6:"a:0:{}";s:7:"summary";a:12:{s:3:"tag";s:13:"5db838e64eb53";s:3:"url";s:78:"http://localhost/musicae/backend/web/index.php?r=gii%2Fdefault%2Fview&id=model";s:4:"ajax";i:0;s:6:"method";s:4:"POST";s:2:"ip";s:3:"::1";s:4:"time";d:1572354278.2780001;s:10:"statusCode";i:200;s:8:"sqlCount";i:67;s:9:"mailCount";i:0;s:9:"mailFiles";a:0:{}s:10:"peakMemory";i:9907344;s:14:"processingTime";d:0.17121100425720215;}s:10:"exceptions";a:0:{}}

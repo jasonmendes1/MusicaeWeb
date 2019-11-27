@@ -1,0 +1,55 @@
+Message-ID: <5784bb783f23c2f99ad447ef0b0776bc@localhost>
+Date: Tue, 29 Oct 2019 23:57:02 +0000
+Subject: Account registration at Musicae
+From: Musicae robot <support@example.com>
+To: mail@mail.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift_v4_1572393422_57d3d1d6c5c0e86c5a62a01f935eaf89_=_"
+
+
+--_=_swift_v4_1572393422_57d3d1d6c5c0e86c5a62a01f935eaf89_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+
+Hello pedro,
+
+Follow the link below to verify your email:
+
+http:=
+//localhost/musicae/frontend/web/index.php?r=3Dsite%2Fverify-email&token=3D=
+aRRuUPdXrv0HD4N-CvWrfg9qQneA84TW_1572393422
+
+--_=_swift_v4_1572393422_57d3d1d6c5c0e86c5a62a01f935eaf89_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns=3D"http://www.w3.org/1999/=
+xhtml">
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/ht=
+ml; charset=3DUTF-8" />
+    <title></title>
+    </head>
+<body>
+    =
+    <div class=3D"verify-email">
+    <p>Hello pedro,</p>
+
+    <p>Foll=
+ow the link below to verify your email:</p>
+
+    <p><a href=3D"http://l=
+ocalhost/musicae/frontend/web/index.php?r=3Dsite%2Fverify-email&amp;token=
+=3DaRRuUPdXrv0HD4N-CvWrfg9qQneA84TW_1572393422">http://localhost/musicae/fr=
+ontend/web/index.php?r=3Dsite%2Fverify-email&amp;token=3DaRRuUPdXrv0HD4N-Cv=
+Wrfg9qQneA84TW_1572393422</a></p>
+</div>
+    </body>
+</html>
+
+
+--_=_swift_v4_1572393422_57d3d1d6c5c0e86c5a62a01f935eaf89_=_--
