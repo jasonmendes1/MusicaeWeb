@@ -144,7 +144,6 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
-
     
     /**
      * Displays about page.
@@ -154,6 +153,16 @@ class SiteController extends Controller
     public function actionTeste()
     {
         return $this->render('teste');
+    }
+    
+    /**
+     * Displays about page.
+     *
+     * @return mixed
+     */
+    public function actionPerfil()
+    {
+        return $this->render('perfil');
     }
 
 

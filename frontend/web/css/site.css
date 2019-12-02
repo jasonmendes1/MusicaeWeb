@@ -47,6 +47,7 @@ h6 {
   text-align: center;
 }
 
+/*
 .fundoEscuroContentLoggedIn {
   z-index: 10;
   position: fixed;
@@ -59,6 +60,7 @@ h6 {
   border-top: none;
   border-color: #800000;
 }
+*/
 
 .fundoEscuroContent {
   text-align: center;
