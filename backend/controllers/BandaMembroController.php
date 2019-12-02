@@ -3,16 +3,16 @@
 namespace app\controllers;
 
 use Yii;
-use common\models\Profiles;
+use common\models\BandaMembros;
 use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * ProfileController implements the CRUD actions for Profiles model.
+ * BandaMembroController implements the CRUD actions for BandaMembros model.
  */
-class ProfileController extends Controller
+class BandaMembroController extends Controller
 {
     /**
      * {@inheritdoc}
@@ -30,13 +30,13 @@ class ProfileController extends Controller
     }
 
     /**
-     * Lists all Profiles models.
+     * Lists all BandaMembros models.
      * @return mixed
      */
     public function actionIndex()
     {
         $dataProvider = new ActiveDataProvider([
-            'query' => Profiles::find(),
+            'query' => BandaMembros::find(),
         ]);
 
         return $this->render('index', [
@@ -45,29 +45,31 @@ class ProfileController extends Controller
     }
 
     /**
-     * Displays a single Profiles model.
-     * @param integer $id
+     * Displays a single BandaMembros model.
+     * @param integer $IdBanda
+     * @param integer $IdMusico
+     * @param integer $Idhabilidade
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
      */
-    public function actionView($id)
+    public function actionView($IdBanda, $IdMusico, $Idhabilidade)
     {
         return $this->render('view', [
-            'model' => $this->findModel($id),
+            'model' => $this->findModel($IdBanda, $IdMusico, $Idhabilidade),
         ]);
     }
 
     /**
-     * Creates a new Profiles model.
+     * Creates a new BandaMembros model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new Profiles();
+        $model = new BandaMembros();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->IdProfile]);
+            return $this->redirect(['view', 'IdBanda' => $model->IdBanda, 'IdMusico' => $model->IdMusico, 'Idhabilidade' => $model->Idhabilidade]);
         }
 
         return $this->render('create', [
@@ -76,18 +78,20 @@ class ProfileController extends Controller
     }
 
     /**
-     * Updates an existing Profiles model.
+     * Updates an existing BandaMembros model.
      * If update is successful, the browser will be redirected to the 'view' page.
-     * @param integer $id
+     * @param integer $IdBanda
+     * @param integer $IdMusico
+     * @param integer $Idhabilidade
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
      */
-    public function actionUpdate($id)
+    public function actionUpdate($IdBanda, $IdMusico, $Idhabilidade)
     {
-        $model = $this->findModel($id);
+        $model = $this->findModel($IdBanda, $IdMusico, $Idhabilidade);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->IdProfile]);
+            return $this->redirect(['view', 'IdBanda' => $model->IdBanda, 'IdMusico' => $model->IdMusico, 'Idhabilidade' => $model->Idhabilidade]);
         }
 
         return $this->render('update', [
@@ -96,30 +100,33 @@ class ProfileController extends Controller
     }
 
     /**
-     * Deletes an existing Profiles model.
+     * Deletes an existing BandaMembros model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
-     * @param integer $id
+     * @param integer $IdBanda
+     * @param integer $IdMusico
+     * @param integer $Idhabilidade
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
      */
-    public function actionDelete($id)
+    public function actionDelete($IdBanda, $IdMusico, $Idhabilidade)
     {
-        /*
-        $this->findModel($id)->delete();
+        $this->findModel($IdBanda, $IdMusico, $Idhabilidade)->delete();
 
-        return $this->redirect(['index']);*/
+        return $this->redirect(['index']);
     }
 
     /**
-     * Finds the Profiles model based on its primary key value.
+     * Finds the BandaMembros model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
-     * @param integer $id
-     * @return Profiles the loaded model
+     * @param integer $IdBanda
+     * @param integer $IdMusico
+     * @param integer $Idhabilidade
+     * @return BandaMembros the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
-    protected function findModel($id)
+    protected function findModel($IdBanda, $IdMusico, $Idhabilidade)
     {
-        if (($model = Profiles::findOne($id)) !== null) {
+        if (($model = BandaMembros::findOne(['IdBanda' => $IdBanda, 'IdMusico' => $IdMusico, 'Idhabilidade' => $Idhabilidade])) !== null) {
             return $model;
         }
 

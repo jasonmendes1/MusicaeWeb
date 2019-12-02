@@ -3,16 +3,16 @@
 namespace app\controllers;
 
 use Yii;
-use common\models\Profiles;
+use common\models\ListaFotos;
 use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * ProfileController implements the CRUD actions for Profiles model.
+ * ListaFotoController implements the CRUD actions for ListaFotos model.
  */
-class ProfileController extends Controller
+class ListaFotoController extends Controller
 {
     /**
      * {@inheritdoc}
@@ -30,13 +30,13 @@ class ProfileController extends Controller
     }
 
     /**
-     * Lists all Profiles models.
+     * Lists all ListaFotos models.
      * @return mixed
      */
     public function actionIndex()
     {
         $dataProvider = new ActiveDataProvider([
-            'query' => Profiles::find(),
+            'query' => ListaFotos::find(),
         ]);
 
         return $this->render('index', [
@@ -45,7 +45,7 @@ class ProfileController extends Controller
     }
 
     /**
-     * Displays a single Profiles model.
+     * Displays a single ListaFotos model.
      * @param integer $id
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
@@ -58,16 +58,16 @@ class ProfileController extends Controller
     }
 
     /**
-     * Creates a new Profiles model.
+     * Creates a new ListaFotos model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new Profiles();
+        $model = new ListaFotos();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->IdProfile]);
+            return $this->redirect(['view', 'id' => $model->IdListaFoto]);
         }
 
         return $this->render('create', [
@@ -76,7 +76,7 @@ class ProfileController extends Controller
     }
 
     /**
-     * Updates an existing Profiles model.
+     * Updates an existing ListaFotos model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -87,7 +87,7 @@ class ProfileController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->IdProfile]);
+            return $this->redirect(['view', 'id' => $model->IdListaFoto]);
         }
 
         return $this->render('update', [
@@ -96,7 +96,7 @@ class ProfileController extends Controller
     }
 
     /**
-     * Deletes an existing Profiles model.
+     * Deletes an existing ListaFotos model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -104,22 +104,21 @@ class ProfileController extends Controller
      */
     public function actionDelete($id)
     {
-        /*
         $this->findModel($id)->delete();
 
-        return $this->redirect(['index']);*/
+        return $this->redirect(['index']);
     }
 
     /**
-     * Finds the Profiles model based on its primary key value.
+     * Finds the ListaFotos model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return Profiles the loaded model
+     * @return ListaFotos the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Profiles::findOne($id)) !== null) {
+        if (($model = ListaFotos::findOne($id)) !== null) {
             return $model;
         }
 
