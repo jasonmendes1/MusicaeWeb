@@ -42,9 +42,4 @@ phpunit.phar
 /backend/web/index-test.php
 /backend/web/robots.txt
 
-<<<<<<< HEAD
 /runtime
-runtime
-=======
-/runtime
->>>>>>> 3c8dc5a5e0d3941fabe84ba6f197e6db2152464d
