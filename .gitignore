@@ -43,3 +43,5 @@ phpunit.phar
 /backend/web/robots.txt
 
 /runtime
+backend/runtime/debug/index.data
+backend/runtime/debug/index.data
