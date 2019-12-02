@@ -9,14 +9,10 @@ class ComposerStaticInitdf1fe03e8772cd71bf9df75b61c55480
     public static $files = array (
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
-        'e88992873b7765f9b5710cab95ba5dd7' => __DIR__ . '/..' . '/hoa/consistency/Prelude.php',
-        '3e76f7f02b41af8cea96018933f6b7e3' => __DIR__ . '/..' . '/hoa/protocol/Wrapper.php',
         '2cffec82183ee1cea088009cef9a6fc3' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier.composer.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
-        'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
-        'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
-        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
+        'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '538ca81a9a966a6716601ecf48f4eaef' => __DIR__ . '/..' . '/opis/closure/functions.php',
         '180092cfc969a12e06f2132a203a3184' => __DIR__ . '/..' . '/codeception/verify/src/Codeception/function.php',
@@ -50,7 +46,6 @@ class ComposerStaticInitdf1fe03e8772cd71bf9df75b61c55480
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Polyfill\\Ctype\\' => 23,
             'Symfony\\Component\\Yaml\\' => 23,
-            'Symfony\\Component\\Process\\' => 26,
             'Symfony\\Component\\Finder\\' => 25,
             'Symfony\\Component\\EventDispatcher\\' => 34,
             'Symfony\\Component\\DomCrawler\\' => 29,
@@ -69,28 +64,13 @@ class ComposerStaticInitdf1fe03e8772cd71bf9df75b61c55480
         array (
             'Opis\\Closure\\' => 13,
         ),
-        'H' => 
-        array (
-            'Hoa\\Ustring\\' => 12,
-            'Hoa\\Stream\\' => 11,
-            'Hoa\\Protocol\\' => 13,
-            'Hoa\\Iterator\\' => 13,
-            'Hoa\\File\\' => 9,
-            'Hoa\\Exception\\' => 14,
-            'Hoa\\Event\\' => 10,
-            'Hoa\\Console\\' => 12,
-            'Hoa\\Consistency\\' => 16,
-        ),
         'G' => 
         array (
             'GuzzleHttp\\Psr7\\' => 16,
-            'GuzzleHttp\\Promise\\' => 19,
-            'GuzzleHttp\\' => 11,
         ),
         'F' => 
         array (
             'Faker\\' => 6,
-            'Facebook\\WebDriver\\' => 19,
         ),
         'D' => 
         array (
@@ -160,10 +140,6 @@ class ComposerStaticInitdf1fe03e8772cd71bf9df75b61c55480
         array (
             0 => __DIR__ . '/..' . '/symfony/yaml',
         ),
-        'Symfony\\Component\\Process\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/process',
-        ),
         'Symfony\\Component\\Finder\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/finder',
@@ -208,61 +184,13 @@ class ComposerStaticInitdf1fe03e8772cd71bf9df75b61c55480
         array (
             0 => __DIR__ . '/..' . '/opis/closure/src',
         ),
-        'Hoa\\Ustring\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/hoa/ustring',
-        ),
-        'Hoa\\Stream\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/hoa/stream',
-        ),
-        'Hoa\\Protocol\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/hoa/protocol',
-        ),
-        'Hoa\\Iterator\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/hoa/iterator',
-        ),
-        'Hoa\\File\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/hoa/file',
-        ),
-        'Hoa\\Exception\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/hoa/exception',
-        ),
-        'Hoa\\Event\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/hoa/event',
-        ),
-        'Hoa\\Console\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/hoa/console',
-        ),
-        'Hoa\\Consistency\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/hoa/consistency',
-        ),
         'GuzzleHttp\\Psr7\\' => 
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/psr7/src',
         ),
-        'GuzzleHttp\\Promise\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/guzzlehttp/promises/src',
-        ),
-        'GuzzleHttp\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
-        ),
         'Faker\\' => 
         array (
             0 => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker',
-        ),
-        'Facebook\\WebDriver\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/facebook/webdriver/lib',
         ),
         'Doctrine\\Instantiator\\' => 
         array (
@@ -279,13 +207,11 @@ class ComposerStaticInitdf1fe03e8772cd71bf9df75b61c55480
         'Codeception\\Extension\\' => 
         array (
             0 => __DIR__ . '/..' . '/codeception/base/ext',
-            1 => __DIR__ . '/..' . '/codeception/codeception/ext',
         ),
         'Codeception\\' => 
         array (
             0 => __DIR__ . '/..' . '/codeception/base/src/Codeception',
-            1 => __DIR__ . '/..' . '/codeception/codeception/src/Codeception',
-            2 => __DIR__ . '/..' . '/codeception/stub/src',
+            1 => __DIR__ . '/..' . '/codeception/stub/src',
         ),
     );
 
