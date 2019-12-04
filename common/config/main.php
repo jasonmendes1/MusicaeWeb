@@ -11,8 +11,8 @@ return [
         ],
     ],
     'modules' => [
-        'api' => [
-            'class' => 'backend\modules\api\Module',
+        'v1' => [
+            'class' => 'backend\modules\v1\Module',
         ],
     ],
 ];

@@ -1,11 +1,11 @@
 <?php
 
-namespace backend\modules\api\controllers;
+namespace backend\modules\v1\controllers;
 
 use yii\rest\ActiveController;
 
 /**
- * Default controller for the `api` module
+ * Default controller for the `v1` module
  */
 class DefaultController extends ActiveController
 {

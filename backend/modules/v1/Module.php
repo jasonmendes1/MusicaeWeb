@@ -1,16 +1,16 @@
 <?php
 
-namespace backend\modules\api;
+namespace backend\modules\v1;
 
 /**
- * api module definition class
+ * v1 module definition class
  */
 class Module extends \yii\base\Module
 {
     /**
      * {@inheritdoc}
      */
-    public $controllerNamespace = 'backend\modules\api\controllers';
+    public $controllerNamespace = 'backend\modules\v1\controllers';
 
     /**
      * {@inheritdoc}

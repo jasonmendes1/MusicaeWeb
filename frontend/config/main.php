@@ -12,8 +12,8 @@ return [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'modules' => [
-        'api' => [
-            'class' => 'backend\modules\api\Module',
+        'v1' => [
+            'class' => 'backend\modules\v1\Module',
         ],
     ],
     'controllerNamespace' => 'frontend\controllers',
