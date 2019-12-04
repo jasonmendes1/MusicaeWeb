@@ -11,6 +11,11 @@ return [
     'name' => 'Musicae',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
+    'modules' => [
+        'v1' => [
+            'class' => 'backend\modules\v1\Module',
+        ],
+    ],
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
         'request' => [
