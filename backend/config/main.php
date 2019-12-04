@@ -12,8 +12,8 @@ return [
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
     'modules' => [
-        'v1' => [
-            'class' => 'backend\modules\v1\Module',
+        'api' => [
+            'class' => 'backend\modules\api\Module',
         ],
     ],
     'components' => [
@@ -46,7 +46,7 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                ['class' => 'yii\rest\UrlRule', 'controller' => ['v1/default'], 'pluralize' => false, ],
+                ['class' => 'yii\rest\UrlRule', 'controller' => ['api/default'], 'pluralize' => false, ],
             ],
         ],
     ],
