@@ -7,7 +7,7 @@ use yii\rest\ActiveController;
 /**
  * Default controller for the `v1` module
  */
-class DefaultController extends ActiveController
+class BandasController extends ActiveController
 {
-    public $modelClass = 'common\models\User';
+    public $modelClass = 'common\models\Bandas';
 }
