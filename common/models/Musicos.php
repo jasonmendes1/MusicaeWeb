@@ -132,7 +132,7 @@ class Musicos extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getMusico()
+    public function getProfile()
     {
         return $this->hasOne(Profiles::className(), ['IdProfile' => 'IDMusico']);
     }
