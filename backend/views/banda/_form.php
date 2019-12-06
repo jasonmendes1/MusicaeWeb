@@ -22,10 +22,6 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'Logo')->textInput() ?>
 
-    <?= $form->field($model, 'Removida')->textInput() ?>
-
-    <?= $form->field($model, 'IdListaMusica')->textInput() ?>
-
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
     </div>
