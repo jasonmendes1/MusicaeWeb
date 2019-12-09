@@ -46,7 +46,11 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                ['class' => 'yii\rest\UrlRule', 'controller' => ['v1/default'], 'pluralize' => false, ],
+                ['class' => 'yii\rest\UrlRule', 'controller' => ['v1/default'],
+                'extraPatterns' => [
+                    'GET total' => 'total',
+                ],
+                'pluralize' => false, ],
                 ['class' => 'yii\rest\UrlRule', 'controller' => ['v1/user'], 'pluralize' => false, ],
                 ['class' => 'yii\rest\UrlRule', 'controller' => ['v1/profiles'], 'pluralize' => false, ],
                 ['class' => 'yii\rest\UrlRule', 'controller' => ['v1/bandas'], 'pluralize' => false, ],

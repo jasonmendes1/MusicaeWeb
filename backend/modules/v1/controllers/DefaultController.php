@@ -4,6 +4,7 @@ namespace backend\modules\v1\controllers;
 
 use common\models\User;
 use yii\rest\ActiveController;
+use yii\helpers\Json;
 use yii\filters\auth\HttpBasicAuth;
 
 /**

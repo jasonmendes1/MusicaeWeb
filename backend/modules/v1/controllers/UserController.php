@@ -10,4 +10,12 @@ use yii\rest\ActiveController;
 class UserController extends ActiveController
 {
     public $modelClass = 'common\models\User';
+
+    public function actionTotal(){
+        $userModel = new $this->modelClass;
+        $recs = $userModel::find()->all();
+        
+        return ['total' => count($recs)];
+    }
+
 }
