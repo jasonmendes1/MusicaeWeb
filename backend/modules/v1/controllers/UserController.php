@@ -23,21 +23,10 @@ class UserController extends ActiveController
         $userModel = new $this->modelClass;
         $rec = $userModel::find()->where("id=".$id)->one();
 
-
         if($rec->validatePassword($pw)){
             return ['validate' => 'true'];
         }else{
             return ['validate' => 'false'];
         }
-        // return ['id' => $rec->id, "pw" => $pw];
     }
-
-
-
-    //return Yii::$app->security->validatePassword($password, $this->password_hash);
-
-
-
-
-
 }
