@@ -16,8 +16,8 @@ use Yii;
  * @property string $Localidade
  * @property int $IdUser
  *
- * @property Industrias $industrias
- * @property Musicos $musicos
+ * @property Industrias[] $industrias
+ * @property Musicos[] $musicos
  * @property User $user
  */
 class Profiles extends \yii\db\ActiveRecord

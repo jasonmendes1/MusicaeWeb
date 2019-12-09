@@ -34,8 +34,8 @@ class IndustriaBandas extends \yii\db\ActiveRecord
             [['Duracao'], 'safe'],
             [['IdIndustria', 'IdBanda'], 'integer'],
             [['IdIndustria', 'IdBanda'], 'unique', 'targetAttribute' => ['IdIndustria', 'IdBanda']],
-            [['IdBanda'], 'exist', 'skipOnError' => true, 'targetClass' => Bandas::className(), 'targetAttribute' => ['IdBanda' => 'IDBanda']],
-            [['IdIndustria'], 'exist', 'skipOnError' => true, 'targetClass' => Industrias::className(), 'targetAttribute' => ['IdIndustria' => 'IDIndustria']],
+            [['IdBanda'], 'exist', 'skipOnError' => true, 'targetClass' => Bandas::className(), 'targetAttribute' => ['IdBanda' => 'Id']],
+            [['IdIndustria'], 'exist', 'skipOnError' => true, 'targetClass' => Industrias::className(), 'targetAttribute' => ['IdIndustria' => 'Id']],
         ];
     }
 
@@ -56,7 +56,7 @@ class IndustriaBandas extends \yii\db\ActiveRecord
      */
     public function getBanda()
     {
-        return $this->hasOne(Bandas::className(), ['IDBanda' => 'IdBanda']);
+        return $this->hasOne(Bandas::className(), ['Id' => 'IdBanda']);
     }
 
     /**
@@ -64,6 +64,6 @@ class IndustriaBandas extends \yii\db\ActiveRecord
      */
     public function getIndustria()
     {
-        return $this->hasOne(Industrias::className(), ['IDIndustria' => 'IdIndustria']);
+        return $this->hasOne(Industrias::className(), ['Id' => 'IdIndustria']);
     }
 }

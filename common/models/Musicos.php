@@ -42,7 +42,10 @@ class Musicos extends \yii\db\ActiveRecord
             [['NivelCompromisso'], 'string'],
             [['idProfile'], 'required'],
             [['idProfile'], 'integer'],
+<<<<<<< HEAD
             [['idProfile'], 'unique'],
+=======
+>>>>>>> 6dcff540a2a97bea937916b61583507bb3c0de40
             [['idProfile'], 'exist', 'skipOnError' => true, 'targetClass' => Profiles::className(), 'targetAttribute' => ['idProfile' => 'Id']],
         ];
     }
