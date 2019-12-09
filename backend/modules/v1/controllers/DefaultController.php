@@ -6,11 +6,13 @@ use common\models\User;
 use yii\rest\ActiveController;
 use yii\helpers\Json;
 use yii\filters\auth\HttpBasicAuth;
+// use yii\web\IdentityInterface;
 
 /**
  * Default controller for the `v1` module
  */
-class DefaultController extends ActiveController
+//implements IdentityInterface
+class DefaultController extends ActiveController 
 {
     public $modelClass = 'common\models\User';
 

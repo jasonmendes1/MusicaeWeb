@@ -46,12 +46,17 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                ['class' => 'yii\rest\UrlRule', 'controller' => ['v1/default'],
+                ['class' => 'yii\rest\UrlRule', 'controller' => ['v1/default'], 'pluralize' => false, ],
+                ['class' => 'yii\rest\UrlRule', 'controller' => ['v1/user'], 
                 'extraPatterns' => [
                     'GET total' => 'total',
+                    'GET {id}/verifica/{pw}' => 'verifica',
+                ],
+                'tokens' => [
+                    '{id}' => '<id:\\d+>',
+                    '{pw}' => '<pw:\\w+>',
                 ],
                 'pluralize' => false, ],
-                ['class' => 'yii\rest\UrlRule', 'controller' => ['v1/user'], 'pluralize' => false, ],
                 ['class' => 'yii\rest\UrlRule', 'controller' => ['v1/profiles'], 'pluralize' => false, ],
                 ['class' => 'yii\rest\UrlRule', 'controller' => ['v1/bandas'], 'pluralize' => false, ],
             ],
