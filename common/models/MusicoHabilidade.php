@@ -32,8 +32,8 @@ class MusicoHabilidade extends \yii\db\ActiveRecord
             [['IdMusico', 'IdHabilidade'], 'required'],
             [['IdMusico', 'IdHabilidade'], 'integer'],
             [['IdMusico', 'IdHabilidade'], 'unique', 'targetAttribute' => ['IdMusico', 'IdHabilidade']],
-            [['IdHabilidade'], 'exist', 'skipOnError' => true, 'targetClass' => Habilidades::className(), 'targetAttribute' => ['IdHabilidade' => 'IDHabilidade']],
-            [['IdMusico'], 'exist', 'skipOnError' => true, 'targetClass' => Musicos::className(), 'targetAttribute' => ['IdMusico' => 'IDMusico']],
+            [['IdHabilidade'], 'exist', 'skipOnError' => true, 'targetClass' => Habilidades::className(), 'targetAttribute' => ['IdHabilidade' => 'Id']],
+            [['IdMusico'], 'exist', 'skipOnError' => true, 'targetClass' => Musicos::className(), 'targetAttribute' => ['IdMusico' => 'Id']],
         ];
     }
 
@@ -53,7 +53,7 @@ class MusicoHabilidade extends \yii\db\ActiveRecord
      */
     public function getHabilidade()
     {
-        return $this->hasOne(Habilidades::className(), ['IDHabilidade' => 'IdHabilidade']);
+        return $this->hasOne(Habilidades::className(), ['Id' => 'IdHabilidade']);
     }
 
     /**
@@ -61,6 +61,6 @@ class MusicoHabilidade extends \yii\db\ActiveRecord
      */
     public function getMusico()
     {
-        return $this->hasOne(Musicos::className(), ['IDMusico' => 'IdMusico']);
+        return $this->hasOne(Musicos::className(), ['Id' => 'IdMusico']);
     }
 }

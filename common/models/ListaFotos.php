@@ -7,7 +7,7 @@ use Yii;
 /**
  * This is the model class for table "listafotos".
  *
- * @property int $IdListaFoto
+ * @property int $Id
  * @property resource $Foto
  *
  * @property Industrias[] $industrias
@@ -39,7 +39,7 @@ class ListaFotos extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'IdListaFoto' => 'Id Lista Foto',
+            'Id' => 'ID',
             'Foto' => 'Foto',
         ];
     }
@@ -49,6 +49,6 @@ class ListaFotos extends \yii\db\ActiveRecord
      */
     public function getIndustrias()
     {
-        return $this->hasMany(Industrias::className(), ['IdListaFoto' => 'IdListaFoto']);
+        return $this->hasMany(Industrias::className(), ['IdListaFoto' => 'Id']);
     }
 }

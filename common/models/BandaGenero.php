@@ -32,8 +32,8 @@ class BandaGenero extends \yii\db\ActiveRecord
             [['IdBanda', 'IdGenero'], 'required'],
             [['IdBanda', 'IdGenero'], 'integer'],
             [['IdBanda', 'IdGenero'], 'unique', 'targetAttribute' => ['IdBanda', 'IdGenero']],
-            [['IdBanda'], 'exist', 'skipOnError' => true, 'targetClass' => Bandas::className(), 'targetAttribute' => ['IdBanda' => 'IDBanda']],
-            [['IdGenero'], 'exist', 'skipOnError' => true, 'targetClass' => Generos::className(), 'targetAttribute' => ['IdGenero' => 'IDGenero']],
+            [['IdBanda'], 'exist', 'skipOnError' => true, 'targetClass' => Bandas::className(), 'targetAttribute' => ['IdBanda' => 'Id']],
+            [['IdGenero'], 'exist', 'skipOnError' => true, 'targetClass' => Generos::className(), 'targetAttribute' => ['IdGenero' => 'Id']],
         ];
     }
 
@@ -53,7 +53,7 @@ class BandaGenero extends \yii\db\ActiveRecord
      */
     public function getBanda()
     {
-        return $this->hasOne(Bandas::className(), ['IDBanda' => 'IdBanda']);
+        return $this->hasOne(Bandas::className(), ['Id' => 'IdBanda']);
     }
 
     /**
@@ -61,6 +61,6 @@ class BandaGenero extends \yii\db\ActiveRecord
      */
     public function getGenero()
     {
-        return $this->hasOne(Generos::className(), ['IDGenero' => 'IdGenero']);
+        return $this->hasOne(Generos::className(), ['Id' => 'IdGenero']);
     }
 }

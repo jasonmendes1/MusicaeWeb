@@ -7,7 +7,7 @@ use Yii;
 /**
  * This is the model class for table "profiles".
  *
- * @property int $IdProfile
+ * @property int $Id
  * @property string $Nome
  * @property string $Sexo
  * @property string $DataNac
@@ -16,8 +16,8 @@ use Yii;
  * @property string $Localidade
  * @property int $IdUser
  *
- * @property Industrias $industrias
- * @property Musicos $musicos
+ * @property Industrias[] $industrias
+ * @property Musicos[] $musicos
  * @property User $user
  */
 class Profiles extends \yii\db\ActiveRecord
@@ -51,7 +51,7 @@ class Profiles extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'IdProfile' => 'Id Profile',
+            'Id' => 'ID',
             'Nome' => 'Nome',
             'Sexo' => 'Sexo',
             'DataNac' => 'Data Nac',
@@ -67,7 +67,7 @@ class Profiles extends \yii\db\ActiveRecord
      */
     public function getIndustrias()
     {
-        return $this->hasOne(Industrias::className(), ['IDIndustria' => 'IdProfile']);
+        return $this->hasMany(Industrias::className(), ['IdProfile' => 'Id']);
     }
 
     /**
@@ -75,7 +75,7 @@ class Profiles extends \yii\db\ActiveRecord
      */
     public function getMusicos()
     {
-        return $this->hasOne(Musicos::className(), ['IDMusico' => 'IdProfile']);
+        return $this->hasMany(Musicos::className(), ['idProfile' => 'Id']);
     }
 
     /**

@@ -32,8 +32,8 @@ class MusicoGenero extends \yii\db\ActiveRecord
             [['IdMusico', 'IdGenero'], 'required'],
             [['IdMusico', 'IdGenero'], 'integer'],
             [['IdMusico', 'IdGenero'], 'unique', 'targetAttribute' => ['IdMusico', 'IdGenero']],
-            [['IdGenero'], 'exist', 'skipOnError' => true, 'targetClass' => Generos::className(), 'targetAttribute' => ['IdGenero' => 'IDGenero']],
-            [['IdMusico'], 'exist', 'skipOnError' => true, 'targetClass' => Musicos::className(), 'targetAttribute' => ['IdMusico' => 'IDMusico']],
+            [['IdGenero'], 'exist', 'skipOnError' => true, 'targetClass' => Generos::className(), 'targetAttribute' => ['IdGenero' => 'Id']],
+            [['IdMusico'], 'exist', 'skipOnError' => true, 'targetClass' => Musicos::className(), 'targetAttribute' => ['IdMusico' => 'Id']],
         ];
     }
 
@@ -53,7 +53,7 @@ class MusicoGenero extends \yii\db\ActiveRecord
      */
     public function getGenero()
     {
-        return $this->hasOne(Generos::className(), ['IDGenero' => 'IdGenero']);
+        return $this->hasOne(Generos::className(), ['Id' => 'IdGenero']);
     }
 
     /**
@@ -61,6 +61,6 @@ class MusicoGenero extends \yii\db\ActiveRecord
      */
     public function getMusico()
     {
-        return $this->hasOne(Musicos::className(), ['IDMusico' => 'IdMusico']);
+        return $this->hasOne(Musicos::className(), ['Id' => 'IdMusico']);
     }
 }

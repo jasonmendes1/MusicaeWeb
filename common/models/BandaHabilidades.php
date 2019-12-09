@@ -32,8 +32,8 @@ class BandaHabilidades extends \yii\db\ActiveRecord
             [['IdBanda', 'IdHabilidade'], 'required'],
             [['IdBanda', 'IdHabilidade'], 'integer'],
             [['IdBanda', 'IdHabilidade'], 'unique', 'targetAttribute' => ['IdBanda', 'IdHabilidade']],
-            [['IdBanda'], 'exist', 'skipOnError' => true, 'targetClass' => Bandas::className(), 'targetAttribute' => ['IdBanda' => 'IDBanda']],
-            [['IdHabilidade'], 'exist', 'skipOnError' => true, 'targetClass' => Habilidades::className(), 'targetAttribute' => ['IdHabilidade' => 'IDHabilidade']],
+            [['IdBanda'], 'exist', 'skipOnError' => true, 'targetClass' => Bandas::className(), 'targetAttribute' => ['IdBanda' => 'Id']],
+            [['IdHabilidade'], 'exist', 'skipOnError' => true, 'targetClass' => Habilidades::className(), 'targetAttribute' => ['IdHabilidade' => 'Id']],
         ];
     }
 
@@ -53,7 +53,7 @@ class BandaHabilidades extends \yii\db\ActiveRecord
      */
     public function getBanda()
     {
-        return $this->hasOne(Bandas::className(), ['IDBanda' => 'IdBanda']);
+        return $this->hasOne(Bandas::className(), ['Id' => 'IdBanda']);
     }
 
     /**
@@ -61,6 +61,6 @@ class BandaHabilidades extends \yii\db\ActiveRecord
      */
     public function getHabilidade()
     {
-        return $this->hasOne(Habilidades::className(), ['IDHabilidade' => 'IdHabilidade']);
+        return $this->hasOne(Habilidades::className(), ['Id' => 'IdHabilidade']);
     }
 }
