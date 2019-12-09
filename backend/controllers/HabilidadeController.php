@@ -1,10 +1,10 @@
 <?php
 
-namespace backend\controllers;
+namespace app\controllers;
 
 use Yii;
 use common\models\Habilidades;
-use yii\data\ActiveDataProvider;
+use common\models\HabilidadesSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -35,11 +35,11 @@ class HabilidadeController extends Controller
      */
     public function actionIndex()
     {
-        $dataProvider = new ActiveDataProvider([
-            'query' => Habilidades::find(),
-        ]);
+        $searchModel = new HabilidadesSearch();
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
+            'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
         ]);
     }
@@ -67,7 +67,7 @@ class HabilidadeController extends Controller
         $model = new Habilidades();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->IDHabilidade]);
+            return $this->redirect(['view', 'id' => $model->Id]);
         }
 
         return $this->render('create', [
@@ -87,7 +87,7 @@ class HabilidadeController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->IDHabilidade]);
+            return $this->redirect(['view', 'id' => $model->Id]);
         }
 
         return $this->render('update', [

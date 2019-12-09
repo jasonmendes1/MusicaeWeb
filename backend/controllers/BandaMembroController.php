@@ -1,10 +1,10 @@
 <?php
 
-namespace backend\controllers;
+namespace app\controllers;
 
 use Yii;
 use common\models\BandaMembros;
-use yii\data\ActiveDataProvider;
+use common\models\BandaMembrosSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -35,11 +35,11 @@ class BandaMembroController extends Controller
      */
     public function actionIndex()
     {
-        $dataProvider = new ActiveDataProvider([
-            'query' => BandaMembros::find(),
-        ]);
+        $searchModel = new BandaMembrosSearch();
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
+            'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
         ]);
     }
@@ -48,14 +48,13 @@ class BandaMembroController extends Controller
      * Displays a single BandaMembros model.
      * @param integer $IdBanda
      * @param integer $IdMusico
-     * @param integer $Idhabilidade
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
      */
-    public function actionView($IdBanda, $IdMusico, $Idhabilidade)
+    public function actionView($IdBanda, $IdMusico)
     {
         return $this->render('view', [
-            'model' => $this->findModel($IdBanda, $IdMusico, $Idhabilidade),
+            'model' => $this->findModel($IdBanda, $IdMusico),
         ]);
     }
 
@@ -69,7 +68,7 @@ class BandaMembroController extends Controller
         $model = new BandaMembros();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'IdBanda' => $model->IdBanda, 'IdMusico' => $model->IdMusico, 'Idhabilidade' => $model->Idhabilidade]);
+            return $this->redirect(['view', 'IdBanda' => $model->IdBanda, 'IdMusico' => $model->IdMusico]);
         }
 
         return $this->render('create', [
@@ -82,16 +81,15 @@ class BandaMembroController extends Controller
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $IdBanda
      * @param integer $IdMusico
-     * @param integer $Idhabilidade
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
      */
-    public function actionUpdate($IdBanda, $IdMusico, $Idhabilidade)
+    public function actionUpdate($IdBanda, $IdMusico)
     {
-        $model = $this->findModel($IdBanda, $IdMusico, $Idhabilidade);
+        $model = $this->findModel($IdBanda, $IdMusico);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'IdBanda' => $model->IdBanda, 'IdMusico' => $model->IdMusico, 'Idhabilidade' => $model->Idhabilidade]);
+            return $this->redirect(['view', 'IdBanda' => $model->IdBanda, 'IdMusico' => $model->IdMusico]);
         }
 
         return $this->render('update', [
@@ -104,13 +102,12 @@ class BandaMembroController extends Controller
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $IdBanda
      * @param integer $IdMusico
-     * @param integer $Idhabilidade
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
      */
-    public function actionDelete($IdBanda, $IdMusico, $Idhabilidade)
+    public function actionDelete($IdBanda, $IdMusico)
     {
-        $this->findModel($IdBanda, $IdMusico, $Idhabilidade)->delete();
+        $this->findModel($IdBanda, $IdMusico)->delete();
 
         return $this->redirect(['index']);
     }
@@ -120,13 +117,12 @@ class BandaMembroController extends Controller
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $IdBanda
      * @param integer $IdMusico
-     * @param integer $Idhabilidade
      * @return BandaMembros the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
-    protected function findModel($IdBanda, $IdMusico, $Idhabilidade)
+    protected function findModel($IdBanda, $IdMusico)
     {
-        if (($model = BandaMembros::findOne(['IdBanda' => $IdBanda, 'IdMusico' => $IdMusico, 'Idhabilidade' => $Idhabilidade])) !== null) {
+        if (($model = BandaMembros::findOne(['IdBanda' => $IdBanda, 'IdMusico' => $IdMusico])) !== null) {
             return $model;
         }
 

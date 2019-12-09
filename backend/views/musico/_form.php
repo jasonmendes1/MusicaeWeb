@@ -12,8 +12,6 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'IDMusico')->textInput() ?>
-
     <?= $form->field($model, 'NivelCompromisso')->dropDownList([ 'Diversao' => 'Diversao', 'Moderadamente Comprometido' => 'Moderadamente Comprometido', 'Comprometido' => 'Comprometido', 'Muito Comprometido' => 'Muito Comprometido', 'Tour' => 'Tour', ], ['prompt' => '']) ?>
 
     <?= $form->field($model, 'idProfile')->textInput() ?>

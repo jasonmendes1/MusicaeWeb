@@ -4,6 +4,7 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 
 /* @var $this yii\web\View */
+/* @var $searchModel common\models\HabilidadesSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = 'Habilidades';
@@ -17,13 +18,15 @@ $this->params['breadcrumbs'][] = $this->title;
         <?= Html::a('Create Habilidades', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
+    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
+        'filterModel' => $searchModel,
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'IDHabilidade',
+            'Id',
             'Nome',
 
             ['class' => 'yii\grid\ActionColumn'],

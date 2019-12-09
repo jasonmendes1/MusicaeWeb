@@ -5,9 +5,9 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model common\models\Profiles */
 
-$this->title = 'Update Profiles: ' . $model->IdProfile;
+$this->title = 'Update Profiles: ' . $model->Id;
 $this->params['breadcrumbs'][] = ['label' => 'Profiles', 'url' => ['index']];
-$this->params['breadcrumbs'][] = ['label' => $model->IdProfile, 'url' => ['view', 'id' => $model->IdProfile]];
+$this->params['breadcrumbs'][] = ['label' => $model->Id, 'url' => ['view', 'id' => $model->Id]];
 $this->params['breadcrumbs'][] = 'Update';
 ?>
 <div class="profiles-update">
