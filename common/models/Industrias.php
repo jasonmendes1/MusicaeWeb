@@ -7,17 +7,19 @@ use Yii;
 /**
  * This is the model class for table "industrias".
  *
- * @property int $IDIndustria
+ * @property int $Id
  * @property string $Tipo
+ * @property int $IdProfile
  * @property int $IdGenero
  * @property int $IdListaMusica
  * @property int $IdListaFoto
  *
  * @property Industriabandas[] $industriabandas
  * @property Bandas[] $bandas
- * @property Profiles $industria
+ * @property Generos $genero
  * @property Listafotos $listaFoto
  * @property Listamusicas $listaMusica
+ * @property Profiles $profile
  */
 class Industrias extends \yii\db\ActiveRecord
 {
@@ -35,12 +37,14 @@ class Industrias extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['Tipo', 'IdGenero', 'IdListaMusica', 'IdListaFoto'], 'required'],
+            [['Tipo', 'IdProfile', 'IdGenero', 'IdListaMusica', 'IdListaFoto'], 'required'],
             [['Tipo'], 'string'],
-            [['IdGenero', 'IdListaMusica', 'IdListaFoto'], 'integer'],
-            [['IDIndustria'], 'exist', 'skipOnError' => true, 'targetClass' => Profiles::className(), 'targetAttribute' => ['IDIndustria' => 'IdProfile']],
-            [['IdListaFoto'], 'exist', 'skipOnError' => true, 'targetClass' => Listafotos::className(), 'targetAttribute' => ['IdListaFoto' => 'IdListaFoto']],
-            [['IdListaMusica'], 'exist', 'skipOnError' => true, 'targetClass' => Listamusicas::className(), 'targetAttribute' => ['IdListaMusica' => 'IDListaMusica']],
+            [['IdProfile', 'IdGenero', 'IdListaMusica', 'IdListaFoto'], 'integer'],
+            [['IdProfile'], 'unique'],
+            [['IdGenero'], 'exist', 'skipOnError' => true, 'targetClass' => Generos::className(), 'targetAttribute' => ['IdGenero' => 'Id']],
+            [['IdListaFoto'], 'exist', 'skipOnError' => true, 'targetClass' => Listafotos::className(), 'targetAttribute' => ['IdListaFoto' => 'Id']],
+            [['IdListaMusica'], 'exist', 'skipOnError' => true, 'targetClass' => Listamusicas::className(), 'targetAttribute' => ['IdListaMusica' => 'Id']],
+            [['IdProfile'], 'exist', 'skipOnError' => true, 'targetClass' => Profiles::className(), 'targetAttribute' => ['IdProfile' => 'Id']],
         ];
     }
 
@@ -50,8 +54,9 @@ class Industrias extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'IDIndustria' => 'Id Industria',
+            'Id' => 'ID',
             'Tipo' => 'Tipo',
+            'IdProfile' => 'Id Profile',
             'IdGenero' => 'Id Genero',
             'IdListaMusica' => 'Id Lista Musica',
             'IdListaFoto' => 'Id Lista Foto',
@@ -63,7 +68,7 @@ class Industrias extends \yii\db\ActiveRecord
      */
     public function getIndustriabandas()
     {
-        return $this->hasMany(Industriabandas::className(), ['IdIndustria' => 'IDIndustria']);
+        return $this->hasMany(Industriabandas::className(), ['IdIndustria' => 'Id']);
     }
 
     /**
@@ -71,15 +76,15 @@ class Industrias extends \yii\db\ActiveRecord
      */
     public function getBandas()
     {
-        return $this->hasMany(Bandas::className(), ['IDBanda' => 'IdBanda'])->viaTable('industriabandas', ['IdIndustria' => 'IDIndustria']);
+        return $this->hasMany(Bandas::className(), ['Id' => 'IdBanda'])->viaTable('industriabandas', ['IdIndustria' => 'Id']);
     }
 
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getIndustria()
+    public function getGenero()
     {
-        return $this->hasOne(Profiles::className(), ['IdProfile' => 'IDIndustria']);
+        return $this->hasOne(Generos::className(), ['Id' => 'IdGenero']);
     }
 
     /**
@@ -87,7 +92,7 @@ class Industrias extends \yii\db\ActiveRecord
      */
     public function getListaFoto()
     {
-        return $this->hasOne(Listafotos::className(), ['IdListaFoto' => 'IdListaFoto']);
+        return $this->hasOne(Listafotos::className(), ['Id' => 'IdListaFoto']);
     }
 
     /**
@@ -95,6 +100,14 @@ class Industrias extends \yii\db\ActiveRecord
      */
     public function getListaMusica()
     {
-        return $this->hasOne(Listamusicas::className(), ['IDListaMusica' => 'IdListaMusica']);
+        return $this->hasOne(Listamusicas::className(), ['Id' => 'IdListaMusica']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getProfile()
+    {
+        return $this->hasOne(Profiles::className(), ['Id' => 'IdProfile']);
     }
 }

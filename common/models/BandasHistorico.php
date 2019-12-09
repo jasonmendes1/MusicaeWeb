@@ -34,8 +34,8 @@ class BandasHistorico extends \yii\db\ActiveRecord
             [['IdMusico', 'IdBanda'], 'integer'],
             [['Duracao'], 'safe'],
             [['IdMusico', 'IdBanda'], 'unique', 'targetAttribute' => ['IdMusico', 'IdBanda']],
-            [['IdBanda'], 'exist', 'skipOnError' => true, 'targetClass' => Bandas::className(), 'targetAttribute' => ['IdBanda' => 'IDBanda']],
-            [['IdMusico'], 'exist', 'skipOnError' => true, 'targetClass' => Musicos::className(), 'targetAttribute' => ['IdMusico' => 'IDMusico']],
+            [['IdBanda'], 'exist', 'skipOnError' => true, 'targetClass' => Bandas::className(), 'targetAttribute' => ['IdBanda' => 'Id']],
+            [['IdMusico'], 'exist', 'skipOnError' => true, 'targetClass' => Musicos::className(), 'targetAttribute' => ['IdMusico' => 'Id']],
         ];
     }
 
@@ -56,7 +56,7 @@ class BandasHistorico extends \yii\db\ActiveRecord
      */
     public function getBanda()
     {
-        return $this->hasOne(Bandas::className(), ['IDBanda' => 'IdBanda']);
+        return $this->hasOne(Bandas::className(), ['Id' => 'IdBanda']);
     }
 
     /**
@@ -64,6 +64,6 @@ class BandasHistorico extends \yii\db\ActiveRecord
      */
     public function getMusico()
     {
-        return $this->hasOne(Musicos::className(), ['IDMusico' => 'IdMusico']);
+        return $this->hasOne(Musicos::className(), ['Id' => 'IdMusico']);
     }
 }

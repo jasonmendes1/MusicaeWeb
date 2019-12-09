@@ -7,7 +7,7 @@ use Yii;
 /**
  * This is the model class for table "bandas".
  *
- * @property int $IDBanda
+ * @property int $Id
  * @property string $Nome
  * @property string $Descricao
  * @property string $Localizacao
@@ -21,13 +21,14 @@ use Yii;
  * @property Bandahabilidades[] $bandahabilidades
  * @property Habilidades[] $habilidades
  * @property Bandamembros[] $bandamembros
+ * @property Musicos[] $musicos
  * @property Listamusicas $listaMusica
  * @property Bandashistorico[] $bandashistoricos
- * @property Musicos[] $musicos
+ * @property Musicos[] $musicos0
  * @property Industriabandas[] $industriabandas
  * @property Industrias[] $industrias
  * @property Listabandas[] $listabandas
- * @property Musicos[] $musicos0
+ * @property Musicos[] $musicos1
  */
 class Bandas extends \yii\db\ActiveRecord
 {
@@ -49,7 +50,7 @@ class Bandas extends \yii\db\ActiveRecord
             [['Logo'], 'string'],
             [['Removida', 'IdListaMusica'], 'integer'],
             [['Nome', 'Descricao', 'Localizacao', 'Contacto'], 'string', 'max' => 255],
-            [['IdListaMusica'], 'exist', 'skipOnError' => true, 'targetClass' => Listamusicas::className(), 'targetAttribute' => ['IdListaMusica' => 'IDListaMusica']],
+            [['IdListaMusica'], 'exist', 'skipOnError' => true, 'targetClass' => Listamusicas::className(), 'targetAttribute' => ['IdListaMusica' => 'Id']],
         ];
     }
 
@@ -59,7 +60,7 @@ class Bandas extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'IDBanda' => 'Id Banda',
+            'Id' => 'ID',
             'Nome' => 'Nome',
             'Descricao' => 'Descricao',
             'Localizacao' => 'Localizacao',
@@ -75,7 +76,7 @@ class Bandas extends \yii\db\ActiveRecord
      */
     public function getBandageneros()
     {
-        return $this->hasMany(Bandagenero::className(), ['IdBanda' => 'IDBanda']);
+        return $this->hasMany(Bandagenero::className(), ['IdBanda' => 'Id']);
     }
 
     /**
@@ -83,7 +84,7 @@ class Bandas extends \yii\db\ActiveRecord
      */
     public function getGeneros()
     {
-        return $this->hasMany(Generos::className(), ['IDGenero' => 'IdGenero'])->viaTable('bandagenero', ['IdBanda' => 'IDBanda']);
+        return $this->hasMany(Generos::className(), ['Id' => 'IdGenero'])->viaTable('bandagenero', ['IdBanda' => 'Id']);
     }
 
     /**
@@ -91,7 +92,7 @@ class Bandas extends \yii\db\ActiveRecord
      */
     public function getBandahabilidades()
     {
-        return $this->hasMany(Bandahabilidades::className(), ['IdBanda' => 'IDBanda']);
+        return $this->hasMany(Bandahabilidades::className(), ['IdBanda' => 'Id']);
     }
 
     /**
@@ -99,7 +100,7 @@ class Bandas extends \yii\db\ActiveRecord
      */
     public function getHabilidades()
     {
-        return $this->hasMany(Habilidades::className(), ['IDHabilidade' => 'IdHabilidade'])->viaTable('bandahabilidades', ['IdBanda' => 'IDBanda']);
+        return $this->hasMany(Habilidades::className(), ['Id' => 'IdHabilidade'])->viaTable('bandahabilidades', ['IdBanda' => 'Id']);
     }
 
     /**
@@ -107,23 +108,7 @@ class Bandas extends \yii\db\ActiveRecord
      */
     public function getBandamembros()
     {
-        return $this->hasMany(Bandamembros::className(), ['IdBanda' => 'IDBanda']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getListaMusica()
-    {
-        return $this->hasOne(Listamusicas::className(), ['IDListaMusica' => 'IdListaMusica']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getBandashistoricos()
-    {
-        return $this->hasMany(Bandashistorico::className(), ['IdBanda' => 'IDBanda']);
+        return $this->hasMany(Bandamembros::className(), ['IdBanda' => 'Id']);
     }
 
     /**
@@ -131,31 +116,23 @@ class Bandas extends \yii\db\ActiveRecord
      */
     public function getMusicos()
     {
-        return $this->hasMany(Musicos::className(), ['IDMusico' => 'IdMusico'])->viaTable('bandashistorico', ['IdBanda' => 'IDBanda']);
+        return $this->hasMany(Musicos::className(), ['Id' => 'IdMusico'])->viaTable('bandamembros', ['IdBanda' => 'Id']);
     }
 
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getIndustriabandas()
+    public function getListaMusica()
     {
-        return $this->hasMany(Industriabandas::className(), ['IdBanda' => 'IDBanda']);
+        return $this->hasOne(Listamusicas::className(), ['Id' => 'IdListaMusica']);
     }
 
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getIndustrias()
+    public function getBandashistoricos()
     {
-        return $this->hasMany(Industrias::className(), ['IDIndustria' => 'IdIndustria'])->viaTable('industriabandas', ['IdBanda' => 'IDBanda']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getListabandas()
-    {
-        return $this->hasMany(Listabandas::className(), ['IdBanda' => 'IDBanda']);
+        return $this->hasMany(Bandashistorico::className(), ['IdBanda' => 'Id']);
     }
 
     /**
@@ -163,6 +140,38 @@ class Bandas extends \yii\db\ActiveRecord
      */
     public function getMusicos0()
     {
-        return $this->hasMany(Musicos::className(), ['IDMusico' => 'IdMusico'])->viaTable('listabandas', ['IdBanda' => 'IDBanda']);
+        return $this->hasMany(Musicos::className(), ['Id' => 'IdMusico'])->viaTable('bandashistorico', ['IdBanda' => 'Id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getIndustriabandas()
+    {
+        return $this->hasMany(Industriabandas::className(), ['IdBanda' => 'Id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getIndustrias()
+    {
+        return $this->hasMany(Industrias::className(), ['Id' => 'IdIndustria'])->viaTable('industriabandas', ['IdBanda' => 'Id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getListabandas()
+    {
+        return $this->hasMany(Listabandas::className(), ['IdBanda' => 'Id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getMusicos1()
+    {
+        return $this->hasMany(Musicos::className(), ['Id' => 'IdMusico'])->viaTable('listabandas', ['IdBanda' => 'Id']);
     }
 }

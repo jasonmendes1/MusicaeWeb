@@ -7,13 +7,11 @@ use Yii;
 /**
  * This is the model class for table "bandamembros".
  *
+ * @property string $DataEntrada
  * @property int $IdBanda
  * @property int $IdMusico
- * @property int $Idhabilidade
- * @property string $DataEntrada
  *
  * @property Bandas $banda
- * @property Habilidades $habilidade
  * @property Musicos $musico
  */
 class BandaMembros extends \yii\db\ActiveRecord
@@ -32,13 +30,12 @@ class BandaMembros extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['IdBanda', 'IdMusico', 'Idhabilidade', 'DataEntrada'], 'required'],
-            [['IdBanda', 'IdMusico', 'Idhabilidade'], 'integer'],
+            [['DataEntrada', 'IdBanda', 'IdMusico'], 'required'],
             [['DataEntrada'], 'safe'],
-            [['IdBanda', 'IdMusico', 'Idhabilidade'], 'unique', 'targetAttribute' => ['IdBanda', 'IdMusico', 'Idhabilidade']],
-            [['IdBanda'], 'exist', 'skipOnError' => true, 'targetClass' => Bandas::className(), 'targetAttribute' => ['IdBanda' => 'IDBanda']],
-            [['Idhabilidade'], 'exist', 'skipOnError' => true, 'targetClass' => Habilidades::className(), 'targetAttribute' => ['Idhabilidade' => 'IDHabilidade']],
-            [['IdMusico'], 'exist', 'skipOnError' => true, 'targetClass' => Musicos::className(), 'targetAttribute' => ['IdMusico' => 'IDMusico']],
+            [['IdBanda', 'IdMusico'], 'integer'],
+            [['IdBanda', 'IdMusico'], 'unique', 'targetAttribute' => ['IdBanda', 'IdMusico']],
+            [['IdBanda'], 'exist', 'skipOnError' => true, 'targetClass' => Bandas::className(), 'targetAttribute' => ['IdBanda' => 'Id']],
+            [['IdMusico'], 'exist', 'skipOnError' => true, 'targetClass' => Musicos::className(), 'targetAttribute' => ['IdMusico' => 'Id']],
         ];
     }
 
@@ -48,10 +45,9 @@ class BandaMembros extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
+            'DataEntrada' => 'Data Entrada',
             'IdBanda' => 'Id Banda',
             'IdMusico' => 'Id Musico',
-            'Idhabilidade' => 'Idhabilidade',
-            'DataEntrada' => 'Data Entrada',
         ];
     }
 
@@ -60,15 +56,7 @@ class BandaMembros extends \yii\db\ActiveRecord
      */
     public function getBanda()
     {
-        return $this->hasOne(Bandas::className(), ['IDBanda' => 'IdBanda']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getHabilidade()
-    {
-        return $this->hasOne(Habilidades::className(), ['IDHabilidade' => 'Idhabilidade']);
+        return $this->hasOne(Bandas::className(), ['Id' => 'IdBanda']);
     }
 
     /**
@@ -76,6 +64,6 @@ class BandaMembros extends \yii\db\ActiveRecord
      */
     public function getMusico()
     {
-        return $this->hasOne(Musicos::className(), ['IDMusico' => 'IdMusico']);
+        return $this->hasOne(Musicos::className(), ['Id' => 'IdMusico']);
     }
 }

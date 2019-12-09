@@ -7,7 +7,7 @@ use Yii;
 /**
  * This is the model class for table "profiles".
  *
- * @property int $IdProfile
+ * @property int $Id
  * @property string $Nome
  * @property string $Sexo
  * @property string $DataNac
@@ -41,6 +41,7 @@ class Profiles extends \yii\db\ActiveRecord
             [['Foto'], 'string'],
             [['IdUser'], 'integer'],
             [['Nome', 'Sexo', 'Descricao', 'Localidade'], 'string', 'max' => 255],
+            [['IdUser'], 'unique'],
             [['IdUser'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['IdUser' => 'id']],
         ];
     }
@@ -51,7 +52,7 @@ class Profiles extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'IdProfile' => 'Id Profile',
+            'Id' => 'ID',
             'Nome' => 'Nome',
             'Sexo' => 'Sexo',
             'DataNac' => 'Data Nac',
@@ -67,7 +68,7 @@ class Profiles extends \yii\db\ActiveRecord
      */
     public function getIndustrias()
     {
-        return $this->hasOne(Industrias::className(), ['IDIndustria' => 'IdProfile']);
+        return $this->hasOne(Industrias::className(), ['IdProfile' => 'Id']);
     }
 
     /**
@@ -75,7 +76,7 @@ class Profiles extends \yii\db\ActiveRecord
      */
     public function getMusicos()
     {
-        return $this->hasOne(Musicos::className(), ['IDMusico' => 'IdProfile']);
+        return $this->hasOne(Musicos::className(), ['idProfile' => 'Id']);
     }
 
     /**

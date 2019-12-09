@@ -7,11 +7,12 @@ use Yii;
 /**
  * This is the model class for table "generos".
  *
- * @property int $IDGenero
+ * @property int $Id
  * @property string $Nome
  *
  * @property Bandagenero[] $bandageneros
  * @property Bandas[] $bandas
+ * @property Industrias[] $industrias
  * @property Musicogenero[] $musicogeneros
  * @property Musicos[] $musicos
  */
@@ -42,7 +43,7 @@ class Generos extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'IDGenero' => 'Id Genero',
+            'Id' => 'ID',
             'Nome' => 'Nome',
         ];
     }
@@ -52,7 +53,7 @@ class Generos extends \yii\db\ActiveRecord
      */
     public function getBandageneros()
     {
-        return $this->hasMany(Bandagenero::className(), ['IdGenero' => 'IDGenero']);
+        return $this->hasMany(Bandagenero::className(), ['IdGenero' => 'Id']);
     }
 
     /**
@@ -60,7 +61,15 @@ class Generos extends \yii\db\ActiveRecord
      */
     public function getBandas()
     {
-        return $this->hasMany(Bandas::className(), ['IDBanda' => 'IdBanda'])->viaTable('bandagenero', ['IdGenero' => 'IDGenero']);
+        return $this->hasMany(Bandas::className(), ['Id' => 'IdBanda'])->viaTable('bandagenero', ['IdGenero' => 'Id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getIndustrias()
+    {
+        return $this->hasMany(Industrias::className(), ['IdGenero' => 'Id']);
     }
 
     /**
@@ -68,7 +77,7 @@ class Generos extends \yii\db\ActiveRecord
      */
     public function getMusicogeneros()
     {
-        return $this->hasMany(Musicogenero::className(), ['IdGenero' => 'IDGenero']);
+        return $this->hasMany(Musicogenero::className(), ['IdGenero' => 'Id']);
     }
 
     /**
@@ -76,6 +85,6 @@ class Generos extends \yii\db\ActiveRecord
      */
     public function getMusicos()
     {
-        return $this->hasMany(Musicos::className(), ['IDMusico' => 'IdMusico'])->viaTable('musicogenero', ['IdGenero' => 'IDGenero']);
+        return $this->hasMany(Musicos::className(), ['Id' => 'IdMusico'])->viaTable('musicogenero', ['IdGenero' => 'Id']);
     }
 }
