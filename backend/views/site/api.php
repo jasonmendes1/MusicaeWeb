@@ -12,13 +12,10 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 
 <div class="links-api">
-    
 
     <p>Teste Bacano Fixe:</p>
     <a href = "/v1/users">Users</a>
     <a href = "/v1/profiles">Profiles</a>
     <a href = "/v1/bandas">Bands</a>
-
-
 
 </div>
