@@ -130,7 +130,7 @@ class Bandas extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getBandashistoricos()
+    public function getBandashistorico()
     {
         return $this->hasMany(Bandashistorico::className(), ['IdBanda' => 'Id']);
     }
@@ -138,7 +138,7 @@ class Bandas extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getMusicos0()
+    public function getMusicosBandaHistorico()
     {
         return $this->hasMany(Musicos::className(), ['Id' => 'IdMusico'])->viaTable('bandashistorico', ['IdBanda' => 'Id']);
     }
@@ -170,7 +170,7 @@ class Bandas extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getMusicos1()
+    public function getMusicoListaBandas()
     {
         return $this->hasMany(Musicos::className(), ['Id' => 'IdMusico'])->viaTable('listabandas', ['IdBanda' => 'Id']);
     }
