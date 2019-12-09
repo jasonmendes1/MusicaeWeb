@@ -32,6 +32,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'IDMusico',
             'NivelCompromisso',
             'idProfile',
+            'profile.Nome',
         ],
     ]) ?>
 
