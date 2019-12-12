@@ -31,7 +31,7 @@ h1{
 <body>
 <div class="fundoEscuro">
     <div class="Logo">
-        <center><img src="../../../frontend/web/images/logotipo.png">
+        <center><img src="../web/images/logotipo.png">
             <h1>Musicae's API:</h1><p><p><p><p><p><p><p><p>
             <div class="links">
                 <a href = "/v1/user">Users</a>

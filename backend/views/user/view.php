@@ -5,15 +5,16 @@ use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
 /* @var $model common\models\User */
+/* @var $modelMusico common\models\Profiles */
 
-$this->title = $model->id;
+$this->title = $model->username;
 $this->params['breadcrumbs'][] = ['label' => 'Users', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 ?>
 <div class="user-view">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+    <h1><?= Html::encode("User") ?></h1>
 
     <p>
         <?= Html::a('Update', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
@@ -42,4 +43,17 @@ $this->params['breadcrumbs'][] = $this->title;
         ],
     ]) ?>
 
+<h1><?= Html::encode("Profile") ?></h1>
+    
+    <?= DetailView::widget([
+        'model' => $model,
+        'attributes' => [
+            'profile.Nome',
+            'profile.Sexo',
+            'profile.DataNac',
+            'profile.Descricao',
+            'profile.Foto',
+            'profile.Localidade',
+        ],
+    ]) ?>
 </div>

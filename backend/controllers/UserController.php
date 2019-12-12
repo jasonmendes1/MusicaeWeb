@@ -54,6 +54,7 @@ class UserController extends Controller
     {
         return $this->render('view', [
             'model' => $this->findModel($id),
+            'modelProfile' => $this->findModel($id),
         ]);
     }
 
