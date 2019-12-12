@@ -22,7 +22,7 @@ class UserController extends ActiveController
     public function actionVerifica($id, $pw){
         $userModel = new $this->modelClass;
         $rec = $userModel::find()->where("id=".$id)->one();
-
+//
         if($rec->validatePassword($pw)){
             return ['validate' => 'true'];
         }else{
