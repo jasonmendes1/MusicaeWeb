@@ -1,5 +1,6 @@
 <?php
 
+//use yii\widgets\UploadForm;
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
@@ -14,7 +15,9 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'Nome')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'CaminhoPasta')->fileInput(['maxlength' => true]) ?>
+    <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]); ?>
+
+    <?= $form->field($model, 'CaminhoPasta')->fileInput() ?>
 
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
