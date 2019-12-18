@@ -19,7 +19,7 @@ class UploadForm extends Model
     {
         return [
             [['imageFile'], 'imageFile', 'skipOnEmpty' => false, 'extensions' => 'png, jpg'],
-            [['CaminhoPasta'], 'imageFile', 'skipOnEmpty' => false, 'extensions' => 'mp3, wav'],
+            [['CaminhoPasta'], 'CaminhoPasta', 'skipOnEmpty' => false, 'extensions' => 'mp3, wav'],
 
             //[['CaminhoPasta'], 'CaminhoPasta', 'maxFiles' => 10, 'extensions' => 'mp3, wav'],
         ];
