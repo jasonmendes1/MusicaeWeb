@@ -20,7 +20,6 @@ class UploadForm extends Model
         return [
             [['imageFile'], 'imageFile', 'skipOnEmpty' => false, 'extensions' => 'png, jpg'],
             [['CaminhoPasta'], 'CaminhoPasta', 'skipOnEmpty' => false, 'extensions' => 'mp3, wav'],
-
             //[['CaminhoPasta'], 'CaminhoPasta', 'maxFiles' => 10, 'extensions' => 'mp3, wav'],
         ];
     }
@@ -29,7 +28,7 @@ class UploadForm extends Model
     {
         if ($this->validate()) { 
             foreach ($this->CaminhoPasta as $file) {
-                $file->saveAs('uploads/' . $file->baseName . '.' . $file->extension);
+                $file->saveAs('./../../backend/songs' . $file->baseName . '.' . $file->extension);
             }
             return true;
         } else {

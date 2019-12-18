@@ -17,7 +17,7 @@ use yii\widgets\ActiveForm;
 
 
     <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]) ?>
-
+    
     <?= $form->field($model, 'CaminhoPasta[]')->fileInput(['multiple' => false, 'accept' => 'audio/mp3, audio/wav']) ?>
     
 
