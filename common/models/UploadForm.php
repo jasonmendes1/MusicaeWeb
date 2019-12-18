@@ -4,25 +4,33 @@ namespace common\models;
 use yii\base\Model;
 use yii\web\UploadedFile;
 
+/**
+* UploadForm is the model behind the upload form.
+*/
 class UploadForm extends Model
 {
     /**
      * @var UploadedFile
      */
     public $imageFile;
+    public $CaminhoPasta;
 
     public function rules()
     {
         return [
-            [['imageFile'], 'file', 'skipOnEmpty' => false, 'extensions' => 'png, jpg'],
-            [['songFile'], 'file', 'maxFiles' => 10, 'extensions' => 'mp3, wav'],
+            [['imageFile'], 'imageFile', 'skipOnEmpty' => false, 'extensions' => 'png, jpg'],
+            [['CaminhoPasta'], 'imageFile', 'skipOnEmpty' => false, 'extensions' => 'mp3, wav'],
+
+            //[['CaminhoPasta'], 'CaminhoPasta', 'maxFiles' => 10, 'extensions' => 'mp3, wav'],
         ];
     }
     
     public function upload()
     {
-        if ($this->validate()) {
-            $this->imageFile->saveAs('uploads/' . $this->imageFile->baseName . '.' . $this->imageFile->extension);
+        if ($this->validate()) { 
+            foreach ($this->CaminhoPasta as $file) {
+                $file->saveAs('uploads/' . $file->baseName . '.' . $file->extension);
+            }
             return true;
         } else {
             return false;
