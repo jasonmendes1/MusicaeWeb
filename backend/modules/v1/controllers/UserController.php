@@ -1,6 +1,7 @@
 <?php
 
 namespace backend\modules\v1\controllers;
+
 use yii\web\User;
 
 use yii\rest\ActiveController;
@@ -8,25 +9,30 @@ use yii\rest\ActiveController;
 /**
  * Default controller for the `v1` module
  */
-class UserController extends ActiveController 
+class UserController extends ActiveController
 {
     public $modelClass = 'common\models\User';
 
-    public function actionTotal(){
+    public function actionTotal()
+    {
         $userModel = new $this->modelClass;
         $recs = $userModel::find()->all();
-        
+
         return ['total' => count($recs)];
     }
 
-    public function actionVerifica($id, $pw){
+    public function actionVerifica($user, $pw)
+    {
         $userModel = new $this->modelClass;
-        $rec = $userModel::find()->where("id=".$id)->one();
-//
-        if($rec->validatePassword($pw)){
-            return ['validate' => 'true'];
-        }else{
-            return ['validate' => 'false'];
+        if (!($userModel::find()->where("username=" . '\'' . $user . '\'')->one())) {
+            return ['id' => -1];
+        }
+
+        $rec = $userModel::find()->where("username=" . '\'' . $user . '\'')->one();
+        if ($rec->validatePassword($pw)) {
+            return ['id' => $rec->id];
+        } else {
+            return ['id' => -1];
         }
     }
 }

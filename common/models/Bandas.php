@@ -46,7 +46,7 @@ class Bandas extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['Nome', 'Descricao', 'Localizacao', 'Contacto', 'Logo', 'Removida', 'IdListaMusica'], 'required'],
+            [['Nome', 'Descricao', 'Localizacao', 'Contacto', 'Logo', 'Removida'], 'required'],
             [['Logo'], 'string'],
             [['Removida', 'IdListaMusica'], 'integer'],
             [['Nome', 'Descricao', 'Localizacao', 'Contacto'], 'string', 'max' => 255],
