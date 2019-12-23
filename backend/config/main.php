@@ -51,12 +51,12 @@ return [
                     'class' => 'yii\rest\UrlRule', 'controller' => ['v1/user'],
                     'extraPatterns' => [
                         'GET total' => 'total',
-                        'GET {user}/{pw}' => 'verifica',
+                        'POST verificaLogin' => 'verifica',
                     ],
                     'tokens' => [
                         '{id}' => '<id:\\d+>',
                         '{user}' => '<user:\\w+>',
-                        '{pw}' => '<pw:\\w+>',
+                        '{pw}' => '<pw:[\-]?\w+>',
                     ],
                     'pluralize' => false,
                 ],
