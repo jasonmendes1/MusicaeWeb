@@ -2,12 +2,53 @@
 
 namespace backend\modules\v1\controllers;
 
+use common\models\User;
 use yii\rest\ActiveController;
+use yii\helpers\Json;
+use yii\filters\auth\HttpBasicAuth;
+// use yii\web\IdentityInterface;
 
 /**
  * Default controller for the `v1` module
  */
-class BandasController extends ActiveController
+//implements IdentityInterface
+class BandasController extends ActiveController 
 {
     public $modelClass = 'common\models\Bandas';
+
+    public function behaviors()
+    {
+        $behaviors = parent::behaviors();
+        $behaviors['authenticator'] = [
+        'class' => HttpBasicAuth::className(),
+        'auth' => [$this, 'auth']
+        ];
+        return $behaviors;
+    }
+
+    public function auth($username, $password)
+    { 
+        $user = \common\models\
+        User::findByUsername($username);
+        if ($user && $user->validatePassword($password)) {
+        return $user;
+        }
+        return null;
+    }
+
+    /*
+    public function behaviors()
+    {
+        $behaviors = parent::behaviors();
+        $behaviors['authenticator'] = [
+        'class' => HttpBasicAuth::className(),
+        'auth' => function ($username, $password){
+            $user = \common\models\User::findByUsername($username);
+            if ($user && $user->validatePassword($password)){
+                return $user;
+            }
+        } return null;
+        ];
+    }
+    */
 }
