@@ -180,15 +180,21 @@ class Bandas extends \yii\db\ActiveRecord
         parent::afterSave($insert, $changedAttributes);
 
         //Obter dados do registo em causa
-        $id=$this->id;
-        $designacao=$this->designacao;
-        $preco=$this->preco;
-        $img=$this->img; 
+        $Id=$this->Id;
+        $Nome=$this->Nome;
+        $Descricao=$this->Descricao;
+        $Contacto=$this->Contacto;
+        $Logo=$this->Logo;
+        $Removida=$this->Removida;
+        $IdListaMusica=$this->IdListaMusica;
         $myObj=new \stdClass();
-        $myObj->id=$id;
-        $myObj->designacao=$designacao;
-        $myObj->preco=$preco;
-        $myObj->img=$img;
+        $myObj->Id=$Id;
+        $myObj->Nome=$Nome;
+        $myObj->Descricao=$Descricao;
+        $myObj->Contacto=$Contacto;
+        $myObj->Logo=$Logo;
+        $myObj->Removida=$Removida;
+        $myObj->IdListaMusica=$IdListaMusica;
         $myJSON = json_encode($myObj);
         if($insert)
             $this->FazPublish("INSERT",$myJSON);
@@ -210,8 +216,8 @@ class Bandas extends \yii\db\ActiveRecord
     {
         $server = "127.0.0.1";
         $port = 1883;
-        $username = "jason"; // set your username
-        $password = "123456"; // set your password
+        $username = ""; // set your username
+        $password = ""; // set your password
         $client_id = "phpMQTT-publisher"; // unique!
         $mqtt = new \app\mosquitto\phpMQTT($server, $port, $client_id);
         if ($mqtt->connect(true, NULL, $username, $password)){
