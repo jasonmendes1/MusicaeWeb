@@ -77,19 +77,9 @@ class Habilidades extends \yii\db\ActiveRecord
         //Obter dados do registo em causa
         $Id=$this->Id;
         $Nome=$this->Nome;
-        $Descricao=$this->Descricao;
-        $Contacto=$this->Contacto;
-        $Logo=$this->Logo;
-        $Removida=$this->Removida;
-        $IdListaMusica=$this->IdListaMusica;
         $myObj=new \stdClass();
         $myObj->Id=$Id;
         $myObj->Nome=$Nome;
-        $myObj->Descricao=$Descricao;
-        $myObj->Contacto=$Contacto;
-        $myObj->Logo=$Logo;
-        $myObj->Removida=$Removida;
-        $myObj->IdListaMusica=$IdListaMusica;
         $myJSON = json_encode($myObj);
         if($insert)
             $this->FazPublish("INSERT",$myJSON);

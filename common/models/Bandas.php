@@ -132,7 +132,6 @@ class Bandas extends \yii\db\ActiveRecord
         $Contacto = $this->Contacto;
         $Logo = $this->Logo;
         $Removida = $this->Removida;
-        $IdListaMusica = $this->IdListaMusica;
         $myObj = new \stdClass();
         $myObj->Id = $Id;
         $myObj->Nome = $Nome;
@@ -140,7 +139,6 @@ class Bandas extends \yii\db\ActiveRecord
         $myObj->Contacto = $Contacto;
         $myObj->Logo = $Logo;
         $myObj->Removida = $Removida;
-        $myObj->IdListaMusica = $IdListaMusica;
         $myJSON = json_encode($myObj);
         if ($insert)
             $this->FazPublish("INSERT", $myJSON);
