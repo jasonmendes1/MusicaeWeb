@@ -10,9 +10,7 @@ use yii\widgets\ActiveForm;
 
 <div class="bandas-form">
 
-    <?php $form = ActiveForm::begin();
-    $model->Removida = 0;
-    ?>
+    <?php $form = ActiveForm::begin(); ?>
 
     <?= $form->field($model, 'Nome')->textInput(['maxlength' => true]) ?>
 
@@ -24,7 +22,9 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'Logo')->textInput() ?>
 
-    <?= $form->field($model, 'Removida')->textInput(['readonly' => true]) ?>
+    <?= $form->field($model, 'Removida')->textInput() ?>
+
+    <?= $form->field($model, 'IdGenero')->textInput() ?>
 
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>

@@ -10,18 +10,16 @@ use Yii;
  * @property int $Id
  * @property string $NivelCompromisso
  * @property int $idProfile
+ * @property int $idHabilidade
+ * @property int $idGenero
  *
  * @property Bandamembros[] $bandamembros
  * @property Bandas[] $bandas
  * @property Bandashistorico[] $bandashistoricos
  * @property Bandas[] $bandas0
- * @property Listabandas[] $listabandas
- * @property Bandas[] $bandas1
- * @property Musicogenero[] $musicogeneros
- * @property Generos[] $generos
- * @property Musicohabilidade[] $musicohabilidades
- * @property Habilidades[] $habilidades
  * @property Profiles $profile
+ * @property Generos $genero
+ * @property Habilidades $habilidade
  */
 class Musicos extends \yii\db\ActiveRecord
 {
@@ -40,10 +38,12 @@ class Musicos extends \yii\db\ActiveRecord
     {
         return [
             [['NivelCompromisso'], 'string'],
-            [['idProfile'], 'required'],
-            [['idProfile'], 'integer'],
+            [['idProfile', 'idHabilidade', 'idGenero'], 'required'],
+            [['idProfile', 'idHabilidade', 'idGenero'], 'integer'],
             [['idProfile'], 'unique'],
             [['idProfile'], 'exist', 'skipOnError' => true, 'targetClass' => Profiles::className(), 'targetAttribute' => ['idProfile' => 'Id']],
+            [['idGenero'], 'exist', 'skipOnError' => true, 'targetClass' => Generos::className(), 'targetAttribute' => ['idGenero' => 'Id']],
+            [['idHabilidade'], 'exist', 'skipOnError' => true, 'targetClass' => Habilidades::className(), 'targetAttribute' => ['idHabilidade' => 'Id']],
         ];
     }
 
@@ -56,6 +56,8 @@ class Musicos extends \yii\db\ActiveRecord
             'Id' => 'ID',
             'NivelCompromisso' => 'Nivel Compromisso',
             'idProfile' => 'Id Profile',
+            'idHabilidade' => 'Id Habilidade',
+            'idGenero' => 'Id Genero',
         ];
     }
 
@@ -86,57 +88,9 @@ class Musicos extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getBandasHistorico()
+    public function getBandas0()
     {
         return $this->hasMany(Bandas::className(), ['Id' => 'IdBanda'])->viaTable('bandashistorico', ['IdMusico' => 'Id']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getListabandas()
-    {
-        return $this->hasMany(Listabandas::className(), ['IdMusico' => 'Id']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getBandasListaBandas()
-    {
-        return $this->hasMany(Bandas::className(), ['Id' => 'IdBanda'])->viaTable('listabandas', ['IdMusico' => 'Id']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getMusicogeneros()
-    {
-        return $this->hasMany(Musicogenero::className(), ['IdMusico' => 'Id']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getGeneros()
-    {
-        return $this->hasMany(Generos::className(), ['Id' => 'IdGenero'])->viaTable('musicogenero', ['IdMusico' => 'Id']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getMusicohabilidades()
-    {
-        return $this->hasMany(Musicohabilidade::className(), ['IdMusico' => 'Id']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getHabilidades()
-    {
-        return $this->hasMany(Habilidades::className(), ['Id' => 'IdHabilidade'])->viaTable('musicohabilidade', ['IdMusico' => 'Id']);
     }
 
     /**
@@ -145,5 +99,21 @@ class Musicos extends \yii\db\ActiveRecord
     public function getProfile()
     {
         return $this->hasOne(Profiles::className(), ['Id' => 'idProfile']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getGenero()
+    {
+        return $this->hasOne(Generos::className(), ['Id' => 'idGenero']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getHabilidade()
+    {
+        return $this->hasOne(Habilidades::className(), ['Id' => 'idHabilidade']);
     }
 }

@@ -4,20 +4,24 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model common\models\ListaFotosSearch */
+/* @var $model common\models\BandaHabilidadesSearch */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="lista-fotos-search">
+<div class="banda-habilidades-search">
 
     <?php $form = ActiveForm::begin([
         'action' => ['index'],
         'method' => 'get',
     ]); ?>
 
-    <?= $form->field($model, 'Id') ?>
+    <?= $form->field($model, 'IdBanda') ?>
 
-    <?= $form->field($model, 'Foto') ?>
+    <?= $form->field($model, 'IdHabilidade') ?>
+
+    <?= $form->field($model, 'experiencia') ?>
+
+    <?= $form->field($model, 'compromisso') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>

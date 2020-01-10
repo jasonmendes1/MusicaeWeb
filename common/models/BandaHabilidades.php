@@ -9,11 +9,13 @@ use Yii;
  *
  * @property int $IdBanda
  * @property int $IdHabilidade
+ * @property string $experiencia
+ * @property string $compromisso
  *
  * @property Bandas $banda
  * @property Habilidades $habilidade
  */
-class BandaHabilidades extends \yii\db\ActiveRecord
+class Bandahabilidades extends \yii\db\ActiveRecord
 {
     /**
      * {@inheritdoc}
@@ -29,8 +31,9 @@ class BandaHabilidades extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['IdBanda', 'IdHabilidade'], 'required'],
+            [['IdBanda', 'IdHabilidade', 'experiencia', 'compromisso'], 'required'],
             [['IdBanda', 'IdHabilidade'], 'integer'],
+            [['experiencia', 'compromisso'], 'string'],
             [['IdBanda', 'IdHabilidade'], 'unique', 'targetAttribute' => ['IdBanda', 'IdHabilidade']],
             [['IdBanda'], 'exist', 'skipOnError' => true, 'targetClass' => Bandas::className(), 'targetAttribute' => ['IdBanda' => 'Id']],
             [['IdHabilidade'], 'exist', 'skipOnError' => true, 'targetClass' => Habilidades::className(), 'targetAttribute' => ['IdHabilidade' => 'Id']],
@@ -45,6 +48,8 @@ class BandaHabilidades extends \yii\db\ActiveRecord
         return [
             'IdBanda' => 'Id Banda',
             'IdHabilidade' => 'Id Habilidade',
+            'experiencia' => 'Experiencia',
+            'compromisso' => 'Compromisso',
         ];
     }
 

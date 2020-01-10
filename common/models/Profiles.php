@@ -16,8 +16,7 @@ use Yii;
  * @property string $Localidade
  * @property int $IdUser
  *
- * @property Industrias[] $industrias
- * @property Musicos[] $musicos
+ * @property Musicos $musicos
  * @property User $user
  */
 class Profiles extends \yii\db\ActiveRecord
@@ -66,14 +65,6 @@ class Profiles extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getIndustrias()
-    {
-        return $this->hasOne(Industrias::className(), ['IdProfile' => 'Id']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
     public function getMusicos()
     {
         return $this->hasOne(Musicos::className(), ['idProfile' => 'Id']);
@@ -85,10 +76,5 @@ class Profiles extends \yii\db\ActiveRecord
     public function getUser()
     {
         return $this->hasOne(User::className(), ['id' => 'IdUser']);
-    }
-
-    public function fields()
-    {
-        return ['Nome', 'IdUser'];
     }
 }

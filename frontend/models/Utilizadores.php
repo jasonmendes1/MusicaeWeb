@@ -58,20 +58,4 @@ class Utilizadores extends \yii\db\ActiveRecord
             'Experiencia' => 'Experiencia',
         ];
     }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getIndustrias()
-    {
-        return $this->hasOne(Industrias::className(), ['ID' => 'ID']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getMusicos()
-    {
-        return $this->hasOne(Musicos::className(), ['ID' => 'ID']);
-    }
 }

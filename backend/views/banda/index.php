@@ -33,7 +33,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'Contacto',
             //'Logo',
             //'Removida',
-            //'IdListaMusica',
+            //'IdGenero',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

@@ -10,10 +10,7 @@ use Yii;
  * @property int $Id
  * @property string $Nome
  *
- * @property Bandagenero[] $bandageneros
  * @property Bandas[] $bandas
- * @property Industrias[] $industrias
- * @property Musicogenero[] $musicogeneros
  * @property Musicos[] $musicos
  */
 class Generos extends \yii\db\ActiveRecord
@@ -51,33 +48,9 @@ class Generos extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getBandageneros()
-    {
-        return $this->hasMany(Bandagenero::className(), ['IdGenero' => 'Id']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
     public function getBandas()
     {
-        return $this->hasMany(Bandas::className(), ['Id' => 'IdBanda'])->viaTable('bandagenero', ['IdGenero' => 'Id']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getIndustrias()
-    {
-        return $this->hasMany(Industrias::className(), ['IdGenero' => 'Id']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getMusicogeneros()
-    {
-        return $this->hasMany(Musicogenero::className(), ['IdGenero' => 'Id']);
+        return $this->hasMany(Bandas::className(), ['IdGenero' => 'Id']);
     }
 
     /**
@@ -85,6 +58,6 @@ class Generos extends \yii\db\ActiveRecord
      */
     public function getMusicos()
     {
-        return $this->hasMany(Musicos::className(), ['Id' => 'IdMusico'])->viaTable('musicogenero', ['IdGenero' => 'Id']);
+        return $this->hasMany(Musicos::className(), ['idGenero' => 'Id']);
     }
 }

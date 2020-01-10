@@ -18,6 +18,7 @@ class BandaHabilidadesSearch extends BandaHabilidades
     {
         return [
             [['IdBanda', 'IdHabilidade'], 'integer'],
+            [['experiencia', 'compromisso'], 'safe'],
         ];
     }
 
@@ -60,6 +61,9 @@ class BandaHabilidadesSearch extends BandaHabilidades
             'IdBanda' => $this->IdBanda,
             'IdHabilidade' => $this->IdHabilidade,
         ]);
+
+        $query->andFilterWhere(['like', 'experiencia', $this->experiencia])
+            ->andFilterWhere(['like', 'compromisso', $this->compromisso]);
 
         return $dataProvider;
     }

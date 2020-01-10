@@ -29,7 +29,7 @@ use yii\widgets\ActiveForm;
 
     <?php // echo $form->field($model, 'Removida') ?>
 
-    <?php // echo $form->field($model, 'IdListaMusica') ?>
+    <?php // echo $form->field($model, 'IdGenero') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>

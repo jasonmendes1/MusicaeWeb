@@ -23,25 +23,6 @@ class UserController extends ActiveController
         return ['total' => count($recs)];
     }
 
-    // public function actionVerifica($user, $pw)
-    // {
-    //     $userModel = new $this->modelClass;
-    //     if (!($userModel::find()->where("username=" . '\'' . $user . '\'')->one())) {
-    //         return ['id' => -1];
-    //     }
-    //     // Token.
-    //     $key = "tHeApAcHe6410111";
-    //     $pw .= "==";
-    //     $dec = openssl_decrypt(base64_decode($pw), "aes-128-ecb", $key, OPENSSL_RAW_DATA);
-
-    //     $rec = $userModel::find()->where("username=" . '\'' . $user . '\'')->one();
-    //     if ($rec->validatePassword($dec)) {
-    //         return ['id' => $rec->id];
-    //     } else {
-    //         return ['id' => -1];
-    //     }
-    // }
-
     public function actionVerifica()
     {
         //Authorization: Basic Auth

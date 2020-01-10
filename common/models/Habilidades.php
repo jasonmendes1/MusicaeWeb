@@ -12,7 +12,6 @@ use Yii;
  *
  * @property Bandahabilidades[] $bandahabilidades
  * @property Bandas[] $bandas
- * @property Musicohabilidade[] $musicohabilidades
  * @property Musicos[] $musicos
  */
 class Habilidades extends \yii\db\ActiveRecord
@@ -66,16 +65,8 @@ class Habilidades extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getMusicohabilidades()
-    {
-        return $this->hasMany(Musicohabilidade::className(), ['IdHabilidade' => 'Id']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
     public function getMusicos()
     {
-        return $this->hasMany(Musicos::className(), ['Id' => 'IdMusico'])->viaTable('musicohabilidade', ['IdHabilidade' => 'Id']);
+        return $this->hasMany(Musicos::className(), ['idHabilidade' => 'Id']);
     }
 }

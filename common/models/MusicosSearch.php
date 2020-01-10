@@ -17,7 +17,7 @@ class MusicosSearch extends Musicos
     public function rules()
     {
         return [
-            [['Id', 'idProfile'], 'integer'],
+            [['Id', 'idProfile', 'idHabilidade', 'idGenero'], 'integer'],
             [['NivelCompromisso'], 'safe'],
         ];
     }
@@ -60,6 +60,8 @@ class MusicosSearch extends Musicos
         $query->andFilterWhere([
             'Id' => $this->Id,
             'idProfile' => $this->idProfile,
+            'idHabilidade' => $this->idHabilidade,
+            'idGenero' => $this->idGenero,
         ]);
 
         $query->andFilterWhere(['like', 'NivelCompromisso', $this->NivelCompromisso]);

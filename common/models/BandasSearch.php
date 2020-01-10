@@ -17,7 +17,7 @@ class BandasSearch extends Bandas
     public function rules()
     {
         return [
-            [['Id', 'Removida', 'IdListaMusica'], 'integer'],
+            [['Id', 'Removida', 'IdGenero'], 'integer'],
             [['Nome', 'Descricao', 'Localizacao', 'Contacto', 'Logo'], 'safe'],
         ];
     }
@@ -60,7 +60,7 @@ class BandasSearch extends Bandas
         $query->andFilterWhere([
             'Id' => $this->Id,
             'Removida' => $this->Removida,
-            'IdListaMusica' => $this->IdListaMusica,
+            'IdGenero' => $this->IdGenero,
         ]);
 
         $query->andFilterWhere(['like', 'Nome', $this->Nome])
