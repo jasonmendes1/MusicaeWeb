@@ -8835,27 +8835,91 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1576251764.076
     'REQUEST_TIME' => 1576251764
 ]
-2020-01-07 10:24:34 [::1][-][tt85tbobgse3clifo5sidtaiu6][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "web/images/logotipoIcon.png". in C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Module.php:537
+2020-01-09 11:25:53 [::1][-][c3nqep66sfk4l906n41lb16t74][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/bandas in C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\base\Controller.php:128
 Stack trace:
-#0 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('web/images/logo...', Array)
-#1 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
-#2 C:\wamp64\www\MusicaeWeb\frontend\web\index.php(17): yii\base\Application->run()
+#0 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('bandas', Array)
+#1 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/bandas', Array)
+#2 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\wamp64\www\ya\MusicaeWeb\frontend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\ya\MusicaeWeb\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2020-01-09 11:25:53 [::1][-][c3nqep66sfk4l906n41lb16t74][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'frontend.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7,gl;q=0.6'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Bitvise SSH Client;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.37 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Win64) PHP/7.0.33'
+    'SERVER_NAME' => 'frontend.test'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/ya/MusicaeWeb/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/ya/MusicaeWeb/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/ya/MusicaeWeb/frontend/web/index.php'
+    'REMOTE_PORT' => '51545'
+    'REDIRECT_URL' => '/site/bandas'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/bandas'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1578569153.612
+    'REQUEST_TIME' => 1578569153
+]
+2020-01-09 11:25:54 [::1][-][c3nqep66sfk4l906n41lb16t74][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "web/images/logotipoIcon.png". in C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('web/images/logo...', Array)
+#1 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\ya\MusicaeWeb\frontend\web\index.php(17): yii\base\Application->run()
 #3 {main}
 
-Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\web\Application.php:115
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\web\Application.php:115
 Stack trace:
-#0 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
-#1 C:\wamp64\www\MusicaeWeb\frontend\web\index.php(17): yii\base\Application->run()
+#0 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\ya\MusicaeWeb\frontend\web\index.php(17): yii\base\Application->run()
 #2 {main}
-2020-01-07 10:24:34 [::1][-][tt85tbobgse3clifo5sidtaiu6][info][application] $_GET = []
+2020-01-09 11:25:54 [::1][-][c3nqep66sfk4l906n41lb16t74][info][application] $_GET = []
 
 $_POST = []
 
 $_FILES = []
 
 $_COOKIE = [
-    'advanced-frontend' => 'tt85tbobgse3clifo5sidtaiu6'
-    '_csrf-frontend' => '86f1f3beb78b634148f159424ce870d76b015e3cabc0794fd2fb2e50827e57fba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"6GouAkK141vo109FI1HE6-6zcPfiAMBk\";}'
+    'advanced-frontend' => 'c3nqep66sfk4l906n41lb16t74'
+    '_csrf-frontend' => 'a2f8939ae12dcae2c1d76acabbfa67036c2cabb6129923e2c602fc6db59afa82a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"aV9HE89-TN6wWJIiI916ma9qnKz1I2bs\";}'
 ]
 
 $_SESSION = [
@@ -8868,29 +8932,29 @@ $_SERVER = [
     'HTTP_CONNECTION' => 'keep-alive'
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36'
     'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
-    'HTTP_REFERER' => 'http://frontend.test/site/login'
+    'HTTP_REFERER' => 'http://frontend.test/site/bandas'
     'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
-    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
-    'HTTP_COOKIE' => 'advanced-frontend=tt85tbobgse3clifo5sidtaiu6; _csrf-frontend=86f1f3beb78b634148f159424ce870d76b015e3cabc0794fd2fb2e50827e57fba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%226GouAkK141vo109FI1HE6-6zcPfiAMBk%22%3B%7D'
-    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\PuTTY\\;C:\\PostgreSQL\\pg11\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php5.6.38;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Pedro Lopes\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Pedro Lopes\\.dotnet\\tools'
-    'SystemRoot' => 'C:\\Windows'
-    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7,gl;q=0.6'
+    'HTTP_COOKIE' => 'advanced-frontend=c3nqep66sfk4l906n41lb16t74; _csrf-frontend=a2f8939ae12dcae2c1d76acabbfa67036c2cabb6129923e2c602fc6db59afa82a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22aV9HE89-TN6wWJIiI916ma9qnKz1I2bs%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Bitvise SSH Client;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
     'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
-    'WINDIR' => 'C:\\Windows'
-    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.37 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
 '
-    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.0.33'
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Win64) PHP/7.0.33'
     'SERVER_NAME' => 'frontend.test'
     'SERVER_ADDR' => '::1'
     'SERVER_PORT' => '80'
     'REMOTE_ADDR' => '::1'
-    'DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/ya/MusicaeWeb/frontend/web'
     'REQUEST_SCHEME' => 'http'
     'CONTEXT_PREFIX' => ''
-    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/ya/MusicaeWeb/frontend/web'
     'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
-    'SCRIPT_FILENAME' => 'C:/wamp64/www/MusicaeWeb/frontend/web/index.php'
-    'REMOTE_PORT' => '54401'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/ya/MusicaeWeb/frontend/web/index.php'
+    'REMOTE_PORT' => '51548'
     'REDIRECT_URL' => '/web/images/logotipoIcon.png'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
@@ -8899,30 +8963,31 @@ $_SERVER = [
     'REQUEST_URI' => '/web/images/logotipoIcon.png'
     'SCRIPT_NAME' => '/index.php'
     'PHP_SELF' => '/index.php'
-    'REQUEST_TIME_FLOAT' => 1578392674.344
-    'REQUEST_TIME' => 1578392674
+    'REQUEST_TIME_FLOAT' => 1578569153.998
+    'REQUEST_TIME' => 1578569153
 ]
-2020-01-09 11:35:45 [::1][-][nd5k0edi20l7g2gbna0er6t5c6][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "web/images/logotipoIcon.png". in C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Module.php:537
+2020-01-09 11:25:55 [::1][-][c3nqep66sfk4l906n41lb16t74][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/banda in C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\base\Controller.php:128
 Stack trace:
-#0 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('web/images/logo...', Array)
-#1 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
-#2 C:\wamp64\www\MusicaeWeb\frontend\web\index.php(17): yii\base\Application->run()
-#3 {main}
+#0 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('banda', Array)
+#1 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/banda', Array)
+#2 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\wamp64\www\ya\MusicaeWeb\frontend\web\index.php(17): yii\base\Application->run()
+#4 {main}
 
-Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\web\Application.php:115
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\web\Application.php:115
 Stack trace:
-#0 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
-#1 C:\wamp64\www\MusicaeWeb\frontend\web\index.php(17): yii\base\Application->run()
+#0 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\ya\MusicaeWeb\frontend\web\index.php(17): yii\base\Application->run()
 #2 {main}
-2020-01-09 11:35:45 [::1][-][nd5k0edi20l7g2gbna0er6t5c6][info][application] $_GET = []
+2020-01-09 11:25:55 [::1][-][c3nqep66sfk4l906n41lb16t74][info][application] $_GET = []
 
 $_POST = []
 
 $_FILES = []
 
 $_COOKIE = [
-    'advanced-frontend' => 'nd5k0edi20l7g2gbna0er6t5c6'
-    '_csrf-frontend' => 'f9497f80e41bf208294a765a291700e572f65cf72b61495d90f4f6623b987e4ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"s1qpAJBAhG-cuImQf0I8nNcxfACl4BTZ\";}'
+    'advanced-frontend' => 'c3nqep66sfk4l906n41lb16t74'
+    '_csrf-frontend' => 'a2f8939ae12dcae2c1d76acabbfa67036c2cabb6129923e2c602fc6db59afa82a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"aV9HE89-TN6wWJIiI916ma9qnKz1I2bs\";}'
 ]
 
 $_SESSION = [
@@ -8933,215 +8998,63 @@ $_SERVER = [
     'REDIRECT_STATUS' => '200'
     'HTTP_HOST' => 'frontend.test'
     'HTTP_CONNECTION' => 'keep-alive'
-    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36'
-    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
-    'HTTP_REFERER' => 'http://frontend.test/site/login'
-    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
-    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
-    'HTTP_COOKIE' => 'advanced-frontend=nd5k0edi20l7g2gbna0er6t5c6; _csrf-frontend=f9497f80e41bf208294a765a291700e572f65cf72b61495d90f4f6623b987e4ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22s1qpAJBAhG-cuImQf0I8nNcxfACl4BTZ%22%3B%7D'
-    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\PuTTY\\;C:\\PostgreSQL\\pg11\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php5.6.38;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Pedro Lopes\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Pedro Lopes\\.dotnet\\tools'
-    'SystemRoot' => 'C:\\Windows'
-    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
-    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
-    'WINDIR' => 'C:\\Windows'
-    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
-'
-    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.0.33'
-    'SERVER_NAME' => 'frontend.test'
-    'SERVER_ADDR' => '::1'
-    'SERVER_PORT' => '80'
-    'REMOTE_ADDR' => '::1'
-    'DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
-    'REQUEST_SCHEME' => 'http'
-    'CONTEXT_PREFIX' => ''
-    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
-    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
-    'SCRIPT_FILENAME' => 'C:/wamp64/www/MusicaeWeb/frontend/web/index.php'
-    'REMOTE_PORT' => '56636'
-    'REDIRECT_URL' => '/web/images/logotipoIcon.png'
-    'GATEWAY_INTERFACE' => 'CGI/1.1'
-    'SERVER_PROTOCOL' => 'HTTP/1.1'
-    'REQUEST_METHOD' => 'GET'
-    'QUERY_STRING' => ''
-    'REQUEST_URI' => '/web/images/logotipoIcon.png'
-    'SCRIPT_NAME' => '/index.php'
-    'PHP_SELF' => '/index.php'
-    'REQUEST_TIME_FLOAT' => 1578569745.152
-    'REQUEST_TIME' => 1578569745
-]
-2020-01-09 14:30:06 [::1][-][9d0t0s5q226503eftgrb0v0017][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "web/images/logotipoIcon.png". in C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Module.php:537
-Stack trace:
-#0 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('web/images/logo...', Array)
-#1 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
-#2 C:\wamp64\www\MusicaeWeb\frontend\web\index.php(17): yii\base\Application->run()
-#3 {main}
-
-Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\web\Application.php:115
-Stack trace:
-#0 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
-#1 C:\wamp64\www\MusicaeWeb\frontend\web\index.php(17): yii\base\Application->run()
-#2 {main}
-2020-01-09 14:30:06 [::1][-][9d0t0s5q226503eftgrb0v0017][info][application] $_GET = []
-
-$_POST = []
-
-$_FILES = []
-
-$_COOKIE = [
-    'advanced-frontend' => '9d0t0s5q226503eftgrb0v0017'
-    '_csrf-frontend' => 'a5bc80b4f81f6af145e4ef2033595785dfb2d3d6864c579c92bea56cf2e4cf25a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"1QMdaeSQxf0PByPaBZ-1D-uBgmoH3OdR\";}'
-]
-
-$_SESSION = [
-    '__flash' => []
-]
-
-$_SERVER = [
-    'REDIRECT_STATUS' => '200'
-    'HTTP_HOST' => 'frontend.test'
-    'HTTP_CONNECTION' => 'keep-alive'
-    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36'
-    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
-    'HTTP_REFERER' => 'http://frontend.test/'
-    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
-    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
-    'HTTP_COOKIE' => 'advanced-frontend=9d0t0s5q226503eftgrb0v0017; _csrf-frontend=a5bc80b4f81f6af145e4ef2033595785dfb2d3d6864c579c92bea56cf2e4cf25a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%221QMdaeSQxf0PByPaBZ-1D-uBgmoH3OdR%22%3B%7D'
-    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\PuTTY\\;C:\\PostgreSQL\\pg11\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php5.6.38;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Pedro Lopes\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Pedro Lopes\\.dotnet\\tools'
-    'SystemRoot' => 'C:\\Windows'
-    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
-    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
-    'WINDIR' => 'C:\\Windows'
-    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
-'
-    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.0.33'
-    'SERVER_NAME' => 'frontend.test'
-    'SERVER_ADDR' => '::1'
-    'SERVER_PORT' => '80'
-    'REMOTE_ADDR' => '::1'
-    'DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
-    'REQUEST_SCHEME' => 'http'
-    'CONTEXT_PREFIX' => ''
-    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
-    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
-    'SCRIPT_FILENAME' => 'C:/wamp64/www/MusicaeWeb/frontend/web/index.php'
-    'REMOTE_PORT' => '58160'
-    'REDIRECT_URL' => '/web/images/logotipoIcon.png'
-    'GATEWAY_INTERFACE' => 'CGI/1.1'
-    'SERVER_PROTOCOL' => 'HTTP/1.1'
-    'REQUEST_METHOD' => 'GET'
-    'QUERY_STRING' => ''
-    'REQUEST_URI' => '/web/images/logotipoIcon.png'
-    'SCRIPT_NAME' => '/index.php'
-    'PHP_SELF' => '/index.php'
-    'REQUEST_TIME_FLOAT' => 1578580206.03
-    'REQUEST_TIME' => 1578580206
-]
-2020-01-09 14:30:10 [::1][-][9d0t0s5q226503eftgrb0v0017][error][Error] Error: Call to undefined method common\models\User::findByUsername() in C:\wamp64\www\MusicaeWeb\common\models\LoginForm.php:73
-Stack trace:
-#0 C:\wamp64\www\MusicaeWeb\common\models\LoginForm.php(44): common\models\LoginForm->getUser()
-#1 [internal function]: common\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator))
-#2 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\validators\InlineValidator.php(72): call_user_func(Array, 'password', NULL, Object(yii\validators\InlineValidator))
-#3 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\validators\Validator.php(257): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
-#4 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
-#5 C:\wamp64\www\MusicaeWeb\common\models\LoginForm.php(58): yii\base\Model->validate()
-#6 C:\wamp64\www\MusicaeWeb\frontend\controllers\SiteController.php(92): common\models\LoginForm->login()
-#7 [internal function]: frontend\controllers\SiteController->actionLogin()
-#8 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
-#9 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
-#10 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('login', Array)
-#11 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
-#12 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
-#13 C:\wamp64\www\MusicaeWeb\frontend\web\index.php(17): yii\base\Application->run()
-#14 {main}
-2020-01-09 14:30:10 [::1][-][9d0t0s5q226503eftgrb0v0017][info][application] $_GET = []
-
-$_POST = [
-    '_csrf-frontend' => 'L4PKONjV4JBsJ1beYWZGYQjTvV9Vr5gHI5ccg00NWUYe0odcubCzwRRBZo4jHxYASomQbhGC7UVE-nPLfkI9FA=='
-    'LoginForm' => [
-        'username' => 'pedro'
-        'password' => '123456'
-        'rememberMe' => '1'
-    ]
-    'login-button' => ''
-]
-
-$_FILES = []
-
-$_COOKIE = [
-    'advanced-frontend' => '9d0t0s5q226503eftgrb0v0017'
-    '_csrf-frontend' => 'a5bc80b4f81f6af145e4ef2033595785dfb2d3d6864c579c92bea56cf2e4cf25a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"1QMdaeSQxf0PByPaBZ-1D-uBgmoH3OdR\";}'
-]
-
-$_SESSION = [
-    '__flash' => []
-]
-
-$_SERVER = [
-    'REDIRECT_STATUS' => '200'
-    'HTTP_HOST' => 'frontend.test'
-    'HTTP_CONNECTION' => 'keep-alive'
-    'CONTENT_LENGTH' => '238'
-    'HTTP_CACHE_CONTROL' => 'max-age=0'
-    'HTTP_ORIGIN' => 'http://frontend.test'
     'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
-    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
-    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
-    'HTTP_REFERER' => 'http://frontend.test/site/login'
     'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
-    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
-    'HTTP_COOKIE' => 'advanced-frontend=9d0t0s5q226503eftgrb0v0017; _csrf-frontend=a5bc80b4f81f6af145e4ef2033595785dfb2d3d6864c579c92bea56cf2e4cf25a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%221QMdaeSQxf0PByPaBZ-1D-uBgmoH3OdR%22%3B%7D'
-    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\PuTTY\\;C:\\PostgreSQL\\pg11\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php5.6.38;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Pedro Lopes\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Pedro Lopes\\.dotnet\\tools'
-    'SystemRoot' => 'C:\\Windows'
-    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7,gl;q=0.6'
+    'HTTP_COOKIE' => 'advanced-frontend=c3nqep66sfk4l906n41lb16t74; _csrf-frontend=a2f8939ae12dcae2c1d76acabbfa67036c2cabb6129923e2c602fc6db59afa82a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22aV9HE89-TN6wWJIiI916ma9qnKz1I2bs%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Bitvise SSH Client;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
     'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
-    'WINDIR' => 'C:\\Windows'
-    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.37 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
 '
-    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.0.33'
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Win64) PHP/7.0.33'
     'SERVER_NAME' => 'frontend.test'
     'SERVER_ADDR' => '::1'
     'SERVER_PORT' => '80'
     'REMOTE_ADDR' => '::1'
-    'DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/ya/MusicaeWeb/frontend/web'
     'REQUEST_SCHEME' => 'http'
     'CONTEXT_PREFIX' => ''
-    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/ya/MusicaeWeb/frontend/web'
     'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
-    'SCRIPT_FILENAME' => 'C:/wamp64/www/MusicaeWeb/frontend/web/index.php'
-    'REMOTE_PORT' => '58163'
-    'REDIRECT_URL' => '/site/login'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/ya/MusicaeWeb/frontend/web/index.php'
+    'REMOTE_PORT' => '51548'
+    'REDIRECT_URL' => '/site/banda'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
-    'REQUEST_METHOD' => 'POST'
+    'REQUEST_METHOD' => 'GET'
     'QUERY_STRING' => ''
-    'REQUEST_URI' => '/site/login'
+    'REQUEST_URI' => '/site/banda'
     'SCRIPT_NAME' => '/index.php'
     'PHP_SELF' => '/index.php'
-    'REQUEST_TIME_FLOAT' => 1578580210.931
-    'REQUEST_TIME' => 1578580210
+    'REQUEST_TIME_FLOAT' => 1578569155.27
+    'REQUEST_TIME' => 1578569155
 ]
-2020-01-09 14:33:43 [::1][-][9d0t0s5q226503eftgrb0v0017][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "web/images/logotipoIcon.png". in C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Module.php:537
+2020-01-09 11:25:59 [::1][-][c3nqep66sfk4l906n41lb16t74][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "banda". in C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\base\Module.php:537
 Stack trace:
-#0 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('web/images/logo...', Array)
-#1 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
-#2 C:\wamp64\www\MusicaeWeb\frontend\web\index.php(17): yii\base\Application->run()
+#0 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('banda', Array)
+#1 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\ya\MusicaeWeb\frontend\web\index.php(17): yii\base\Application->run()
 #3 {main}
 
-Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\web\Application.php:115
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\web\Application.php:115
 Stack trace:
-#0 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
-#1 C:\wamp64\www\MusicaeWeb\frontend\web\index.php(17): yii\base\Application->run()
+#0 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\ya\MusicaeWeb\frontend\web\index.php(17): yii\base\Application->run()
 #2 {main}
-2020-01-09 14:33:43 [::1][-][9d0t0s5q226503eftgrb0v0017][info][application] $_GET = []
+2020-01-09 11:25:59 [::1][-][c3nqep66sfk4l906n41lb16t74][info][application] $_GET = []
 
 $_POST = []
 
 $_FILES = []
 
 $_COOKIE = [
-    'advanced-frontend' => '9d0t0s5q226503eftgrb0v0017'
-    '_csrf-frontend' => 'a5bc80b4f81f6af145e4ef2033595785dfb2d3d6864c579c92bea56cf2e4cf25a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"1QMdaeSQxf0PByPaBZ-1D-uBgmoH3OdR\";}'
+    'advanced-frontend' => 'c3nqep66sfk4l906n41lb16t74'
+    '_csrf-frontend' => 'a2f8939ae12dcae2c1d76acabbfa67036c2cabb6129923e2c602fc6db59afa82a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"aV9HE89-TN6wWJIiI916ma9qnKz1I2bs\";}'
 ]
 
 $_SESSION = [
@@ -9152,31 +9065,165 @@ $_SERVER = [
     'REDIRECT_STATUS' => '200'
     'HTTP_HOST' => 'frontend.test'
     'HTTP_CONNECTION' => 'keep-alive'
-    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7,gl;q=0.6'
+    'HTTP_COOKIE' => 'advanced-frontend=c3nqep66sfk4l906n41lb16t74; _csrf-frontend=a2f8939ae12dcae2c1d76acabbfa67036c2cabb6129923e2c602fc6db59afa82a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22aV9HE89-TN6wWJIiI916ma9qnKz1I2bs%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Bitvise SSH Client;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.37 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Win64) PHP/7.0.33'
+    'SERVER_NAME' => 'frontend.test'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/ya/MusicaeWeb/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/ya/MusicaeWeb/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/ya/MusicaeWeb/frontend/web/index.php'
+    'REMOTE_PORT' => '51549'
+    'REDIRECT_URL' => '/banda'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/banda'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1578569159.06
+    'REQUEST_TIME' => 1578569159
+]
+2020-01-09 11:26:00 [::1][-][c3nqep66sfk4l906n41lb16t74][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "bandas". in C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('bandas', Array)
+#1 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\ya\MusicaeWeb\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\ya\MusicaeWeb\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2020-01-09 11:26:00 [::1][-][c3nqep66sfk4l906n41lb16t74][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'c3nqep66sfk4l906n41lb16t74'
+    '_csrf-frontend' => 'a2f8939ae12dcae2c1d76acabbfa67036c2cabb6129923e2c602fc6db59afa82a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"aV9HE89-TN6wWJIiI916ma9qnKz1I2bs\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'frontend.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7,gl;q=0.6'
+    'HTTP_COOKIE' => 'advanced-frontend=c3nqep66sfk4l906n41lb16t74; _csrf-frontend=a2f8939ae12dcae2c1d76acabbfa67036c2cabb6129923e2c602fc6db59afa82a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22aV9HE89-TN6wWJIiI916ma9qnKz1I2bs%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Bitvise SSH Client;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.37 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Win64) PHP/7.0.33'
+    'SERVER_NAME' => 'frontend.test'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/ya/MusicaeWeb/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/ya/MusicaeWeb/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/ya/MusicaeWeb/frontend/web/index.php'
+    'REMOTE_PORT' => '51548'
+    'REDIRECT_URL' => '/bandas'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/bandas'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1578569160.744
+    'REQUEST_TIME' => 1578569160
+]
+2020-01-09 15:38:09 [::1][-][c3nqep66sfk4l906n41lb16t74][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "web/images/logotipoIcon.png". in C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('web/images/logo...', Array)
+#1 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\ya\MusicaeWeb\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\ya\MusicaeWeb\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2020-01-09 15:38:09 [::1][-][c3nqep66sfk4l906n41lb16t74][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'c3nqep66sfk4l906n41lb16t74'
+    '_csrf-frontend' => 'a2f8939ae12dcae2c1d76acabbfa67036c2cabb6129923e2c602fc6db59afa82a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"aV9HE89-TN6wWJIiI916ma9qnKz1I2bs\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'frontend.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36'
     'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
     'HTTP_REFERER' => 'http://frontend.test/'
     'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
-    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
-    'HTTP_COOKIE' => 'advanced-frontend=9d0t0s5q226503eftgrb0v0017; _csrf-frontend=a5bc80b4f81f6af145e4ef2033595785dfb2d3d6864c579c92bea56cf2e4cf25a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%221QMdaeSQxf0PByPaBZ-1D-uBgmoH3OdR%22%3B%7D'
-    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\PuTTY\\;C:\\PostgreSQL\\pg11\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php5.6.38;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Pedro Lopes\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Pedro Lopes\\.dotnet\\tools'
-    'SystemRoot' => 'C:\\Windows'
-    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7,gl;q=0.6'
+    'HTTP_COOKIE' => 'advanced-frontend=c3nqep66sfk4l906n41lb16t74; _csrf-frontend=a2f8939ae12dcae2c1d76acabbfa67036c2cabb6129923e2c602fc6db59afa82a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22aV9HE89-TN6wWJIiI916ma9qnKz1I2bs%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Bitvise SSH Client;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
     'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
-    'WINDIR' => 'C:\\Windows'
-    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.37 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
 '
-    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.0.33'
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Win64) PHP/7.0.33'
     'SERVER_NAME' => 'frontend.test'
     'SERVER_ADDR' => '::1'
     'SERVER_PORT' => '80'
     'REMOTE_ADDR' => '::1'
-    'DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/ya/MusicaeWeb/frontend/web'
     'REQUEST_SCHEME' => 'http'
     'CONTEXT_PREFIX' => ''
-    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/ya/MusicaeWeb/frontend/web'
     'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
-    'SCRIPT_FILENAME' => 'C:/wamp64/www/MusicaeWeb/frontend/web/index.php'
-    'REMOTE_PORT' => '58223'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/ya/MusicaeWeb/frontend/web/index.php'
+    'REMOTE_PORT' => '54602'
     'REDIRECT_URL' => '/web/images/logotipoIcon.png'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
@@ -9185,43 +9232,44 @@ $_SERVER = [
     'REQUEST_URI' => '/web/images/logotipoIcon.png'
     'SCRIPT_NAME' => '/index.php'
     'PHP_SELF' => '/index.php'
-    'REQUEST_TIME_FLOAT' => 1578580423.828
-    'REQUEST_TIME' => 1578580423
+    'REQUEST_TIME_FLOAT' => 1578584289.087
+    'REQUEST_TIME' => 1578584289
 ]
-2020-01-09 14:33:52 [::1][-][9d0t0s5q226503eftgrb0v0017][error][Error] Error: Call to undefined method common\models\User::findByUsername() in C:\wamp64\www\MusicaeWeb\common\models\LoginForm.php:73
+2020-01-09 15:38:20 [::1][-][c3nqep66sfk4l906n41lb16t74][error][yii\base\InvalidCallException] yii\base\InvalidCallException: Getting write-only property: common\models\User::password in C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\base\Component.php:151
 Stack trace:
-#0 C:\wamp64\www\MusicaeWeb\common\models\LoginForm.php(44): common\models\LoginForm->getUser()
-#1 [internal function]: common\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator))
-#2 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\validators\InlineValidator.php(72): call_user_func(Array, 'password', NULL, Object(yii\validators\InlineValidator))
-#3 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\validators\Validator.php(257): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
-#4 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
-#5 C:\wamp64\www\MusicaeWeb\common\models\LoginForm.php(58): yii\base\Model->validate()
-#6 C:\wamp64\www\MusicaeWeb\frontend\controllers\SiteController.php(92): common\models\LoginForm->login()
-#7 [internal function]: frontend\controllers\SiteController->actionLogin()
-#8 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
-#9 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
-#10 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('login', Array)
-#11 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
-#12 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
-#13 C:\wamp64\www\MusicaeWeb\frontend\web\index.php(17): yii\base\Application->run()
-#14 {main}
-2020-01-09 14:33:52 [::1][-][9d0t0s5q226503eftgrb0v0017][info][application] $_GET = []
+#0 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\db\BaseActiveRecord.php(298): yii\base\Component->__get('password')
+#1 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\validators\Validator.php(303): yii\db\BaseActiveRecord->__get('password')
+#2 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\validators\Validator.php(257): yii\validators\Validator->validateAttribute(Object(common\models\User), 'password')
+#3 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(common\models\User), Array)
+#4 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\db\ActiveRecord.php(560): yii\base\Model->validate(Array)
+#5 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 C:\wamp64\www\ya\MusicaeWeb\frontend\models\SignupForm.php(57): yii\db\BaseActiveRecord->save()
+#7 C:\wamp64\www\ya\MusicaeWeb\frontend\controllers\SiteController.php(177): frontend\models\SignupForm->signup()
+#8 [internal function]: frontend\controllers\SiteController->actionSignup()
+#9 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#10 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#12 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#13 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\wamp64\www\ya\MusicaeWeb\frontend\web\index.php(17): yii\base\Application->run()
+#15 {main}
+2020-01-09 15:38:19 [::1][-][c3nqep66sfk4l906n41lb16t74][info][application] $_GET = []
 
 $_POST = [
-    '_csrf-frontend' => '5jsR4sxdiFKSA9H9dP-kB7l8BqtgVpftN2bHjf1b13zXalyGrTjbA-pl4a02hvRm-yYrmiR74q9QC6jFzhSzLg=='
-    'LoginForm' => [
-        'username' => 'pedro'
+    '_csrf-frontend' => '75Hu-xv0Vt9gattqrSgdmtXDLkkMvEwvfGqgrwZPoV6Ox9ezXsxv8jQk7R36YlTznPoff2HddV4SIdqeT33DLQ=='
+    'SignupForm' => [
+        'username' => 'jason'
+        'email' => '123@asd.com'
         'password' => '123456'
-        'rememberMe' => '1'
     ]
-    'login-button' => ''
+    'signup-button' => ''
 ]
 
 $_FILES = []
 
 $_COOKIE = [
-    'advanced-frontend' => '9d0t0s5q226503eftgrb0v0017'
-    '_csrf-frontend' => 'a5bc80b4f81f6af145e4ef2033595785dfb2d3d6864c579c92bea56cf2e4cf25a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"1QMdaeSQxf0PByPaBZ-1D-uBgmoH3OdR\";}'
+    'advanced-frontend' => 'c3nqep66sfk4l906n41lb16t74'
+    '_csrf-frontend' => 'a2f8939ae12dcae2c1d76acabbfa67036c2cabb6129923e2c602fc6db59afa82a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"aV9HE89-TN6wWJIiI916ma9qnKz1I2bs\";}'
 ]
 
 $_SESSION = [
@@ -9232,166 +9280,82 @@ $_SERVER = [
     'REDIRECT_STATUS' => '200'
     'HTTP_HOST' => 'frontend.test'
     'HTTP_CONNECTION' => 'keep-alive'
-    'CONTENT_LENGTH' => '238'
+    'CONTENT_LENGTH' => '221'
     'HTTP_CACHE_CONTROL' => 'max-age=0'
     'HTTP_ORIGIN' => 'http://frontend.test'
     'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
     'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
-    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
-    'HTTP_REFERER' => 'http://frontend.test/site/login'
+    'HTTP_REFERER' => 'http://frontend.test/site/signup'
     'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
-    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
-    'HTTP_COOKIE' => 'advanced-frontend=9d0t0s5q226503eftgrb0v0017; _csrf-frontend=a5bc80b4f81f6af145e4ef2033595785dfb2d3d6864c579c92bea56cf2e4cf25a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%221QMdaeSQxf0PByPaBZ-1D-uBgmoH3OdR%22%3B%7D'
-    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\PuTTY\\;C:\\PostgreSQL\\pg11\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php5.6.38;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Pedro Lopes\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Pedro Lopes\\.dotnet\\tools'
-    'SystemRoot' => 'C:\\Windows'
-    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7,gl;q=0.6'
+    'HTTP_COOKIE' => 'advanced-frontend=c3nqep66sfk4l906n41lb16t74; _csrf-frontend=a2f8939ae12dcae2c1d76acabbfa67036c2cabb6129923e2c602fc6db59afa82a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22aV9HE89-TN6wWJIiI916ma9qnKz1I2bs%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Bitvise SSH Client;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
     'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
-    'WINDIR' => 'C:\\Windows'
-    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.37 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
 '
-    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.0.33'
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Win64) PHP/7.0.33'
     'SERVER_NAME' => 'frontend.test'
     'SERVER_ADDR' => '::1'
     'SERVER_PORT' => '80'
     'REMOTE_ADDR' => '::1'
-    'DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/ya/MusicaeWeb/frontend/web'
     'REQUEST_SCHEME' => 'http'
     'CONTEXT_PREFIX' => ''
-    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/ya/MusicaeWeb/frontend/web'
     'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
-    'SCRIPT_FILENAME' => 'C:/wamp64/www/MusicaeWeb/frontend/web/index.php'
-    'REMOTE_PORT' => '58224'
-    'REDIRECT_URL' => '/site/login'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/ya/MusicaeWeb/frontend/web/index.php'
+    'REMOTE_PORT' => '54605'
+    'REDIRECT_URL' => '/site/signup'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
     'REQUEST_METHOD' => 'POST'
     'QUERY_STRING' => ''
-    'REQUEST_URI' => '/site/login'
+    'REQUEST_URI' => '/site/signup'
     'SCRIPT_NAME' => '/index.php'
     'PHP_SELF' => '/index.php'
-    'REQUEST_TIME_FLOAT' => 1578580432.685
-    'REQUEST_TIME' => 1578580432
+    'REQUEST_TIME_FLOAT' => 1578584299.841
+    'REQUEST_TIME' => 1578584299
 ]
-2020-01-09 14:34:02 [::1][-][9d0t0s5q226503eftgrb0v0017][error][Error] Error: Call to undefined method common\models\User::findByUsername() in C:\wamp64\www\MusicaeWeb\common\models\LoginForm.php:73
+2020-01-09 15:38:35 [::1][-][c3nqep66sfk4l906n41lb16t74][error][yii\base\InvalidCallException] yii\base\InvalidCallException: Getting write-only property: common\models\User::password in C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\base\Component.php:151
 Stack trace:
-#0 C:\wamp64\www\MusicaeWeb\common\models\LoginForm.php(44): common\models\LoginForm->getUser()
-#1 [internal function]: common\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator))
-#2 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\validators\InlineValidator.php(72): call_user_func(Array, 'password', NULL, Object(yii\validators\InlineValidator))
-#3 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\validators\Validator.php(257): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
-#4 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
-#5 C:\wamp64\www\MusicaeWeb\common\models\LoginForm.php(58): yii\base\Model->validate()
-#6 C:\wamp64\www\MusicaeWeb\frontend\controllers\SiteController.php(92): common\models\LoginForm->login()
-#7 [internal function]: frontend\controllers\SiteController->actionLogin()
-#8 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
-#9 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
-#10 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('login', Array)
-#11 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
-#12 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
-#13 C:\wamp64\www\MusicaeWeb\frontend\web\index.php(17): yii\base\Application->run()
-#14 {main}
-2020-01-09 14:34:02 [::1][-][9d0t0s5q226503eftgrb0v0017][info][application] $_GET = []
+#0 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\db\BaseActiveRecord.php(298): yii\base\Component->__get('password')
+#1 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\validators\Validator.php(303): yii\db\BaseActiveRecord->__get('password')
+#2 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\validators\Validator.php(257): yii\validators\Validator->validateAttribute(Object(common\models\User), 'password')
+#3 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(common\models\User), Array)
+#4 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\db\ActiveRecord.php(560): yii\base\Model->validate(Array)
+#5 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 C:\wamp64\www\ya\MusicaeWeb\frontend\models\SignupForm.php(57): yii\db\BaseActiveRecord->save()
+#7 C:\wamp64\www\ya\MusicaeWeb\frontend\controllers\SiteController.php(177): frontend\models\SignupForm->signup()
+#8 [internal function]: frontend\controllers\SiteController->actionSignup()
+#9 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#10 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#12 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#13 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\wamp64\www\ya\MusicaeWeb\frontend\web\index.php(17): yii\base\Application->run()
+#15 {main}
+2020-01-09 15:38:35 [::1][-][c3nqep66sfk4l906n41lb16t74][info][application] $_GET = []
 
 $_POST = [
-    '_csrf-frontend' => '9NEDp4mM0fF3WRSOJ3vng4x0a9myS5OCF8luc_ehMLzFgE7D6OmCoA8_JN5lArfizi5G6PZm5sBwpAE7xO5U7g=='
-    'LoginForm' => [
-        'username' => 'pedro'
-        'password' => '1324567iop'
-        'rememberMe' => '1'
-    ]
-    'login-button' => ''
-]
-
-$_FILES = []
-
-$_COOKIE = [
-    'advanced-frontend' => '9d0t0s5q226503eftgrb0v0017'
-    '_csrf-frontend' => 'a5bc80b4f81f6af145e4ef2033595785dfb2d3d6864c579c92bea56cf2e4cf25a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"1QMdaeSQxf0PByPaBZ-1D-uBgmoH3OdR\";}'
-]
-
-$_SESSION = [
-    '__flash' => []
-]
-
-$_SERVER = [
-    'REDIRECT_STATUS' => '200'
-    'HTTP_HOST' => 'frontend.test'
-    'HTTP_CONNECTION' => 'keep-alive'
-    'CONTENT_LENGTH' => '242'
-    'HTTP_CACHE_CONTROL' => 'max-age=0'
-    'HTTP_ORIGIN' => 'http://frontend.test'
-    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
-    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
-    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36'
-    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
-    'HTTP_REFERER' => 'http://frontend.test/site/login'
-    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
-    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
-    'HTTP_COOKIE' => 'advanced-frontend=9d0t0s5q226503eftgrb0v0017; _csrf-frontend=a5bc80b4f81f6af145e4ef2033595785dfb2d3d6864c579c92bea56cf2e4cf25a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%221QMdaeSQxf0PByPaBZ-1D-uBgmoH3OdR%22%3B%7D'
-    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\PuTTY\\;C:\\PostgreSQL\\pg11\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php5.6.38;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Pedro Lopes\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Pedro Lopes\\.dotnet\\tools'
-    'SystemRoot' => 'C:\\Windows'
-    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
-    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
-    'WINDIR' => 'C:\\Windows'
-    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
-'
-    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.0.33'
-    'SERVER_NAME' => 'frontend.test'
-    'SERVER_ADDR' => '::1'
-    'SERVER_PORT' => '80'
-    'REMOTE_ADDR' => '::1'
-    'DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
-    'REQUEST_SCHEME' => 'http'
-    'CONTEXT_PREFIX' => ''
-    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
-    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
-    'SCRIPT_FILENAME' => 'C:/wamp64/www/MusicaeWeb/frontend/web/index.php'
-    'REMOTE_PORT' => '58223'
-    'REDIRECT_URL' => '/site/login'
-    'GATEWAY_INTERFACE' => 'CGI/1.1'
-    'SERVER_PROTOCOL' => 'HTTP/1.1'
-    'REQUEST_METHOD' => 'POST'
-    'QUERY_STRING' => ''
-    'REQUEST_URI' => '/site/login'
-    'SCRIPT_NAME' => '/index.php'
-    'PHP_SELF' => '/index.php'
-    'REQUEST_TIME_FLOAT' => 1578580442.078
-    'REQUEST_TIME' => 1578580442
-]
-2020-01-09 14:34:16 [::1][-][9d0t0s5q226503eftgrb0v0017][error][Error] Error: Call to undefined method common\models\User::findByUsername() in C:\wamp64\www\MusicaeWeb\common\models\LoginForm.php:73
-Stack trace:
-#0 C:\wamp64\www\MusicaeWeb\common\models\LoginForm.php(44): common\models\LoginForm->getUser()
-#1 [internal function]: common\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator))
-#2 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\validators\InlineValidator.php(72): call_user_func(Array, 'password', NULL, Object(yii\validators\InlineValidator))
-#3 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\validators\Validator.php(257): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
-#4 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
-#5 C:\wamp64\www\MusicaeWeb\common\models\LoginForm.php(58): yii\base\Model->validate()
-#6 C:\wamp64\www\MusicaeWeb\frontend\controllers\SiteController.php(92): common\models\LoginForm->login()
-#7 [internal function]: frontend\controllers\SiteController->actionLogin()
-#8 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
-#9 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
-#10 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('login', Array)
-#11 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
-#12 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
-#13 C:\wamp64\www\MusicaeWeb\frontend\web\index.php(17): yii\base\Application->run()
-#14 {main}
-2020-01-09 14:34:16 [::1][-][9d0t0s5q226503eftgrb0v0017][info][application] $_GET = []
-
-$_POST = [
-    '_csrf-frontend' => 'NH2q-TfVXnq6sdkXYtEvdIR7yGlgqZoZ4fQH9Zs_WS8FLOedVrANK8LX6UcgqH8VxiHlWCSE71uGmWi9qHA9fQ=='
-    'LoginForm' => [
-        'username' => 'pedro'
+    '_csrf-frontend' => '75Hu-xv0Vt9gattqrSgdmtXDLkkMvEwvfGqgrwZPoV6Ox9ezXsxv8jQk7R36YlTznPoff2HddV4SIdqeT33DLQ=='
+    'SignupForm' => [
+        'username' => 'jason'
+        'email' => '123@asd.com'
         'password' => '123456'
-        'rememberMe' => '1'
     ]
-    'login-button' => ''
+    'signup-button' => ''
 ]
 
 $_FILES = []
 
 $_COOKIE = [
-    'advanced-frontend' => '9d0t0s5q226503eftgrb0v0017'
-    '_csrf-frontend' => 'a5bc80b4f81f6af145e4ef2033595785dfb2d3d6864c579c92bea56cf2e4cf25a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"1QMdaeSQxf0PByPaBZ-1D-uBgmoH3OdR\";}'
+    'advanced-frontend' => 'c3nqep66sfk4l906n41lb16t74'
+    '_csrf-frontend' => 'a2f8939ae12dcae2c1d76acabbfa67036c2cabb6129923e2c602fc6db59afa82a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"aV9HE89-TN6wWJIiI916ma9qnKz1I2bs\";}'
 ]
 
 $_SESSION = [
@@ -9402,81 +9366,82 @@ $_SERVER = [
     'REDIRECT_STATUS' => '200'
     'HTTP_HOST' => 'frontend.test'
     'HTTP_CONNECTION' => 'keep-alive'
-    'CONTENT_LENGTH' => '238'
+    'CONTENT_LENGTH' => '221'
     'HTTP_CACHE_CONTROL' => 'max-age=0'
-    'HTTP_ORIGIN' => 'http://frontend.test'
     'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://frontend.test'
     'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
-    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
-    'HTTP_REFERER' => 'http://frontend.test/site/login'
+    'HTTP_REFERER' => 'http://frontend.test/site/signup'
     'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
-    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
-    'HTTP_COOKIE' => 'advanced-frontend=9d0t0s5q226503eftgrb0v0017; _csrf-frontend=a5bc80b4f81f6af145e4ef2033595785dfb2d3d6864c579c92bea56cf2e4cf25a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%221QMdaeSQxf0PByPaBZ-1D-uBgmoH3OdR%22%3B%7D'
-    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\PuTTY\\;C:\\PostgreSQL\\pg11\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php5.6.38;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Pedro Lopes\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Pedro Lopes\\.dotnet\\tools'
-    'SystemRoot' => 'C:\\Windows'
-    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7,gl;q=0.6'
+    'HTTP_COOKIE' => 'advanced-frontend=c3nqep66sfk4l906n41lb16t74; _csrf-frontend=a2f8939ae12dcae2c1d76acabbfa67036c2cabb6129923e2c602fc6db59afa82a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22aV9HE89-TN6wWJIiI916ma9qnKz1I2bs%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Bitvise SSH Client;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
     'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
-    'WINDIR' => 'C:\\Windows'
-    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.37 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
 '
-    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.0.33'
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Win64) PHP/7.0.33'
     'SERVER_NAME' => 'frontend.test'
     'SERVER_ADDR' => '::1'
     'SERVER_PORT' => '80'
     'REMOTE_ADDR' => '::1'
-    'DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/ya/MusicaeWeb/frontend/web'
     'REQUEST_SCHEME' => 'http'
     'CONTEXT_PREFIX' => ''
-    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/ya/MusicaeWeb/frontend/web'
     'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
-    'SCRIPT_FILENAME' => 'C:/wamp64/www/MusicaeWeb/frontend/web/index.php'
-    'REMOTE_PORT' => '58227'
-    'REDIRECT_URL' => '/site/login'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/ya/MusicaeWeb/frontend/web/index.php'
+    'REMOTE_PORT' => '54614'
+    'REDIRECT_URL' => '/site/signup'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
     'REQUEST_METHOD' => 'POST'
     'QUERY_STRING' => ''
-    'REQUEST_URI' => '/site/login'
+    'REQUEST_URI' => '/site/signup'
     'SCRIPT_NAME' => '/index.php'
     'PHP_SELF' => '/index.php'
-    'REQUEST_TIME_FLOAT' => 1578580456.494
-    'REQUEST_TIME' => 1578580456
+    'REQUEST_TIME_FLOAT' => 1578584315.003
+    'REQUEST_TIME' => 1578584315
 ]
-2020-01-09 14:39:31 [::1][-][9d0t0s5q226503eftgrb0v0017][error][Error] Error: Call to undefined method common\models\User::findByUsername() in C:\wamp64\www\MusicaeWeb\common\models\LoginForm.php:73
+2020-01-09 15:38:43 [::1][-][c3nqep66sfk4l906n41lb16t74][error][yii\base\InvalidCallException] yii\base\InvalidCallException: Getting write-only property: common\models\User::password in C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\base\Component.php:151
 Stack trace:
-#0 C:\wamp64\www\MusicaeWeb\common\models\LoginForm.php(44): common\models\LoginForm->getUser()
-#1 [internal function]: common\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator))
-#2 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\validators\InlineValidator.php(72): call_user_func(Array, 'password', NULL, Object(yii\validators\InlineValidator))
-#3 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\validators\Validator.php(257): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
-#4 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
-#5 C:\wamp64\www\MusicaeWeb\common\models\LoginForm.php(58): yii\base\Model->validate()
-#6 C:\wamp64\www\MusicaeWeb\frontend\controllers\SiteController.php(92): common\models\LoginForm->login()
-#7 [internal function]: frontend\controllers\SiteController->actionLogin()
-#8 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
-#9 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
-#10 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('login', Array)
-#11 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
-#12 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
-#13 C:\wamp64\www\MusicaeWeb\frontend\web\index.php(17): yii\base\Application->run()
-#14 {main}
-2020-01-09 14:39:31 [::1][-][9d0t0s5q226503eftgrb0v0017][info][application] $_GET = []
+#0 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\db\BaseActiveRecord.php(298): yii\base\Component->__get('password')
+#1 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\validators\Validator.php(303): yii\db\BaseActiveRecord->__get('password')
+#2 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\validators\Validator.php(257): yii\validators\Validator->validateAttribute(Object(common\models\User), 'password')
+#3 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(common\models\User), Array)
+#4 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\db\ActiveRecord.php(560): yii\base\Model->validate(Array)
+#5 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 C:\wamp64\www\ya\MusicaeWeb\frontend\models\SignupForm.php(57): yii\db\BaseActiveRecord->save()
+#7 C:\wamp64\www\ya\MusicaeWeb\frontend\controllers\SiteController.php(177): frontend\models\SignupForm->signup()
+#8 [internal function]: frontend\controllers\SiteController->actionSignup()
+#9 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#10 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#12 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#13 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\wamp64\www\ya\MusicaeWeb\frontend\web\index.php(17): yii\base\Application->run()
+#15 {main}
+2020-01-09 15:38:42 [::1][-][c3nqep66sfk4l906n41lb16t74][info][application] $_GET = []
 
 $_POST = [
-    '_csrf-frontend' => 'NH2q-TfVXnq6sdkXYtEvdIR7yGlgqZoZ4fQH9Zs_WS8FLOedVrANK8LX6UcgqH8VxiHlWCSE71uGmWi9qHA9fQ=='
-    'LoginForm' => [
-        'username' => 'pedro'
+    '_csrf-frontend' => 'KzVihr5CYLlWaFRbzyzMVCqZxSu8CrQEZKZIqhWOFKBKY1vO-3pZlAImYiyYZoU9Y6D0HdFrjXUK7TKbXLx20w=='
+    'SignupForm' => [
+        'username' => 'jason'
+        'email' => 'asd@asd.com'
         'password' => '123456'
-        'rememberMe' => '1'
     ]
-    'login-button' => ''
+    'signup-button' => ''
 ]
 
 $_FILES = []
 
 $_COOKIE = [
-    'advanced-frontend' => '9d0t0s5q226503eftgrb0v0017'
-    '_csrf-frontend' => 'a5bc80b4f81f6af145e4ef2033595785dfb2d3d6864c579c92bea56cf2e4cf25a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"1QMdaeSQxf0PByPaBZ-1D-uBgmoH3OdR\";}'
+    'advanced-frontend' => 'c3nqep66sfk4l906n41lb16t74'
+    '_csrf-frontend' => 'a2f8939ae12dcae2c1d76acabbfa67036c2cabb6129923e2c602fc6db59afa82a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"aV9HE89-TN6wWJIiI916ma9qnKz1I2bs\";}'
 ]
 
 $_SESSION = [
@@ -9487,44 +9452,130 @@ $_SERVER = [
     'REDIRECT_STATUS' => '200'
     'HTTP_HOST' => 'frontend.test'
     'HTTP_CONNECTION' => 'keep-alive'
-    'CONTENT_LENGTH' => '238'
+    'CONTENT_LENGTH' => '221'
     'HTTP_CACHE_CONTROL' => 'max-age=0'
-    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
-    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36'
     'HTTP_ORIGIN' => 'http://frontend.test'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
     'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
-    'HTTP_REFERER' => 'http://frontend.test/site/login'
+    'HTTP_REFERER' => 'http://frontend.test/site/signup'
     'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
-    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
-    'HTTP_COOKIE' => 'advanced-frontend=9d0t0s5q226503eftgrb0v0017; _csrf-frontend=a5bc80b4f81f6af145e4ef2033595785dfb2d3d6864c579c92bea56cf2e4cf25a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%221QMdaeSQxf0PByPaBZ-1D-uBgmoH3OdR%22%3B%7D'
-    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\PuTTY\\;C:\\PostgreSQL\\pg11\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php5.6.38;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Pedro Lopes\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Pedro Lopes\\.dotnet\\tools'
-    'SystemRoot' => 'C:\\Windows'
-    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7,gl;q=0.6'
+    'HTTP_COOKIE' => 'advanced-frontend=c3nqep66sfk4l906n41lb16t74; _csrf-frontend=a2f8939ae12dcae2c1d76acabbfa67036c2cabb6129923e2c602fc6db59afa82a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22aV9HE89-TN6wWJIiI916ma9qnKz1I2bs%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Bitvise SSH Client;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
     'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
-    'WINDIR' => 'C:\\Windows'
-    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.37 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
 '
-    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.0.33'
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Win64) PHP/7.0.33'
     'SERVER_NAME' => 'frontend.test'
     'SERVER_ADDR' => '::1'
     'SERVER_PORT' => '80'
     'REMOTE_ADDR' => '::1'
-    'DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/ya/MusicaeWeb/frontend/web'
     'REQUEST_SCHEME' => 'http'
     'CONTEXT_PREFIX' => ''
-    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/ya/MusicaeWeb/frontend/web'
     'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
-    'SCRIPT_FILENAME' => 'C:/wamp64/www/MusicaeWeb/frontend/web/index.php'
-    'REMOTE_PORT' => '58241'
-    'REDIRECT_URL' => '/site/login'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/ya/MusicaeWeb/frontend/web/index.php'
+    'REMOTE_PORT' => '54616'
+    'REDIRECT_URL' => '/site/signup'
     'GATEWAY_INTERFACE' => 'CGI/1.1'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
     'REQUEST_METHOD' => 'POST'
     'QUERY_STRING' => ''
-    'REQUEST_URI' => '/site/login'
+    'REQUEST_URI' => '/site/signup'
     'SCRIPT_NAME' => '/index.php'
     'PHP_SELF' => '/index.php'
-    'REQUEST_TIME_FLOAT' => 1578580771.364
-    'REQUEST_TIME' => 1578580771
+    'REQUEST_TIME_FLOAT' => 1578584322.217
+    'REQUEST_TIME' => 1578584322
+]
+2020-01-09 15:45:11 [::1][-][c3nqep66sfk4l906n41lb16t74][error][yii\base\InvalidCallException] yii\base\InvalidCallException: Getting write-only property: common\models\User::password in C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\base\Component.php:151
+Stack trace:
+#0 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\db\BaseActiveRecord.php(298): yii\base\Component->__get('password')
+#1 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\validators\Validator.php(303): yii\db\BaseActiveRecord->__get('password')
+#2 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\validators\Validator.php(257): yii\validators\Validator->validateAttribute(Object(common\models\User), 'password')
+#3 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\base\Model.php(367): yii\validators\Validator->validateAttributes(Object(common\models\User), Array)
+#4 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\db\ActiveRecord.php(560): yii\base\Model->validate(Array)
+#5 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 C:\wamp64\www\ya\MusicaeWeb\frontend\models\SignupForm.php(57): yii\db\BaseActiveRecord->save()
+#7 C:\wamp64\www\ya\MusicaeWeb\frontend\controllers\SiteController.php(177): frontend\models\SignupForm->signup()
+#8 [internal function]: frontend\controllers\SiteController->actionSignup()
+#9 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#10 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#12 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#13 C:\wamp64\www\ya\MusicaeWeb\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\wamp64\www\ya\MusicaeWeb\frontend\web\index.php(17): yii\base\Application->run()
+#15 {main}
+2020-01-09 15:45:10 [::1][-][c3nqep66sfk4l906n41lb16t74][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-frontend' => 'YZFjPeem3p8rkqzmAP86B3U4hnv01H8x5g4PWcTaBm4Ax1p1op7nsn_cmpFXtXNuPAG3TZm1RkCIRXVojehkHQ=='
+    'SignupForm' => [
+        'username' => 'jason123'
+        'email' => '123@asd.com'
+        'password' => '123456'
+    ]
+    'signup-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'c3nqep66sfk4l906n41lb16t74'
+    '_csrf-frontend' => 'a2f8939ae12dcae2c1d76acabbfa67036c2cabb6129923e2c602fc6db59afa82a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"aV9HE89-TN6wWJIiI916ma9qnKz1I2bs\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'frontend.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '224'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://frontend.test'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://frontend.test/site/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7,gl;q=0.6'
+    'HTTP_COOKIE' => 'advanced-frontend=c3nqep66sfk4l906n41lb16t74; _csrf-frontend=a2f8939ae12dcae2c1d76acabbfa67036c2cabb6129923e2c602fc6db59afa82a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22aV9HE89-TN6wWJIiI916ma9qnKz1I2bs%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Bitvise SSH Client;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.37 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.37 (Win64) PHP/7.0.33'
+    'SERVER_NAME' => 'frontend.test'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/ya/MusicaeWeb/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/ya/MusicaeWeb/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/ya/MusicaeWeb/frontend/web/index.php'
+    'REMOTE_PORT' => '54693'
+    'REDIRECT_URL' => '/site/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1578584710.561
+    'REQUEST_TIME' => 1578584710
 ]

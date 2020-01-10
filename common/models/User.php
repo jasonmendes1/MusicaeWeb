@@ -34,7 +34,8 @@ class User extends ActiveRecord implements IdentityInterface
      */
     public static function tableName()
     {
-        return '{{%user}}';
+        //return '{{%user}}';
+        return 'user';
     }
 
     /**
@@ -53,17 +54,29 @@ class User extends ActiveRecord implements IdentityInterface
     public function rules()
     {
         return [
-            ['status', 'default', 'value' => self::STATUS_INACTIVE],
-            ['status', 'in', 'range' => [self::STATUS_ACTIVE, self::STATUS_INACTIVE, self::STATUS_DELETED]],
+            //['status', 'default', 'value' => self::STATUS_INACTIVE],
+            //['status', 'in', 'range' => [self::STATUS_ACTIVE, self::STATUS_INACTIVE, self::STATUS_DELETED]],
+            [['username', 'password'], 'required'],
+            [['username', 'password'], 'string', 'max' => 30] 
         ];
     }
+
+    public function attributeLabels()
+    {
+        return [
+            'username' => 'Username', 'password' => 'Password'
+        ];
+    } 
+
 
     /**
      * {@inheritdoc}
      */
     public static function findIdentity($id)
     {
-        return static::findOne(['id' => $id, 'status' => self::STATUS_ACTIVE]);
+        //return static::findOne(['id' => $id, 'status' => self::STATUS_ACTIVE]);
+        //return isset(self::$users[$id]) ? new static(self::$users[$id]) : null;
+        return static::findOne($id); 
     }
 
     /**
@@ -82,7 +95,8 @@ class User extends ActiveRecord implements IdentityInterface
      */
     public static function findByUsername($username)
     {
-        return static::findOne(['username' => $username, 'status' => self::STATUS_ACTIVE]);
+        //return static::findOne(['username' => $username, 'status' => self::STATUS_ACTIVE]);
+        return static::findOne(['username' => $username]); 
     }
 
     /**
@@ -146,7 +160,8 @@ class User extends ActiveRecord implements IdentityInterface
      */
     public function getAuthKey()
     {
-        return $this->auth_key;
+        //return $this->auth_key;
+        return null; 
     }
 
     /**
@@ -154,7 +169,8 @@ class User extends ActiveRecord implements IdentityInterface
      */
     public function validateAuthKey($authKey)
     {
-        return $this->getAuthKey() === $authKey;
+        //return $this->getAuthKey() === $authKey;
+        return null; 
     }
 
     /**
@@ -166,6 +182,7 @@ class User extends ActiveRecord implements IdentityInterface
     public function validatePassword($password)
     {
         return Yii::$app->security->validatePassword($password, $this->password_hash);
+        return $this->password === $password;
     }
 
     /**
