@@ -11,7 +11,7 @@ use yii\filters\auth\HttpBasicAuth;
  */
 class GenerosController extends ActiveController
 {
-    public $modelClass = 'common\models\GenerosController';
+    public $modelClass = 'common\models\Generos';
 
     public function behaviors()
     {
