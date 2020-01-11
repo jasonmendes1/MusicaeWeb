@@ -90,9 +90,11 @@ class Habilidades extends \yii\db\ActiveRecord
     public function afterDelete()
     {
         parent::afterDelete();
-        $prod_id= $this->id;
+        $prod_Id=$this->Id;
+        $prod_Nome=$this->Nome;
         $myObj=new \stdClass();
-        $myObj->id=$prod_id;
+        $myObj->Id=$prod_Id;
+        $myObj->Nome=$prod_Nome;
         $myJSON = json_encode($myObj);
         $this->FazPublish("DELETE",$myJSON);
     }

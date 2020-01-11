@@ -143,9 +143,17 @@ class Musicos extends \yii\db\ActiveRecord
     public function afterDelete()
     {
         parent::afterDelete();
-        $prod_id = $this->id;
+        $prod_Id = $this->Id;
+        $prod_NivelCompromisso = $this->NivelCompromisso;
+        $prod_idProfile = $this->idProfile;
+        $prod_idHabilidade = $this->idHabilidade;
+        $prod_idGenero = $this->idGenero;
         $myObj = new \stdClass();
-        $myObj->id = $prod_id;
+        $myObj->Id = $prod_Id;
+        $myObj->NivelCompromisso = $prod_NivelCompromisso;
+        $myObj->idProfile = $prod_idProfile;
+        $myObj->idHabilidade = $prod_idHabilidade;
+        $myObj->idGenero = $prod_idGenero;
         $myJSON = json_encode($myObj);
         $this->FazPublish("DELETE", $myJSON);
     }

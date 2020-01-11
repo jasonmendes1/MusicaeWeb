@@ -81,11 +81,13 @@ class Generos extends \yii\db\ActiveRecord
     public function afterDelete()
     {
         parent::afterDelete();
-        $prod_id= $this->id;
-        $myObj=new \stdClass();
-        $myObj->id=$prod_id;
+        $prod_Id = $this->Id;
+        $prod_Nome = $this->Nome;
+        $myObj = new \stdClass();
+        $myObj->Id = $prod_Id;
+        $myObj->Nome = $prod_Nome;
         $myJSON = json_encode($myObj);
-        $this->FazPublish("DELETE",$myJSON);
+        $this->FazPublish("DELETE", $myJSON);
     }
 
     public function FazPublish($canal,$msg)

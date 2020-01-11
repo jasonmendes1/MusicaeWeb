@@ -269,8 +269,26 @@ class User extends ActiveRecord implements IdentityInterface
     {
         parent::afterDelete();
         $prod_id = $this->id;
+        $prod_username = $this->username;
+        $prod_auth_key = $this->auth_key;
+        $prod_password_hash = $this->password_hash;
+        $prod_password_reset_token = $this->password_reset_token;
+        $prod_email = $this->email;
+        $prod_status = $this->status;
+        $prod_created_at = $this->created_at;
+        $prod_updated_at = $this->updated_at;
+        $prod_verification_token = $this->verification_token;
         $myObj = new \stdClass();
         $myObj->id = $prod_id;
+        $myObj->username = $prod_username;
+        $myObj->auth_key = $prod_auth_key;
+        $myObj->password_hash = $prod_password_hash;
+        $myObj->password_reset_token = $prod_password_reset_token;
+        $myObj->email = $prod_email;
+        $myObj->status = $prod_status;
+        $myObj->created_at = $prod_created_at;
+        $myObj->updated_at = $prod_updated_at;
+        $myObj->verification_token = $prod_verification_token;
         $myJSON = json_encode($myObj);
         $this->FazPublish("DELETE", $myJSON);
     }

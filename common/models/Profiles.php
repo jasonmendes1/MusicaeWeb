@@ -110,9 +110,23 @@ class Profiles extends \yii\db\ActiveRecord
     public function afterDelete()
     {
         parent::afterDelete();
-        $prod_id = $this->id;
+        $prod_Id = $this->Id;
+        $prod_Nome = $this->Nome;
+        $prod_Sexo = $this->Sexo;
+        $prod_DataNac = $this->DataNac;
+        $prod_Descricao = $this->Descricao;
+        $prod_Foto = $this->Foto;
+        $prod_Localidade = $this->Localidade;
+        $prod_IdUser = $this->IdUser;
         $myObj = new \stdClass();
-        $myObj->id = $prod_id;
+        $myObj->Id = $prod_Id;
+        $myObj->Nome = $prod_Nome;
+        $myObj->Sexo = $prod_Sexo;
+        $myObj->DataNac = $prod_DataNac;
+        $myObj->Descricao = $prod_Descricao;
+        $myObj->Foto = $prod_Foto;
+        $myObj->Localidade = $prod_Localidade;
+        $myObj->IdUser = $prod_IdUser;
         $myJSON = json_encode($myObj);
         $this->FazPublish("DELETE", $myJSON);
     }
