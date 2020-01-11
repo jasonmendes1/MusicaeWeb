@@ -149,9 +149,18 @@ class Bandas extends \yii\db\ActiveRecord
     public function afterDelete()
     {
         parent::afterDelete();
-        $prod_id = $this->id;
+        $prod_Id = $this->Id;
+        $prod_Nome = $this->Nome;
+        $prod_Descricao = $this->Descricao;
+        $prod_Contacto = $this->Contacto;
+        $prod_Logo = $this->Logo;
+        $prod_Removida = $this->Removida;
         $myObj = new \stdClass();
-        $myObj->id = $prod_id;
+        $myObj->Id = $prod_Id;
+        $myObj->Nome = $prod_Nome;
+        $myObj->Descricao = $prod_Descricao;
+        $myObj->Logo = $prod_Logo;
+        $myObj->Removida = $prod_Removida;
         $myJSON = json_encode($myObj);
         $this->FazPublish("DELETE", $myJSON);
     }
