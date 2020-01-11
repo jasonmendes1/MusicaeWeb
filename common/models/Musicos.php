@@ -173,4 +173,14 @@ class Musicos extends \yii\db\ActiveRecord
             file_put_contents("debug.output", "Time out!");
         }
     }
+
+    public function fields()
+    {
+        return ['Id', 'NivelCompromisso'];
+    }
+
+    public function extraFields()
+    {
+        return ['habilidade', 'genero'];
+    }
 }

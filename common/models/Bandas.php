@@ -3,6 +3,8 @@
 namespace common\models;
 
 use Yii;
+use yii\web\Link;
+use yii\helpers\Url;
 
 /**
  * This is the model class for table "bandas".
@@ -159,6 +161,7 @@ class Bandas extends \yii\db\ActiveRecord
         $myObj->Id = $prod_Id;
         $myObj->Nome = $prod_Nome;
         $myObj->Descricao = $prod_Descricao;
+        $myObj->Contacto = $prod_Contacto;
         $myObj->Logo = $prod_Logo;
         $myObj->Removida = $prod_Removida;
         $myJSON = json_encode($myObj);
@@ -179,5 +182,15 @@ class Bandas extends \yii\db\ActiveRecord
         } else {
             file_put_contents("debug.output", "Time out!");
         }
+    }
+
+    public function fields()
+    {
+        return ['Id', 'Nome', 'Descricao', 'Contacto', 'Logo', 'Removida'];
+    }
+
+    public function extraFields()
+    {
+        return ['genero'];
     }
 }
