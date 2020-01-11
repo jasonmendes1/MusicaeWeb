@@ -6,6 +6,7 @@ use common\models\User;
 use yii\rest\ActiveController;
 use yii\helpers\Json;
 use yii\filters\auth\HttpBasicAuth;
+
 // use yii\web\IdentityInterface;
 
 /**
@@ -91,6 +92,12 @@ class BandasController extends ActiveController
     public function behaviors()
     {
         $behaviors = parent::behaviors();
+        $behaviors['contentNegotiator'] = [
+            'class' => 'yii\filters\ContentNegotiator',
+            'formats' => [
+                'application/json' => Response::FORMAT_JSON,
+            ]
+        ];
         $behaviors['authenticator'] = [
             'class' => HttpBasicAuth::className(),
             'auth' => [$this, 'auth']
