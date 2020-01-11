@@ -6,6 +6,7 @@ use common\models\User;
 use yii\rest\ActiveController;
 use yii\helpers\Json;
 use yii\filters\auth\HttpBasicAuth;
+use yii\web\Response;
 
 // use yii\web\IdentityInterface;
 

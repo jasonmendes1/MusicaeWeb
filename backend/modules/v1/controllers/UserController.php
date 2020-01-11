@@ -6,6 +6,7 @@ use yii\filters\auth\HttpBasicAuth;
 use yii\web\User;
 use yii\rest\ActiveController;
 use yii\web\Request;
+use yii\web\Response;
 use Yii;
 
 /**
@@ -18,6 +19,12 @@ class UserController extends ActiveController
     public function behaviors()
     {
         $behaviors = parent::behaviors();
+        $behaviors['contentNegotiator'] = [
+            'class' => 'yii\filters\ContentNegotiator',
+            'formats' => [
+                'application/json' => Response::FORMAT_JSON,
+            ]
+        ];
         $behaviors['authenticator'] = [
         'class' => HttpBasicAuth::className(),
         'auth' => [$this, 'auth']
