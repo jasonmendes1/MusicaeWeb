@@ -31,13 +31,14 @@ h1{
 <body>
 <div class="fundoEscuro">
     <div class="Logo">
-        <center><img src="../web/images/logotipo.png">
+        <center><img src="/images/logotipo.png">
             <h1>Musicae's API:</h1><p><p><p><p><p><p><p><p>
             <div class="links">
                 <a href = "/v1/user">Users</a>
                 <a href = "/v1/profiles">Profiles</a>
-                <a href = "/v1/bandas">Bands</a>
-                <a href = "#">Etc</a>
+                <a href = "/v1/musicos">Músico</a>
+                <a href = "/v1/bandas">Bandas</a>
+                <a href = "/v1/generos">Género</a>
             </div>
         </center>
     </div>
