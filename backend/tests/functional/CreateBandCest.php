@@ -9,7 +9,7 @@ class CreateBandCest
 {
     public function tryCreateBand(FunctionalTester $I)
     {
-        /*$I->amOnPage(\yii::$app->homeUrl);
+        $I->amOnPage(\yii::$app->homeUrl);
         $I->click('Login');
         $I->fillField('Username', 'pedro');
         $I->fillField('Password', '123456');
@@ -18,8 +18,8 @@ class CreateBandCest
         $I->dontSeeLink('Login');
         $I->dontSeeLink('Signup');
         
-        $I->amOnPage('musicaeweb/backend/banda');
-        $I->click('btn btn-success');
+        $I->amOnPage('/musicaeweb/backend/web/banda/create');
+        //$I->click('create');
         $I->fillField('Bandas[Nome]', 'BandaTeste');
         $I->fillField('Bandas[Descricao]', 'BandaTeste');
         $I->fillField('Bandas[Localizacao]', 'BandaTeste');
@@ -27,7 +27,6 @@ class CreateBandCest
         $I->fillField('Bandas[Logo]', '1');
         $I->fillField('Bandas[Removida]', '1');
         $I->fillField('Bandas[IdGenero]', '1');
-*/
 
     }
 }
