@@ -14,7 +14,8 @@ class LoginCest
         $I->fillField('Username', 'pedro');
         $I->fillField('Password', '123456');
         $I->click('login-button');
-        $I->see('Logout (erau)', 'form button[type=submit]');
-        // $I->seeEmailIsSent(); // only for Symfony
+        $I->see('Logout (pedro)', 'form button[type=submit]');
+        $I->dontSeeLink('Login');
+        $I->dontSeeLink('Signup');
     }
 }
