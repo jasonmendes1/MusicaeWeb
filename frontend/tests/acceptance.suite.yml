@@ -11,3 +11,4 @@ modules:
                   "goog:chromeOptions": # additional chrome options
         - Yii2:
               part: init
+              cleanup: true #don't cleanup the fixtures

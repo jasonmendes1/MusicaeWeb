@@ -3,4 +3,5 @@ actor: FunctionalTester
 modules:
     enabled:
         - Filesystem
-        - Yii2
+        - Yii2:
+            cleanup: true #don't cleanup the fixtures

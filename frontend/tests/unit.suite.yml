@@ -5,3 +5,7 @@ modules:
         - Yii2:
             part: [orm, email, fixtures]
         - Asserts
+        - DB:
+            dsn: 'mysql:host=localhost;dbname=musicaedb'
+            user: 'root'
+            password: ''
