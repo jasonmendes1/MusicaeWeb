@@ -12,8 +12,7 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'Nome')->dropDownList([ 'acoustic' => 'Acoustic', 'alternative' => 'Alternative', 'blues' => 'Blues', 'celtic' => 'Celtic', 'gospel' => 'Gospel', 'classic rock' => 'Classic rock', 'classical' => 'Classical', 'country' => 'Country', 'electronic' => 'Electronic', 'funk' => 'Funk', 'hip hop' => 'Hip hop', 'jazz' => 'Jazz', 'metal' => 'Metal', 'pop' => 'Pop', 'reggae' => 'Reggae', 'rock' => 'Rock', 'other' => 'Other', ], ['prompt' => '']) ?>
-
+    <?= $form->field($model, 'Nome')->textInput() ?>
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
     </div>

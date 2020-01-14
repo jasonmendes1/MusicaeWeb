@@ -37,8 +37,9 @@ class Musicos extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
+            [['NivelCompromisso', 'idProfile', 'idHabilidade', 'idGenero'], 'required'],
             [['NivelCompromisso'], 'string'],
-            [['idProfile', 'idHabilidade', 'idGenero'], 'required'],
+            ['NivelCompromisso', 'in', 'range' => ['Diversao','Moderadamente Comprometido','Comprometido','Muito Comprometido','Tour']],
             [['idProfile', 'idHabilidade', 'idGenero'], 'integer'],
             [['idProfile'], 'unique'],
             [['idProfile'], 'exist', 'skipOnError' => true, 'targetClass' => Profiles::className(), 'targetAttribute' => ['idProfile' => 'Id']],
