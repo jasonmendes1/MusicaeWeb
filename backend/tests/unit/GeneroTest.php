@@ -25,28 +25,40 @@ class GeneroTest extends \Codeception\Test\Unit
         $user->Nome = null;
         $this->assertFalse($user->validate(['Nome']));
 
-        $user->Nome = 'toolooooongnaaaaaaameeeeee';
+        $user->Nome = 'JazzJazzJazzJazzJazzJazzJazz';
         $this->assertFalse($user->validate(['Nome']));
 
-        $user->Nome = 'pop';
+        $user->Nome = 'Jazz';
         $this->assertTrue($user->validate(['Nome']));
     }
 
-    /*function testSavingUser()
+    function testSavingGenero()
     {
         $user = new Generos();
-        $user->Nome = ('elllll');
+        $user->Nome = ('Jazz');
         $user->save();
-        //$this->tester->seeInDatabase('generos', ['Nome' => 'Jazz']);
-    }*/
+        $this->tester->seeInDatabase('generos', ['Nome' => 'Jazz']);
+    }
 
-    function testUserDeleted()
+    function testGeneroCanBeChanged()
     {
-        $id = $this->tester->grabRecord('common\models\Generos', ['Nome' => 'elllll']);
+        $id = $this->tester->grabRecord('common\models\Generos', ['Nome' => 'Jazz']);
+
+        $user = Generos::findOne($id);
+        $user->Nome = ('Rap');
+        $user->save();
+
+        $this->tester->seeRecord('common\models\Generos', ['Nome' => 'Rap']);
+        $this->tester->dontSeeRecord('common\models\Generos', ['Nome' => 'Jazz']);
+    }
+
+    function testGeneroDeleted()
+    {
+        $id = $this->tester->grabRecord('common\models\Generos', ['Nome' => 'Rap']);
 
         $user = Generos::findOne($id);
         $user->delete();
 
-        //$this->tester->dontSeeRecord('backend\models\Pessoa', ['Nome' => 'Tiago']);
+        $this->tester->dontSeeRecord('common\models\Generos', ['Nome' => 'Rap']);
     }
 }
