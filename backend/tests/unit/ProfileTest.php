@@ -1,12 +1,11 @@
-<?php namespace frontend\tests;
+<?php namespace backend\tests;
 
-use yii\codeception\DbTestCase;
 use common\models\Profiles;
 
 class ProfileTest extends \Codeception\Test\Unit
 {
     /**
-     * @var \frontend\tests\UnitTester
+     * @var \backend\tests\UnitTester
      */
     protected $tester;
     
@@ -23,13 +22,13 @@ class ProfileTest extends \Codeception\Test\Unit
     {
         $user = new Profiles();
 
-        $user->Nome = (null);
+        $user->Nome = null;
         $this->assertFalse($user->validate(['Nome']));
 
-        $user->Nome = ('toolooooongnaaaaaaameeeetoolooooongnaaaaaaameeeetoolooooongnaaaaaaameeeetoolooooongnaaaaaaameeeeaaaaaaeeeeeeaaaaaaeeeeeeaaaaaeaeauyegagduaegduyagdaegdgugyadgudguaeguyaguaegdyguagdaugdyugquyaeuyqadeadeadaedaehdaieuhdashdusaihdashdashdasihfduhoitjgiodgjidfgjoidfjo');
+        $user->Nome = 'fghnvghtoolooooongnafghnvghtoolooooongnaaaaaaameeeefghjkcxdftyhfghjkcxdfghjkcxhdd';
         $this->assertFalse($user->validate(['Nome']));
 
-        $user->Nome = ('davert');
+        $user->Nome = 'pedro';
         $this->assertTrue($user->validate(['Nome']));
     }
 
@@ -47,5 +46,15 @@ class ProfileTest extends \Codeception\Test\Unit
         //$this->tester->seeInDatabase('profiles', ['Nome' => 'pedro']);
     }
 
-    
+    /*function testUserNameCanBeChanged()
+    {
+        $id = $this->tester->grabRecord('common\models\Profiles', ['Nome' => 'pedro']);
+
+        $user = Profiles::findOne($id);
+        $user->Nome = ('jason');
+        $user->save();
+
+        $this->tester->seeRecord('common\models\Profiles', ['Nome' => 'jason']);
+        $this->tester->dontSeeRecord('common\models\Profiles', ['Nome' => 'pedro']);
+    }*/
 }

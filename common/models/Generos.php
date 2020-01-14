@@ -30,7 +30,7 @@ class Generos extends \yii\db\ActiveRecord
     {
         return [
             [['Nome'], 'required'],
-            [['Nome'], 'string'],
+            [['Nome'], 'string', 'max' => 25],
         ];
     }
 
