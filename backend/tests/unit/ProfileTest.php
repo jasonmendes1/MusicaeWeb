@@ -25,7 +25,7 @@ class ProfileTest extends \Codeception\Test\Unit
         $user->Nome = null;
         $this->assertFalse($user->validate(['Nome']));
 
-        $user->Nome = 'fghnvghtoolooooongnafghnvghtoolooooongnaaaaaaameeeefghjkcxdftyhfghjkcxdfghjkcxhdd';
+        $user->Nome = 'fghnvghtoolooooongnafghnvghtoolooooongnaaaaaaameeeefghjkcxdftyhfghjkcxdfghjkcxhss';
         $this->assertFalse($user->validate(['Nome']));
 
         $user->Nome = 'pedro';
@@ -35,7 +35,7 @@ class ProfileTest extends \Codeception\Test\Unit
     function testSavingUser()
     {
         $user = new Profiles();
-        $user->Nome = 'pedroooooo';
+        $user->Nome = 'pedro';
         $user->Sexo = 'homem';
         $user->DataNac = '2000-07-09 12:12:12';
         $user->Descricao = 'wtf';

@@ -32,17 +32,17 @@ class GeneroTest extends \Codeception\Test\Unit
         $this->assertTrue($user->validate(['Nome']));
     }
 
-    function testSavingUser()
+    /*function testSavingUser()
     {
         $user = new Generos();
-        $user->Nome = ('pop');
+        $user->Nome = ('elllll');
         $user->save();
         //$this->tester->seeInDatabase('generos', ['Nome' => 'Jazz']);
-    }
+    }*/
 
     function testUserDeleted()
     {
-        $id = $this->tester->grabRecord('common\models\Generos', ['Nome' => 'pop']);
+        $id = $this->tester->grabRecord('common\models\Generos', ['Nome' => 'elllll']);
 
         $user = Generos::findOne($id);
         $user->delete();
