@@ -1,8 +1,8 @@
 <?php namespace backend\tests;
 
-use common\models\Profiles;
+use common\models\Habilidades;
 
-class ProfileTest extends \Codeception\Test\Unit
+class HabilidadeTest extends \Codeception\Test\Unit
 {
     /**
      * @var \backend\tests\UnitTester
@@ -20,7 +20,7 @@ class ProfileTest extends \Codeception\Test\Unit
     // tests
     public function testValidation()
     {
-        $user = new Profiles();
+        $user = new Habilidades();
 
         $user->Nome = null;
         $this->assertFalse($user->validate(['Nome']));
@@ -32,9 +32,9 @@ class ProfileTest extends \Codeception\Test\Unit
         $this->assertTrue($user->validate(['Nome']));
     }
 
-    function testSavingUser()
+    function testSavingHabilidade()
     {
-        $user = new Profiles();
+        $user = new Habilidades();
         $user->Nome = 'Profileeeeee';
         $user->Sexo = 'homem';
         $user->DataNac = '2000-07-09 12:12:12';
@@ -43,28 +43,28 @@ class ProfileTest extends \Codeception\Test\Unit
         $user->Localidade = '2430 MG';
         $user->IdUser = 3;
         $user->save();
-        $this->tester->seeInDatabase('profiles', ['Nome' => 'Profileeeeee']);
+        $this->tester->seeInDatabase('habilidades', ['Nome' => 'Profileeeeee']);
     }
 
-    function testUserNameCanBeChanged()
+    function testHabilidadeCanBeChanged()
     {
-        $id = $this->tester->grabRecord('common\models\Profiles', ['Nome' => 'Profileeeeee']);
+        $id = $this->tester->grabRecord('common\models\Habilidades', ['Nome' => 'Profileeeeee']);
 
-        $user = Profiles::findOne($id);
+        $user = Habilidades::findOne($id);
         $user->Nome = ('Teste');
         $user->save();
 
-        $this->tester->seeRecord('common\models\Profiles', ['Nome' => 'Teste']);
-        $this->tester->dontSeeRecord('common\models\Profiles', ['Nome' => 'Profileeeeee']);
+        $this->tester->seeRecord('common\models\Habilidades', ['Nome' => 'Teste']);
+        $this->tester->dontSeeRecord('common\models\Habilidades', ['Nome' => 'Profileeeeee']);
     }
 
-    function testUserDeleted()
+    function testHabilidadeDeleted()
     {
-        $id = $this->tester->grabRecord('common\models\Profiles', ['Nome' => 'Teste']);
+        $id = $this->tester->grabRecord('common\models\Habilidades', ['Nome' => 'Teste']);
 
-        $user = Profiles::findOne($id);
+        $user = Habilidades::findOne($id);
         $user->delete();
 
-        $this->tester->dontSeeRecord('common\models\Profiles', ['Nome' => 'Teste']);
+        $this->tester->dontSeeRecord('common\models\Habilidades', ['Nome' => 'Teste']);
     }
 }
