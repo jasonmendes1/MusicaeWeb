@@ -5,7 +5,7 @@ namespace backend\tests\functional;
 use backend\tests\FunctionalTester;
 use common\fixtures\UserFixture;
 
-class CreateBandCest
+class CreateGeneroCest
 {
     public function tryCreateBand(FunctionalTester $I)
     {
@@ -19,7 +19,7 @@ class CreateBandCest
         $I->dontSeeLink('Login');
         $I->dontSeeLink('Signup');
 
-        $I->amOnPage('/banda');
+        $I->amOnPage('/genero');
         $I->click('Create');
         $I->fillField('Nome', 'BandaTeste');
         $I->fillField('Descricao', 'BandaTeste');
