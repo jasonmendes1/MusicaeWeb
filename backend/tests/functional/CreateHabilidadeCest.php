@@ -5,9 +5,9 @@ namespace backend\tests\functional;
 use backend\tests\FunctionalTester;
 use common\fixtures\UserFixture;
 
-class CreateGeneroCest
+class CreateHabilidadeCest
 {
-    public function tryCreateBand(FunctionalTester $I)
+    public function tryCreateHabilidade(FunctionalTester $I)
     {
         // Login na Página
         $I->amOnPage(\yii::$app->homeUrl);
@@ -19,16 +19,16 @@ class CreateGeneroCest
         $I->dontSeeLink('Login');
         $I->dontSeeLink('Signup');
 
-        $I->amOnPage('/genero');
+        $I->amOnPage('/habilidade');
         $I->click('Create');
-        $I->fillField('Nome', 'GeneroTest');
+        $I->fillField('Nome', 'HabilidadesTest');
         $I->click('Save');
     }
 
-    public function tryEditGenero(FunctionalTester $I)
+    public function tryEditHabilidade(FunctionalTester $I)
     {
-        $I->amOnPage('/genero/update?id=27');
-        $I->fillField('Nome', 'GeneroUpdate');
+        $I->amOnPage('/habilidade/update?id=5');
+        $I->fillField('Nome', 'HabilidadesUpdate');
         $I->click('Save');
     }
 /*

@@ -5,9 +5,9 @@ namespace backend\tests\functional;
 use backend\tests\FunctionalTester;
 use common\fixtures\UserFixture;
 
-class CreateBandCest
+class CreateBandaCest
 {
-    public function tryCreateBand(FunctionalTester $I)
+    public function tryCreateBanda(FunctionalTester $I)
     {
         // Login na Página
         $I->amOnPage(\yii::$app->homeUrl);
@@ -31,7 +31,7 @@ class CreateBandCest
         $I->click('Save');
     }
 
-    public function tryEditBand(FunctionalTester $I)
+    public function tryEditBanda(FunctionalTester $I)
     {
         $I->amOnPage('/banda/update?id=6');
         $I->fillField('Nome', 'BandaUpdate');
