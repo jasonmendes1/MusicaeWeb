@@ -66,17 +66,17 @@ class Generos extends \yii\db\ActiveRecord
         parent::afterSave($insert, $changedAttributes);
 
         //Obter dados do registo em causa
-        $Id=$this->Id;
-        $Nome=$this->Nome;
-        $myObj=new \stdClass();
-        $myObj->Id=$Id;
-        $myObj->Nome=$Nome;
+        $Id = $this->Id;
+        $Nome = $this->Nome;
+        $myObj = new \stdClass();
+        $myObj->Id = $Id;
+        $myObj->Nome = $Nome;
         $myJSON = json_encode($myObj);
-        if($insert)
-            $this->FazPublish("INSERT",$myJSON);
+        if ($insert)
+            $this->FazPublish("INSERT", $myJSON);
         else
-            $this->FazPublish("UPDATE",$myJSON);
-    } 
+            $this->FazPublish("UPDATE", $myJSON);
+    }
 
     public function afterDelete()
     {
@@ -90,7 +90,7 @@ class Generos extends \yii\db\ActiveRecord
         $this->FazPublish("DELETE", $myJSON);
     }
 
-    public function FazPublish($canal,$msg)
+    public function FazPublish($canal, $msg)
     {
         $server = "127.0.0.1";
         $port = 1883;
@@ -98,10 +98,11 @@ class Generos extends \yii\db\ActiveRecord
         $password = ""; // set your password
         $client_id = "phpMQTT-publisher"; // unique!
         $mqtt = new \app\mosquitto\phpMQTT($server, $port, $client_id);
-        if ($mqtt->connect(true, NULL, $username, $password)){
+        if ($mqtt->connect(true, NULL, $username, $password)) {
             $mqtt->publish($canal, $msg, 0);
             $mqtt->close();
+        } else {
+            file_put_contents("debug.output", "Time out!");
         }
-        else { file_put_contents("debug.output","Time out!"); }
     }
 }
