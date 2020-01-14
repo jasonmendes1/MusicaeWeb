@@ -25,46 +25,40 @@ class HabilidadeTest extends \Codeception\Test\Unit
         $user->Nome = null;
         $this->assertFalse($user->validate(['Nome']));
 
-        $user->Nome = 'fghnvghtoolooooongnafghnvghtoolooooongnaaaaaaameeeefghjkcxdftyhfghjkcxdfghjkcxhss';
+        $user->Nome = 'HabilidadeHabilidadeHabilidadeHabilidadeHabilidadeHabilidade';
         $this->assertFalse($user->validate(['Nome']));
 
-        $user->Nome = 'Pedro';
+        $user->Nome = 'Habilidade';
         $this->assertTrue($user->validate(['Nome']));
     }
 
     function testSavingHabilidade()
     {
         $user = new Habilidades();
-        $user->Nome = 'Profileeeeee';
-        $user->Sexo = 'homem';
-        $user->DataNac = '2000-07-09 12:12:12';
-        $user->Descricao = 'Descriii';
-        $user->Foto = null;
-        $user->Localidade = '2430 MG';
-        $user->IdUser = 3;
+        $user->Nome = 'Harpa';
         $user->save();
-        $this->tester->seeInDatabase('habilidades', ['Nome' => 'Profileeeeee']);
+        $this->tester->seeInDatabase('habilidades', ['Nome' => 'Harpa']);
     }
 
     function testHabilidadeCanBeChanged()
     {
-        $id = $this->tester->grabRecord('common\models\Habilidades', ['Nome' => 'Profileeeeee']);
+        $id = $this->tester->grabRecord('common\models\Habilidades', ['Nome' => 'Harpa']);
 
         $user = Habilidades::findOne($id);
-        $user->Nome = ('Teste');
+        $user->Nome = ('Guitarra');
         $user->save();
 
-        $this->tester->seeRecord('common\models\Habilidades', ['Nome' => 'Teste']);
-        $this->tester->dontSeeRecord('common\models\Habilidades', ['Nome' => 'Profileeeeee']);
+        $this->tester->seeRecord('common\models\Habilidades', ['Nome' => 'Guitarra']);
+        $this->tester->dontSeeRecord('common\models\Habilidades', ['Nome' => 'Harpa']);
     }
 
     function testHabilidadeDeleted()
     {
-        $id = $this->tester->grabRecord('common\models\Habilidades', ['Nome' => 'Teste']);
+        $id = $this->tester->grabRecord('common\models\Habilidades', ['Nome' => 'Guitarra']);
 
         $user = Habilidades::findOne($id);
         $user->delete();
 
-        $this->tester->dontSeeRecord('common\models\Habilidades', ['Nome' => 'Teste']);
+        $this->tester->dontSeeRecord('common\models\Habilidades', ['Nome' => 'Guitarra']);
     }
 }

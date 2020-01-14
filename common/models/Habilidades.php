@@ -31,7 +31,7 @@ class Habilidades extends \yii\db\ActiveRecord
     {
         return [
             [['Nome'], 'required'],
-            [['Nome'], 'string'],
+            [['Nome'], 'string', 'max' => 50],
         ];
     }
 
