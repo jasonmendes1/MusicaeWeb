@@ -7,7 +7,7 @@ use common\fixtures\UserFixture;
 
 class CreateBandCest
 {
-/*
+
     public function tryLogin(FunctionalTester $I)
     {
         $I->amOnPage(\yii::$app->homeUrl);
@@ -19,7 +19,7 @@ class CreateBandCest
         $I->dontSeeLink('Login');
         $I->dontSeeLink('Signup');
     }
-*/
+
     public function tryCreateBand(FunctionalTester $I)
     {
         $I->amOnPage('/banda/create');
@@ -32,7 +32,22 @@ class CreateBandCest
         $I->fillField('Removida', '1');
         $I->fillField('Bandas[IdGenero]', '1');
         $I->click('Save');
-
-
     }
+
+    
+    public function tryEditBand(FunctionalTester $I)
+    {
+        $I->amOnPage('/banda/update?id=6');
+        //$I->click('Create');
+        $I->fillField('Nome', 'BandaUpdate');
+        $I->fillField('Descricao', 'BandaUpdate');
+        $I->fillField('Localizacao', 'BandaUpdate');
+        $I->fillField('Contacto', '123456789');
+        $I->fillField('Logo', '1');
+        $I->fillField('Removida', '1');
+        $I->fillField('Bandas[IdGenero]', '1');
+        $I->click('Save');
+    }
+    
+
 }

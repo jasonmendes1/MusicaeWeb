@@ -52,3 +52,4 @@ frontend/runtime/logs/app.log
 frontend/runtime/debug/index.data
 backend/runtime/debug/index.data
 frontend/runtime/debug/index.data
+*.php
