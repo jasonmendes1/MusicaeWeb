@@ -1,5 +1,8 @@
 <?php namespace frontend\tests;
 
+use yii\codeception\DbTestCase;
+use common\models\Profiles;
+
 class ProfileTest extends \Codeception\Test\Unit
 {
     /**
@@ -16,31 +19,33 @@ class ProfileTest extends \Codeception\Test\Unit
     }
 
     // tests
+    public function testValidation()
+    {
+        $user = new Profiles();
+
+        $user->Nome = (null);
+        $this->assertFalse($user->validate(['Nome']));
+
+        $user->Nome = ('toolooooongnaaaaaaameeeetoolooooongnaaaaaaameeeetoolooooongnaaaaaaameeeetoolooooongnaaaaaaameeeeaaaaaaeeeeeeaaaaaaeeeeeeaaaaaeaeauyegagduaegduyagdaegdgugyadgudguaeguyaguaegdyguagdaugdyugquyaeuyqadeadeadaedaehdaieuhdashdusaihdashdashdasihfduhoitjgiodgjidfgjoidfjo');
+        $this->assertFalse($user->validate(['Nome']));
+
+        $user->Nome = ('davert');
+        $this->assertTrue($user->validate(['Nome']));
+    }
 
     function testSavingUser()
     {
-        $profile = new Profiles();
-
-        $profile->Nome = ('Pedro Alves');
-        $profile->Sexo = ('Masculino');
-        $profile->DataNac = ('1998-11-23 13:17:17');
-        $profile->Descricao = ('Descricao');
-        $profile->Localidade = ('Marinha Grande');
-        $profile->save();
-        $this->tester->seeInDatabase('profiles', ['Nome' => 'Pedro']);
+        $user = new Profiles();
+        $user->Nome = 'pedroooooo';
+        $user->Sexo = 'homem';
+        $user->DataNac = '2000-07-09 12:12:12';
+        $user->Descricao = 'wtf';
+        $user->Foto = null;
+        $user->Localidade = '2430 MG';
+        $user->IdUser = 1;
+        $user->save();
+        //$this->tester->seeInDatabase('profiles', ['Nome' => 'pedro']);
     }
 
-    public function testValidation()
-    {
-        $profile = new Profiles();
-
-        $profile->Nome = (null);
-        $this->assertFalse($profile->validate(['Nome']));
-
-        $profile->Nome = ('toolooooongnaaaaaaameeeetoolooooongnaaaaaaameeeetoolooooongnaaaaaaameeeetoolooooongnaaaaaaameeeeaaaaaaeeeeeeaaaaaaeeeeeeaaaaaeaeauyegagduaegduyagdaegdgugyadgudguaeguyaguaegdyguagdaugdyugquyaeuyqadeadeadaedaehdaieuhdashdusaihdashdashdasihfduhoitjgiodgjidfgjoidfjo');
-        $this->assertFalse($profile->validate(['Nome']));
-
-        $profile->Nome = ('davert');
-        $this->assertTrue($profile->validate(['Nome']));
-    }
+    
 }

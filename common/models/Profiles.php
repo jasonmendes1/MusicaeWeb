@@ -39,7 +39,7 @@ class Profiles extends \yii\db\ActiveRecord
             [['DataNac'], 'safe'],
             [['Foto'], 'string'],
             [['IdUser'], 'integer'],
-            [['Nome', 'Sexo', 'Descricao', 'Localidade'], 'string', 'max' => 255],
+            [['Nome', 'Sexo', 'Descricao', 'Localidade'], 'string', 'max' => 80],
             [['IdUser'], 'unique'],
             [['IdUser'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['IdUser' => 'id']],
         ];
