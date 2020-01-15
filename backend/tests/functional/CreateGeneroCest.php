@@ -27,7 +27,7 @@ class CreateGeneroCest
 
     public function tryEditGenero(FunctionalTester $I)
     {
-        $I->amOnPage('/genero/update?id=27');
+        $I->amOnPage('/genero/update?id=1');
         $I->fillField('Nome', 'GeneroUpdate');
         $I->click('Save');
     }
