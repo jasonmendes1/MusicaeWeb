@@ -2,12 +2,30 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use yii\data\ActiveDataProvider;
+use common\models\Bandas;
+use yii\db\Query;
 
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = 'Bandas';
 $this->params['breadcrumbs'][] = $this->title;
+// $classModelo = 'common\models\Bandas';
+// $banda = new $classModelo;
+
+// var_dump($banda->getMusicos()->primaryModel->IdBanda);
+// $query = Bandas::find()->where([Bandas::getBandamembros()->primaryModel => 1]);
+
+
+/*
+// $query = Bandas::find()->where([$banda->getBandamembros() => 1]);
+$query = $banda->find()->where(['id' => 5]);
+$dataProvider = new ActiveDataProvider([
+    'query' => $query,
+]);
+
+*/
 ?>
 <style>
     a {

@@ -38,7 +38,11 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'IdGenero')->textInput() ?>
 
     <div class="form-group">
-        <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
+        <?php
+        if (\Yii::$app->user->can('criarBanda')) {
+            Html::submitButton('Save', ['class' => 'btn btn-success']);
+        }
+        ?>
     </div>
 
     <?php ActiveForm::end(); ?>
