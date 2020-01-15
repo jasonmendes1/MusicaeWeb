@@ -9,7 +9,17 @@ use yii\grid\GridView;
 $this->title = 'Profiles';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="profiles-index">
+<style>
+    a {
+        color: #800000;
+    }
+
+    a:hover {
+        color: #800000;
+    }
+</style>
+
+<div class="profiles-index" style="color: #800000;">
 
     <h1><?= Html::encode($this->title) ?></h1>
 

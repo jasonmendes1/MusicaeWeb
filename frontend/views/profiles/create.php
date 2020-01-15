@@ -9,7 +9,18 @@ $this->title = 'Create Profiles';
 $this->params['breadcrumbs'][] = ['label' => 'Profiles', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="profiles-create">
+
+<style>
+    a {
+        color: #800000;
+    }
+
+    a:hover {
+        color: #800000;
+    }
+</style>
+
+<div class="profiles-create" style="color: #800000;">
 
     <h1><?= Html::encode($this->title) ?></h1>
 

@@ -8,11 +8,21 @@ use yii\widgets\ActiveForm;
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="musicos-form">
+<style>
+    a {
+        color: #800000;
+    }
+
+    a:hover {
+        color: #800000;
+    }
+</style>
+
+<div class="musicos-form" style="color: #800000;">
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'NivelCompromisso')->dropDownList([ 'Diversao' => 'Diversao', 'Moderadamente Comprometido' => 'Moderadamente Comprometido', 'Comprometido' => 'Comprometido', 'Muito Comprometido' => 'Muito Comprometido', 'Tour' => 'Tour', ], ['prompt' => '']) ?>
+    <?= $form->field($model, 'NivelCompromisso')->dropDownList(['Diversao' => 'Diversao', 'Moderadamente Comprometido' => 'Moderadamente Comprometido', 'Comprometido' => 'Comprometido', 'Muito Comprometido' => 'Muito Comprometido', 'Tour' => 'Tour',], ['prompt' => '']) ?>
 
     <?= $form->field($model, 'idProfile')->textInput() ?>
 

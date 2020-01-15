@@ -9,7 +9,17 @@ use yii\grid\GridView;
 $this->title = 'Musicos';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="musicos-index">
+<style>
+    a {
+        color: #800000;
+    }
+
+    a:hover {
+        color: #800000;
+    }
+</style>
+
+<div class="musicos-index" style="color: #800000;">
 
     <h1><?= Html::encode($this->title) ?></h1>
 

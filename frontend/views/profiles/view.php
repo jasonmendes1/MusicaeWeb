@@ -11,7 +11,17 @@ $this->params['breadcrumbs'][] = ['label' => 'Profiles', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 ?>
-<div class="profiles-view">
+<style>
+    a {
+        color: #800000;
+    }
+
+    a:hover {
+        color: #800000;
+    }
+</style>
+
+<div class="profiles-view" style="color: #800000;">
 
     <h1><?= Html::encode($this->title) ?></h1>
 

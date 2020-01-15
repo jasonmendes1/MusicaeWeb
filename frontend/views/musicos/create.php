@@ -9,7 +9,18 @@ $this->title = 'Create Musicos';
 $this->params['breadcrumbs'][] = ['label' => 'Musicos', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="musicos-create">
+
+<style>
+    a {
+        color: #800000;
+    }
+
+    a:hover {
+        color: #800000;
+    }
+</style>
+
+<div class="musicos-create" style="color: #800000;">
 
     <h1><?= Html::encode($this->title) ?></h1>
 

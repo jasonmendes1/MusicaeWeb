@@ -9,7 +9,16 @@ use yii\grid\GridView;
 $this->title = 'Bandas';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="bandas-index">
+<style>
+    a {
+        color: #800000;
+    }
+
+    a:hover {
+        color: #800000;
+    }
+</style>
+<div class="bandas-index" style="color: #800000;">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
@@ -28,9 +37,6 @@ $this->params['breadcrumbs'][] = $this->title;
             'Descricao',
             'Localizacao',
             'Contacto',
-            //'Logo',
-            //'Removida',
-            //'IdGenero',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
