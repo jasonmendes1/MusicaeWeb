@@ -5,7 +5,6 @@ use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
 /* @var $model common\models\BandaHabilidades */
-/* @var $bandas common\models\Bandas */
 
 $this->title = $model->IdBanda;
 $this->params['breadcrumbs'][] = ['label' => 'Banda Habilidades', 'url' => ['index']];
@@ -32,8 +31,8 @@ $this->params['breadcrumbs'][] = $this->title;
         'attributes' => [
             'IdBanda',
             'IdHabilidade',
-            'banda.Nome',
-            'habilidade.Nome',
+            'experiencia',
+            'compromisso',
         ],
     ]) ?>
 

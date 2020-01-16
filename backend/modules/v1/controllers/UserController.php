@@ -16,32 +16,6 @@ class UserController extends ActiveController
 {
     public $modelClass = 'common\models\User';
 
-    public function behaviors()
-    {
-        $behaviors = parent::behaviors();
-        $behaviors['contentNegotiator'] = [
-            'class' => 'yii\filters\ContentNegotiator',
-            'formats' => [
-                'application/json' => Response::FORMAT_JSON,
-            ]
-        ];
-        $behaviors['authenticator'] = [
-        'class' => HttpBasicAuth::className(),
-        'auth' => [$this, 'auth']
-        ];
-        return $behaviors;
-    }
-
-    public function auth($username, $password)
-    { 
-        $user = \common\models\
-        User::findByUsername($username);
-        if ($user && $user->validatePassword($password)) {
-        return $user;
-        }
-        return null;
-    }
-
     public function actionTotal()
     {
         $userModel = new $this->modelClass;
