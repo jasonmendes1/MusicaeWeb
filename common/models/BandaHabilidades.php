@@ -70,4 +70,14 @@ class Bandahabilidades extends \yii\db\ActiveRecord
     {
         return $this->hasOne(Habilidades::className(), ['Id' => 'IdHabilidade']);
     }
+
+    public function fields()
+    {
+        return ['experiencia', 'compromisso'];
+    }
+
+    public function extraFields()
+    {
+        return ['banda', 'habilidade'];
+    }
 }
