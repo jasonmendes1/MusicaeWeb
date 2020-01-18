@@ -43,7 +43,7 @@ class UserController extends ActiveController
 
         $rec = $userModel::find()->where("username=" . '\'' . $user . '\'')->one();
         if ($rec->validatePassword($dec)) {
-            return ['id' => $rec->id];
+            return ['id' => $rec->Id];
         } else {
             return ['id' => -1];
         }
