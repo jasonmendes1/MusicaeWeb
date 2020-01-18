@@ -83,6 +83,13 @@ return [
                     ],
                     'pluralize' => false,
                 ],
+                [
+                    'class' => 'yii\rest\UrlRule', 'controller' => ['v1/banda-habilidades'],
+                    'extraPatterns' => [
+                        'GET feed' => 'feed',
+                    ],
+                    'pluralize' => false,
+                ],
             ],
         ],
     ],

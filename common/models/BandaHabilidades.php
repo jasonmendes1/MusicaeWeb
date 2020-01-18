@@ -34,7 +34,7 @@ class Bandahabilidades extends \yii\db\ActiveRecord
             [['IdBanda', 'IdHabilidade', 'experiencia', 'compromisso'], 'required'],
             [['IdBanda', 'IdHabilidade'], 'integer'],
             [['experiencia', 'compromisso'], 'string'],
-            ['experiencia', 'in', 'range' => ['Aprendiz','Novato','Experiente','Profissional']],
+            ['experiencia', 'in', 'range' => ['Aprendiz', 'Novato', 'Experiente', 'Profissional']],
             ['compromisso', 'in', 'range' => ['Pouco', 'Medio', 'Muito']],
             [['IdBanda', 'IdHabilidade'], 'unique', 'targetAttribute' => ['IdBanda', 'IdHabilidade']],
             [['IdBanda'], 'exist', 'skipOnError' => true, 'targetClass' => Bandas::className(), 'targetAttribute' => ['IdBanda' => 'Id']],
@@ -69,15 +69,5 @@ class Bandahabilidades extends \yii\db\ActiveRecord
     public function getHabilidade()
     {
         return $this->hasOne(Habilidades::className(), ['Id' => 'IdHabilidade']);
-    }
-
-    public function fields()
-    {
-        return ['experiencia', 'compromisso'];
-    }
-
-    public function extraFields()
-    {
-        return ['banda', 'habilidade'];
     }
 }

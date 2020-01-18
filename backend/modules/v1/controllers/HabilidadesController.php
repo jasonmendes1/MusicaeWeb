@@ -24,18 +24,17 @@ class HabilidadesController extends ActiveController
             ]
         ];
         $behaviors['authenticator'] = [
-        'class' => HttpBasicAuth::className(),
-        'auth' => [$this, 'auth']
+            'class' => HttpBasicAuth::className(),
+            'auth' => [$this, 'auth']
         ];
         return $behaviors;
     }
 
     public function auth($username, $password)
-    { 
-        $user = \common\models\
-        User::findByUsername($username);
+    {
+        $user = \common\models\User::findByUsername($username);
         if ($user && $user->validatePassword($password)) {
-        return $user;
+            return $user;
         }
         return null;
     }
