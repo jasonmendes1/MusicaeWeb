@@ -49,9 +49,11 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                ['class' => 'yii\rest\UrlRule', 
-                    'controller' => ['v1/bandas'], 
-                    'pluralize' => false,],
+                [
+                    'class' => 'yii\rest\UrlRule',
+                    'controller' => ['v1/bandas'],
+                    'pluralize' => false,
+                ],
                 [
                     'class' => 'yii\rest\UrlRule', 'controller' => ['v1/user'],
                     'extraPatterns' => [
@@ -71,13 +73,13 @@ return [
                     'extraPatterns' => [
                         'GET feed' => 'feed',
                         'GET feedhabilidade/{idhabilidade}' => 'feedhabilidade',
-                        'GET membros/{idmusico}' => 'membros',
+                        'GET membros/{iduser}' => 'membros',
                         // 'POST feedhabilidade' => 'feedhabilidade',
                     ],
                     'tokens' => [
                         '{id}' => '<id:\\d+>',
                         '{idhabilidade}' => '<idhabilidade:\\d+>',
-                        '{idmusico}' => '<idmusico:\\d+>',
+                        '{iduser}' => '<iduser:\\d+>',
                     ],
                     'pluralize' => false,
                 ],
