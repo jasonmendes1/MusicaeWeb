@@ -22,6 +22,34 @@ class BandasController extends ActiveController
     public $modelMembrosBanda = 'common\models\BandaMembros';
     public $modelUser = 'common\models\User';
     public $modelProfile = 'common\models\Profiles';
+    public $modelMusico = 'common\models\Musicos';
+    public $modelGenero = 'common\models\Generos';
+
+    public function actionPerfil()
+    {
+        $bandas = new $this->modelClass;
+        $recs = $bandas::find()->all();
+        $genero = new $this->modelGenero;
+        $bandaMembros = new $this->modelMembrosBanda;
+
+        $feed = array();
+
+        foreach ($recs as $rec) {
+            $bandaRec = $banda::find()->where("Id=" . '\'' . $rec->IdBanda . '\'')->one();
+            $habilidadeRec = $habilidade::find()->where("Id=" . '\'' . $rec->IdHabilidade . '\'')->one();
+
+            array_push($feed, 
+            ["Id" => $bandaRec->Id, 
+            "Nome" => $bandaRec->Nome,
+            "Instrumento" => $habilidadeRec->Nome, 
+            "Experiencia" => $rec->experiencia, 
+            "Compromisso" => $rec->compromisso, 
+            "Logo" => $bandaRec->Logo]);
+
+        }
+
+        return $feed;
+    }
 
     public function actionMembros($iduser)
     {

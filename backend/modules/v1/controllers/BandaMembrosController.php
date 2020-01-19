@@ -10,9 +10,11 @@ use yii\web\Response;
 /**
  * Default controller for the `v1` module
  */
-class HabilidadesController extends ActiveController
+class BandaMembrosController extends ActiveController
 {
-    public $modelClass = 'common\models\Habilidades';
+    public $modelClass = 'common\models\BandaMembros';
+    public $modelBanda = 'common\models\Bandas';
+    public $modelMusico = 'common\models\Musicos';
 
     public function behaviors()
     {
@@ -23,19 +25,6 @@ class HabilidadesController extends ActiveController
                 'application/json' => Response::FORMAT_JSON,
             ]
         ];
-        /*$behaviors['authenticator'] = [
-            'class' => HttpBasicAuth::className(),
-            'auth' => [$this, 'auth']
-        ];*/
         return $behaviors;
     }
-
-    /*public function auth($username, $password)
-    {
-        $user = \common\models\User::findByUsername($username);
-        if ($user && $user->validatePassword($password)) {
-            return $user;
-        }
-        return null;
-    }*/
 }
