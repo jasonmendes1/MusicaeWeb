@@ -13,8 +13,6 @@ use yii\web\Response;
 class BandaMembrosController extends ActiveController
 {
     public $modelClass = 'common\models\BandaMembros';
-    public $modelBanda = 'common\models\Bandas';
-    public $modelMusico = 'common\models\Musicos';
 
     public function behaviors()
     {

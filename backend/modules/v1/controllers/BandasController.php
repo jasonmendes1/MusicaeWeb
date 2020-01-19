@@ -30,25 +30,25 @@ class BandasController extends ActiveController
         $bandas = new $this->modelClass;
         $recs = $bandas::find()->all();
         $genero = new $this->modelGenero;
-        $bandaMembros = new $this->modelMembrosBanda;
 
-        $feed = array();
+
+        $perfil = array();
 
         foreach ($recs as $rec) {
-            $bandaRec = $banda::find()->where("Id=" . '\'' . $rec->IdBanda . '\'')->one();
-            $habilidadeRec = $habilidade::find()->where("Id=" . '\'' . $rec->IdHabilidade . '\'')->one();
+            $generoRec = $genero::find()->where("Id=" . '\'' . $rec->IdGenero . '\'')->one();
 
-            array_push($feed, 
-            ["Id" => $bandaRec->Id, 
-            "Nome" => $bandaRec->Nome,
-            "Instrumento" => $habilidadeRec->Nome, 
-            "Experiencia" => $rec->experiencia, 
-            "Compromisso" => $rec->compromisso, 
-            "Logo" => $bandaRec->Logo]);
+            array_push($perfil, 
+            ["Id" => $rec->Id, 
+            "Nome" => $rec->Nome,
+            "Genero" => $generoRec->Nome,
+            "Localizacao" => $rec->Localizacao, 
+            "Contacto" => $rec->Contacto, 
+            "Descricao" => $rec->Descricao, 
+            "Capa" => $rec->Logo]);
 
         }
 
-        return $feed;
+        return $perfil;
     }
 
     public function actionMembros($iduser)

@@ -15,7 +15,7 @@ class BandaHabilidadesController extends ActiveController
     public $modelClass = 'common\models\BandaHabilidades';
     public $modelBanda = 'common\models\Bandas';
     public $modelHabilidade = 'common\models\Habilidades';
-
+    
     public function actionFeed()
     {
         $bandaHabilidades = new $this->modelClass;
