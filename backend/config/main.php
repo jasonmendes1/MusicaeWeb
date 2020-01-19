@@ -71,6 +71,7 @@ return [
                 [
                     'class' => 'yii\rest\UrlRule', 'controller' => ['v1/bandas'],
                     'extraPatterns' => [
+                        'GET perfil' => 'perfil',
                         'GET feed' => 'feed',
                         'GET feedhabilidade/{idhabilidade}' => 'feedhabilidade',
                         'GET membros/{iduser}' => 'membros',
