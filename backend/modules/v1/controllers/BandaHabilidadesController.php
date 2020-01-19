@@ -22,11 +22,7 @@ class BandaHabilidadesController extends ActiveController
         $recs = $bandaHabilidades::find()->all();
         $banda = new $this->modelBanda;
         $habilidade = new $this->modelHabilidade;
-        /*$auxNome = array();
-        $auxLogo = array();
-        $auxInstrumento = array();
-        $auxExperiencia = array();
-        $auxCompromisso = array();*/
+
         $feed = array();
 
         foreach ($recs as $rec) {
@@ -34,15 +30,17 @@ class BandaHabilidadesController extends ActiveController
             $habilidadeRec = $habilidade::find()->where("Id=" . '\'' . $rec->IdHabilidade . '\'')->one();
 
             array_push($feed, 
-            ['Id'=>$rec->Id, 
-            "Nome" => $bandaRec->Nome, 
+            ["Id" => $bandaRec->Id, 
+            "Nome" => $bandaRec->Nome,
             "Instrumento" => $habilidadeRec->Nome, 
             "Experiencia" => $rec->experiencia, 
             "Compromisso" => $rec->compromisso, 
             "Logo" => $bandaRec->Logo]);
+
         }
 
         //ir buscar todos
+        //return ['feed'=>$feed];
         return $feed;
 
         //ir buscar 1 pedido
@@ -61,19 +59,6 @@ class BandaHabilidadesController extends ActiveController
                 'application/json' => Response::FORMAT_JSON,
             ]
         ];
-        $behaviors['authenticator'] = [
-            'class' => HttpBasicAuth::className(),
-            'auth' => [$this, 'auth']
-        ];
         return $behaviors;
-    }
-
-    public function auth($username, $password)
-    {
-        $user = \common\models\User::findByUsername($username);
-        if ($user && $user->validatePassword($password)) {
-            return $user;
-        }
-        return null;
     }
 }

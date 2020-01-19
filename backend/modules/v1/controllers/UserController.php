@@ -48,4 +48,16 @@ class UserController extends ActiveController
             return ['id' => -1];
         }
     }
+
+    public function behaviors()
+    {
+        $behaviors = parent::behaviors();
+        $behaviors['contentNegotiator'] = [
+            'class' => 'yii\filters\ContentNegotiator',
+            'formats' => [
+                'application/json' => Response::FORMAT_JSON,
+            ]
+        ];
+        return $behaviors;
+    }
 }
