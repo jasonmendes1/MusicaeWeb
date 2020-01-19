@@ -24,17 +24,15 @@ class BandasController extends ActiveController
     public $modelProfile = 'common\models\Profiles';
     public $modelMusico = 'common\models\Musicos';
     public $modelGenero = 'common\models\Generos';
-
-    public function actionPerfil()
+    
+    public function actionPerfil($id)
     {
         $bandas = new $this->modelClass;
-        $recs = $bandas::find()->all();
+        $rec = $bandas::find()->where("Id=" . '\'' . $id . '\'')->one();
         $genero = new $this->modelGenero;
-
-
+        
         $perfil = array();
 
-        foreach ($recs as $rec) {
             $generoRec = $genero::find()->where("Id=" . '\'' . $rec->IdGenero . '\'')->one();
 
             array_push($perfil, 
@@ -45,8 +43,6 @@ class BandasController extends ActiveController
             "Contacto" => $rec->Contacto, 
             "Descricao" => $rec->Descricao, 
             "Capa" => $rec->Logo]);
-
-        }
 
         return $perfil;
     }
