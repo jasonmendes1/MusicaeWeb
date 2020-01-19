@@ -52,24 +52,6 @@ return [
                 [
                     'class' => 'yii\rest\UrlRule',
                     'controller' => ['v1/bandas'],
-                    'pluralize' => false,
-                ],
-                [
-                    'class' => 'yii\rest\UrlRule', 'controller' => ['v1/user'],
-                    'extraPatterns' => [
-                        'GET total' => 'total',
-                        'POST verificaLogin' => 'verifica',
-                    ],
-                    'tokens' => [
-                        '{id}' => '<id:\\d+>',
-                        '{user}' => '<user:\\w+>',
-                        '{pw}' => '<pw:[\-]?\w+>',
-                    ],
-                    'pluralize' => false,
-                ],
-                ['class' => 'yii\rest\UrlRule', 'controller' => ['v1/profiles'], 'pluralize' => false,],
-                [
-                    'class' => 'yii\rest\UrlRule', 'controller' => ['v1/bandas'],
                     'extraPatterns' => [
                         'GET perfil' => 'perfil',
                         'GET feed' => 'feed',
@@ -85,7 +67,27 @@ return [
                     'pluralize' => false,
                 ],
                 [
-                    'class' => 'yii\rest\UrlRule', 'controller' => ['v1/banda-habilidades'],
+                    'class' => 'yii\rest\UrlRule', 
+                    'controller' => ['v1/user'],
+                    'extraPatterns' => [
+                        'GET total' => 'total',
+                        'POST verificaLogin' => 'verifica',
+                    ],
+                    'tokens' => [
+                        '{id}' => '<id:\\d+>',
+                        '{user}' => '<user:\\w+>',
+                        '{pw}' => '<pw:[\-]?\w+>',
+                    ],
+                    'pluralize' => false,
+                ],
+                [
+                    'class' => 'yii\rest\UrlRule', 
+                    'controller' => ['v1/profiles'], 
+                    'pluralize' => false,
+                ],
+                [
+                    'class' => 'yii\rest\UrlRule', 
+                    'controller' => ['v1/banda-habilidades'],
                     'extraPatterns' => [
                         'GET feed' => 'feed',
                     ],
