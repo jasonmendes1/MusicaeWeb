@@ -22,18 +22,34 @@ class BandaHabilidadesController extends ActiveController
         $recs = $bandaHabilidades::find()->all();
         $banda = new $this->modelBanda;
         $habilidade = new $this->modelHabilidade;
-        $temp = array();
-        $aux = array();
+        /*$auxNome = array();
+        $auxLogo = array();
+        $auxInstrumento = array();
+        $auxExperiencia = array();
+        $auxCompromisso = array();*/
+        $feed = array();
 
         foreach ($recs as $rec) {
             $bandaRec = $banda::find()->where("Id=" . '\'' . $rec->IdBanda . '\'')->one();
             $habilidadeRec = $habilidade::find()->where("Id=" . '\'' . $rec->IdHabilidade . '\'')->one();
-            array_push($temp, $bandaRec->Nome, $bandaRec->Logo, $habilidadeRec->Nome, $rec->experiencia, $rec->compromisso);
-            array_push($aux, $temp);
-            $temp = array();
+
+            array_push($feed, 
+            ['Id'=>$rec->Id, 
+            "Nome" => $bandaRec->Nome, 
+            "Instrumento" => $habilidadeRec->Nome, 
+            "Experiencia" => $rec->experiencia, 
+            "Compromisso" => $rec->compromisso, 
+            "Logo" => $bandaRec->Logo]);
         }
 
-        return ['idBanda' => $aux];
+        //ir buscar todos
+        return $feed;
+
+        //ir buscar 1 pedido
+        //return $feed[0];
+
+        //ir buscar o nome por exemplo
+        //return $feed[0][0];
     }
 
     public function behaviors()
