@@ -67,10 +67,11 @@ return [
                     'pluralize' => false,
                 ],
                 [
-                    'class' => 'yii\rest\UrlRule', 
+                    'class' => 'yii\rest\UrlRule',
                     'controller' => ['v1/user'],
                     'extraPatterns' => [
                         'GET total' => 'total',
+                        'GET profile/{id}' => 'profile',
                         'POST verificaLogin' => 'verifica',
                     ],
                     'tokens' => [
@@ -81,12 +82,12 @@ return [
                     'pluralize' => false,
                 ],
                 [
-                    'class' => 'yii\rest\UrlRule', 
-                    'controller' => ['v1/profiles'], 
+                    'class' => 'yii\rest\UrlRule',
+                    'controller' => ['v1/profiles'],
                     'pluralize' => false,
                 ],
                 [
-                    'class' => 'yii\rest\UrlRule', 
+                    'class' => 'yii\rest\UrlRule',
                     'controller' => ['v1/banda-habilidades'],
                     'extraPatterns' => [
                         'GET feed' => 'feed',
