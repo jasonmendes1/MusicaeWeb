@@ -30,19 +30,23 @@ class BandasController extends ActiveController
         $bandas = new $this->modelClass;
         $rec = $bandas::find()->where("Id=" . '\'' . $id . '\'')->one();
         $genero = new $this->modelGenero;
-        
+
         $perfil = array();
 
-            $generoRec = $genero::find()->where("Id=" . '\'' . $rec->IdGenero . '\'')->one();
+        $generoRec = $genero::find()->where("Id=" . '\'' . $rec->IdGenero . '\'')->one();
 
-            array_push($perfil, 
-            ["Id" => $rec->Id, 
-            "Nome" => $rec->Nome,
-            "Genero" => $generoRec->Nome,
-            "Localizacao" => $rec->Localizacao, 
-            "Contacto" => $rec->Contacto, 
-            "Descricao" => $rec->Descricao, 
-            "Capa" => $rec->Logo]);
+        array_push(
+            $perfil,
+            [
+                "Id" => $rec->Id,
+                "Nome" => $rec->Nome,
+                "Genero" => $generoRec->Nome,
+                "Localizacao" => $rec->Localizacao,
+                "Contacto" => $rec->Contacto,
+                "Descricao" => $rec->Descricao,
+                "Capa" => $rec->Logo
+            ]
+        );
 
         return $perfil;
     }
@@ -58,19 +62,24 @@ class BandasController extends ActiveController
         $recProfile = $profile::find()->where("Id=" . '\'' . $recUser->profile->Id . '\'')->one();;
 
         $membros = new $this->modelMembrosBanda;
-        $recs = $membros::find()->where("IdMusico=" . '\'' . $recProfile->musicos->Id . '\'')->one();
-        $habilidade = new $this->modelHabilidade;
-        $temp = array();
-        $aux = array();
+        $recs = $membros::find()->where("IdMusico=" . '\'' . $recProfile->musicos->Id . '\'')->all();
 
+        $habilidade = new $this->modelHabilidade;
+        $MinhasBandas = array();
         foreach ($recs as $rec) {
-            $habilidadeRec = $habilidade::find()->where("Id=" . '\'' . $rec->musico->idHabilidade . '\'')->one();
-            array_push($temp, $rec->DataEntrada, $rec->banda->Nome, $habilidadeRec->Nome);
-            array_push($aux, $temp);
-            $temp = array();
+            $habilidadeRec = $habilidade::find()->where("Id=" . '\'' . $rec->IdMusico . '\'')->one();
+            array_push(
+                $MinhasBandas,
+                [
+                    "Id" => $rec->IdBanda,
+                    "DataEntrada" => $rec->DataEntrada,
+                    "BandaNome" => $rec->banda->Nome,
+                    "HabilidadeNome" => $habilidadeRec->Nome,
+                ]
+            );
         }
 
-        return ['Minhas_Bandas' => $aux];
+        return $MinhasBandas;
     }
 
     //Feed com base na habilidade escolhida no filtro
@@ -88,7 +97,6 @@ class BandasController extends ActiveController
         //return ['idhabilidade' => $recs2];
         //$rec = $userModel::find()->where("username=" . '\'' . $user . '\'')->one();
     }
-
 
     public function behaviors()
     {
@@ -114,8 +122,8 @@ class BandasController extends ActiveController
         }
         return null;
     }
-
-    
+*/
+    /*
     public function behaviors()
     {
         $behaviors = parent::behaviors();

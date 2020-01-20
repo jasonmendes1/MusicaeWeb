@@ -22,21 +22,23 @@ class BandaHabilidadesController extends ActiveController
         $recs = $bandaHabilidades::find()->all();
         $banda = new $this->modelBanda;
         $habilidade = new $this->modelHabilidade;
-
         $feed = array();
 
         foreach ($recs as $rec) {
             $bandaRec = $banda::find()->where("Id=" . '\'' . $rec->IdBanda . '\'')->one();
             $habilidadeRec = $habilidade::find()->where("Id=" . '\'' . $rec->IdHabilidade . '\'')->one();
 
-            array_push($feed, 
-            ["Id" => $bandaRec->Id, 
-            "Nome" => $bandaRec->Nome,
-            "Instrumento" => $habilidadeRec->Nome, 
-            "Experiencia" => $rec->experiencia, 
-            "Compromisso" => $rec->compromisso, 
-            "Logo" => $bandaRec->Logo]);
-
+            array_push(
+                $feed,
+                [
+                    "Id" => $bandaRec->Id,
+                    "Nome" => $bandaRec->Nome,
+                    "Instrumento" => $habilidadeRec->Nome,
+                    "Experiencia" => $rec->experiencia,
+                    "Compromisso" => $rec->compromisso,
+                    "Logo" => $bandaRec->Logo
+                ]
+            );
         }
 
         return $feed;
