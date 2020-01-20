@@ -67,7 +67,7 @@ class BandasController extends ActiveController
         $habilidade = new $this->modelHabilidade;
         $MinhasBandas = array();
         foreach ($recs as $rec) {
-            $habilidadeRec = $habilidade::find()->where("Id=" . '\'' . $rec->IdMusico . '\'')->one();
+            $habilidadeRec = $habilidade::find()->where("Id=" . '\'' . $recProfile->musicos->idHabilidade . '\'')->one();
             array_push(
                 $MinhasBandas,
                 [
