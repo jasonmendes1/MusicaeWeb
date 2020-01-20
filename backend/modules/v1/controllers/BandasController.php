@@ -34,19 +34,24 @@ class BandasController extends ActiveController
         $recProfile = $profile::find()->where("Id=" . '\'' . $recUser->profile->Id . '\'')->one();;
 
         $membros = new $this->modelMembrosBanda;
-        $recs = $membros::find()->where("IdMusico=" . '\'' . $recProfile->musicos->Id . '\'')->one();
-        $habilidade = new $this->modelHabilidade;
-        $temp = array();
-        $aux = array();
+        $recs = $membros::find()->where("IdMusico=" . '\'' . $recProfile->musicos->Id . '\'')->all();
 
+        $habilidade = new $this->modelHabilidade;
+        $MinhasBandas = array();
         foreach ($recs as $rec) {
-            $habilidadeRec = $habilidade::find()->where("Id=" . '\'' . $rec->musico->idHabilidade . '\'')->one();
-            array_push($temp, $rec->DataEntrada, $rec->banda->Nome, $habilidadeRec->Nome);
-            array_push($aux, $temp);
-            $temp = array();
+            $habilidadeRec = $habilidade::find()->where("Id=" . '\'' . $rec->IdMusico . '\'')->one();
+            array_push(
+                $MinhasBandas,
+                [
+                    "Id" => $rec->IdBanda,
+                    "DataEntrada" => $rec->DataEntrada,
+                    "BandaNome" => $rec->banda->Nome,
+                    "HabilidadeNome" => $habilidadeRec->Nome,
+                ]
+            );
         }
 
-        return ['Minhas_Bandas' => $aux];
+        return $MinhasBandas;
     }
 
     //Feed com base na habilidade escolhida no filtro
@@ -65,7 +70,7 @@ class BandasController extends ActiveController
         //$rec = $userModel::find()->where("username=" . '\'' . $user . '\'')->one();
     }
 
-
+    /*
     public function behaviors()
     {
         $behaviors = parent::behaviors();
@@ -90,7 +95,7 @@ class BandasController extends ActiveController
         }
         return null;
     }
-
+*/
     /*
     public function behaviors()
     {
