@@ -15,6 +15,9 @@ use Yii;
 class UserController extends ActiveController
 {
     public $modelClass = 'common\models\User';
+    public $modelProfile = 'common\models\Profiles';
+    public $modelHabilidade = 'common\models\Habilidades';
+    public $modelGenero = 'common\models\Generos';
 
     public function actionTotal()
     {
@@ -47,6 +50,33 @@ class UserController extends ActiveController
         } else {
             return ['id' => -1];
         }
+    }
+
+    public function actionProfile($id)
+    {
+        $user = new $this->modelClass;
+        $userRecord = $user::find()->where("Id=" . '\'' . $id . '\'')->one();
+        $habilidadeModel = new $this->modelHabilidade;
+        $generoModel = new $this->modelGenero;
+        $profile = array();
+
+        $habilidadeRecord = $habilidadeModel::find()->where("Id=" . '\'' . $userRecord->profile->musicos->idHabilidade . '\'')->one();
+        $generoRecord = $generoModel::find()->where("Id=" . '\'' . $userRecord->profile->musicos->idGenero . '\'')->one();
+
+        array_push(
+            $profile,
+            [
+                "UserUsername" => $userRecord->username,
+                "HabilidadeNome" => $habilidadeRecord->Nome,
+                "GeneroNome" => $generoRecord->Nome,
+                "ProfileNome" => $userRecord->profile->Nome,
+                "ProfileSexo" => $userRecord->profile->Sexo,
+                "ProfileLocalidade" => $userRecord->profile->Localidade,
+                "ProfileFoto" => $userRecord->profile->Foto,
+                "UserEmail" => $userRecord->email,
+            ]
+        );
+        return $profile;
     }
 
     public function behaviors()
