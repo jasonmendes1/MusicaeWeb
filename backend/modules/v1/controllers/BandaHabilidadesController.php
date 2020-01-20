@@ -39,15 +39,30 @@ class BandaHabilidadesController extends ActiveController
 
         }
 
-        //ir buscar todos
-        //return ['feed'=>$feed];
         return $feed;
+    }
 
-        //ir buscar 1 pedido
-        //return $feed[0];
+    public function actionFeeed($id)
+    {
+        $bandaHabilidades = new $this->modelClass;
+        $rec = $bandaHabilidades::find()->where("Id=" . '\'' . $id . '\'')->one();
+        $banda = new $this->modelBanda;
+        $habilidade = new $this->modelHabilidade;
 
-        //ir buscar o nome por exemplo
-        //return $feed[0][0];
+        $feeed = array();
+
+            $bandaRec = $banda::find()->where("Id=" . '\'' . $rec->IdBanda . '\'')->one();
+            $habilidadeRec = $habilidade::find()->where("Id=" . '\'' . $rec->IdHabilidade . '\'')->one();
+
+            array_push($feeed, 
+            ["Id" => $bandaRec->Id, 
+            "Nome" => $bandaRec->Nome,
+            "Instrumento" => $habilidadeRec->Nome, 
+            "Experiencia" => $rec->experiencia, 
+            "Compromisso" => $rec->compromisso, 
+            "Logo" => $bandaRec->Logo]);
+
+        return $feeed;
     }
 
     public function behaviors()

@@ -90,6 +90,7 @@ return [
                     'controller' => ['v1/banda-habilidades'],
                     'extraPatterns' => [
                         'GET feed' => 'feed',
+                        'GET feeed/{id}' => 'feeed',
                     ],
                     'pluralize' => false,
                 ],
