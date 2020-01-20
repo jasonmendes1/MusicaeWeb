@@ -33,6 +33,41 @@ class UserController extends ActiveController
         //Tentar sacar o id do gajo que faz a autênticação.
         $userModel = new $this->modelClass;
         $request = Yii::$app->request;
+        $userInfo = array();
+
+        $user = $request->get('username');
+        $pw = $request->get('password_hash');
+        $key = "tHeApAcHe6410111";
+
+
+        $dec = openssl_decrypt(base64_decode($pw), "aes-128-ecb", $key, OPENSSL_RAW_DATA);
+        if (!($userModel::find()->where("username=" . '\'' . $user . '\'')->one())) {
+            return ['id' => -1];
+        }
+
+        $rec = $userModel::find()->where("username=" . '\'' . $user . '\'')->one();
+        array_push(
+            $userInfo,
+            [
+                "id" => $rec->Id,
+                "username" => $rec->username,
+                "email" => $rec->email,
+            ]
+        );
+        if ($rec->validatePassword($dec)) {
+            return $userInfo;
+        } else {
+            return ['id' => -1];
+        }
+    }
+    /*
+    UNTOUCHED
+    public function actionVerifica()
+    {
+        //Authorization: Basic Auth
+        //Tentar sacar o id do gajo que faz a autênticação.
+        $userModel = new $this->modelClass;
+        $request = Yii::$app->request;
 
         $user = $request->get('username');
         $pw = $request->get('password_hash');
@@ -51,6 +86,7 @@ class UserController extends ActiveController
             return ['id' => -1];
         }
     }
+    */
 
     public function actionProfile($id)
     {
