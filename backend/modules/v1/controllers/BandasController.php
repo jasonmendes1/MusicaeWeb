@@ -22,6 +22,34 @@ class BandasController extends ActiveController
     public $modelMembrosBanda = 'common\models\BandaMembros';
     public $modelUser = 'common\models\User';
     public $modelProfile = 'common\models\Profiles';
+    public $modelMusico = 'common\models\Musicos';
+    public $modelGenero = 'common\models\Generos';
+
+    public function actionPerfil($id)
+    {
+        $bandas = new $this->modelClass;
+        $rec = $bandas::find()->where("Id=" . '\'' . $id . '\'')->one();
+        $genero = new $this->modelGenero;
+
+        $perfil = array();
+
+        $generoRec = $genero::find()->where("Id=" . '\'' . $rec->IdGenero . '\'')->one();
+
+        array_push(
+            $perfil,
+            [
+                "Id" => $rec->Id,
+                "Nome" => $rec->Nome,
+                "Genero" => $generoRec->Nome,
+                "Localizacao" => $rec->Localizacao,
+                "Contacto" => $rec->Contacto,
+                "Descricao" => $rec->Descricao,
+                "Capa" => $rec->Logo
+            ]
+        );
+
+        return $perfil;
+    }
 
     public function actionMembros($iduser)
     {
@@ -70,7 +98,6 @@ class BandasController extends ActiveController
         //$rec = $userModel::find()->where("username=" . '\'' . $user . '\'')->one();
     }
 
-    /*
     public function behaviors()
     {
         $behaviors = parent::behaviors();
@@ -80,14 +107,14 @@ class BandasController extends ActiveController
                 'application/json' => Response::FORMAT_JSON,
             ]
         ];
-        $behaviors['authenticator'] = [
+        /*$behaviors['authenticator'] = [
             'class' => HttpBasicAuth::className(),
             'auth' => [$this, 'auth']
-        ];
+        ];*/
         return $behaviors;
     }
 
-    public function auth($username, $password)
+    /*public function auth($username, $password)
     {
         $user = \common\models\User::findByUsername($username);
         if ($user && $user->validatePassword($password)) {
