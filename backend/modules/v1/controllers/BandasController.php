@@ -24,7 +24,7 @@ class BandasController extends ActiveController
     public $modelProfile = 'common\models\Profiles';
     public $modelMusico = 'common\models\Musicos';
     public $modelGenero = 'common\models\Generos';
-    
+
     public function actionPerfil($id)
     {
         $bandas = new $this->modelClass;
@@ -99,14 +99,14 @@ class BandasController extends ActiveController
                 'application/json' => Response::FORMAT_JSON,
             ]
         ];
-        $behaviors['authenticator'] = [
+        /*$behaviors['authenticator'] = [
             'class' => HttpBasicAuth::className(),
             'auth' => [$this, 'auth']
-        ];
+        ];*/
         return $behaviors;
     }
 
-    public function auth($username, $password)
+    /*public function auth($username, $password)
     {
         $user = \common\models\User::findByUsername($username);
         if ($user && $user->validatePassword($password)) {
@@ -115,7 +115,7 @@ class BandasController extends ActiveController
         return null;
     }
 
-    /*
+    
     public function behaviors()
     {
         $behaviors = parent::behaviors();
