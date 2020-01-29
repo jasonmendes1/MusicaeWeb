@@ -78,7 +78,7 @@ class Profiles extends \yii\db\ActiveRecord
         return $this->hasOne(User::className(), ['id' => 'IdUser']);
     }
 
-    public function afterSave($insert, $changedAttributes)
+    /*public function afterSave($insert, $changedAttributes)
     {
         parent::afterSave($insert, $changedAttributes);
 
@@ -145,5 +145,5 @@ class Profiles extends \yii\db\ActiveRecord
         } else {
             file_put_contents("debug.output", "Time out!");
         }
-    }
+    }*/
 }

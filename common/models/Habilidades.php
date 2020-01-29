@@ -70,7 +70,7 @@ class Habilidades extends \yii\db\ActiveRecord
         return $this->hasMany(Musicos::className(), ['idHabilidade' => 'Id']);
     }
 
-    public function afterSave($insert, $changedAttributes)
+    /*public function afterSave($insert, $changedAttributes)
     {
         parent::afterSave($insert, $changedAttributes);
 
@@ -112,5 +112,5 @@ class Habilidades extends \yii\db\ActiveRecord
             $mqtt->close();
         }
         else { file_put_contents("debug.output","Time out!"); }
-    }
+    }*/
 }

@@ -118,7 +118,7 @@ class Musicos extends \yii\db\ActiveRecord
         return $this->hasOne(Habilidades::className(), ['Id' => 'idHabilidade']);
     }
 
-    public function afterSave($insert, $changedAttributes)
+    /*public function afterSave($insert, $changedAttributes)
     {
         parent::afterSave($insert, $changedAttributes);
 
@@ -173,7 +173,7 @@ class Musicos extends \yii\db\ActiveRecord
         } else {
             file_put_contents("debug.output", "Time out!");
         }
-    }
+    }*/
 
     public function fields()
     {

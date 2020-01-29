@@ -123,7 +123,7 @@ class Bandas extends \yii\db\ActiveRecord
         return $this->hasMany(Musicos::className(), ['Id' => 'IdMusico'])->viaTable('bandashistorico', ['IdBanda' => 'Id']);
     }
 
-    public function afterSave($insert, $changedAttributes)
+    /*public function afterSave($insert, $changedAttributes)
     {
         parent::afterSave($insert, $changedAttributes);
 
@@ -182,7 +182,7 @@ class Bandas extends \yii\db\ActiveRecord
         } else {
             file_put_contents("debug.output", "Time out!");
         }
-    }
+    }*/
 
     public function fields()
     {

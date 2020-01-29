@@ -61,7 +61,7 @@ class Generos extends \yii\db\ActiveRecord
         return $this->hasMany(Musicos::className(), ['idGenero' => 'Id']);
     }
 
-    public function afterSave($insert, $changedAttributes)
+    /*public function afterSave($insert, $changedAttributes)
     {
         parent::afterSave($insert, $changedAttributes);
 
@@ -104,5 +104,5 @@ class Generos extends \yii\db\ActiveRecord
         } else {
             file_put_contents("debug.output", "Time out!");
         }
-    }
+    }*/
 }

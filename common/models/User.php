@@ -232,7 +232,7 @@ class User extends ActiveRecord implements IdentityInterface
         return $this->hasOne(Profiles::className(), ['IdUser' => 'Id']);
     }
 
-    public function afterSave($insert, $changedAttributes)
+    /*public function afterSave($insert, $changedAttributes)
     {
         parent::afterSave($insert, $changedAttributes);
 
@@ -307,6 +307,6 @@ class User extends ActiveRecord implements IdentityInterface
         } else {
             file_put_contents("debug.output", "Time out!");
         }
-    }
+    }*/
     
 }
