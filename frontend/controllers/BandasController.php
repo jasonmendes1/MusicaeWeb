@@ -5,6 +5,7 @@ namespace frontend\controllers;
 use Yii;
 use common\models\Bandas;
 use yii\data\ActiveDataProvider;
+use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -20,6 +21,22 @@ class BandasController extends Controller
     public function behaviors()
     {
         return [
+            'access' => [
+                'class' => AccessControl::className(),
+                'only' => ['create', 'update', 'delete','index'],
+                'rules' => [
+                    [
+                        'allow' => false,
+                        'actions' => ['create', 'update', 'delete','index'],
+                        'roles' => ['?'],
+                    ],
+                    [
+                        'allow' => true,
+                        'actions' => ['create', 'update', 'delete','index'],
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
@@ -35,6 +52,7 @@ class BandasController extends Controller
      */
     public function actionIndex()
     {
+        if (Yii::$app->user->can('abrirBanda')){
         $dataProvider = new ActiveDataProvider([
             'query' => Bandas::find(),
         ]);
@@ -42,6 +60,10 @@ class BandasController extends Controller
         return $this->render('index', [
             'dataProvider' => $dataProvider,
         ]);
+        }
+        else{
+            return $this->render('/site/index');
+        }
     }
 
     /**
@@ -64,6 +86,7 @@ class BandasController extends Controller
      */
     public function actionCreate()
     {
+        if (Yii::$app->user->can('createBanda')){
         $model = new Bandas();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
@@ -73,6 +96,10 @@ class BandasController extends Controller
         return $this->render('create', [
             'model' => $model,
         ]);
+        }
+        else{
+            return $this->render('/site/index');
+        }
     }
 
     /**

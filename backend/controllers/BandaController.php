@@ -5,6 +5,8 @@ namespace backend\controllers;
 use Yii;
 use common\models\Bandas;
 use common\models\BandasSearch;
+use yii\filters\AccessControl;
+use yii\helpers\BaseVarDumper;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -20,6 +22,15 @@ class BandaController extends Controller
     public function behaviors()
     {
         return [
+            'access' => [
+                'class' => AccessControl::className(),
+                'rules' => [
+                    [
+                        'allow' => true,
+                        'roles' => ['admin'],
+                    ],
+                ],
+            ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
@@ -35,13 +46,17 @@ class BandaController extends Controller
      */
     public function actionIndex()
     {
+        if (Yii::$app->user->can('abrirBanda')) {
         $searchModel = new BandasSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
         ]);
+        }
+        else{
+            return $this->render('/site/index');
+        }
     }
 
     /**
@@ -64,6 +79,7 @@ class BandaController extends Controller
      */
     public function actionCreate()
     {
+        if (Yii::$app->user->id==1){
         $model = new Bandas();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
@@ -73,6 +89,12 @@ class BandaController extends Controller
         return $this->render('create', [
             'model' => $model,
         ]);
+
+    }
+    else{
+        return $this->render('/site/index');
+    }
+
     }
 
     /**
@@ -84,6 +106,7 @@ class BandaController extends Controller
      */
     public function actionUpdate($id)
     {
+        if (Yii::$app->user->id==1){
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
@@ -93,6 +116,10 @@ class BandaController extends Controller
         return $this->render('update', [
             'model' => $model,
         ]);
+        }
+        else{
+            return $this->render('/site/index');
+        }
     }
 
     /**
@@ -104,9 +131,15 @@ class BandaController extends Controller
      */
     public function actionDelete($id)
     {
+        if (Yii::$app->user->id==1){
         $this->findModel($id)->delete();
 
         return $this->redirect(['index']);
+
+        }
+        else{
+            return $this->render('/site/index');
+        }
     }
 
     /**

@@ -1,6 +1,6 @@
 <?php
 /* @var $this yii\web\View */
-$this->title = "Musicae's API";
+$this->title = "Musicae's Opções";
 ?>
 <style>
 body{
@@ -32,13 +32,15 @@ h1{
 <div class="fundoEscuro">
     <div class="Logo">
         <center><img src="/images/logotipo.png">
-            <h1>Musicae's API:</h1><p><p><p><p><p><p><p><p>
+            <h1>Musicae's Opções:</h1>
+            <br>
             <div class="links">
-                <a href = "/v1/user">Users</a>
-                <a href = "/v1/profiles">Profiles</a>
-                <a href = "/v1/musicos">Músico</a>
-                <a href = "/v1/bandas">Bandas</a>
-                <a href = "/v1/generos">Género</a>
+                <a href = "/user/index">Users</a>
+                <a href = "/profile/index">Profiles</a>
+                <a href = "/musico/index">Músicos</a>
+                <a href = "/banda/index">Bandas</a>
+                <a href = "/genero/index">Géneros</a>
+                <a href = "/habilidade/index">Habilidades</a>
             </div>
         </center>
     </div>
