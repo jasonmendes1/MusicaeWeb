@@ -1,7 +1,9 @@
 <?php
 
 use yii\helpers\Html;
+use yii\helpers\ArrayHelper;
 use yii\widgets\ActiveForm;
+use common\models\Generos;
 
 /* @var $this yii\web\View */
 /* @var $model common\models\Bandas */
@@ -24,7 +26,10 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'Removida')->textInput() ?>
 
-    <?= $form->field($model, 'IdGenero')->textInput() ?>
+    <?= $form->field($model, 'IdGenero')->dropDownList(
+        ArrayHelper::map(Generos::find()->all(), 'Id','Nome'),
+        ['prompt'=>'']
+    ) ?>
 
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>

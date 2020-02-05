@@ -30,21 +30,22 @@ AppAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => Html::img('@web/images/MusicaeBranco.png', ['alt'=>Yii::$app->name], ['style=width:2%;']),
-        'brandUrl' => Yii::$app->homeUrl,
+        'brandLabel' => Html::img('@web/images/MusicaeBranco.png', ['alt'=>Yii::$app->name, 'style' => 'height: 40px; width: 80px; top: -15px; left: 350px; position: absolute;']),
+        'brandUrl' => ['/site/login'],
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
     ]);
-    $menuItems = [
-        ['label' => 'Feed', 'url' => ['/site/teste']],
-        ['label' => 'Perfil', 'url' => ['/site/perfil']],
-        ['label' => 'Minhas Bandas  ', 'url' => ['/bandas/index']]
-    ];
+
     if (Yii::$app->user->isGuest) {
-        $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
+        $menuItems[] = ['label' => 'Join Free   ', 'url' => ['/site/signup']];
         $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
     } else {
+        $menuItems = [
+            ['label' => 'Perfil', 'url' => ['/site/perfil']],
+            ['label' => 'Minhas Bandas  ', 'url' => ['/bandas/index']],
+            ['label' => 'Feed', 'url' => ['/site/teste']],
+        ];
         $menuItems[] = '<li>'
             . Html::beginForm(['/site/logout'], 'post')
             . Html::submitButton(

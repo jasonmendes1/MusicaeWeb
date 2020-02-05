@@ -63,7 +63,7 @@ class Bandas extends \yii\db\ActiveRecord
             'Contacto' => 'Contacto',
             'Logo' => 'Logo',
             'Removida' => 'Removida',
-            'IdGenero' => 'Id Genero',
+            'IdGenero' => 'Genero',
         ];
     }
 

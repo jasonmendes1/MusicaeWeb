@@ -9,7 +9,6 @@ class CreateBandaCest
 {
     public function tryCreateBanda(FunctionalTester $I)
     {
-        // Login na Página
         $I->amOnPage(\yii::$app->homeUrl);
         $I->click('Login');
         $I->fillField('Username', 'user');
@@ -19,34 +18,17 @@ class CreateBandaCest
         $I->dontSeeLink('Login');
         $I->dontSeeLink('Signup');
 
-        $I->amOnPage('/banda');
-        $I->click('Create');
+        $I->click('Home');
+        $I->click('Bandas');
+        $I->click('Create Bandas');
         $I->fillField('Nome', 'BandaTeste');
         $I->fillField('Descricao', 'BandaTeste');
         $I->fillField('Localizacao', 'BandaTeste');
         $I->fillField('Contacto', '123456789');
-        $I->fillField('Logo', '1');
-        $I->fillField('Removida', '1');
-        $I->fillField('Bandas[IdGenero]', '1');
+        $I->fillField('Logo', 'Logo');
+        $I->fillField('Removida', '0');
+        $I->selectOption('Genero', '3');
         $I->click('Save');
     }
 
-    public function tryEditBanda(FunctionalTester $I)
-    {
-        $I->amOnPage('/banda/update?id=6');
-        $I->fillField('Nome', 'BandaUpdate');
-        $I->fillField('Descricao', 'BandaUpdate');
-        $I->fillField('Localizacao', 'BandaUpdate');
-        $I->fillField('Contacto', '123456789');
-        $I->fillField('Logo', '1');
-        $I->fillField('Removida', '1');
-        $I->fillField('Bandas[IdGenero]', '1');
-        $I->click('Save');
-    }
-/*
-    public function tryDeleteBand(FunctionalTester $I)
-    {
-        $I->amOnPage('/banda/delete?id=6');
-    }
-*/
 }

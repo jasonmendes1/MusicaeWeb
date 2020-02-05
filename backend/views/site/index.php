@@ -1,53 +1,53 @@
 <?php
-
 /* @var $this yii\web\View */
-// var_dump(Yii::$app->authManager);
-$this->title = 'My Yii Application';
+$this->title = "Musicae";
 ?>
-<div class="site-index">
+<style>
+    body{
+        background-color: #293133;
+        background-repeat: no-repeat, repeat;
+        background-size: cover;
+        overflow-y: scroll;
+    }
 
-    <div class="jumbotron">
-        <h1>Congratulations!</h1>
+    h1{
+        color: white;
+        text-align: center;
+        font-size: 64px;
+    }
 
-        <p class="lead">You have successfully created your Yii-powered application.</p>
+    img{
+        height: 300px;
+    }
 
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
-    </div>
+    .links > a{
+        color: #636b6f;
+        padding: 0 25px;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: .1rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+    }
+</style>
 
-    <div class="body-content">
-
-        <div class="row">
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
+<body>
+<div class="fundoEscuro">
+    <div class="Logo">
+        <center><img src="/images/logo_branco.png">
+            <h1>Musicae's Home:</h1>
+            <br>
+            <div class="links">
+                <a href = "/user/index">Users</a>
+                <a href = "/profile/index">Profiles</a>
+                <a href = "/musico/index">Músicos</a>
+                <a href = "/banda/index">Bandas</a>
+                <a href = "/genero/index">Géneros</a>
+                <a href = "/habilidade/index">Habilidades</a>
+                <a href = "/banda-habilidades/index">Feed</a>
             </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
-            </div>
-        </div>
-
+        </center>
     </div>
 </div>
+</body>

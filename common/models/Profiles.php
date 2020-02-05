@@ -54,11 +54,11 @@ class Profiles extends \yii\db\ActiveRecord
             'Id' => 'ID',
             'Nome' => 'Nome',
             'Sexo' => 'Sexo',
-            'DataNac' => 'Data Nac',
-            'Descricao' => 'Descricao',
+            'DataNac' => 'Data de Nascimento',
+            'Descricao' => 'Descrição',
             'Foto' => 'Foto',
             'Localidade' => 'Localidade',
-            'IdUser' => 'Id User',
+            'IdUser' => 'User',
         ];
     }
 

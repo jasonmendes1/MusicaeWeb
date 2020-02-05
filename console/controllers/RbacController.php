@@ -23,6 +23,12 @@ class RbacController extends \yii\console\Controller
         $auth->addChild($admin, $abrirBanda);
         $auth->addChild($admin, $acederBackend);
 
+        $user = $auth->createRole('user');
+        $auth->add($user);
+
         $auth->assign($admin, 1);
+        $auth->assign($admin, 8);
+        $auth->assign($admin, 9);
+        $auth->assign($user, 10);
     }
 }

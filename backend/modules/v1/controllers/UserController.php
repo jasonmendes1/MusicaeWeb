@@ -108,6 +108,8 @@ class UserController extends ActiveController
                 "ProfileNome" => $userRecord->profile->Nome,
                 "ProfileSexo" => $userRecord->profile->Sexo,
                 "ProfileLocalidade" => $userRecord->profile->Localidade,
+                "ProfileDataNasc" => $userRecord->profile->DataNac,
+                "ProfileDescricao" => $userRecord->profile->Descricao,
                 "ProfileFoto" => $userRecord->profile->Foto,
                 "UserEmail" => $userRecord->email,
             ]

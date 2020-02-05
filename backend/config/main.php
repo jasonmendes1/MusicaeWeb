@@ -17,10 +17,10 @@ return [
         ],
     ],
     'components' => [
-        'authManager' => [
+        /*'authManager' => [
             'class' => 'yii\rbac\DbManager',
             'defaultRoles' => ['user', 'admin'],
-        ],
+        ],*/
         'request' => [
             'csrfParam' => '_csrf-backend',
             'parsers' => [

@@ -11,10 +11,18 @@ class CreateUserCest
     {
         // Signup
         $I->amOnPage(\yii::$app->homeUrl);
-        $I->click('Signup');
+        $I->click('Join Free');
         $I->fillField('Username', 'userteste');
         $I->fillField('Email', 'userteste@userteste.userteste');
         $I->fillField('Password', '123456');
+        $I->fillField('Nome', 'Teste');
+        $I->fillField('Sexo', 'Masculino');
+        $I->fillField('Data de Nascimento', '2000-09-07');
+        $I->fillField('Descrição', 'Descrição Teste');
+        $I->fillField('Localidade', 'Leiria');
+        $I->selectOption('Nivel de Compromisso', 'Tour');
+        $I->selectOption('Habilidade', '3');
+        $I->selectOption('Género', '3');
         $I->click('signup-button');
         $I->see('Thank you for registration. Please check your inbox for verification email.');
         

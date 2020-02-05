@@ -9,7 +9,6 @@ class CreateHabilidadeCest
 {
     public function tryCreateHabilidade(FunctionalTester $I)
     {
-        // Login na Página
         $I->amOnPage(\yii::$app->homeUrl);
         $I->click('Login');
         $I->fillField('Username', 'user');
@@ -19,22 +18,11 @@ class CreateHabilidadeCest
         $I->dontSeeLink('Login');
         $I->dontSeeLink('Signup');
 
-        $I->amOnPage('/habilidade');
-        $I->click('Create');
+        $I->click('Home');
+        $I->click('Habilidades');
+        $I->click('Create Habilidades');
         $I->fillField('Nome', 'HabilidadesTest');
         $I->click('Save');
     }
 
-    public function tryEditHabilidade(FunctionalTester $I)
-    {
-        $I->amOnPage('/habilidade/update?id=5');
-        $I->fillField('Nome', 'HabilidadesUpdate');
-        $I->click('Save');
-    }
-/*
-    public function tryDeleteBand(FunctionalTester $I)
-    {
-        $I->amOnPage('/banda/delete?id=6');
-    }
-*/
 }

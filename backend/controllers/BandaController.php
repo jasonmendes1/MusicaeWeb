@@ -27,7 +27,7 @@ class BandaController extends Controller
                 'rules' => [
                     [
                         'allow' => true,
-                        'roles' => ['admin'],
+                        'roles' => ['@'],
                     ],
                 ],
             ],
@@ -46,17 +46,12 @@ class BandaController extends Controller
      */
     public function actionIndex()
     {
-        if (Yii::$app->user->can('abrirBanda')) {
         $searchModel = new BandasSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
         ]);
-        }
-        else{
-            return $this->render('/site/index');
-        }
     }
 
     /**
@@ -79,7 +74,6 @@ class BandaController extends Controller
      */
     public function actionCreate()
     {
-        if (Yii::$app->user->id==1){
         $model = new Bandas();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
@@ -89,12 +83,6 @@ class BandaController extends Controller
         return $this->render('create', [
             'model' => $model,
         ]);
-
-    }
-    else{
-        return $this->render('/site/index');
-    }
-
     }
 
     /**

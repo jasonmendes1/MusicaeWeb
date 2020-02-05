@@ -7,9 +7,8 @@ use common\fixtures\UserFixture;
 
 class CreateGeneroCest
 {
-    public function tryCreateBand(FunctionalTester $I)
+    public function tryCreateGenero(FunctionalTester $I)
     {
-        // Login na Página
         $I->amOnPage(\yii::$app->homeUrl);
         $I->click('Login');
         $I->fillField('Username', 'user');
@@ -19,22 +18,10 @@ class CreateGeneroCest
         $I->dontSeeLink('Login');
         $I->dontSeeLink('Signup');
 
-        $I->amOnPage('/genero');
-        $I->click('Create');
-        $I->fillField('Nome', 'GeneroTest');
+        $I->click('Home');
+        $I->click('Géneros');
+        $I->click('Create Generos');
+        $I->fillField('Nome', 'GenerosTest');
         $I->click('Save');
     }
-
-    public function tryEditGenero(FunctionalTester $I)
-    {
-        $I->amOnPage('/genero/update?id=1');
-        $I->fillField('Nome', 'GeneroUpdate');
-        $I->click('Save');
-    }
-/*
-    public function tryDeleteBand(FunctionalTester $I)
-    {
-        $I->amOnPage('/banda/delete?id=6');
-    }
-*/
 }
