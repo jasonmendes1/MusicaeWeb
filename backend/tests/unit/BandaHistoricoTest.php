@@ -24,6 +24,18 @@ class BandaHistoricoTest extends \Codeception\Test\Unit
 
         $user->Duracao = null;
         $this->assertFalse($user->validate(['Duracao']));
+        $user->Duracao = '2019-09-09';
+        $this->assertTrue($user->validate(['Duracao']));
+
+        $user->IdMusico = null;
+        $this->assertFalse($user->validate(['IdMusico']));
+        $user->IdMusico = 'Texto';
+        $this->assertFalse($user->validate(['IdMusico']));
+
+        $user->IdBanda = null;
+        $this->assertFalse($user->validate(['IdBanda']));
+        $user->IdBanda = 'Texto';
+        $this->assertFalse($user->validate(['IdBanda']));
     }
 
     function testSavingBandasHistorico()

@@ -56,9 +56,9 @@ class Musicos extends \yii\db\ActiveRecord
         return [
             'Id' => 'ID',
             'NivelCompromisso' => 'Nivel Compromisso',
-            'idProfile' => 'Id Profile',
-            'idHabilidade' => 'Id Habilidade',
-            'idGenero' => 'Id Genero',
+            'idProfile' => 'Profile',
+            'idHabilidade' => 'Habilidade',
+            'idGenero' => 'Genero',
         ];
     }
 

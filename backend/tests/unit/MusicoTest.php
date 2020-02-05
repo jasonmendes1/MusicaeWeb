@@ -24,7 +24,6 @@ class MusicoTest extends \Codeception\Test\Unit
 
         $user->NivelCompromisso = null;
         $this->assertFalse($user->validate(['NivelCompromisso']));
-
         $user->NivelCompromisso = 'Diversao';
         $this->assertTrue($user->validate(['NivelCompromisso']));
         $user->NivelCompromisso = 'Moderadamente Comprometido';
@@ -35,9 +34,23 @@ class MusicoTest extends \Codeception\Test\Unit
         $this->assertTrue($user->validate(['NivelCompromisso']));
         $user->NivelCompromisso = 'Tour';
         $this->assertTrue($user->validate(['NivelCompromisso']));
-
         $user->NivelCompromisso = 'OutraCoisa';
         $this->assertFalse($user->validate(['NivelCompromisso']));
+
+        $user->idProfile = null;
+        $this->assertFalse($user->validate(['idProfile']));
+        $user->idProfile = 'Texto';
+        $this->assertFalse($user->validate(['idProfile']));
+
+        $user->idHabilidade = null;
+        $this->assertFalse($user->validate(['idHabilidade']));
+        $user->idHabilidade = 'Texto';
+        $this->assertFalse($user->validate(['idHabilidade']));
+
+        $user->idGenero = null;
+        $this->assertFalse($user->validate(['idGenero']));
+        $user->idGenero = 'Texto';
+        $this->assertFalse($user->validate(['idGenero']));
     }
 
     function testSavingMusico()

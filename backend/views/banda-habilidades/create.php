@@ -5,8 +5,8 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model common\models\BandaHabilidades */
 
-$this->title = 'Create Banda Habilidades';
-$this->params['breadcrumbs'][] = ['label' => 'Banda Habilidades', 'url' => ['index']];
+$this->title = 'Create Feed';
+$this->params['breadcrumbs'][] = ['label' => 'Feed', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="banda-habilidades-create">

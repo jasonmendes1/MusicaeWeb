@@ -36,7 +36,7 @@ class Profiles extends \yii\db\ActiveRecord
     {
         return [
             [['Nome', 'Sexo', 'DataNac', 'Descricao', 'Localidade', 'IdUser'], 'required'],
-            [['DataNac'], 'safe'],
+            [['DataNac'], 'date', 'format' => 'yyyy-M-d'],
             [['Foto'], 'string'],
             [['IdUser'], 'integer'],
             [['Nome', 'Sexo', 'Descricao', 'Localidade'], 'string', 'max' => 80],

@@ -27,8 +27,7 @@ class RbacController extends \yii\console\Controller
         $auth->add($user);
 
         $auth->assign($admin, 1);
-        $auth->assign($admin, 8);
-        $auth->assign($admin, 9);
-        $auth->assign($user, 10);
+        $auth->assign($admin, 32);
+        $auth->assign($user, 33);
     }
 }

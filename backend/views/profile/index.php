@@ -33,7 +33,11 @@ $this->params['breadcrumbs'][] = $this->title;
             'DataNac',
             'Descricao',
             'Foto',
-            'IdUser',
+            [
+                'attribute' => 'user.username',
+                'header' => 'User',
+                'headerOptions' => ['style' => 'color: #337AB7']
+            ],
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

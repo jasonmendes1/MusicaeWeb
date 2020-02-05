@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel common\models\BandaHabilidadesSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Banda Habilidades';
+$this->title = 'Feed';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="banda-habilidades-index">
@@ -15,7 +15,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Create Banda Habilidades', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Create Feed', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); 
@@ -27,8 +27,16 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'IdBanda',
-            'IdHabilidade',
+            [
+                'attribute' => 'banda.Nome',
+                'header' => 'Banda',
+                'headerOptions' => ['style' => 'color: #337AB7']
+            ],
+            [
+                'attribute' => 'habilidade.Nome',
+                'header' => 'Habilidade',
+                'headerOptions' => ['style' => 'color: #337AB7']
+            ],
             'experiencia',
             'compromisso',
 

@@ -32,11 +32,14 @@ $this->params['breadcrumbs'][] = $this->title;
             'Id',
             'Nome',
             'Sexo',
-            'DataNac',
             'Localidade',
+            'DataNac',
             'Descricao',
             'Foto',
-            'IdUser',
+            [
+                'attribute' => 'user.username',
+                'label' => 'User',
+            ],
         ],
     ]) ?>
 

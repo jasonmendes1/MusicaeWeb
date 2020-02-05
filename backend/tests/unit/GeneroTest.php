@@ -24,10 +24,8 @@ class GeneroTest extends \Codeception\Test\Unit
 
         $user->Nome = null;
         $this->assertFalse($user->validate(['Nome']));
-
         $user->Nome = 'JazzJazzJazzJazzJazzJazzJazz';
         $this->assertFalse($user->validate(['Nome']));
-
         $user->Nome = 'Jazz';
         $this->assertTrue($user->validate(['Nome']));
     }

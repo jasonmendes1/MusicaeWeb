@@ -1,7 +1,10 @@
 <?php
 
 use yii\helpers\Html;
+use yii\helpers\ArrayHelper;
 use yii\widgets\ActiveForm;
+use common\models\Bandas;
+use common\models\Habilidades;
 
 /* @var $this yii\web\View */
 /* @var $model common\models\BandaHabilidades */
@@ -12,9 +15,15 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'IdBanda')->textInput() ?>
+    <?= $form->field($model, 'IdBanda')->dropDownList(
+        ArrayHelper::map(Bandas::find()->all(), 'Id','Nome'),
+        ['prompt'=>'']
+    ) ?>
 
-    <?= $form->field($model, 'IdHabilidade')->textInput() ?>
+    <?= $form->field($model, 'IdHabilidade')->dropDownList(
+        ArrayHelper::map(Habilidades::find()->all(), 'Id','Nome'),
+        ['prompt'=>'']
+    ) ?>
 
     <?= $form->field($model, 'experiencia')->dropDownList([ 'Aprendiz' => 'Aprendiz', 'Novato' => 'Novato', 'Experiente' => 'Experiente', 'Profissional' => 'Profissional', ], ['prompt' => '']) ?>
 

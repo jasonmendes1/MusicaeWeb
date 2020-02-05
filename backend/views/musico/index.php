@@ -28,9 +28,21 @@ $this->params['breadcrumbs'][] = $this->title;
 
             'Id',
             'NivelCompromisso',
-            'idProfile',
-            'idHabilidade',
-            'idGenero',
+            [
+                'attribute' => 'profile.Nome',
+                'header' => 'Profile',
+                'headerOptions' => ['style' => 'color: #337AB7']
+            ],
+            [
+                'attribute' => 'habilidade.Nome',
+                'header' => 'Habilidade',
+                'headerOptions' => ['style' => 'color: #337AB7']
+            ],
+            [
+                'attribute' => 'genero.Nome',
+                'header' => 'Genero',
+                'headerOptions' => ['style' => 'color: #337AB7']
+            ],
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

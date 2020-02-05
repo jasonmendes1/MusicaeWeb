@@ -31,9 +31,18 @@ $this->params['breadcrumbs'][] = $this->title;
         'attributes' => [
             'Id',
             'NivelCompromisso',
-            'idProfile',
-            'idHabilidade',
-            'idGenero',
+            [
+                'attribute' => 'profile.Nome',
+                'label' => 'Perfil'
+            ],
+            [
+                'attribute' => 'habilidade.Nome',
+                'label' => 'Habilidade'
+            ],
+            [
+                'attribute' => 'genero.Nome',
+                'label' => 'Genero'
+            ],
         ],
     ]) ?>
 

@@ -24,10 +24,8 @@ class HabilidadeTest extends \Codeception\Test\Unit
 
         $user->Nome = null;
         $this->assertFalse($user->validate(['Nome']));
-
         $user->Nome = 'HabilidadeHabilidadeHabilidadeHabilidadeHabilidadeHabilidade';
         $this->assertFalse($user->validate(['Nome']));
-
         $user->Nome = 'Habilidade';
         $this->assertTrue($user->validate(['Nome']));
     }

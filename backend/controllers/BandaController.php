@@ -46,12 +46,17 @@ class BandaController extends Controller
      */
     public function actionIndex()
     {
+        if (Yii::$app->user->can('acederBackend')) {
         $searchModel = new BandasSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
         ]);
+        }
+        else{
+            return $this->render('/site/index');
+        }
     }
 
     /**
