@@ -22,6 +22,9 @@ $habilidade = Habilidades::find()->where(['Id' => $musico->idHabilidade])->one()
 ?>
 
 <style>
+    body{
+        color: #293133;
+    }
     h1{
         color: #ffffff;
         font-size: 30px;
