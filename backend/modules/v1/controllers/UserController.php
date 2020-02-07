@@ -18,6 +18,7 @@ class UserController extends ActiveController
     public $modelProfile = 'common\models\Profiles';
     public $modelHabilidade = 'common\models\Habilidades';
     public $modelGenero = 'common\models\Generos';
+    public $modelMusico = 'common\models\Musicos';
 
     public function actionTotal()
     {
@@ -29,11 +30,10 @@ class UserController extends ActiveController
 
     public function actionVerifica()
     {
-        //Authorization: Basic Auth
-        //Tentar sacar o id do gajo que faz a autênticação.
         $userModel = new $this->modelClass;
         $request = Yii::$app->request;
         $userInfo = array();
+
 
         $user = $request->get('username');
         $pw = $request->get('password_hash');
@@ -60,33 +60,6 @@ class UserController extends ActiveController
             return ['id' => -1];
         }
     }
-    /*
-    UNTOUCHED
-    public function actionVerifica()
-    {
-        //Authorization: Basic Auth
-        //Tentar sacar o id do gajo que faz a autênticação.
-        $userModel = new $this->modelClass;
-        $request = Yii::$app->request;
-
-        $user = $request->get('username');
-        $pw = $request->get('password_hash');
-        $key = "tHeApAcHe6410111";
-
-
-        $dec = openssl_decrypt(base64_decode($pw), "aes-128-ecb", $key, OPENSSL_RAW_DATA);
-        if (!($userModel::find()->where("username=" . '\'' . $user . '\'')->one())) {
-            return ['id' => -1];
-        }
-
-        $rec = $userModel::find()->where("username=" . '\'' . $user . '\'')->one();
-        if ($rec->validatePassword($dec)) {
-            return ['id' => $rec->Id];
-        } else {
-            return ['id' => -1];
-        }
-    }
-    */
 
     public function actionProfile($id)
     {
@@ -103,7 +76,9 @@ class UserController extends ActiveController
             $profile,
             [
                 "UserUsername" => $userRecord->username,
+                "HabilidadeId" => $habilidadeRecord->Id,
                 "HabilidadeNome" => $habilidadeRecord->Nome,
+                "GeneroId" => $generoRecord->Id,
                 "GeneroNome" => $generoRecord->Nome,
                 "ProfileNome" => $userRecord->profile->Nome,
                 "ProfileSexo" => $userRecord->profile->Sexo,
@@ -115,6 +90,39 @@ class UserController extends ActiveController
             ]
         );
         return $profile;
+    }
+
+    public function actionEdit()
+    {
+        $request = Yii::$app->request;
+
+        $idUser = $request->get('IdUser');
+        $user = new $this->modelClass;
+        $profile = new $this->modelProfile;
+        $musico = new $this->modelMusico;
+        $userRecord = $user::find()->where("Id=" . '\'' . $idUser . '\'')->one();
+        $musicoRecord = $musico::find()->where("Id=" . '\'' . $userRecord->profile->musicos->Id . '\'')->one();
+        $profileRecord = $profile::find()->where("Id=" . '\'' . $userRecord->profile->Id . '\'')->one();
+
+        $habilidadeId = $request->get('HabilidadeId');
+        $generoId = $request->get('GeneroId');
+        $profileNome = $request->get('ProfileNome');
+        $profileSexo = $request->get('ProfileSexo');
+        $profileLocalidade = $request->get('ProfileLocalidade');
+        $profileDescricao = $request->get('ProfileDescricao');
+
+        $musicoRecord->idHabilidade = $habilidadeId;
+        $musicoRecord->idGenero = $generoId;
+        $profileRecord->Nome = $profileNome;
+        $profileRecord->Sexo = $profileSexo;
+        $profileRecord->Localidade = $profileLocalidade;
+        $profileRecord->Descricao = $profileDescricao;
+
+        $userRecord->save();
+        $musicoRecord->save();
+        $profileRecord->save();
+
+        return 0;
     }
 
     public function behaviors()

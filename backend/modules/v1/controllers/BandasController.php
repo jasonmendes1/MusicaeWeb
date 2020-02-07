@@ -51,6 +51,18 @@ class BandasController extends ActiveController
         return $perfil;
     }
 
+
+    public function actionAdicionarmembro()
+    {
+        // $request = \Yii::$app->request;
+
+
+
+
+
+        return 0;
+    }
+
     public function actionMembros($iduser)
     {
         $user = new $this->modelUser;
@@ -65,8 +77,49 @@ class BandasController extends ActiveController
         $recs = $membros::find()->where("IdMusico=" . '\'' . $recProfile->musicos->Id . '\'')->all();
 
         $habilidade = new $this->modelHabilidade;
+        $banda = new $this->modelClass;
         $MinhasBandas = array();
         foreach ($recs as $rec) {
+            $bandaRec = $banda::find()->where("Id=" . '\'' . $rec->IdBanda . '\'')->one();
+            if ($bandaRec->Removida == 1) {
+                continue;
+            }
+            $habilidadeRec = $habilidade::find()->where("Id=" . '\'' . $recProfile->musicos->idHabilidade . '\'')->one();
+            array_push(
+                $MinhasBandas,
+                [
+                    "Id" => $rec->IdBanda,
+                    "DataEntrada" => $rec->DataEntrada,
+                    "BandaNome" => $rec->banda->Nome,
+                    "HabilidadeNome" => $habilidadeRec->Nome,
+                ]
+            );
+        }
+
+        return $MinhasBandas;
+    }
+
+    public function actionHistorico($iduser)
+    {
+        $user = new $this->modelUser;
+        $recUser = $user::find()->where("Id=" . '\'' . $iduser . '\'')->one();
+        if ($recUser == null) {
+            return ['error' => "404"];
+        }
+        $profile = new $this->modelProfile;
+        $recProfile = $profile::find()->where("Id=" . '\'' . $recUser->profile->Id . '\'')->one();;
+
+        $membros = new $this->modelMembrosBanda;
+        $recs = $membros::find()->where("IdMusico=" . '\'' . $recProfile->musicos->Id . '\'')->all();
+
+        $habilidade = new $this->modelHabilidade;
+        $banda = new $this->modelClass;
+        $MinhasBandas = array();
+        foreach ($recs as $rec) {
+            $bandaRec = $banda::find()->where("Id=" . '\'' . $rec->IdBanda . '\'')->one();
+            if ($bandaRec->Removida == 0) {
+                continue;
+            }
             $habilidadeRec = $habilidade::find()->where("Id=" . '\'' . $recProfile->musicos->idHabilidade . '\'')->one();
             array_push(
                 $MinhasBandas,
@@ -94,8 +147,6 @@ class BandasController extends ActiveController
         $recs2 = $bandaHabilidade::find()->where("IdHabilidade=" . '\'' . $idhabilidade . '\'')->all();
 
         return ['IdBanda' => $recs2];
-        //return ['idhabilidade' => $recs2];
-        //$rec = $userModel::find()->where("username=" . '\'' . $user . '\'')->one();
     }
 
     public function behaviors()

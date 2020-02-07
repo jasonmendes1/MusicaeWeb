@@ -2,9 +2,11 @@
 
 namespace backend\modules\v1\controllers;
 
+use common\models\Bandahabilidades;
 use yii\rest\ActiveController;
 use yii\filters\auth\HttpBasicAuth;
 use yii\web\Response;
+use Yii;
 
 
 /**
@@ -15,7 +17,7 @@ class BandaHabilidadesController extends ActiveController
     public $modelClass = 'common\models\BandaHabilidades';
     public $modelBanda = 'common\models\Bandas';
     public $modelHabilidade = 'common\models\Habilidades';
-    
+
     public function actionFeed()
     {
         $bandaHabilidades = new $this->modelClass;
@@ -26,6 +28,9 @@ class BandaHabilidadesController extends ActiveController
 
         foreach ($recs as $rec) {
             $bandaRec = $banda::find()->where("Id=" . '\'' . $rec->IdBanda . '\'')->one();
+            if ($bandaRec->Removida == 1) {
+                continue;
+            }
             $habilidadeRec = $habilidade::find()->where("Id=" . '\'' . $rec->IdHabilidade . '\'')->one();
 
             array_push(
@@ -53,16 +58,20 @@ class BandaHabilidadesController extends ActiveController
 
         $feeed = array();
 
-            $bandaRec = $banda::find()->where("Id=" . '\'' . $rec->IdBanda . '\'')->one();
-            $habilidadeRec = $habilidade::find()->where("Id=" . '\'' . $rec->IdHabilidade . '\'')->one();
+        $bandaRec = $banda::find()->where("Id=" . '\'' . $rec->IdBanda . '\'')->one();
+        $habilidadeRec = $habilidade::find()->where("Id=" . '\'' . $rec->IdHabilidade . '\'')->one();
 
-            array_push($feeed, 
-            ["Id" => $bandaRec->Id, 
-            "Nome" => $bandaRec->Nome,
-            "Instrumento" => $habilidadeRec->Nome, 
-            "Experiencia" => $rec->experiencia, 
-            "Compromisso" => $rec->compromisso, 
-            "Logo" => $bandaRec->Logo]);
+        array_push(
+            $feeed,
+            [
+                "Id" => $bandaRec->Id,
+                "Nome" => $bandaRec->Nome,
+                "Instrumento" => $habilidadeRec->Nome,
+                "Experiencia" => $rec->experiencia,
+                "Compromisso" => $rec->compromisso,
+                "Logo" => $bandaRec->Logo
+            ]
+        );
 
         return $feeed;
     }
