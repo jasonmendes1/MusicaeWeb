@@ -22,14 +22,18 @@ $habilidade = Habilidades::find()->where(['Id' => $musico->idHabilidade])->one()
 ?>
 
 <style>
-    body{
-        color: #293133;
+    body {
+        color: #293133 !important;
     }
-    h1{
+
+    h1 {
         color: #ffffff;
         font-size: 30px;
     }
-    table, th, td {
+
+    table,
+    th,
+    td {
         color: #ffffff;
         font-size: 20px;
         border: 1px solid black;
@@ -47,7 +51,7 @@ $habilidade = Habilidades::find()->where(['Id' => $musico->idHabilidade])->one()
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
-    <table style="width:100%" >
+    <table style="width:100%">
         <tr>
             <th>Nome</th>
             <td><?= $profile->Nome ?></td>

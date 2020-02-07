@@ -140,7 +140,6 @@ class UserController extends ActiveController
         $musicoIdIdGenero = $request->get('musicoIdGenero');
 
 
-
         $user = new $this->modelClass;
         $user->setPassword($userPassword);
         $user->username = $userUsername;

@@ -16,6 +16,7 @@ AppAsset::register($this);
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
+
 <head>
     <meta charset="<?= Yii::$app->charset ?>">
     <link rel="icon" href="../web/images/logotipoIcon.png">
@@ -25,50 +26,52 @@ AppAsset::register($this);
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<body>
-<?php $this->beginBody() ?>
 
-<div class="wrap">
-    <?php
-    NavBar::begin([
-        'brandLabel' => Html::img('@web/images/MusicaeBranco.png', ['alt'=>Yii::$app->name, 'style' => 'height: 40px; width: 80px; top: -15px; left: 350px; position: absolute;']),
-        'brandUrl' => ['/site/login'],
-        'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
-        ],
-    ]);
+<body style="background-color: #293133;">
+    <?php $this->beginBody() ?>
 
-    if (Yii::$app->user->isGuest) {
-        $menuItems[] = ['label' => 'Join Free   ', 'url' => ['/site/signup']];
-        $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
-    } else {
-        $menuItems = [
-            ['label' => 'Perfil', 'url' => ['/profiles/view?id=' . Yii::$app->user->identity->getId()]],
-            ['label' => 'Minhas Bandas  ', 'url' => ['/banda-membro']],
-        ];
-        $menuItems[] = '<li>'
-            . Html::beginForm(['/site/logout'], 'post')
-            . Html::submitButton(
-                'Logout (' . Yii::$app->user->identity->username . ')',
-                ['class' => 'btn btn-link logout']
-            )
-            . Html::endForm()
-            . '</li>';
-    }
-    echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
-        'items' => $menuItems,
-    ]);
-    NavBar::end();
-    ?>
+    <div class="wrap">
+        <?php
+        NavBar::begin([
+            'brandLabel' => Html::img('@web/images/MusicaeBranco.png', ['alt' => Yii::$app->name, 'style' => 'height: 40px; width: 80px; top: -15px; left: 350px; position: absolute;']),
+            'brandUrl' => ['/site/login'],
+            'options' => [
+                'class' => 'navbar-inverse navbar-fixed-top',
+            ],
+        ]);
 
-    <div class="container">
-        <?= Alert::widget() ?>
-        <?= $content ?>
+        if (Yii::$app->user->isGuest) {
+            $menuItems[] = ['label' => 'Join Free   ', 'url' => ['/site/signup']];
+            $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
+        } else {
+            $menuItems = [
+                ['label' => 'Perfil', 'url' => ['/profiles/view?id=' . Yii::$app->user->identity->getId()]],
+                ['label' => 'Minhas Bandas  ', 'url' => ['/banda-membro']],
+            ];
+            $menuItems[] = '<li>'
+                . Html::beginForm(['/site/logout'], 'post')
+                . Html::submitButton(
+                    'Logout (' . Yii::$app->user->identity->username . ')',
+                    ['class' => 'btn btn-link logout']
+                )
+                . Html::endForm()
+                . '</li>';
+        }
+        echo Nav::widget([
+            'options' => ['class' => 'navbar-nav navbar-right'],
+            'items' => $menuItems,
+        ]);
+        NavBar::end();
+        ?>
+
+        <div class="container">
+            <?= Alert::widget() ?>
+            <?= $content ?>
+        </div>
     </div>
-</div>
 
-<?php $this->endBody() ?>
+    <?php $this->endBody() ?>
 </body>
+
 </html>
 <?php $this->endPage() ?>

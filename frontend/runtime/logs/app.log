@@ -43028,3 +43028,1941 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1581110211.189
     'REQUEST_TIME' => 1581110211
 ]
+2020-02-07 21:20:04 [::1][4][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 38565 bytes' 
+
+in C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php:34
+
+Stack trace:
+#0 C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php(34): yii\web\ErrorHandler->handleError()
+#1 C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php(34): ::unserialize()
+#2 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(105): ::Opis\Closure\unserialize()
+#3 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(80): yii\debug\LogTarget->updateIndexFile()
+#4 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(136): yii\debug\LogTarget->export()
+#5 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\log\Dispatcher.php(189): yii\debug\LogTarget->collect()
+#6 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch()
+#7 {main}
+2020-02-07 21:20:04 [::1][4][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'efmj5ibmje6lqlglulsba10eu3'
+    '_identity-frontend' => '36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[4,null,2592000]\";}'
+    '_csrf-frontend' => 'f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"htqSRn-TIWVUf86tJlOrnhelpDJEM17L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'frontend.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_PURPOSE' => 'prefetch'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=efmj5ibmje6lqlglulsba10eu3; _identity-frontend=36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B4%2Cnull%2C2592000%5D%22%3B%7D; _csrf-frontend=f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22htqSRn-TIWVUf86tJlOrnhelpDJEM17L%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\PuTTY\\;C:\\PostgreSQL\\pg11\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php5.6.38;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Pedro Lopes\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Pedro Lopes\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.0.33'
+    'SERVER_NAME' => 'frontend.test'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/MusicaeWeb/frontend/web/index.php'
+    'REMOTE_PORT' => '64346'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1581110404.212
+    'REQUEST_TIME' => 1581110404
+]
+2020-02-07 21:20:05 [::1][4][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 38565 bytes' 
+
+in C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php:34
+
+Stack trace:
+#0 C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php(34): yii\web\ErrorHandler->handleError()
+#1 C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php(34): ::unserialize()
+#2 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(105): ::Opis\Closure\unserialize()
+#3 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(80): yii\debug\LogTarget->updateIndexFile()
+#4 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(136): yii\debug\LogTarget->export()
+#5 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\log\Dispatcher.php(189): yii\debug\LogTarget->collect()
+#6 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch()
+#7 {main}
+2020-02-07 21:20:04 [::1][4][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'efmj5ibmje6lqlglulsba10eu3'
+    '_identity-frontend' => '36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[4,null,2592000]\";}'
+    '_csrf-frontend' => 'f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"htqSRn-TIWVUf86tJlOrnhelpDJEM17L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'frontend.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=efmj5ibmje6lqlglulsba10eu3; _identity-frontend=36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B4%2Cnull%2C2592000%5D%22%3B%7D; _csrf-frontend=f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22htqSRn-TIWVUf86tJlOrnhelpDJEM17L%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\PuTTY\\;C:\\PostgreSQL\\pg11\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php5.6.38;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Pedro Lopes\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Pedro Lopes\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.0.33'
+    'SERVER_NAME' => 'frontend.test'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/MusicaeWeb/frontend/web/index.php'
+    'REMOTE_PORT' => '64346'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1581110404.845
+    'REQUEST_TIME' => 1581110404
+]
+2020-02-07 21:20:09 [::1][4][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 38565 bytes' 
+
+in C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php:34
+
+Stack trace:
+#0 C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php(34): yii\web\ErrorHandler->handleError()
+#1 C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php(34): ::unserialize()
+#2 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(105): ::Opis\Closure\unserialize()
+#3 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(80): yii\debug\LogTarget->updateIndexFile()
+#4 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(136): yii\debug\LogTarget->export()
+#5 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\log\Dispatcher.php(189): yii\debug\LogTarget->collect()
+#6 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch()
+#7 {main}
+2020-02-07 21:20:09 [::1][4][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'efmj5ibmje6lqlglulsba10eu3'
+    '_identity-frontend' => '36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[4,null,2592000]\";}'
+    '_csrf-frontend' => 'f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"htqSRn-TIWVUf86tJlOrnhelpDJEM17L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'frontend.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://frontend.test/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=efmj5ibmje6lqlglulsba10eu3; _identity-frontend=36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B4%2Cnull%2C2592000%5D%22%3B%7D; _csrf-frontend=f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22htqSRn-TIWVUf86tJlOrnhelpDJEM17L%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\PuTTY\\;C:\\PostgreSQL\\pg11\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php5.6.38;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Pedro Lopes\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Pedro Lopes\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.0.33'
+    'SERVER_NAME' => 'frontend.test'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/MusicaeWeb/frontend/web/index.php'
+    'REMOTE_PORT' => '64351'
+    'REDIRECT_URL' => '/banda-membro'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/banda-membro'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1581110409.53
+    'REQUEST_TIME' => 1581110409
+]
+2020-02-07 21:20:12 [::1][4][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 38565 bytes' 
+
+in C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php:34
+
+Stack trace:
+#0 C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php(34): yii\web\ErrorHandler->handleError()
+#1 C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php(34): ::unserialize()
+#2 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(105): ::Opis\Closure\unserialize()
+#3 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(80): yii\debug\LogTarget->updateIndexFile()
+#4 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(136): yii\debug\LogTarget->export()
+#5 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\log\Dispatcher.php(189): yii\debug\LogTarget->collect()
+#6 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch()
+#7 {main}
+2020-02-07 21:20:11 [::1][4][-][info][application] $_GET = [
+    'id' => '4'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'efmj5ibmje6lqlglulsba10eu3'
+    '_identity-frontend' => '36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[4,null,2592000]\";}'
+    '_csrf-frontend' => 'f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"htqSRn-TIWVUf86tJlOrnhelpDJEM17L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'frontend.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://frontend.test/banda-membro'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=efmj5ibmje6lqlglulsba10eu3; _identity-frontend=36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B4%2Cnull%2C2592000%5D%22%3B%7D; _csrf-frontend=f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22htqSRn-TIWVUf86tJlOrnhelpDJEM17L%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\PuTTY\\;C:\\PostgreSQL\\pg11\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php5.6.38;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Pedro Lopes\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Pedro Lopes\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.0.33'
+    'SERVER_NAME' => 'frontend.test'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/MusicaeWeb/frontend/web/index.php'
+    'REMOTE_PORT' => '64355'
+    'REDIRECT_URL' => '/profiles/view'
+    'REDIRECT_QUERY_STRING' => 'id=4'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=4'
+    'REQUEST_URI' => '/profiles/view?id=4'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1581110411.923
+    'REQUEST_TIME' => 1581110411
+]
+2020-02-07 21:20:16 [::1][4][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 38565 bytes' 
+
+in C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php:34
+
+Stack trace:
+#0 C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php(34): yii\web\ErrorHandler->handleError()
+#1 C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php(34): ::unserialize()
+#2 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(105): ::Opis\Closure\unserialize()
+#3 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(80): yii\debug\LogTarget->updateIndexFile()
+#4 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(136): yii\debug\LogTarget->export()
+#5 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\log\Dispatcher.php(189): yii\debug\LogTarget->collect()
+#6 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch()
+#7 {main}
+2020-02-07 21:20:16 [::1][4][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'efmj5ibmje6lqlglulsba10eu3'
+    '_identity-frontend' => '36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[4,null,2592000]\";}'
+    '_csrf-frontend' => 'f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"htqSRn-TIWVUf86tJlOrnhelpDJEM17L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'frontend.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://frontend.test/profiles/view?id=4'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=efmj5ibmje6lqlglulsba10eu3; _identity-frontend=36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B4%2Cnull%2C2592000%5D%22%3B%7D; _csrf-frontend=f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22htqSRn-TIWVUf86tJlOrnhelpDJEM17L%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\PuTTY\\;C:\\PostgreSQL\\pg11\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php5.6.38;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Pedro Lopes\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Pedro Lopes\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.0.33'
+    'SERVER_NAME' => 'frontend.test'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/MusicaeWeb/frontend/web/index.php'
+    'REMOTE_PORT' => '64356'
+    'REDIRECT_URL' => '/banda-membro'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/banda-membro'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1581110416.359
+    'REQUEST_TIME' => 1581110416
+]
+2020-02-07 21:20:17 [::1][4][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 38565 bytes' 
+
+in C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php:34
+
+Stack trace:
+#0 C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php(34): yii\web\ErrorHandler->handleError()
+#1 C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php(34): ::unserialize()
+#2 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(105): ::Opis\Closure\unserialize()
+#3 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(80): yii\debug\LogTarget->updateIndexFile()
+#4 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(136): yii\debug\LogTarget->export()
+#5 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\log\Dispatcher.php(189): yii\debug\LogTarget->collect()
+#6 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch()
+#7 {main}
+2020-02-07 21:20:17 [::1][4][-][info][application] $_GET = [
+    'id' => '4'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'efmj5ibmje6lqlglulsba10eu3'
+    '_identity-frontend' => '36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[4,null,2592000]\";}'
+    '_csrf-frontend' => 'f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"htqSRn-TIWVUf86tJlOrnhelpDJEM17L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'frontend.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://frontend.test/banda-membro'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=efmj5ibmje6lqlglulsba10eu3; _identity-frontend=36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B4%2Cnull%2C2592000%5D%22%3B%7D; _csrf-frontend=f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22htqSRn-TIWVUf86tJlOrnhelpDJEM17L%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\PuTTY\\;C:\\PostgreSQL\\pg11\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php5.6.38;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Pedro Lopes\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Pedro Lopes\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.0.33'
+    'SERVER_NAME' => 'frontend.test'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/MusicaeWeb/frontend/web/index.php'
+    'REMOTE_PORT' => '64362'
+    'REDIRECT_URL' => '/profiles/view'
+    'REDIRECT_QUERY_STRING' => 'id=4'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=4'
+    'REQUEST_URI' => '/profiles/view?id=4'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1581110417.665
+    'REQUEST_TIME' => 1581110417
+]
+2020-02-07 21:20:19 [::1][4][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 38565 bytes' 
+
+in C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php:34
+
+Stack trace:
+#0 C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php(34): yii\web\ErrorHandler->handleError()
+#1 C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php(34): ::unserialize()
+#2 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(105): ::Opis\Closure\unserialize()
+#3 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(80): yii\debug\LogTarget->updateIndexFile()
+#4 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(136): yii\debug\LogTarget->export()
+#5 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\log\Dispatcher.php(189): yii\debug\LogTarget->collect()
+#6 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch()
+#7 {main}
+2020-02-07 21:20:19 [::1][4][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'efmj5ibmje6lqlglulsba10eu3'
+    '_identity-frontend' => '36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[4,null,2592000]\";}'
+    '_csrf-frontend' => 'f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"htqSRn-TIWVUf86tJlOrnhelpDJEM17L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'frontend.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://frontend.test/profiles/view?id=4'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=efmj5ibmje6lqlglulsba10eu3; _identity-frontend=36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B4%2Cnull%2C2592000%5D%22%3B%7D; _csrf-frontend=f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22htqSRn-TIWVUf86tJlOrnhelpDJEM17L%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\PuTTY\\;C:\\PostgreSQL\\pg11\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php5.6.38;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Pedro Lopes\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Pedro Lopes\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.0.33'
+    'SERVER_NAME' => 'frontend.test'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/MusicaeWeb/frontend/web/index.php'
+    'REMOTE_PORT' => '64363'
+    'REDIRECT_URL' => '/banda-membro'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/banda-membro'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1581110418.995
+    'REQUEST_TIME' => 1581110418
+]
+2020-02-07 21:20:20 [::1][4][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 38565 bytes' 
+
+in C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php:34
+
+Stack trace:
+#0 C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php(34): yii\web\ErrorHandler->handleError()
+#1 C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php(34): ::unserialize()
+#2 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(105): ::Opis\Closure\unserialize()
+#3 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(80): yii\debug\LogTarget->updateIndexFile()
+#4 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(136): yii\debug\LogTarget->export()
+#5 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\log\Dispatcher.php(189): yii\debug\LogTarget->collect()
+#6 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch()
+#7 {main}
+2020-02-07 21:20:20 [::1][4][-][info][application] $_GET = [
+    'id' => '4'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'efmj5ibmje6lqlglulsba10eu3'
+    '_identity-frontend' => '36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[4,null,2592000]\";}'
+    '_csrf-frontend' => 'f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"htqSRn-TIWVUf86tJlOrnhelpDJEM17L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'frontend.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://frontend.test/banda-membro'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=efmj5ibmje6lqlglulsba10eu3; _identity-frontend=36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B4%2Cnull%2C2592000%5D%22%3B%7D; _csrf-frontend=f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22htqSRn-TIWVUf86tJlOrnhelpDJEM17L%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\PuTTY\\;C:\\PostgreSQL\\pg11\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php5.6.38;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Pedro Lopes\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Pedro Lopes\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.0.33'
+    'SERVER_NAME' => 'frontend.test'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/MusicaeWeb/frontend/web/index.php'
+    'REMOTE_PORT' => '64363'
+    'REDIRECT_URL' => '/profiles/view'
+    'REDIRECT_QUERY_STRING' => 'id=4'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=4'
+    'REQUEST_URI' => '/profiles/view?id=4'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1581110420.173
+    'REQUEST_TIME' => 1581110420
+]
+2020-02-07 21:20:21 [::1][4][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 38565 bytes' 
+
+in C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php:34
+
+Stack trace:
+#0 C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php(34): yii\web\ErrorHandler->handleError()
+#1 C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php(34): ::unserialize()
+#2 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(105): ::Opis\Closure\unserialize()
+#3 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(80): yii\debug\LogTarget->updateIndexFile()
+#4 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(136): yii\debug\LogTarget->export()
+#5 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\log\Dispatcher.php(189): yii\debug\LogTarget->collect()
+#6 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch()
+#7 {main}
+2020-02-07 21:20:21 [::1][4][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'efmj5ibmje6lqlglulsba10eu3'
+    '_identity-frontend' => '36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[4,null,2592000]\";}'
+    '_csrf-frontend' => 'f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"htqSRn-TIWVUf86tJlOrnhelpDJEM17L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'frontend.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://frontend.test/profiles/view?id=4'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=efmj5ibmje6lqlglulsba10eu3; _identity-frontend=36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B4%2Cnull%2C2592000%5D%22%3B%7D; _csrf-frontend=f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22htqSRn-TIWVUf86tJlOrnhelpDJEM17L%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\PuTTY\\;C:\\PostgreSQL\\pg11\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php5.6.38;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Pedro Lopes\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Pedro Lopes\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.0.33'
+    'SERVER_NAME' => 'frontend.test'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/MusicaeWeb/frontend/web/index.php'
+    'REMOTE_PORT' => '64369'
+    'REDIRECT_URL' => '/banda-membro'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/banda-membro'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1581110421.368
+    'REQUEST_TIME' => 1581110421
+]
+2020-02-07 21:20:22 [::1][4][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 38565 bytes' 
+
+in C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php:34
+
+Stack trace:
+#0 C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php(34): yii\web\ErrorHandler->handleError()
+#1 C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php(34): ::unserialize()
+#2 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(105): ::Opis\Closure\unserialize()
+#3 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(80): yii\debug\LogTarget->updateIndexFile()
+#4 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(136): yii\debug\LogTarget->export()
+#5 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\log\Dispatcher.php(189): yii\debug\LogTarget->collect()
+#6 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch()
+#7 {main}
+2020-02-07 21:20:22 [::1][4][-][info][application] $_GET = [
+    'id' => '4'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'efmj5ibmje6lqlglulsba10eu3'
+    '_identity-frontend' => '36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[4,null,2592000]\";}'
+    '_csrf-frontend' => 'f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"htqSRn-TIWVUf86tJlOrnhelpDJEM17L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'frontend.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://frontend.test/banda-membro'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=efmj5ibmje6lqlglulsba10eu3; _identity-frontend=36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B4%2Cnull%2C2592000%5D%22%3B%7D; _csrf-frontend=f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22htqSRn-TIWVUf86tJlOrnhelpDJEM17L%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\PuTTY\\;C:\\PostgreSQL\\pg11\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php5.6.38;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Pedro Lopes\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Pedro Lopes\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.0.33'
+    'SERVER_NAME' => 'frontend.test'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/MusicaeWeb/frontend/web/index.php'
+    'REMOTE_PORT' => '64375'
+    'REDIRECT_URL' => '/profiles/view'
+    'REDIRECT_QUERY_STRING' => 'id=4'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=4'
+    'REQUEST_URI' => '/profiles/view?id=4'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1581110422.162
+    'REQUEST_TIME' => 1581110422
+]
+2020-02-07 21:20:23 [::1][4][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 38565 bytes' 
+
+in C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php:34
+
+Stack trace:
+#0 C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php(34): yii\web\ErrorHandler->handleError()
+#1 C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php(34): ::unserialize()
+#2 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(105): ::Opis\Closure\unserialize()
+#3 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(80): yii\debug\LogTarget->updateIndexFile()
+#4 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(136): yii\debug\LogTarget->export()
+#5 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\log\Dispatcher.php(189): yii\debug\LogTarget->collect()
+#6 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch()
+#7 {main}
+2020-02-07 21:20:23 [::1][4][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'efmj5ibmje6lqlglulsba10eu3'
+    '_identity-frontend' => '36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[4,null,2592000]\";}'
+    '_csrf-frontend' => 'f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"htqSRn-TIWVUf86tJlOrnhelpDJEM17L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'frontend.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://frontend.test/profiles/view?id=4'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=efmj5ibmje6lqlglulsba10eu3; _identity-frontend=36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B4%2Cnull%2C2592000%5D%22%3B%7D; _csrf-frontend=f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22htqSRn-TIWVUf86tJlOrnhelpDJEM17L%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\PuTTY\\;C:\\PostgreSQL\\pg11\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php5.6.38;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Pedro Lopes\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Pedro Lopes\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.0.33'
+    'SERVER_NAME' => 'frontend.test'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/MusicaeWeb/frontend/web/index.php'
+    'REMOTE_PORT' => '64376'
+    'REDIRECT_URL' => '/banda-membro'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/banda-membro'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1581110423.169
+    'REQUEST_TIME' => 1581110423
+]
+2020-02-07 21:20:24 [::1][4][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 38565 bytes' 
+
+in C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php:34
+
+Stack trace:
+#0 C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php(34): yii\web\ErrorHandler->handleError()
+#1 C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php(34): ::unserialize()
+#2 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(105): ::Opis\Closure\unserialize()
+#3 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(80): yii\debug\LogTarget->updateIndexFile()
+#4 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(136): yii\debug\LogTarget->export()
+#5 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\log\Dispatcher.php(189): yii\debug\LogTarget->collect()
+#6 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch()
+#7 {main}
+2020-02-07 21:20:24 [::1][4][-][info][application] $_GET = [
+    'id' => '4'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'efmj5ibmje6lqlglulsba10eu3'
+    '_identity-frontend' => '36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[4,null,2592000]\";}'
+    '_csrf-frontend' => 'f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"htqSRn-TIWVUf86tJlOrnhelpDJEM17L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'frontend.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://frontend.test/banda-membro'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=efmj5ibmje6lqlglulsba10eu3; _identity-frontend=36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B4%2Cnull%2C2592000%5D%22%3B%7D; _csrf-frontend=f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22htqSRn-TIWVUf86tJlOrnhelpDJEM17L%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\PuTTY\\;C:\\PostgreSQL\\pg11\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php5.6.38;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Pedro Lopes\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Pedro Lopes\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.0.33'
+    'SERVER_NAME' => 'frontend.test'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/MusicaeWeb/frontend/web/index.php'
+    'REMOTE_PORT' => '64376'
+    'REDIRECT_URL' => '/profiles/view'
+    'REDIRECT_QUERY_STRING' => 'id=4'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=4'
+    'REQUEST_URI' => '/profiles/view?id=4'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1581110424.404
+    'REQUEST_TIME' => 1581110424
+]
+2020-02-07 21:21:05 [::1][4][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 38565 bytes' 
+
+in C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php:34
+
+Stack trace:
+#0 C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php(34): yii\web\ErrorHandler->handleError()
+#1 C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php(34): ::unserialize()
+#2 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(105): ::Opis\Closure\unserialize()
+#3 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(80): yii\debug\LogTarget->updateIndexFile()
+#4 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(136): yii\debug\LogTarget->export()
+#5 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\log\Dispatcher.php(189): yii\debug\LogTarget->collect()
+#6 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch()
+#7 {main}
+2020-02-07 21:21:04 [::1][4][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'efmj5ibmje6lqlglulsba10eu3'
+    '_identity-frontend' => '36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[4,null,2592000]\";}'
+    '_csrf-frontend' => 'f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"htqSRn-TIWVUf86tJlOrnhelpDJEM17L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'frontend.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://frontend.test/profiles/view?id=4'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=efmj5ibmje6lqlglulsba10eu3; _identity-frontend=36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B4%2Cnull%2C2592000%5D%22%3B%7D; _csrf-frontend=f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22htqSRn-TIWVUf86tJlOrnhelpDJEM17L%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\PuTTY\\;C:\\PostgreSQL\\pg11\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php5.6.38;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Pedro Lopes\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Pedro Lopes\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.0.33'
+    'SERVER_NAME' => 'frontend.test'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/MusicaeWeb/frontend/web/index.php'
+    'REMOTE_PORT' => '64424'
+    'REDIRECT_URL' => '/banda-membro'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/banda-membro'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1581110464.709
+    'REQUEST_TIME' => 1581110464
+]
+2020-02-07 21:21:19 [::1][4][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 38565 bytes' 
+
+in C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php:34
+
+Stack trace:
+#0 C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php(34): yii\web\ErrorHandler->handleError()
+#1 C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php(34): ::unserialize()
+#2 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(105): ::Opis\Closure\unserialize()
+#3 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(80): yii\debug\LogTarget->updateIndexFile()
+#4 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(136): yii\debug\LogTarget->export()
+#5 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\log\Dispatcher.php(189): yii\debug\LogTarget->collect()
+#6 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch()
+#7 {main}
+2020-02-07 21:21:19 [::1][4][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'efmj5ibmje6lqlglulsba10eu3'
+    '_identity-frontend' => '36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[4,null,2592000]\";}'
+    '_csrf-frontend' => 'f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"htqSRn-TIWVUf86tJlOrnhelpDJEM17L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'frontend.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://frontend.test/banda-membro'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=efmj5ibmje6lqlglulsba10eu3; _identity-frontend=36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B4%2Cnull%2C2592000%5D%22%3B%7D; _csrf-frontend=f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22htqSRn-TIWVUf86tJlOrnhelpDJEM17L%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\PuTTY\\;C:\\PostgreSQL\\pg11\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php5.6.38;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Pedro Lopes\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Pedro Lopes\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.0.33'
+    'SERVER_NAME' => 'frontend.test'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/MusicaeWeb/frontend/web/index.php'
+    'REMOTE_PORT' => '64441'
+    'REDIRECT_URL' => '/banda-membro'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/banda-membro'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1581110479.577
+    'REQUEST_TIME' => 1581110479
+]
+2020-02-07 21:22:45 [::1][4][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 38565 bytes' 
+
+in C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php:34
+
+Stack trace:
+#0 C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php(34): yii\web\ErrorHandler->handleError()
+#1 C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php(34): ::unserialize()
+#2 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(105): ::Opis\Closure\unserialize()
+#3 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(80): yii\debug\LogTarget->updateIndexFile()
+#4 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(136): yii\debug\LogTarget->export()
+#5 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\log\Dispatcher.php(189): yii\debug\LogTarget->collect()
+#6 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch()
+#7 {main}
+2020-02-07 21:22:45 [::1][4][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'efmj5ibmje6lqlglulsba10eu3'
+    '_identity-frontend' => '36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[4,null,2592000]\";}'
+    '_csrf-frontend' => 'f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"htqSRn-TIWVUf86tJlOrnhelpDJEM17L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'frontend.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://frontend.test/banda-membro'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=efmj5ibmje6lqlglulsba10eu3; _identity-frontend=36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B4%2Cnull%2C2592000%5D%22%3B%7D; _csrf-frontend=f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22htqSRn-TIWVUf86tJlOrnhelpDJEM17L%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\PuTTY\\;C:\\PostgreSQL\\pg11\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php5.6.38;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Pedro Lopes\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Pedro Lopes\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.0.33'
+    'SERVER_NAME' => 'frontend.test'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/MusicaeWeb/frontend/web/index.php'
+    'REMOTE_PORT' => '64514'
+    'REDIRECT_URL' => '/banda-membro'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/banda-membro'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1581110565.081
+    'REQUEST_TIME' => 1581110565
+]
+2020-02-07 21:22:46 [::1][4][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 38565 bytes' 
+
+in C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php:34
+
+Stack trace:
+#0 C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php(34): yii\web\ErrorHandler->handleError()
+#1 C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php(34): ::unserialize()
+#2 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(105): ::Opis\Closure\unserialize()
+#3 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(80): yii\debug\LogTarget->updateIndexFile()
+#4 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(136): yii\debug\LogTarget->export()
+#5 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\log\Dispatcher.php(189): yii\debug\LogTarget->collect()
+#6 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch()
+#7 {main}
+2020-02-07 21:22:46 [::1][4][-][info][application] $_GET = [
+    'id' => '4'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'efmj5ibmje6lqlglulsba10eu3'
+    '_identity-frontend' => '36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[4,null,2592000]\";}'
+    '_csrf-frontend' => 'f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"htqSRn-TIWVUf86tJlOrnhelpDJEM17L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'frontend.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://frontend.test/banda-membro'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=efmj5ibmje6lqlglulsba10eu3; _identity-frontend=36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B4%2Cnull%2C2592000%5D%22%3B%7D; _csrf-frontend=f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22htqSRn-TIWVUf86tJlOrnhelpDJEM17L%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\PuTTY\\;C:\\PostgreSQL\\pg11\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php5.6.38;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Pedro Lopes\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Pedro Lopes\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.0.33'
+    'SERVER_NAME' => 'frontend.test'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/MusicaeWeb/frontend/web/index.php'
+    'REMOTE_PORT' => '64515'
+    'REDIRECT_URL' => '/profiles/view'
+    'REDIRECT_QUERY_STRING' => 'id=4'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=4'
+    'REQUEST_URI' => '/profiles/view?id=4'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1581110566.286
+    'REQUEST_TIME' => 1581110566
+]
+2020-02-07 21:22:47 [::1][4][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 38565 bytes' 
+
+in C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php:34
+
+Stack trace:
+#0 C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php(34): yii\web\ErrorHandler->handleError()
+#1 C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php(34): ::unserialize()
+#2 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(105): ::Opis\Closure\unserialize()
+#3 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(80): yii\debug\LogTarget->updateIndexFile()
+#4 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(136): yii\debug\LogTarget->export()
+#5 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\log\Dispatcher.php(189): yii\debug\LogTarget->collect()
+#6 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch()
+#7 {main}
+2020-02-07 21:22:46 [::1][4][-][info][application] $_GET = [
+    'id' => '4'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'efmj5ibmje6lqlglulsba10eu3'
+    '_identity-frontend' => '36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[4,null,2592000]\";}'
+    '_csrf-frontend' => 'f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"htqSRn-TIWVUf86tJlOrnhelpDJEM17L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'frontend.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://frontend.test/banda-membro'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=efmj5ibmje6lqlglulsba10eu3; _identity-frontend=36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B4%2Cnull%2C2592000%5D%22%3B%7D; _csrf-frontend=f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22htqSRn-TIWVUf86tJlOrnhelpDJEM17L%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\PuTTY\\;C:\\PostgreSQL\\pg11\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php5.6.38;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Pedro Lopes\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Pedro Lopes\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.0.33'
+    'SERVER_NAME' => 'frontend.test'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/MusicaeWeb/frontend/web/index.php'
+    'REMOTE_PORT' => '64519'
+    'REDIRECT_URL' => '/profiles/view'
+    'REDIRECT_QUERY_STRING' => 'id=4'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=4'
+    'REQUEST_URI' => '/profiles/view?id=4'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1581110566.96
+    'REQUEST_TIME' => 1581110566
+]
+2020-02-07 21:22:47 [::1][4][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 38565 bytes' 
+
+in C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php:34
+
+Stack trace:
+#0 C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php(34): yii\web\ErrorHandler->handleError()
+#1 C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php(34): ::unserialize()
+#2 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(105): ::Opis\Closure\unserialize()
+#3 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(80): yii\debug\LogTarget->updateIndexFile()
+#4 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(136): yii\debug\LogTarget->export()
+#5 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\log\Dispatcher.php(189): yii\debug\LogTarget->collect()
+#6 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch()
+#7 {main}
+2020-02-07 21:22:47 [::1][4][-][info][application] $_GET = [
+    'id' => '4'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'efmj5ibmje6lqlglulsba10eu3'
+    '_identity-frontend' => '36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[4,null,2592000]\";}'
+    '_csrf-frontend' => 'f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"htqSRn-TIWVUf86tJlOrnhelpDJEM17L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'frontend.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://frontend.test/banda-membro'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=efmj5ibmje6lqlglulsba10eu3; _identity-frontend=36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B4%2Cnull%2C2592000%5D%22%3B%7D; _csrf-frontend=f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22htqSRn-TIWVUf86tJlOrnhelpDJEM17L%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\PuTTY\\;C:\\PostgreSQL\\pg11\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php5.6.38;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Pedro Lopes\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Pedro Lopes\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.0.33'
+    'SERVER_NAME' => 'frontend.test'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/MusicaeWeb/frontend/web/index.php'
+    'REMOTE_PORT' => '64522'
+    'REDIRECT_URL' => '/profiles/view'
+    'REDIRECT_QUERY_STRING' => 'id=4'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=4'
+    'REQUEST_URI' => '/profiles/view?id=4'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1581110567.102
+    'REQUEST_TIME' => 1581110567
+]
+2020-02-07 21:22:48 [::1][4][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 38565 bytes' 
+
+in C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php:34
+
+Stack trace:
+#0 C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php(34): yii\web\ErrorHandler->handleError()
+#1 C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php(34): ::unserialize()
+#2 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(105): ::Opis\Closure\unserialize()
+#3 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(80): yii\debug\LogTarget->updateIndexFile()
+#4 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(136): yii\debug\LogTarget->export()
+#5 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\log\Dispatcher.php(189): yii\debug\LogTarget->collect()
+#6 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch()
+#7 {main}
+2020-02-07 21:22:48 [::1][4][-][info][application] $_GET = [
+    'id' => '4'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'efmj5ibmje6lqlglulsba10eu3'
+    '_identity-frontend' => '36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[4,null,2592000]\";}'
+    '_csrf-frontend' => 'f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"htqSRn-TIWVUf86tJlOrnhelpDJEM17L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'frontend.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://frontend.test/banda-membro'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=efmj5ibmje6lqlglulsba10eu3; _identity-frontend=36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B4%2Cnull%2C2592000%5D%22%3B%7D; _csrf-frontend=f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22htqSRn-TIWVUf86tJlOrnhelpDJEM17L%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\PuTTY\\;C:\\PostgreSQL\\pg11\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php5.6.38;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Pedro Lopes\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Pedro Lopes\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.0.33'
+    'SERVER_NAME' => 'frontend.test'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/MusicaeWeb/frontend/web/index.php'
+    'REMOTE_PORT' => '64524'
+    'REDIRECT_URL' => '/profiles/view'
+    'REDIRECT_QUERY_STRING' => 'id=4'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=4'
+    'REQUEST_URI' => '/profiles/view?id=4'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1581110568.325
+    'REQUEST_TIME' => 1581110568
+]
+2020-02-07 21:22:49 [::1][4][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 38565 bytes' 
+
+in C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php:34
+
+Stack trace:
+#0 C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php(34): yii\web\ErrorHandler->handleError()
+#1 C:\wamp64\www\MusicaeWeb\vendor\opis\closure\functions.php(34): ::unserialize()
+#2 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(105): ::Opis\Closure\unserialize()
+#3 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(80): yii\debug\LogTarget->updateIndexFile()
+#4 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2-debug\src\LogTarget.php(136): yii\debug\LogTarget->export()
+#5 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\log\Dispatcher.php(189): yii\debug\LogTarget->collect()
+#6 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch()
+#7 {main}
+2020-02-07 21:22:48 [::1][4][-][info][application] $_GET = [
+    'id' => '4'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'efmj5ibmje6lqlglulsba10eu3'
+    '_identity-frontend' => '36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[4,null,2592000]\";}'
+    '_csrf-frontend' => 'f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"htqSRn-TIWVUf86tJlOrnhelpDJEM17L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'frontend.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://frontend.test/banda-membro'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=efmj5ibmje6lqlglulsba10eu3; _identity-frontend=36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B4%2Cnull%2C2592000%5D%22%3B%7D; _csrf-frontend=f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22htqSRn-TIWVUf86tJlOrnhelpDJEM17L%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\PuTTY\\;C:\\PostgreSQL\\pg11\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php5.6.38;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Pedro Lopes\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Pedro Lopes\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.0.33'
+    'SERVER_NAME' => 'frontend.test'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/MusicaeWeb/frontend/web/index.php'
+    'REMOTE_PORT' => '64524'
+    'REDIRECT_URL' => '/profiles/view'
+    'REDIRECT_QUERY_STRING' => 'id=4'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=4'
+    'REQUEST_URI' => '/profiles/view?id=4'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1581110568.722
+    'REQUEST_TIME' => 1581110568
+]
+2020-02-07 21:22:49 [::1][4][efmj5ibmje6lqlglulsba10eu3][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "web/images/logotipoIcon.png". in C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('web/images/logo...', Array)
+#1 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\MusicaeWeb\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\MusicaeWeb\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2020-02-07 21:22:49 [::1][4][efmj5ibmje6lqlglulsba10eu3][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'efmj5ibmje6lqlglulsba10eu3'
+    '_identity-frontend' => '36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[4,null,2592000]\";}'
+    '_csrf-frontend' => 'f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"htqSRn-TIWVUf86tJlOrnhelpDJEM17L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'frontend.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://frontend.test/profiles/view?id=4'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=efmj5ibmje6lqlglulsba10eu3; _identity-frontend=36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B4%2Cnull%2C2592000%5D%22%3B%7D; _csrf-frontend=f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22htqSRn-TIWVUf86tJlOrnhelpDJEM17L%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\PuTTY\\;C:\\PostgreSQL\\pg11\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php5.6.38;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Pedro Lopes\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Pedro Lopes\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.0.33'
+    'SERVER_NAME' => 'frontend.test'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/MusicaeWeb/frontend/web/index.php'
+    'REMOTE_PORT' => '64529'
+    'REDIRECT_URL' => '/web/images/logotipoIcon.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/images/logotipoIcon.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1581110569.341
+    'REQUEST_TIME' => 1581110569
+]
+2020-02-07 21:22:51 [::1][4][efmj5ibmje6lqlglulsba10eu3][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "web/images/logotipoIcon.png". in C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('web/images/logo...', Array)
+#1 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\MusicaeWeb\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\MusicaeWeb\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2020-02-07 21:22:51 [::1][4][efmj5ibmje6lqlglulsba10eu3][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'efmj5ibmje6lqlglulsba10eu3'
+    '_identity-frontend' => '36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[4,null,2592000]\";}'
+    '_csrf-frontend' => 'f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"htqSRn-TIWVUf86tJlOrnhelpDJEM17L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'frontend.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://frontend.test/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=efmj5ibmje6lqlglulsba10eu3; _identity-frontend=36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B4%2Cnull%2C2592000%5D%22%3B%7D; _csrf-frontend=f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22htqSRn-TIWVUf86tJlOrnhelpDJEM17L%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\PuTTY\\;C:\\PostgreSQL\\pg11\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php5.6.38;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Pedro Lopes\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Pedro Lopes\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.0.33'
+    'SERVER_NAME' => 'frontend.test'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/MusicaeWeb/frontend/web/index.php'
+    'REMOTE_PORT' => '64541'
+    'REDIRECT_URL' => '/web/images/logotipoIcon.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/images/logotipoIcon.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1581110571.344
+    'REQUEST_TIME' => 1581110571
+]
+2020-02-07 21:22:53 [::1][4][efmj5ibmje6lqlglulsba10eu3][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "web/images/logotipoIcon.png". in C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('web/images/logo...', Array)
+#1 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\MusicaeWeb\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\MusicaeWeb\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2020-02-07 21:22:52 [::1][4][efmj5ibmje6lqlglulsba10eu3][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'efmj5ibmje6lqlglulsba10eu3'
+    '_identity-frontend' => '36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[4,null,2592000]\";}'
+    '_csrf-frontend' => 'f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"htqSRn-TIWVUf86tJlOrnhelpDJEM17L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'frontend.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://frontend.test/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=efmj5ibmje6lqlglulsba10eu3; _identity-frontend=36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B4%2Cnull%2C2592000%5D%22%3B%7D; _csrf-frontend=f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22htqSRn-TIWVUf86tJlOrnhelpDJEM17L%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\PuTTY\\;C:\\PostgreSQL\\pg11\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php5.6.38;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Pedro Lopes\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Pedro Lopes\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.0.33'
+    'SERVER_NAME' => 'frontend.test'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/MusicaeWeb/frontend/web/index.php'
+    'REMOTE_PORT' => '64553'
+    'REDIRECT_URL' => '/web/images/logotipoIcon.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/images/logotipoIcon.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1581110572.817
+    'REQUEST_TIME' => 1581110572
+]
+2020-02-07 21:22:53 [::1][4][efmj5ibmje6lqlglulsba10eu3][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "web/images/logotipoIcon.png". in C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('web/images/logo...', Array)
+#1 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\MusicaeWeb\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\MusicaeWeb\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2020-02-07 21:22:53 [::1][4][efmj5ibmje6lqlglulsba10eu3][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'efmj5ibmje6lqlglulsba10eu3'
+    '_identity-frontend' => '36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[4,null,2592000]\";}'
+    '_csrf-frontend' => 'f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"htqSRn-TIWVUf86tJlOrnhelpDJEM17L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'frontend.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://frontend.test/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=efmj5ibmje6lqlglulsba10eu3; _identity-frontend=36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B4%2Cnull%2C2592000%5D%22%3B%7D; _csrf-frontend=f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22htqSRn-TIWVUf86tJlOrnhelpDJEM17L%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\PuTTY\\;C:\\PostgreSQL\\pg11\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php5.6.38;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Pedro Lopes\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Pedro Lopes\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.0.33'
+    'SERVER_NAME' => 'frontend.test'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/MusicaeWeb/frontend/web/index.php'
+    'REMOTE_PORT' => '64550'
+    'REDIRECT_URL' => '/web/images/logotipoIcon.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/images/logotipoIcon.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1581110573.177
+    'REQUEST_TIME' => 1581110573
+]
+2020-02-07 21:23:14 [::1][4][efmj5ibmje6lqlglulsba10eu3][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "web/images/logotipoIcon.png". in C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('web/images/logo...', Array)
+#1 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\MusicaeWeb\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\MusicaeWeb\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2020-02-07 21:23:14 [::1][4][efmj5ibmje6lqlglulsba10eu3][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'efmj5ibmje6lqlglulsba10eu3'
+    '_identity-frontend' => '36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[4,null,2592000]\";}'
+    '_csrf-frontend' => 'f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"htqSRn-TIWVUf86tJlOrnhelpDJEM17L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'frontend.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://frontend.test/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=efmj5ibmje6lqlglulsba10eu3; _identity-frontend=36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B4%2Cnull%2C2592000%5D%22%3B%7D; _csrf-frontend=f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22htqSRn-TIWVUf86tJlOrnhelpDJEM17L%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\PuTTY\\;C:\\PostgreSQL\\pg11\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php5.6.38;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Pedro Lopes\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Pedro Lopes\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.0.33'
+    'SERVER_NAME' => 'frontend.test'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/MusicaeWeb/frontend/web/index.php'
+    'REMOTE_PORT' => '64567'
+    'REDIRECT_URL' => '/web/images/logotipoIcon.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/images/logotipoIcon.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1581110594.833
+    'REQUEST_TIME' => 1581110594
+]
+2020-02-07 21:23:23 [::1][4][efmj5ibmje6lqlglulsba10eu3][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "index". in C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('index', Array)
+#1 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\MusicaeWeb\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\MusicaeWeb\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2020-02-07 21:23:23 [::1][4][efmj5ibmje6lqlglulsba10eu3][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'efmj5ibmje6lqlglulsba10eu3'
+    '_identity-frontend' => '36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[4,null,2592000]\";}'
+    '_csrf-frontend' => 'f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"htqSRn-TIWVUf86tJlOrnhelpDJEM17L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'frontend.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=efmj5ibmje6lqlglulsba10eu3; _identity-frontend=36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B4%2Cnull%2C2592000%5D%22%3B%7D; _csrf-frontend=f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22htqSRn-TIWVUf86tJlOrnhelpDJEM17L%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\PuTTY\\;C:\\PostgreSQL\\pg11\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php5.6.38;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Pedro Lopes\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Pedro Lopes\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.0.33'
+    'SERVER_NAME' => 'frontend.test'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/MusicaeWeb/frontend/web/index.php'
+    'REMOTE_PORT' => '64574'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1581110603.537
+    'REQUEST_TIME' => 1581110603
+]
+2020-02-07 21:23:42 [::1][4][efmj5ibmje6lqlglulsba10eu3][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "index". in C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('index', Array)
+#1 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\MusicaeWeb\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\wamp64\www\MusicaeWeb\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\MusicaeWeb\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2020-02-07 21:23:42 [::1][4][efmj5ibmje6lqlglulsba10eu3][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'efmj5ibmje6lqlglulsba10eu3'
+    '_identity-frontend' => '36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[4,null,2592000]\";}'
+    '_csrf-frontend' => 'f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"htqSRn-TIWVUf86tJlOrnhelpDJEM17L\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'frontend.test'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'advanced-frontend=efmj5ibmje6lqlglulsba10eu3; _identity-frontend=36def030fa8dafe3add8c7d6666d931fe0c155dab50f1aba51d2d7a7889c81b8a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B4%2Cnull%2C2592000%5D%22%3B%7D; _csrf-frontend=f1e01d3c2be74c35edd66ce50bbe988094c3e2f8b732f410787bdbe978a1fd2aa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22htqSRn-TIWVUf86tJlOrnhelpDJEM17L%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\PuTTY\\;C:\\PostgreSQL\\pg11\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\wamp64\\bin\\php\\php5.6.38;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\wamp64\\bin\\php\\php5.6.40;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Pedro Lopes\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Pedro Lopes\\.dotnet\\tools'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.39 (Win64) PHP/7.0.33 Server at frontend.test Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.39 (Win64) PHP/7.0.33'
+    'SERVER_NAME' => 'frontend.test'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/MusicaeWeb/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/MusicaeWeb/frontend/web/index.php'
+    'REMOTE_PORT' => '64580'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1581110622.673
+    'REQUEST_TIME' => 1581110622
+]
