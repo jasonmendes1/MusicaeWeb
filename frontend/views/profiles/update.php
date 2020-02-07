@@ -7,7 +7,7 @@ use yii\helpers\Html;
 /* @var $modelMusico common\models\Musicos */
 /* @var $modelUser common\models\User */
 
-$this->title = 'Update Profiles: ' . $model->Id;
+$this->title = 'Update Profiles: ' . $model->Nome;
 $this->params['breadcrumbs'][] = ['label' => 'Profiles', 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->Id, 'url' => ['view', 'id' => $model->Id]];
 $this->params['breadcrumbs'][] = 'Update';
