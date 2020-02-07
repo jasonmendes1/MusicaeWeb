@@ -23,16 +23,16 @@ class ProfileController extends Controller
         return [
             'access' => [
                 'class' => AccessControl::className(),
-                'only' => ['create', 'update', 'delete','index'],
+                'only' => ['create', 'update', 'delete', 'index'],
                 'rules' => [
                     [
                         'allow' => false,
-                        'actions' => ['create', 'update', 'delete','index'],
+                        'actions' => ['create', 'update', 'delete', 'index'],
                         'roles' => ['?'],
                     ],
                     [
                         'allow' => true,
-                        'actions' => ['create', 'update', 'delete','index'],
+                        'actions' => ['create', 'update', 'delete', 'index'],
                         'roles' => ['@'],
                     ],
                 ],

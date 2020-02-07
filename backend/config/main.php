@@ -61,6 +61,7 @@ return [
                         'GET feed' => 'feed',
                         'GET feedhabilidade/{idhabilidade}' => 'feedhabilidade',
                         'GET membros/{iduser}' => 'membros',
+                        'GET historico/{iduser}' => 'historico',
                         // 'POST feedhabilidade' => 'feedhabilidade',
                     ],
                     'tokens' => [
@@ -77,7 +78,8 @@ return [
                         'GET total' => 'total',
                         'GET profile/{id}' => 'profile',
                         'POST verificaLogin' => 'verifica',
-                        'POST profile/edit' => 'edit'
+                        'POST profile/edit' => 'edit',
+                        'POST add' => 'add'
                     ],
                     'tokens' => [
                         '{id}' => '<id:\\d+>',
