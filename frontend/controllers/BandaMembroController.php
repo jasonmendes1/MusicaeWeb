@@ -2,9 +2,13 @@
 
 namespace frontend\controllers;
 
+use frontend\models\CriarBandaForm;
 use Yii;
 use common\models\BandaMembros;
+use common\models\Profiles;
+use common\models\User;
 use common\models\BandaMembrosSearch;
+use yii\helpers\BaseVarDumper;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -38,8 +42,13 @@ class BandaMembroController extends Controller
         $searchModel = new BandaMembrosSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
+        $currentId = Yii::$app->user->id;
+        $user = User::find()->where(['id' => $currentId])->one();
+
+        $dataProvider = $user->profile->musicos->bandas;
+
         return $this->render('index', [
-            'searchModel' => $searchModel,
+            //'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
         ]);
     }
@@ -65,10 +74,10 @@ class BandaMembroController extends Controller
      */
     public function actionCreate()
     {
-        $model = new BandaMembros();
+        $model = new CriarBandaForm();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'IdBanda' => $model->IdBanda, 'IdMusico' => $model->IdMusico]);
+        if ($model->load(Yii::$app->request->post()) && $model->criarBanda()) {
+            return $this->redirect(['/banda-membro/index']);
         }
 
         return $this->render('create', [

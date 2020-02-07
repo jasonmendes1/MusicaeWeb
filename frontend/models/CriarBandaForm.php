@@ -1,24 +1,26 @@
 <?php
 
-namespace common\models;
+namespace frontend\models;
 
+use common\models\BandaMembros;
+use common\models\Generos;
+use common\models\Habilidades;
 use Yii;
+use yii\base\Model;
+use common\models\User;
+use common\models\Profiles;
+use common\models\Bandas;
+use common\models\Musicos;
 use yii\helpers\BaseVarDumper;
 
+
 /**
- * This is the model class for table "bandamembros".
- *
- * @property string $DataEntrada
- * @property int $IdBanda
- * @property int $IdMusico
- *
- * @property Bandas $banda
- * @property Musicos $musico
+ * CriarBandaForm form
  */
-class BandaMembros extends \yii\db\ActiveRecord
+class CriarBandaForm extends Model
 {
 
-    /*public $Nome;
+    public $Nome;
     public $Descricao;
     public $Localizacao;
     public $Contacto;
@@ -28,14 +30,6 @@ class BandaMembros extends \yii\db\ActiveRecord
     public $DataEntrada;
     public $IdBanda;
     public $IdMusico;
-
-    /**
-     * {@inheritdoc}
-     */
-    public static function tableName()
-    {
-        return 'bandamembros';
-    }
 
     /**
      * {@inheritdoc}
@@ -50,7 +44,6 @@ class BandaMembros extends \yii\db\ActiveRecord
             [['Nome', 'Descricao', 'Localizacao', 'Contacto'], 'string', 'max' => 255],
             [['IdGenero'], 'exist', 'skipOnError' => true, 'targetClass' => Generos::className(), 'targetAttribute' => ['IdGenero' => 'Id']],
 
-            [['DataEntrada'], 'required'],
             [['DataEntrada'], 'safe'],
             [['IdBanda', 'IdMusico'], 'integer'],
             [['IdBanda', 'IdMusico'], 'unique', 'targetAttribute' => ['IdBanda', 'IdMusico']],
@@ -92,31 +85,15 @@ class BandaMembros extends \yii\db\ActiveRecord
             $banda->IdGenero = $this->IdGenero;
 
             $bandamembros = new BandaMembros();
-            $bandamembros->DataEntrada = $this->DataEntrada;
+            $bandamembros->DataEntrada = date('Y-m-d H:i:s');;
 
             $banda->save(false);
             $bandamembros->IdBanda = $banda->Id;
-            $bandamembros->IdMusico = $musico;
+            $bandamembros->IdMusico = $musico->Id;
             $bandamembros->save(false);
 
             return $bandamembros;
         }
         return null;
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getBanda()
-    {
-        return $this->hasOne(Bandas::className(), ['Id' => 'IdBanda']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getMusico()
-    {
-        return $this->hasOne(Musicos::className(), ['Id' => 'IdMusico']);
     }
 }

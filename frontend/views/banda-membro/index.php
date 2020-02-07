@@ -31,7 +31,66 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <h1>MINHAS BANDAS</h1>
 
-    <?= GridView::widget([
+    <p>
+        <?= Html::a('Crear Banda', ['create'], ['class' => 'btn btn-success']) ?>
+    </p>
+
+    <svg width="70" height="70">
+        <rect width="70" height="20" style="fill:#DFF0D8;stroke-width:1px;stroke:rgb(0,0,0)" />
+        <text x="19" y="15" fill="black">Ativa</text>
+    </svg>
+
+    <svg width="70" height="70">
+        <rect width="70" height="20" style="fill:#F2DEDE;stroke-width:1px;stroke:rgb(0,0,0)" />
+        <text x="14" y="15" fill="black">Inativa</text>
+    </svg>
+
+    <?php
+
+        foreach ($dataProvider as $banda){
+            if($banda->Removida == 1){
+                ?>
+                <div class="row" style="background-color: #F2DEDE; color: black">
+                <?php
+            }
+            else{
+                ?>
+                    <div class="row" style="background-color: #DFF0D8; color: black">
+                        <?php
+            }
+            ?>
+                <div class="col-lg-2">
+                    <?php
+                    foreach ($banda->bandamembros as $membros)
+                        echo $membros->DataEntrada;
+
+                    ?>
+                </div>
+                <div class="col-lg-2">
+                    <?= $banda->Nome ?>
+                </div>
+                <div class="col-lg-2">
+                    <?= $banda->Localizacao ?>
+                </div>
+                <div class="col-lg-2">
+                    <?= $banda->Contacto ?>
+                </div>
+                <div class="col-lg-2">
+                    <?= $banda->genero->Nome ?>
+                </div>
+                <div class="col-lg-2">
+                    <?php
+                    foreach ($banda->musicos as $musico)
+                        echo $musico->profile->Nome;
+
+                    ?>
+                </div>
+            </div>
+            <?php
+        }
+    ?>
+
+    <?php /* echo GridView::widget([
         'dataProvider' => $dataProvider,
         'tableOptions' => ['class' => 'table table-bordered'],
         'rowOptions' => function($model){
@@ -56,6 +115,11 @@ $this->params['breadcrumbs'][] = $this->title;
                 'headerOptions' => ['style' => 'color: #ffffff']
             ],
             [
+                'attribute' => 'banda.Contacto',
+                'header' => 'Contacto',
+                'headerOptions' => ['style' => 'color: #ffffff']
+            ],
+            [
                 'attribute' => 'banda.genero.Nome',
                 'header' => 'Género',
                 'headerOptions' => ['style' => 'color: #ffffff']
@@ -66,16 +130,8 @@ $this->params['breadcrumbs'][] = $this->title;
                 'headerOptions' => ['style' => 'color: #ffffff']
             ],
         ],
-    ]); ?>
+    ]);*/ ?>
 
-    <svg width="70" height="70">
-        <rect width="70" height="20" style="fill:#DFF0D8;stroke-width:1px;stroke:rgb(0,0,0)" />
-        <text x="19" y="15" fill="black">Ativa</text>
-    </svg>
 
-    <svg width="70" height="70">
-        <rect width="70" height="20" style="fill:#F2DEDE;stroke-width:1px;stroke:rgb(0,0,0)" />
-        <text x="14" y="15" fill="black">Inativa</text>
-    </svg>
 
 </div>

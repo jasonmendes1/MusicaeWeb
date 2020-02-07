@@ -5,7 +5,7 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model common\models\BandaMembros */
 
-$this->title = 'Create Banda Membros';
+$this->title = 'CRIAR BANDA';
 $this->params['breadcrumbs'][] = ['label' => 'Banda Membros', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
