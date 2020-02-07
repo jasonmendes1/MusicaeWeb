@@ -9,6 +9,7 @@ use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use frontend\assets\AppAsset;
 use common\widgets\Alert;
+use common\models\Profiles;
 
 AppAsset::register($this);
 ?>
@@ -42,9 +43,8 @@ AppAsset::register($this);
         $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
     } else {
         $menuItems = [
-            ['label' => 'Perfil', 'url' => ['/site/perfil']],
-            ['label' => 'Minhas Bandas  ', 'url' => ['/bandas/index']],
-            ['label' => 'Feed', 'url' => ['/site/teste']],
+            ['label' => 'Perfil', 'url' => ['/profiles/view?id=' . Yii::$app->user->identity->getId()]],
+            ['label' => 'Minhas Bandas  ', 'url' => ['/banda-membro']],
         ];
         $menuItems[] = '<li>'
             . Html::beginForm(['/site/logout'], 'post')

@@ -2,7 +2,9 @@
 
 namespace common\models;
 
+use common\models\Habilidades;
 use Yii;
+use common\models\Generos;
 
 /**
  * This is the model class for table "profiles".

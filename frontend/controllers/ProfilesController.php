@@ -2,9 +2,12 @@
 
 namespace frontend\controllers;
 
+use common\models\User;
 use Yii;
 use common\models\Profiles;
+use common\models\Musicos;
 use yii\data\ActiveDataProvider;
+use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -23,7 +26,7 @@ class ProfilesController extends Controller
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
-                    'delete' => ['POST'],
+                    'logout' => ['post'],
                 ],
             ],
         ];
@@ -33,16 +36,17 @@ class ProfilesController extends Controller
      * Lists all Profiles models.
      * @return mixed
      */
-    public function actionIndex()
+    /*public function actionIndex()
     {
         $dataProvider = new ActiveDataProvider([
-            'query' => Profiles::find(),
+            'query' => Profiles::find()->where(['IdUser' => Yii::$app->user->id]),
         ]);
 
         return $this->render('index', [
             'dataProvider' => $dataProvider,
         ]);
-    }
+
+    }*/
 
     /**
      * Displays a single Profiles model.
@@ -52,8 +56,11 @@ class ProfilesController extends Controller
      */
     public function actionView($id)
     {
+        $user_id = Yii::$app->user->identity->getId();
+        $profile = Profiles::find()->where(['IdUser' => $user_id])->one();
+
         return $this->render('view', [
-            'model' => $this->findModel($id),
+            'model' => $this->findModel($profile),
         ]);
     }
 
@@ -62,7 +69,7 @@ class ProfilesController extends Controller
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
-    public function actionCreate()
+    /*public function actionCreate()
     {
         $model = new Profiles();
 
@@ -73,7 +80,7 @@ class ProfilesController extends Controller
         return $this->render('create', [
             'model' => $model,
         ]);
-    }
+    }*/
 
     /**
      * Updates an existing Profiles model.
@@ -84,7 +91,12 @@ class ProfilesController extends Controller
      */
     public function actionUpdate($id)
     {
-        $model = $this->findModel($id);
+        $user_id = Yii::$app->user->identity->getId();
+        $profile = Profiles::find()->where(['IdUser' => $user_id])->one();
+        $musico = Musicos::find()->where(['idProfile' => $profile->Id])->one();
+        $user = User::find()->where(Yii::$app->user->identity->getId())->one();
+
+        $model = $this->findModel($profile);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->Id]);
@@ -92,6 +104,8 @@ class ProfilesController extends Controller
 
         return $this->render('update', [
             'model' => $model,
+            'modelUser' => $user,
+            'modelMusico' => $musico,
         ]);
     }
 
@@ -102,12 +116,17 @@ class ProfilesController extends Controller
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
      */
-    public function actionDelete($id)
+    /*public function actionDelete($id)
     {
+        if($id == Yii::$app->user->id){
         $this->findModel($id)->delete();
 
         return $this->redirect(['index']);
-    }
+        }else{
+
+            return $this->redirect("/profiles");
+        }
+    }*/
 
     /**
      * Finds the Profiles model based on its primary key value.

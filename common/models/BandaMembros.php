@@ -45,9 +45,9 @@ class BandaMembros extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'DataEntrada' => 'Data Entrada',
-            'IdBanda' => 'Id Banda',
-            'IdMusico' => 'Id Musico',
+            'DataEntrada' => 'Data de Entrada',
+            'IdBanda' => 'Banda',
+            'IdMusico' => 'Musico',
         ];
     }
 
