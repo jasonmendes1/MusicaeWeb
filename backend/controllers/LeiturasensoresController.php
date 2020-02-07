@@ -3,17 +3,16 @@
 namespace backend\controllers;
 
 use Yii;
-use common\models\Profiles;
-use common\models\ProfilesSearch;
-use yii\filters\AccessControl;
+use backend\models\Leiturasensores;
+use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * ProfileController implements the CRUD actions for Profiles model.
+ * LeiturasensoresController implements the CRUD actions for Leiturasensores model.
  */
-class ProfileController extends Controller
+class LeiturasensoresController extends Controller
 {
     /**
      * {@inheritdoc}
@@ -21,22 +20,6 @@ class ProfileController extends Controller
     public function behaviors()
     {
         return [
-            'access' => [
-                'class' => AccessControl::className(),
-                'only' => ['create', 'update', 'delete', 'index'],
-                'rules' => [
-                    [
-                        'allow' => false,
-                        'actions' => ['create', 'update', 'delete', 'index'],
-                        'roles' => ['?'],
-                    ],
-                    [
-                        'allow' => true,
-                        'actions' => ['create', 'update', 'delete', 'index'],
-                        'roles' => ['@'],
-                    ],
-                ],
-            ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
@@ -47,22 +30,22 @@ class ProfileController extends Controller
     }
 
     /**
-     * Lists all Profiles models.
+     * Lists all Leiturasensores models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel = new ProfilesSearch();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        $dataProvider = new ActiveDataProvider([
+            'query' => Leiturasensores::find(),
+        ]);
 
         return $this->render('index', [
-            'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
         ]);
     }
 
     /**
-     * Displays a single Profiles model.
+     * Displays a single Leiturasensores model.
      * @param integer $id
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
@@ -75,25 +58,25 @@ class ProfileController extends Controller
     }
 
     /**
-     * Creates a new Profiles model.
+     * Creates a new Leiturasensores model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
-    /*public function actionCreate()
+    public function actionCreate()
     {
-        $model = new Profiles();
+        $model = new Leiturasensores();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->Id]);
+            return $this->redirect(['view', 'id' => $model->id]);
         }
 
         return $this->render('create', [
             'model' => $model,
         ]);
-    }*/
+    }
 
     /**
-     * Updates an existing Profiles model.
+     * Updates an existing Leiturasensores model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -104,7 +87,7 @@ class ProfileController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->Id]);
+            return $this->redirect(['view', 'id' => $model->id]);
         }
 
         return $this->render('update', [
@@ -113,7 +96,7 @@ class ProfileController extends Controller
     }
 
     /**
-     * Deletes an existing Profiles model.
+     * Deletes an existing Leiturasensores model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -127,15 +110,15 @@ class ProfileController extends Controller
     }
 
     /**
-     * Finds the Profiles model based on its primary key value.
+     * Finds the Leiturasensores model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return Profiles the loaded model
+     * @return Leiturasensores the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Profiles::findOne($id)) !== null) {
+        if (($model = Leiturasensores::findOne($id)) !== null) {
             return $model;
         }
 

@@ -118,9 +118,54 @@ class UserController extends ActiveController
         $profileRecord->Localidade = $profileLocalidade;
         $profileRecord->Descricao = $profileDescricao;
 
-        $userRecord->save();
         $musicoRecord->save();
-        $profileRecord->save();
+        $userRecord->save();
+        $profileRecord->save(false);
+
+        return $profileRecord->Id;
+    }
+
+    public function actionAdd()
+    {
+        $request = Yii::$app->request;
+
+        $userUsername = $request->get('userUsername');
+        $userPassword = $request->get('userPassword');
+        $userEmail = $request->get('userEmail');
+        $profileNome = $request->get('profileNome');
+        $profileSexo = $request->get('profileSexo');
+        $profileLocalidade = $request->get('profileLocalidade');
+        $profileDataNasc = $request->get('profileDataNasc');
+        $musicoIdHabilidade = $request->get('musicoIdHabilidade');
+        $musicoIdIdGenero = $request->get('musicoIdGenero');
+
+
+
+        $user = new $this->modelClass;
+        $user->setPassword($userPassword);
+        $user->username = $userUsername;
+        $user->status = 1;
+        $user->email = $userEmail;
+        $user->generateAuthKey();
+        $user->save(false);
+
+        $profile = new $this->modelProfile;
+        $profile->IdUser = $user->Id;
+        $profile->Nome = $profileNome;
+        $profile->Sexo = $profileSexo;
+        $profile->Localidade = $profileLocalidade;
+        $profile->DataNac = $profileDataNasc;
+        $profile->Descricao = "";
+        $profile->Foto = "";
+        $profile->save(false);
+
+
+        $musico = new $this->modelMusico;
+        $musico->idProfile = $profile->Id;
+        $musico->NivelCompromisso = "Diversao";
+        $musico->idHabilidade = $musicoIdHabilidade;
+        $musico->idGenero = $musicoIdIdGenero;
+        $musico->save(false);
 
         return 0;
     }
