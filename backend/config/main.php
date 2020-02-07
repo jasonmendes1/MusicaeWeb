@@ -77,6 +77,7 @@ return [
                         'GET total' => 'total',
                         'GET profile/{id}' => 'profile',
                         'POST verificaLogin' => 'verifica',
+                        'POST profile/edit' => 'edit'
                     ],
                     'tokens' => [
                         '{id}' => '<id:\\d+>',
