@@ -62,7 +62,6 @@ return [
                         'GET feedhabilidade/{idhabilidade}' => 'feedhabilidade',
                         'GET membros/{iduser}' => 'membros',
                         'GET historico/{iduser}' => 'historico',
-                        // 'POST feedhabilidade' => 'feedhabilidade',
                     ],
                     'tokens' => [
                         '{id}' => '<id:\\d+>',
