@@ -17,14 +17,42 @@ class BandaHabilidadesController extends ActiveController
     public $modelClass = 'common\models\BandaHabilidades';
     public $modelBanda = 'common\models\Bandas';
     public $modelHabilidade = 'common\models\Habilidades';
+    public $modelBDHabilidade = 'common\models\BandaHabilidades';
+    public $modelMembrosBanda = 'common\models\BandaMembros';
+    public $modelUser = 'common\models\User';
+    public $modelProfile = 'common\models\Profiles';
+    public $modelMusico = 'common\models\Musicos';
+    public $modelGenero = 'common\models\Generos';
 
-    public function actionFeed()
+    public function actionFeed($id)
     {
+        $user = new $this->modelUser;
+        $recUser = $user::find()->where("Id=" . '\'' . $id . '\'')->one();
+        if ($recUser == null) {
+            return ['error' => "404"];
+        }
+        $profile = new $this->modelProfile;
+        $recProfile = $profile::find()->where("Id=" . '\'' . $recUser->profile->Id . '\'')->one();;
+
+        $membros = new $this->modelMembrosBanda;
+        $bandaMembros = $membros::find()->where("IdMusico=" . '\'' . $recProfile->musicos->Id . '\'')->all();
+
         $bandaHabilidades = new $this->modelClass;
         $recs = $bandaHabilidades::find()->all();
         $banda = new $this->modelBanda;
         $habilidade = new $this->modelHabilidade;
         $feed = array();
+        $minhasBandas = array();
+        $i = 0;
+
+        foreach ($bandaMembros as $bandasMembros) {
+            foreach ($recs as $rec) {
+                if ($bandasMembros->IdBanda == $rec->IdBanda) {
+                    array_push($minhasBandas, $bandasMembros->IdBanda);
+                    continue;
+                }
+            }
+        }
 
         foreach ($recs as $rec) {
             $bandaRec = $banda::find()->where("Id=" . '\'' . $rec->IdBanda . '\'')->one();
@@ -45,6 +73,14 @@ class BandaHabilidadesController extends ActiveController
                 ]
             );
         }
+
+        foreach ($feed as $Id => $fed) {
+            if (in_array($fed['Id'], $minhasBandas)) {
+                unset($feed[$i]);
+            }
+            $i++;
+        }
+        $feed = array_values($feed);
 
         return $feed;
     }

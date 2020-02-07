@@ -96,7 +96,7 @@ return [
                     'class' => 'yii\rest\UrlRule',
                     'controller' => ['v1/banda-habilidades'],
                     'extraPatterns' => [
-                        'GET feed' => 'feed',
+                        'GET feed/{id}' => 'feed',
                         'GET feeed/{id}' => 'feeed',
                     ],
                     'pluralize' => false,

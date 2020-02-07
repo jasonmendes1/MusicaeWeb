@@ -18,11 +18,17 @@ $this->params['breadcrumbs'][] = $this->title;
         <?= Html::a('Create Bandas', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
-    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
+    <?php // echo $this->render('_search', ['model' => $searchModel]); 
+    ?>
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
+        'rowOptions' => function ($model, $key, $index, $column) {
+            if ($model->Removida == 1) {
+                return ['style' => 'Color: red'];
+            }
+        },
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
