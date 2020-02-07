@@ -18,7 +18,6 @@ $profile = Profiles::find()->where(['IdUser' => $user_id])->one();
 $musico = Musicos::find()->where(['idProfile' => $profile->Id])->one();
 $genero = Generos::find()->where(['Id' => $musico->idGenero])->one();
 $habilidade = Habilidades::find()->where(['Id' => $musico->idHabilidade])->one();
-
 ?>
 
 <style>
