@@ -37,20 +37,15 @@ class BandaMembrosController extends ActiveController
         $musicoRec = $musicos::find()->where("Id=" . '\'' . $profileRec->musicos->Id . '\'')->one();
 
         $banda = new $this->modelBanda;
-        $bandaRec = $banda::find()->where("Nome=" . '\'' . $BandaNome . '\'')->all();
+        $bandaRec = $banda::find()->where("Nome=" . '\'' . $BandaNome . '\'')->one();
 
-        foreach ($bandaRec as $rec) {
-            if ($rec->Removida == 1)
-                continue;
-            $bandaRec = $rec;
-        }
 
         $bandaMembro = new $this->modelClass;
 
         $bandaMembro->DataEntrada = date('Y/m/d H:i:s', time());
         $bandaMembro->IdBanda = $bandaRec->Id;
         $bandaMembro->IdMusico = $musicoRec->Id;
-        $bandaMembro->save();
+        $bandaMembro->save(false);
 
         \Yii::$app->response->statusCode = 201;
         return ["code" => "ok"];
