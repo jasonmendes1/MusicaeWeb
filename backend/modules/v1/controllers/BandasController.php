@@ -172,21 +172,7 @@ class BandasController extends ActiveController
             return $user;
         }
         return null;
-    }
-*/
-    /*
-    public function behaviors()
-    {
-        $behaviors = parent::behaviors();
-        $behaviors['authenticator'] = [
-        'class' => HttpBasicAuth::className(),
-        'auth' => function ($username, $password){
-            $user = \common\models\User::findByUsername($username);
-            if ($user && $user->validatePassword($password)){
-                return $user;
-            }
-        } return null;
-        ];
-    }
-    */
+    }*/
+
+
 }
